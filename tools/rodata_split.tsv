@@ -1,0 +1,22 @@
+#object	section	offset	length	symbol (address in symbols.ld)
+func_800356F0.o	.rodata	0x18	0xFFE8	__rodata_800356F0_18
+func_800566A0.o	.rodata	0x8	0x8	__rodata_800566A0_8
+func_800566A0.o	.rodata	0x10	0x8	__rodata_800566A0_10
+func_800566A0.o	.rodata	0x18	0x8	__rodata_800566A0_18
+func_800566A0.o	.rodata	0x20	0x8	__rodata_800566A0_20
+func_800566A0.o	.rodata	0x28	0x8	__rodata_800566A0_28
+func_800566A0.o	.rodata	0x30	0x8	__rodata_800566A0_30
+func_800566A0.o	.rodata	0x38	0x8	__rodata_800566A0_38
+func_800566A0.o	.rodata	0x40	0x8	__rodata_800566A0_40
+func_800566A0.o	.rodata	0x48	0x8	__rodata_800566A0_48
+func_800566A0.o	.rodata	0x50	0xFFB0	__rodata_800566A0_50
+func_80057E70.o	.rodata	0x8	0x8	__rodata_80057E70_8
+func_80057E70.o	.rodata	0x10	0x8	__rodata_80057E70_10
+func_80057E70.o	.rodata	0x18	0x8	__rodata_80057E70_18
+func_80057E70.o	.rodata	0x20	0x8	__rodata_80057E70_20
+func_80057E70.o	.rodata	0x28	0x8	__rodata_80057E70_28
+func_80057E70.o	.rodata	0x30	0x8	__rodata_80057E70_30
+func_80057E70.o	.rodata	0x38	0x8	__rodata_80057E70_38
+func_80057E70.o	.rodata	0x40	0x8	__rodata_80057E70_40
+func_80057E70.o	.rodata	0x48	0x8	__rodata_80057E70_48
+func_80057E70.o	.rodata	0x50	0xFFB0	__rodata_80057E70_50

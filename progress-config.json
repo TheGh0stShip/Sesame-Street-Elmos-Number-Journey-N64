@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64",
-  "scope": "USA ROM SHA-1 7195ea96d9fe5de065af61f70d55c92c8ee905e6. All catalogued executable functions were independently rebuilt word-exact in verification run v17. Assembly-assisted sources are complete but excluded from ordinary-C credit. Asset regeneration is reported separately.",
+  "scope": "USA ROM SHA-1 7195ea96d9fe5de065af61f70d55c92c8ee905e6. Conventional matching-decompilation project: after one-time extraction, the build compiles, assembles, links and re-encodes without reading the base ROM, then reproduces its SHA-1. Original assembly and the single inline-assembly allocator workaround are source-complete but excluded from ordinary-C credit.",
   "functions": 973,
   "code_bytes": 444672
 }

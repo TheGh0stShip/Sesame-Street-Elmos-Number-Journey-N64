@@ -1,6 +1,11 @@
 *.z64
 *.n64
 *.v64
-build/*
+build/
+build_*/
 !build/report.json
+.extracted/
+assets/*/
+!assets/README
 __pycache__/
+*.pyc

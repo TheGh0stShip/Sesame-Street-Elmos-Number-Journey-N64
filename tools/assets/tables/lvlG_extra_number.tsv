@@ -1,0 +1,3 @@
+# lvlG ledger rows its current classifier draws differently (see assets.py lvlG_extra)
+bump.bif	0x3EB08	0x3EB20	mesh_bbox
+bump.bif	0x3EB44	0x3EB48	mesh_header_tail

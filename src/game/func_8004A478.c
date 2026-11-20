@@ -1,0 +1,124 @@
+#include "common.h"
+
+
+void func_8004A478(s32 arg0) {
+    f32 sp10;
+    s32 pad0;
+    f32 sp18;
+    f32 sp1C;
+    f32 sp20;
+    s32 pad1;
+    f32 sp28;
+    f32 sp2C;
+    f32 sp30;
+    s32 pad2;
+    f32 sp38;
+    f32 sp3C;
+    f32 sp40;
+    s32 pad3;
+    f32 sp48;
+    f32 sp4C;
+    f32 sp50;
+    s32 pad4;
+    f32 sp58;
+    f32 sp5C;
+    f32 sp60;
+    s32 pad5;
+    f32 sp68;
+    f32 sp6C;
+    f32 sp70;
+    f64 sp78;
+
+    sp18 = ((((struct gd_60_f32 *)arg0)->v + (((struct gd_6C_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_78_f32 *)arg0)->v * D_8013ECA0)) + (((struct gd_84_f32 *)arg0)->v * D_80115410);
+    sp1C = ((((struct gd_64_f32 *)arg0)->v + (((struct gd_70_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_7C_f32 *)arg0)->v * D_8013ECA0)) + (((struct gd_88_f32 *)arg0)->v * D_80115410);
+    sp20 = ((((struct gd_68_f32 *)arg0)->v + (((struct gd_74_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_80_f32 *)arg0)->v * D_8013ECA0)) + (((struct gd_8C_f32 *)arg0)->v * D_80115410);
+    sp28 = ((((struct gd_60_f32 *)arg0)->v + (((struct gd_6C_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_78_f32 *)arg0)->v * (-D_8013ECA0))) + (((struct gd_84_f32 *)arg0)->v * D_80115410);
+    sp2C = ((((struct gd_64_f32 *)arg0)->v + (((struct gd_70_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_7C_f32 *)arg0)->v * (-D_8013ECA0))) + (((struct gd_88_f32 *)arg0)->v * D_80115410);
+    sp30 = ((((struct gd_68_f32 *)arg0)->v + (((struct gd_74_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_80_f32 *)arg0)->v * (-D_8013ECA0))) + (((struct gd_8C_f32 *)arg0)->v * D_80115410);
+    sp38 = ((((struct gd_60_f32 *)arg0)->v + (((struct gd_6C_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_78_f32 *)arg0)->v * D_8013ECA0)) + (((struct gd_84_f32 *)arg0)->v * (-D_80115410));
+    sp3C = ((((struct gd_64_f32 *)arg0)->v + (((struct gd_70_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_7C_f32 *)arg0)->v * D_8013ECA0)) + (((struct gd_88_f32 *)arg0)->v * (-D_80115410));
+    sp40 = ((((struct gd_68_f32 *)arg0)->v + (((struct gd_74_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_80_f32 *)arg0)->v * D_8013ECA0)) + (((struct gd_8C_f32 *)arg0)->v * (-D_80115410));
+    sp48 = ((((struct gd_60_f32 *)arg0)->v + (((struct gd_6C_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_78_f32 *)arg0)->v * (-D_8013ECA0))) + (((struct gd_84_f32 *)arg0)->v * (-D_80115410));
+    sp4C = ((((struct gd_64_f32 *)arg0)->v + (((struct gd_70_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_7C_f32 *)arg0)->v * (-D_8013ECA0))) + (((struct gd_88_f32 *)arg0)->v * (-D_80115410));
+    sp50 = ((((struct gd_68_f32 *)arg0)->v + (((struct gd_74_f32 *)arg0)->v * ((struct gd_F0_f32 *)arg0)->v)) + (((struct gd_80_f32 *)arg0)->v * (-D_8013ECA0))) + (((struct gd_8C_f32 *)arg0)->v * (-D_80115410));
+    sp58 = sp18 - ((struct gd_60_f32 *)arg0)->v;
+    sp5C = sp1C - ((struct gd_64_f32 *)arg0)->v;
+    sp60 = sp20 - ((struct gd_68_f32 *)arg0)->v;
+    sp68 = sp38 - ((struct gd_60_f32 *)arg0)->v;
+    sp6C = sp3C - ((struct gd_64_f32 *)arg0)->v;
+    sp70 = sp40 - ((struct gd_68_f32 *)arg0)->v;
+    ((struct gd_9C_f32 *)arg0)->v = (sp6C * sp60) - (sp70 * sp5C);
+    ((struct gd_A0_f32 *)arg0)->v = (sp70 * sp58) - (sp68 * sp60);
+    ((struct gd_A4_f32 *)arg0)->v = (sp68 * sp5C) - (sp6C * sp58);
+    sp10 = sqrtf((((((struct gd_9C_f32 *)arg0)->v * ((struct gd_9C_f32 *)arg0)->v) + (((struct gd_A0_f32 *)arg0)->v * ((struct gd_A0_f32 *)arg0)->v)) + (((struct gd_A4_f32 *)arg0)->v * ((struct gd_A4_f32 *)arg0)->v)));
+    if (sp10 >= 1e-07f) {
+        sp78 = D_8007B418 / ((f64)sp10);
+        ((struct gd_9C_f32 *)arg0)->v = (f32)(((f64)((struct gd_9C_f32 *)arg0)->v) * sp78);
+        ((struct gd_A0_f32 *)arg0)->v = (f32)(((f64)((struct gd_A0_f32 *)arg0)->v) * sp78);
+        ((struct gd_A4_f32 *)arg0)->v = (f32)(((f64)((struct gd_A4_f32 *)arg0)->v) * sp78);
+    } else {
+    }
+    ((struct gd_DC_f32 *)arg0)->v = ((sp18 * ((struct gd_9C_f32 *)arg0)->v) + (sp1C * ((struct gd_A0_f32 *)arg0)->v)) + (sp20 * ((struct gd_A4_f32 *)arg0)->v);
+    sp58 = sp28 - ((struct gd_60_f32 *)arg0)->v;
+    sp5C = sp2C - ((struct gd_64_f32 *)arg0)->v;
+    sp60 = sp30 - ((struct gd_68_f32 *)arg0)->v;
+    sp68 = sp18 - ((struct gd_60_f32 *)arg0)->v;
+    sp6C = sp1C - ((struct gd_64_f32 *)arg0)->v;
+    sp70 = sp20 - ((struct gd_68_f32 *)arg0)->v;
+    ((struct gd_A8_f32 *)arg0)->v = (sp6C * sp60) - (sp70 * sp5C);
+    ((struct gd_AC_f32 *)arg0)->v = (sp70 * sp58) - (sp68 * sp60);
+    ((struct gd_B0_f32 *)arg0)->v = (sp68 * sp5C) - (sp6C * sp58);
+    sp10 = sqrtf((((((struct gd_A8_f32 *)arg0)->v * ((struct gd_A8_f32 *)arg0)->v) + (((struct gd_AC_f32 *)arg0)->v * ((struct gd_AC_f32 *)arg0)->v)) + (((struct gd_B0_f32 *)arg0)->v * ((struct gd_B0_f32 *)arg0)->v)));
+    if (sp10 >= 1e-07f) {
+        sp78 = D_8007B420 / ((f64)sp10);
+        ((struct gd_A8_f32 *)arg0)->v = (f32)(((f64)((struct gd_A8_f32 *)arg0)->v) * sp78);
+        ((struct gd_AC_f32 *)arg0)->v = (f32)(((f64)((struct gd_AC_f32 *)arg0)->v) * sp78);
+        ((struct gd_B0_f32 *)arg0)->v = (f32)(((f64)((struct gd_B0_f32 *)arg0)->v) * sp78);
+    } else {
+    }
+    ((struct gd_E0_f32 *)arg0)->v = ((sp28 * ((struct gd_A8_f32 *)arg0)->v) + (sp2C * ((struct gd_AC_f32 *)arg0)->v)) + (sp30 * ((struct gd_B0_f32 *)arg0)->v);
+    sp58 = sp48 - ((struct gd_60_f32 *)arg0)->v;
+    sp5C = sp4C - ((struct gd_64_f32 *)arg0)->v;
+    sp60 = sp50 - ((struct gd_68_f32 *)arg0)->v;
+    sp68 = sp28 - ((struct gd_60_f32 *)arg0)->v;
+    sp6C = sp2C - ((struct gd_64_f32 *)arg0)->v;
+    sp70 = sp30 - ((struct gd_68_f32 *)arg0)->v;
+    ((struct gd_90_f32 *)arg0)->v = (sp6C * sp60) - (sp70 * sp5C);
+    ((struct gd_94_f32 *)arg0)->v = (sp70 * sp58) - (sp68 * sp60);
+    ((struct gd_98_f32 *)arg0)->v = (sp68 * sp5C) - (sp6C * sp58);
+    sp10 = sqrtf((((((struct gd_90_f32 *)arg0)->v * ((struct gd_90_f32 *)arg0)->v) + (((struct gd_94_f32 *)arg0)->v * ((struct gd_94_f32 *)arg0)->v)) + (((struct gd_98_f32 *)arg0)->v * ((struct gd_98_f32 *)arg0)->v)));
+    if (sp10 >= 1e-07f) {
+        sp78 = D_8007B428 / ((f64)sp10);
+        ((struct gd_90_f32 *)arg0)->v = (f32)(((f64)((struct gd_90_f32 *)arg0)->v) * sp78);
+        ((struct gd_94_f32 *)arg0)->v = (f32)(((f64)((struct gd_94_f32 *)arg0)->v) * sp78);
+        ((struct gd_98_f32 *)arg0)->v = (f32)(((f64)((struct gd_98_f32 *)arg0)->v) * sp78);
+    } else {
+    }
+    ((struct gd_D8_f32 *)arg0)->v = ((sp48 * ((struct gd_90_f32 *)arg0)->v) + (sp4C * ((struct gd_94_f32 *)arg0)->v)) + (sp50 * ((struct gd_98_f32 *)arg0)->v);
+    sp58 = sp38 - ((struct gd_60_f32 *)arg0)->v;
+    sp5C = sp3C - ((struct gd_64_f32 *)arg0)->v;
+    sp60 = sp40 - ((struct gd_68_f32 *)arg0)->v;
+    sp68 = sp48 - ((struct gd_60_f32 *)arg0)->v;
+    sp6C = sp4C - ((struct gd_64_f32 *)arg0)->v;
+    sp70 = sp50 - ((struct gd_68_f32 *)arg0)->v;
+    ((struct gd_B4_f32 *)arg0)->v = (sp6C * sp60) - (sp70 * sp5C);
+    ((struct gd_B8_f32 *)arg0)->v = (sp70 * sp58) - (sp68 * sp60);
+    ((struct gd_BC_f32 *)arg0)->v = (sp68 * sp5C) - (sp6C * sp58);
+    sp10 = sqrtf((((((struct gd_B4_f32 *)arg0)->v * ((struct gd_B4_f32 *)arg0)->v) + (((struct gd_B8_f32 *)arg0)->v * ((struct gd_B8_f32 *)arg0)->v)) + (((struct gd_BC_f32 *)arg0)->v * ((struct gd_BC_f32 *)arg0)->v)));
+    if (sp10 >= 1e-07f) {
+        sp78 = D_8007B430 / ((f64)sp10);
+        ((struct gd_B4_f32 *)arg0)->v = (f32)(((f64)((struct gd_B4_f32 *)arg0)->v) * sp78);
+        ((struct gd_B8_f32 *)arg0)->v = (f32)(((f64)((struct gd_B8_f32 *)arg0)->v) * sp78);
+        ((struct gd_BC_f32 *)arg0)->v = (f32)(((f64)((struct gd_BC_f32 *)arg0)->v) * sp78);
+    } else {
+    }
+    ((struct gd_E4_f32 *)arg0)->v = ((sp38 * ((struct gd_B4_f32 *)arg0)->v) + (sp3C * ((struct gd_B8_f32 *)arg0)->v)) + (sp40 * ((struct gd_BC_f32 *)arg0)->v);
+    ((struct gd_CC_f32 *)arg0)->v = ((struct gd_6C_f32 *)arg0)->v;
+    ((struct gd_D0_f32 *)arg0)->v = ((struct gd_70_f32 *)arg0)->v;
+    ((struct gd_D4_f32 *)arg0)->v = ((struct gd_74_f32 *)arg0)->v;
+    ((struct gd_EC_f32 *)arg0)->v = ((sp28 * ((struct gd_CC_f32 *)arg0)->v) + (sp2C * ((struct gd_D0_f32 *)arg0)->v)) + (sp30 * ((struct gd_D4_f32 *)arg0)->v);
+    ((struct gd_C0_f32 *)arg0)->v = -((struct gd_6C_f32 *)arg0)->v;
+    ((struct gd_C4_f32 *)arg0)->v = -((struct gd_70_f32 *)arg0)->v;
+    ((struct gd_C8_f32 *)arg0)->v = -((struct gd_74_f32 *)arg0)->v;
+    ((struct gd_E8_f32 *)arg0)->v = ((((struct gd_60_f32 *)arg0)->v * ((struct gd_C0_f32 *)arg0)->v) + (((struct gd_64_f32 *)arg0)->v * ((struct gd_C4_f32 *)arg0)->v)) + (((struct gd_68_f32 *)arg0)->v * ((struct gd_C8_f32 *)arg0)->v);
+}

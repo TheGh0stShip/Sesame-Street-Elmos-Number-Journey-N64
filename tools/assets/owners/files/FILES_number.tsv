@@ -1,0 +1,69 @@
+id	rom_start	rom_end	size	class_guess	note	loaded_by
+0	0x07CB20	0x0A5940	167456	gfx_pack	menu22: mode 22 screen images: raw, PI-copied to 0x80154000	func_8001E2CC case 22 -> func_80017788
+1	0x0A5940	0x10D560	424992	gfx_pack	menu21: mode 21 screen images: raw, PI-copied to 0x80154000	func_8001E2CC case 21 -> func_80017788
+2	0x10D560	0x177680	434464	gfx_pack	common: shared world data: raw, PI-copied to 0x8024B000	func_8001E2CC (all cases) -> func_80017788
+3	0x177680	0x1BCE90	284688	gzip_level	street.bif: level 1 (hub) world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001E2CC case 1 -> func_800139D0 (inflate)
+4	0x1BCE90	0x1D6CA0	106000	gzip_level	dunk.bif: level 9 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001E2CC case 9
+5	0x1D6CA0	0x206CC0	196640	gzip_level	bump.bif: level 10 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001E2CC case 10
+6	0x206CC0	0x22EC10	163664	gzip_level	mansion.bif: level 8 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001E2CC case 8
+7	0x22EC10	0x25AF80	181104	gzip_level	maze.bif: level 7 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001E2CC case 7
+8	0x25AF80	0x27ADC0	130624	gzip_level	ski.bif: level 6 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001E2CC case 6
+9	0x27ADC0	0x2B8FD0	254480	gzip_level	river.bif: level 5 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001E2CC case 5
+10	0x2B8FD0	0x2E6FC0	188400	gzip_level	bonus123.bif: level 11 (bonus) world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001E2CC case 11
+11	0x2E6FC0	0x2E9A90	10960	libmus_ptr_bank	sfx.ptr: sound-effect pointer bank	func_80017520 -> func_80017788 to 0x800B10A0; musConfig.ptr
+12	0x2E9A90	0x3CB0C0	923184	libmus_wave_bank	sfx.wbk: sound-effect wave bank, ROM-resident	func_80017520 musConfig.wbk
+13	0x3CB0C0	0x3CB880	1984	libmus_fx_bank	sfx.fx: libmus default effect bank	func_80017520 -> func_80017788 to 0x80115530
+14	0x3CB880	0x3D0980	20736	libmus_ptr_bank	music.ptr: music pointer bank	func_8001933C
+15	0x3D0980	0x4B00C0	915264	libmus_wave_bank	music.wbk: music wave bank, ROM-resident	func_8001933C (wbk = D_003D0980)
+16	0x4B00C0	0x4B8E70	36272	libmus_song	song_4B00C0: song	func_80019470
+17	0x4B8E70	0x4BA590	5920	libmus_song	song_4B8E70: song	func_80019470 / func_8003C494
+18	0x4BA590	0x4BC400	7792	libmus_song	song_4BA590: song	func_80019470
+19	0x4BC400	0x4BCB50	1872	libmus_song	song_4BC400: song	func_8003BF64
+20	0x4BCB50	0x4C12F0	18336	libmus_song	song_4BCB50: song	func_80019470
+21	0x4C12F0	0x4C1970	1664	libmus_song	song_4C12F0: song	func_8003BF64
+22	0x4C1970	0x4C6350	18912	libmus_song	song_4C1970: song	func_80019470
+23	0x4C6350	0x4C69A0	1616	libmus_song	song_4C6350: song	func_8003BF64
+24	0x4C69A0	0x4CB8D0	20272	libmus_song	song_4C69A0: song	func_80019470
+25	0x4CB8D0	0x4CBCD0	1024	libmus_song	song_4CB8D0: song	func_8003BF64
+26	0x4CBCD0	0x4CFEC0	16880	libmus_song	song_4CBCD0: song	func_80019470
+27	0x4CFEC0	0x4D0690	2000	libmus_song	song_4CFEC0: song	func_8003BF64
+28	0x4D0690	0x4D7C90	30208	libmus_song	song_4D0690: song	func_80019470
+29	0x4D7C90	0x4D83F0	1888	libmus_song	song_4D7C90: song	func_8003BF64
+30	0x4D83F0	0x4DF7C0	29648	libmus_song	song_4D83F0: song	func_80019470
+31	0x4DF7C0	0x4E0870	4272	libmus_song	song_4DF7C0: song	func_800287AC
+32	0x4E0870	0x4E1090	2080	libmus_song	song_4E0870: song	func_8003C494
+33	0x4E1090	0x4E7620	26000	libmus_song	song_4E1090: song	func_80019470
+34	0x4E7620	0x4E9810	8688	libmus_song	song_4E7620: song	func_8003C494
+35	0x4E9810	0x61F510	1268992	speech_mort	clips: "MORT" voice/sound clip region played by func_80012FA0 -> func_80051314; clip table {u32 rom, s16 ms} in .data (ROM 0x75700..0x75B30)	.data clip tables
+36	0x61F510	0x625430	24352	sprite_anim	anim_61F510: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+37	0x625430	0x6289C0	13712	sprite_anim	anim_625430: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+38	0x6289C0	0x637780	60864	sprite_anim	anim_6289C0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+39	0x637780	0x6482F0	68464	sprite_anim	anim_637780: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0
+40	0x6482F0	0x6505B0	33472	sprite_anim	anim_6482F0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+41	0x6505B0	0x6634C0	77584	sprite_anim	anim_6505B0: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0
+42	0x6634C0	0x674C10	71504	sprite_anim	anim_6634C0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+43	0x674C10	0x67C2F0	30432	sprite_anim	anim_674C10: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+44	0x67C2F0	0x687B30	47168	sprite_anim	anim_67C2F0: sprite animation file loaded whole into RAM by the streaming thread (unused: start never referenced)	none (unused)
+45	0x687B30	0x691BB0	41088	sprite_anim	anim_687B30: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+46	0x691BB0	0x6A44D0	76064	sprite_anim	anim_691BB0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+47	0x6A44D0	0x6A99B0	21728	sprite_anim	anim_6A44D0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+48	0x6A99B0	0x6B92E0	63792	sprite_anim	anim_6A99B0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+49	0x6B92E0	0x6C6700	54304	sprite_anim	anim_6B92E0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+50	0x6C6700	0x6D25E0	48864	sprite_anim	anim_6C6700: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+51	0x6D25E0	0x6E3450	69232	sprite_anim	anim_6D25E0: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0
+52	0x6E3450	0x6F8CF0	88224	sprite_anim	anim_6E3450: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+53	0x6F8CF0	0x701190	33952	sprite_anim	anim_6F8CF0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+54	0x701190	0x712000	69232	sprite_anim	anim_701190: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0
+55	0x712000	0x723E50	73296	sprite_anim	anim_712000: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+56	0x723E50	0x732CF0	61088	sprite_anim	anim_723E50: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+57	0x732CF0	0x739C20	28464	sprite_anim	anim_732CF0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+58	0x739C20	0x75F380	153440	sprite_anim	anim_739C20: sprite animation file loaded whole into RAM by the streaming thread (unused: start never referenced)	none (unused)
+59	0x75F380	0x7710B0	73008	sprite_anim	anim_75F380: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+60	0x7710B0	0x780C00	64336	sprite_anim	anim_7710B0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+61	0x780C00	0x78E0B0	54448	sprite_anim	anim_780C00: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+62	0x78E0B0	0x79CD90	60640	sprite_anim	anim_78E0B0: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0
+63	0x79CD90	0x7AB810	60032	sprite_anim	anim_79CD90: sprite animation file loaded whole into RAM by the streaming thread (unused: start never referenced)	none (unused)
+64	0x7AB810	0x7B35C0	32176	sprite_anim	anim_7AB810: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+65	0x7B35C0	0x7BB850	33424	sprite_anim	anim_7B35C0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC
+66	0x7BB850	0x7C57E0	40848	sprite_anim	anim_7BB850: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0
+67	0x7C57E0	0x7CE410	35888	sprite_anim	anim_7C57E0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC

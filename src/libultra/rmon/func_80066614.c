@@ -1,0 +1,123 @@
+/* SDK rmon/rmonregs.c */
+
+#include "PRinternal/dbgproto.h"
+#include "PR/os_internal.h"
+#include "PR/rcp.h"
+#include "PR/sptask.h"
+#include "PRinternal/rmonint.h"
+#include "PR/rdb.h"
+#include "PR/os_version.h"
+
+#include "PRinternal/macros.h"
+
+// TODO: these come from headers
+#ident "$Revision: 3.70 $"
+#ident "$Revision: 1.5 $"
+#ident "$Revision: 1.2 $"
+#ident "$Revision: 1.4 $"
+#ident "$Revision: 1.3 $"
+
+extern u32 RCPpc;
+extern u32 oldIMEMvalue;
+extern u32 DMEMbuffer[4];
+
+typedef union {
+    u32 everything;
+    struct {
+        int opcode : 6;
+        int base : 5;
+        int rt : 5;
+        int offset : 16;
+    } scalarop;
+    struct {
+        int opcode : 6;
+        int base : 5;
+        int rt : 5;
+        int size : 5;
+        int element : 4;
+        int offset : 7;
+    } vectorop;
+} INSTRUCTION;
+
+static void LoadStoreSU(int opcode, int regno) {
+    INSTRUCTION inst;
+
+    /* Prepare a scalar load or store instruction at DMEM address 0 */
+    inst.everything = 0;
+    inst.scalarop.opcode = opcode;
+    inst.scalarop.rt = regno;
+    __rmonWriteWordTo((u32*)SP_IMEM_START, inst.everything);
+    __rmonWriteWordTo((u32*)SP_PC_REG, 0);
+}
+void LoadStoreVU(int opcode, int regno);
+
+static void SetUpForRCPop(int isVector) {
+    /* Save RSP data that would be overwritten when reading or writing registers */
+    RCPpc = __rmonReadWordAt((u32*)SP_PC_REG);
+    oldIMEMvalue = __rmonReadWordAt((u32*)SP_IMEM_START);
+    DMEMbuffer[0] = __rmonReadWordAt((u32*)SP_DMEM_START);
+    if (isVector) {
+        DMEMbuffer[1] = __rmonReadWordAt((u32*)(SP_DMEM_START + 0x4));
+        DMEMbuffer[2] = __rmonReadWordAt((u32*)(SP_DMEM_START + 0x8));
+        DMEMbuffer[3] = __rmonReadWordAt((u32*)(SP_DMEM_START + 0xC));
+    }
+}
+
+static void CleanupFromRCPop(int isVector) {
+    /* Restore RSP data that was saved to read or write registers */
+    __rmonWriteWordTo((u32*)SP_DMEM_START, DMEMbuffer[0]);
+    if (isVector) {
+        __rmonWriteWordTo((u32*)(SP_DMEM_START + 0x4), DMEMbuffer[1]);
+        __rmonWriteWordTo((u32*)(SP_DMEM_START + 0x8), DMEMbuffer[2]);
+        /* BUG: the last word is not restored properly */
+        __rmonWriteWordTo((u32*)(SP_DMEM_START + 0xC), DMEMbuffer[2]);
+    }
+    __rmonWriteWordTo((u32*)SP_IMEM_START, oldIMEMvalue);
+    __rmonWriteWordTo((u32*)SP_PC_REG, RCPpc);
+}
+int __rmonGetGRegisters(KKHeader* req);
+int __rmonSetGRegisters(KKHeader* req);
+int __rmonGetFRegisters(KKHeader* req);
+int __rmonSetFRegisters(KKHeader* req);
+u32 rmonGetRcpRegister(int regNumber);
+
+int __rmonGetSRegs(KKHeader* req) {
+    register KKObjectRequest* request = (KKObjectRequest*)req;
+    KKCpSregEvent reply;
+    register int i;
+
+    STUBBED_PRINTF(("GetSRegisters\n"));
+
+    if (__rmonRCPrunning()) {
+        return TV_ERROR_OPERATIONS_PROTECTED;
+    }
+
+    reply.tid = request->object;
+    reply.header.code = request->header.code;
+    reply.header.error = TV_ERROR_NO_ERROR;
+
+    SetUpForRCPop(FALSE);
+    for (i = SREG_IDX_ZERO; i <= SREG_IDX_RA; i++) {
+        LoadStoreSU(MIPS_SW_OPCODE, i);
+        __rmonStepRCP();
+        reply.registers.sregs[i] = __rmonReadWordAt((u32*)SP_DMEM_START);
+    }
+    CleanupFromRCPop(FALSE);
+
+    reply.registers.sregs[SREG_IDX_DRAM_ADDR] = __rmonReadWordAt((u32*)SP_DRAM_ADDR_REG);
+    reply.registers.sregs[SREG_IDX_MEM_ADDR] = __rmonReadWordAt((u32*)SP_MEM_ADDR_REG);
+    reply.registers.sregs[SREG_IDX_RD_LEN] = __rmonReadWordAt((u32*)SP_RD_LEN_REG);
+    reply.registers.sregs[SREG_IDX_PC] = __rmonReadWordAt((u32*)SP_PC_REG) + SP_IMEM_START;
+    reply.registers.sregs[SREG_IDX_WR_LEN] = __rmonReadWordAt((u32*)SP_WR_LEN_REG);
+    reply.registers.sregs[SREG_IDX_STATUS] = __rmonReadWordAt((u32*)SP_STATUS_REG);
+    reply.registers.sregs[SREG_IDX_DMA_FULL] = __rmonReadWordAt((u32*)SP_DMA_FULL_REG);
+    reply.registers.sregs[SREG_IDX_DMA_BUSY] = __rmonReadWordAt((u32*)SP_DMA_BUSY_REG);
+
+    __rmonSendReply(&reply.header, sizeof(reply), KK_TYPE_REPLY);
+    return TV_ERROR_NO_ERROR;
+}
+int __rmonSetSRegs(KKHeader* req);
+int __rmonGetVRegs(KKHeader* req);
+int __rmonSetVRegs(KKHeader* req);
+u32 __rmonGetRegisterContents(int method, int threadNumber, int regNumber);
+
