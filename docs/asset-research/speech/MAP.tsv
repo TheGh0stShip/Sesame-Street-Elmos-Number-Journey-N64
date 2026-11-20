@@ -1,0 +1,873 @@
+game	rom_start	rom_end	class	format	description	referenced_by	extractor
+letter	0x4D9D78	0x4D9D80	unknown	-	8 bytes, tail of the range that starts at D_003EA160 (preceding file); no separate reference	-	-
+letter	0x4D9D80	0x4DB3E0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_80018A60,func_8003AB7C via func_8001892C	audio agent (libmus)
+letter	0x4DB3E0	0x4DD320	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_80018A60 via func_8001892C	audio agent (libmus)
+letter	0x4DD320	0x4E32C0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad); NOT referenced by any code (unused song)	none	audio agent (libmus)
+letter	0x4E32C0	0x4EA530	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_80018A60	audio agent (libmus)
+letter	0x4EA530	0x4EADF0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_8003AB7C	audio agent (libmus)
+letter	0x4EADF0	0x4F1850	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_80018A60	audio agent (libmus)
+letter	0x4F1850	0x4F2030	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_8003A650	audio agent (libmus)
+letter	0x4F2030	0x4FA460	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_80018A60	audio agent (libmus)
+letter	0x4FA460	0x4FAC20	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_8003A650	audio agent (libmus)
+letter	0x4FAC20	0x501130	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_80018A60	audio agent (libmus)
+letter	0x501130	0x501820	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_8003A650	audio agent (libmus)
+letter	0x501820	0x507070	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_80018A60	audio agent (libmus)
+letter	0x507070	0x507890	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_8003A650	audio agent (libmus)
+letter	0x507890	0x50C970	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_80018A60	audio agent (libmus)
+letter	0x50C970	0x50D000	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_8003A650	audio agent (libmus)
+letter	0x50D000	0x50F9E0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad)	func_8003AB7C	audio agent (libmus)
+letter	0x50F9E0	0x510A10	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001892C; size = next start - start (may include trailing pad); NOT referenced by any code (unused song)	none	audio agent (libmus)
+letter	0x510A10	0x51195C	audio	MORT GSM 06.10 speech stream	speech clip 0: 126 frames, 16000 Hz, 1.260 s	none (unused clip)	tools/extract_speech.py
+letter	0x51195C	0x511960	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x511960	0x515520	audio	MORT GSM 06.10 speech stream	speech clip 1: 473 frames, 16000 Hz, 4.730 s	table D_800732F0+0x0 (func_8003AB7C)	tools/extract_speech.py
+letter	0x515520	0x516AE8	audio	MORT GSM 06.10 speech stream	speech clip 2: 186 frames, 16000 Hz, 1.860 s	table D_80073218+0x0,D_800732F0+0x10 (func_800336BC,func_8003AB7C)	tools/extract_speech.py
+letter	0x516AE8	0x516AF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x516AF0	0x517774	audio	MORT GSM 06.10 speech stream	speech clip 3: 135 frames, 16000 Hz, 1.350 s	table D_80073218+0x8 (func_800336BC)	tools/extract_speech.py
+letter	0x517774	0x517780	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x517780	0x5183C4	audio	MORT GSM 06.10 speech stream	speech clip 4: 136 frames, 16000 Hz, 1.360 s	table D_80073218+0x10 (func_800336BC)	tools/extract_speech.py
+letter	0x5183C4	0x5183D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5183D0	0x518F70	audio	MORT GSM 06.10 speech stream	speech clip 5: 120 frames, 16000 Hz, 1.200 s	table D_80073218+0x18 (func_800336BC)	tools/extract_speech.py
+letter	0x518F70	0x519F04	audio	MORT GSM 06.10 speech stream	speech clip 6: 154 frames, 16000 Hz, 1.540 s	table D_80073218+0x20 (func_800336BC)	tools/extract_speech.py
+letter	0x519F04	0x519F10	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x519F10	0x51AC78	audio	MORT GSM 06.10 speech stream	speech clip 7: 125 frames, 16000 Hz, 1.250 s	table D_80073218+0x28 (func_800336BC)	tools/extract_speech.py
+letter	0x51AC78	0x51AC80	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x51AC80	0x51BB0C	audio	MORT GSM 06.10 speech stream	speech clip 8: 143 frames, 16000 Hz, 1.430 s	table D_80073218+0x30,D_80073218+0x38 (func_800336BC)	tools/extract_speech.py
+letter	0x51BB0C	0x51BB10	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x51BB10	0x51DEF4	audio	MORT GSM 06.10 speech stream	speech clip 9: 352 frames, 16000 Hz, 3.520 s	none (unused clip)	tools/extract_speech.py
+letter	0x51DEF4	0x51DF00	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x51DF00	0x51ED48	audio	MORT GSM 06.10 speech stream	speech clip 10: 113 frames, 16000 Hz, 1.130 s	table D_80073258+0x0 (func_800336BC)	tools/extract_speech.py
+letter	0x51ED48	0x51ED50	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x51ED50	0x51F294	audio	MORT GSM 06.10 speech stream	speech clip 11: 53 frames, 16000 Hz, 0.530 s	table D_80073258+0x8 (func_800336BC)	tools/extract_speech.py
+letter	0x51F294	0x51F2A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x51F2A0	0x51FA30	audio	MORT GSM 06.10 speech stream	speech clip 12: 67 frames, 16000 Hz, 0.670 s	table D_80073258+0x10 (func_800336BC)	tools/extract_speech.py
+letter	0x51FA30	0x520DD0	audio	MORT GSM 06.10 speech stream	speech clip 13: 161 frames, 16000 Hz, 1.610 s	table D_80073258+0x18 (func_800336BC)	tools/extract_speech.py
+letter	0x520DD0	0x521E88	audio	MORT GSM 06.10 speech stream	speech clip 14: 154 frames, 16000 Hz, 1.540 s	table D_80073258+0x20,D_800737E8+0x0 (func_800336BC)	tools/extract_speech.py
+letter	0x521E88	0x521E90	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x521E90	0x5228EC	audio	MORT GSM 06.10 speech stream	speech clip 15: 107 frames, 16000 Hz, 1.070 s	table D_80073258+0x28 (func_800336BC)	tools/extract_speech.py
+letter	0x5228EC	0x5228F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5228F0	0x524064	audio	MORT GSM 06.10 speech stream	speech clip 16: 245 frames, 16000 Hz, 2.450 s	table D_80073258+0x30 (func_800336BC)	tools/extract_speech.py
+letter	0x524064	0x524070	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x524070	0x525124	audio	MORT GSM 06.10 speech stream	speech clip 17: 143 frames, 16000 Hz, 1.430 s	table D_80073258+0x38,D_800737E8+0x8 (func_800336BC)	tools/extract_speech.py
+letter	0x525124	0x525130	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x525130	0x525E38	audio	MORT GSM 06.10 speech stream	speech clip 18: 169 frames, 16000 Hz, 1.690 s	table D_80073258+0x40 (func_800336BC)	tools/extract_speech.py
+letter	0x525E38	0x525E40	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x525E40	0x526AE4	audio	MORT GSM 06.10 speech stream	speech clip 19: 117 frames, 16000 Hz, 1.170 s	table D_80073258+0x48 (func_800336BC)	tools/extract_speech.py
+letter	0x526AE4	0x526AF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x526AF0	0x529BD0	audio	MORT GSM 06.10 speech stream	speech clip 20: 504 frames, 16000 Hz, 5.040 s	table D_800733C8+0x0 (func_8002AB50)	tools/extract_speech.py
+letter	0x529BD0	0x52A464	audio	MORT GSM 06.10 speech stream	speech clip 21: 72 frames, 16000 Hz, 0.720 s	table D_800732C0+0x0 (func_8001A12C)	tools/extract_speech.py
+letter	0x52A464	0x52A470	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x52A470	0x52AFEC	audio	MORT GSM 06.10 speech stream	speech clip 22: 95 frames, 16000 Hz, 0.950 s	table D_800732D0+0x0 (func_8001A12C)	tools/extract_speech.py
+letter	0x52AFEC	0x52AFF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x52AFF0	0x52B9E8	audio	MORT GSM 06.10 speech stream	speech clip 23: 87 frames, 16000 Hz, 0.870 s	table D_800732E0+0x0 (func_8001A12C)	tools/extract_speech.py
+letter	0x52B9E8	0x52B9F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x52B9F0	0x52CD14	audio	MORT GSM 06.10 speech stream	speech clip 24: 243 frames, 16000 Hz, 2.430 s	table D_80073320+0x0 (func_80036068)	tools/extract_speech.py
+letter	0x52CD14	0x52CD20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x52CD20	0x52ED34	audio	MORT GSM 06.10 speech stream	speech clip 25: 314 frames, 16000 Hz, 3.140 s	table D_80073320+0x8 (func_80036068)	tools/extract_speech.py
+letter	0x52ED34	0x52ED40	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x52ED40	0x531658	audio	MORT GSM 06.10 speech stream	speech clip 26: 367 frames, 16000 Hz, 3.670 s	table D_80074450+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x531658	0x531660	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x531660	0x533508	audio	MORT GSM 06.10 speech stream	speech clip 27: 251 frames, 16000 Hz, 2.510 s	table D_80074480+0x0 (func_8003AB7C)	tools/extract_speech.py
+letter	0x533508	0x533510	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x533510	0x539290	audio	MORT GSM 06.10 speech stream	speech clip 28: 913 frames, 16000 Hz, 9.130 s	table D_80073310+0x0 (func_80036068)	tools/extract_speech.py
+letter	0x539290	0x53B058	audio	MORT GSM 06.10 speech stream	speech clip 29: 244 frames, 16000 Hz, 2.440 s	table D_80073830+0x20 (func_800272C8)	tools/extract_speech.py
+letter	0x53B058	0x53B060	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x53B060	0x541420	audio	MORT GSM 06.10 speech stream	speech clip 30: 941 frames, 16000 Hz, 9.410 s	table D_80073398+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x541420	0x543808	audio	MORT GSM 06.10 speech stream	speech clip 31: 416 frames, 16000 Hz, 4.160 s	table D_800733A8+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x543808	0x543810	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x543810	0x54803C	audio	MORT GSM 06.10 speech stream	speech clip 32: 815 frames, 16000 Hz, 8.150 s	table D_800733B8+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x54803C	0x548040	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x548040	0x54C364	audio	MORT GSM 06.10 speech stream	speech clip 33: 610 frames, 16000 Hz, 6.100 s	table D_80073368+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x54C364	0x54C370	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x54C370	0x54E838	audio	MORT GSM 06.10 speech stream	speech clip 34: 346 frames, 16000 Hz, 3.460 s	table D_80073378+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x54E838	0x54E840	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x54E840	0x553340	audio	MORT GSM 06.10 speech stream	speech clip 35: 679 frames, 16000 Hz, 6.790 s	table D_80073388+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x553340	0x556FE8	audio	MORT GSM 06.10 speech stream	speech clip 36: 581 frames, 16000 Hz, 5.810 s	table D_80073338+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x556FE8	0x556FF0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x556FF0	0x5595BC	audio	MORT GSM 06.10 speech stream	speech clip 37: 373 frames, 16000 Hz, 3.730 s	table D_80073348+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x5595BC	0x5595C0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5595C0	0x55CE98	audio	MORT GSM 06.10 speech stream	speech clip 38: 518 frames, 16000 Hz, 5.180 s	table D_80073358+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x55CE98	0x55CEA0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x55CEA0	0x56108C	audio	MORT GSM 06.10 speech stream	speech clip 39: 675 frames, 16000 Hz, 6.750 s	table D_800736D0+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x56108C	0x561090	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x561090	0x562A48	audio	MORT GSM 06.10 speech stream	speech clip 40: 234 frames, 16000 Hz, 2.340 s	table D_800736D0+0x10 (func_800272C8)	tools/extract_speech.py
+letter	0x562A48	0x562A50	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x562A50	0x5636B4	audio	MORT GSM 06.10 speech stream	speech clip 41: 112 frames, 16000 Hz, 1.120 s	table D_80073520+0x10 (func_8002AB50)	tools/extract_speech.py
+letter	0x5636B4	0x5636C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5636C0	0x564654	audio	MORT GSM 06.10 speech stream	speech clip 42: 167 frames, 16000 Hz, 1.670 s	table D_80073520+0x20 (func_8002AB50)	tools/extract_speech.py
+letter	0x564654	0x564660	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x564660	0x565EB4	audio	MORT GSM 06.10 speech stream	speech clip 43: 220 frames, 16000 Hz, 2.200 s	table D_80073520+0x38 (func_8002AB50)	tools/extract_speech.py
+letter	0x565EB4	0x565EC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x565EC0	0x5671A4	audio	MORT GSM 06.10 speech stream	speech clip 44: 239 frames, 16000 Hz, 2.390 s	table D_80073520+0x48 (func_8002AB50)	tools/extract_speech.py
+letter	0x5671A4	0x5671B0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5671B0	0x56A0E0	audio	MORT GSM 06.10 speech stream	speech clip 45: 403 frames, 16000 Hz, 4.030 s	table D_80073520+0x58 (func_8002AB50)	tools/extract_speech.py
+letter	0x56A0E0	0x56EA08	audio	MORT GSM 06.10 speech stream	speech clip 46: 733 frames, 16000 Hz, 7.330 s	table D_800736F0+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x56EA08	0x56EA10	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x56EA10	0x570244	audio	MORT GSM 06.10 speech stream	speech clip 47: 216 frames, 16000 Hz, 2.160 s	table D_80073590+0xC (func_8002AB50)	tools/extract_speech.py
+letter	0x570244	0x570250	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x570250	0x571B8C	audio	MORT GSM 06.10 speech stream	speech clip 48: 260 frames, 16000 Hz, 2.600 s	table D_80073590+0x1C (func_8002AB50)	tools/extract_speech.py
+letter	0x571B8C	0x571B90	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x571B90	0x5730FC	audio	MORT GSM 06.10 speech stream	speech clip 49: 208 frames, 16000 Hz, 2.080 s	table D_80073590+0x2C,D_80073590+0x54 (func_8002AB50)	tools/extract_speech.py
+letter	0x5730FC	0x573100	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x573100	0x5741D8	audio	MORT GSM 06.10 speech stream	speech clip 50: 221 frames, 16000 Hz, 2.210 s	table D_80073590+0x3C (func_8002AB50)	tools/extract_speech.py
+letter	0x5741D8	0x5741E0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5741E0	0x574D80	audio	MORT GSM 06.10 speech stream	speech clip 51: 122 frames, 16000 Hz, 1.220 s	table D_80073520+0x28,D_80073590+0x44,D_80073590+0x6C (func_8002AB50)	tools/extract_speech.py
+letter	0x574D80	0x5754D0	audio	MORT GSM 06.10 speech stream	speech clip 52: 103 frames, 16000 Hz, 1.030 s	table D_80073590+0x64 (func_8002AB50)	tools/extract_speech.py
+letter	0x5754D0	0x5780F8	audio	MORT GSM 06.10 speech stream	speech clip 53: 441 frames, 16000 Hz, 4.410 s	table D_800736B0+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x5780F8	0x578100	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x578100	0x578E44	audio	MORT GSM 06.10 speech stream	speech clip 54: 151 frames, 16000 Hz, 1.510 s	table D_800736B0+0x10 (func_800272C8)	tools/extract_speech.py
+letter	0x578E44	0x578E50	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x578E50	0x57B14C	audio	MORT GSM 06.10 speech stream	speech clip 55: 313 frames, 16000 Hz, 3.130 s	table D_80073428+0x10 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x57B14C	0x57B150	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x57B150	0x57E71C	audio	MORT GSM 06.10 speech stream	speech clip 56: 520 frames, 16000 Hz, 5.200 s	table D_80073428+0x28 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x57E71C	0x57E720	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x57E720	0x580098	audio	MORT GSM 06.10 speech stream	speech clip 57: 231 frames, 16000 Hz, 2.310 s	table D_80073428+0x40 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x580098	0x5800A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5800A0	0x583674	audio	MORT GSM 06.10 speech stream	speech clip 58: 531 frames, 16000 Hz, 5.310 s	table D_80073698+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x583674	0x583680	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x583680	0x586F54	audio	MORT GSM 06.10 speech stream	speech clip 59: 488 frames, 16000 Hz, 4.880 s	table D_800734A0+0x10,D_800734A0+0x48 (func_8002AB50)	tools/extract_speech.py
+letter	0x586F54	0x586F60	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x586F60	0x5876AC	audio	MORT GSM 06.10 speech stream	speech clip 60: 70 frames, 16000 Hz, 0.700 s	table D_80073428+0x58 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x5876AC	0x5876B0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5876B0	0x589238	audio	MORT GSM 06.10 speech stream	speech clip 61: 275 frames, 16000 Hz, 2.750 s	table D_80073428+0x68 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x589238	0x589240	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x589240	0x58BEC4	audio	MORT GSM 06.10 speech stream	speech clip 62: 391 frames, 16000 Hz, 3.910 s	table D_800734A0+0x28,D_800734A0+0x68 (func_8002AB50)	tools/extract_speech.py
+letter	0x58BEC4	0x58BED0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x58BED0	0x58CF00	audio	MORT GSM 06.10 speech stream	speech clip 63: 154 frames, 16000 Hz, 1.540 s	table D_800734A0+0x38,D_800734A0+0x58 (func_8002AB50)	tools/extract_speech.py
+letter	0x58CF00	0x58D9FC	audio	MORT GSM 06.10 speech stream	speech clip 64: 104 frames, 16000 Hz, 1.040 s	table D_800737F8+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x58D9FC	0x58DA00	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x58DA00	0x58F16C	audio	MORT GSM 06.10 speech stream	speech clip 65: 220 frames, 16000 Hz, 2.200 s	table D_800737F8+0x8 (func_800272C8)	tools/extract_speech.py
+letter	0x58F16C	0x58F170	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x58F170	0x592F00	audio	MORT GSM 06.10 speech stream	speech clip 66: 606 frames, 16000 Hz, 6.060 s	table D_800737F8+0x10 (func_800272C8)	tools/extract_speech.py
+letter	0x592F00	0x593A1C	audio	MORT GSM 06.10 speech stream	speech clip 67: 111 frames, 16000 Hz, 1.110 s	table D_800737F8+0x18 (func_800272C8)	tools/extract_speech.py
+letter	0x593A1C	0x593A20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x593A20	0x594E64	audio	MORT GSM 06.10 speech stream	speech clip 68: 180 frames, 16000 Hz, 1.800 s	table D_800737F8+0x28 (func_800272C8)	tools/extract_speech.py
+letter	0x594E64	0x594E70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x594E70	0x595B10	audio	MORT GSM 06.10 speech stream	speech clip 69: 113 frames, 16000 Hz, 1.130 s	table D_8007360C+0xC (func_8002AB50)	tools/extract_speech.py
+letter	0x595B10	0x597C88	audio	MORT GSM 06.10 speech stream	speech clip 70: 312 frames, 16000 Hz, 3.120 s	table D_8007360C+0x1C (func_8002AB50)	tools/extract_speech.py
+letter	0x597C88	0x597C90	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x597C90	0x59A9B8	audio	MORT GSM 06.10 speech stream	speech clip 71: 409 frames, 16000 Hz, 4.090 s	table D_8007360C+0x2C (func_8002AB50)	tools/extract_speech.py
+letter	0x59A9B8	0x59A9C0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x59A9C0	0x5A0F1C	audio	MORT GSM 06.10 speech stream	speech clip 72: 957 frames, 16000 Hz, 9.570 s	table D_80073830+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x5A0F1C	0x5A0F20	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5A0F20	0x5A1BC4	audio	MORT GSM 06.10 speech stream	speech clip 73: 124 frames, 16000 Hz, 1.240 s	table D_80073830+0x10 (func_800272C8)	tools/extract_speech.py
+letter	0x5A1BC4	0x5A1BD0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5A1BD0	0x5A4138	audio	MORT GSM 06.10 speech stream	speech clip 74: 343 frames, 16000 Hz, 3.430 s	table D_80073650+0x8 (func_8002AB50)	tools/extract_speech.py
+letter	0x5A4138	0x5A4140	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5A4140	0x5A8568	audio	MORT GSM 06.10 speech stream	speech clip 75: 670 frames, 16000 Hz, 6.700 s	table D_80073650+0x20 (func_8002AB50)	tools/extract_speech.py
+letter	0x5A8568	0x5A8570	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5A8570	0x5A96E8	audio	MORT GSM 06.10 speech stream	speech clip 76: 175 frames, 16000 Hz, 1.750 s	table D_80073650+0x30 (func_8002AB50)	tools/extract_speech.py
+letter	0x5A96E8	0x5A96F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5A96F0	0x5AAAB0	audio	MORT GSM 06.10 speech stream	speech clip 77: 166 frames, 16000 Hz, 1.660 s	table D_80073708+0x0,D_80073760+0x8,D_800737B8+0x8 (func_8002F274,func_80036DE8)	tools/extract_speech.py
+letter	0x5AAAB0	0x5AB95C	audio	MORT GSM 06.10 speech stream	speech clip 78: 153 frames, 16000 Hz, 1.530 s	table D_80073708+0x10,D_80073708+0x38,D_80073760+0x18,D_800737B8+0x18 (func_8002F274,func_80036DE8)	tools/extract_speech.py
+letter	0x5AB95C	0x5AB960	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5AB960	0x5AC7EC	audio	MORT GSM 06.10 speech stream	speech clip 79: 130 frames, 16000 Hz, 1.300 s	table D_80073708+0x20,D_80073708+0x48 (func_80036DE8)	tools/extract_speech.py
+letter	0x5AC7EC	0x5AC7F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5AC7F0	0x5ADF40	audio	MORT GSM 06.10 speech stream	speech clip 80: 231 frames, 16000 Hz, 2.310 s	table D_80073708+0x30 (func_80036DE8)	tools/extract_speech.py
+letter	0x5ADF40	0x5AFAE4	audio	MORT GSM 06.10 speech stream	speech clip 81: 308 frames, 16000 Hz, 3.080 s	table D_80073790+0x0 (func_800377FC)	tools/extract_speech.py
+letter	0x5AFAE4	0x5AFAF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5AFAF0	0x5B0774	audio	MORT GSM 06.10 speech stream	speech clip 82: 134 frames, 16000 Hz, 1.340 s	table D_80073790+0x10 (func_800377FC)	tools/extract_speech.py
+letter	0x5B0774	0x5B0780	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B0780	0x5B2464	audio	MORT GSM 06.10 speech stream	speech clip 83: 240 frames, 16000 Hz, 2.400 s	none (unused clip)	tools/extract_speech.py
+letter	0x5B2464	0x5B2470	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B2470	0x5B415C	audio	MORT GSM 06.10 speech stream	speech clip 84: 280 frames, 16000 Hz, 2.800 s	none (unused clip)	tools/extract_speech.py
+letter	0x5B415C	0x5B4160	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B4160	0x5B6440	audio	MORT GSM 06.10 speech stream	speech clip 85: 293 frames, 16000 Hz, 2.930 s	table D_80074470+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x5B6440	0x5B6B0C	audio	MORT GSM 06.10 speech stream	speech clip 86: 76 frames, 16000 Hz, 0.760 s	table D_80073A00+0x0,D_80073A00+0x10,D_80073A00+0x18,D_80073A00+0x20,D_80073A00+0x30,D_80073A00+0x38,D_80073A00+0x40,D_80073A00+0x50,D_80073A00+0x58,D_80073A00+0x60,D_80073A00+0x78,D_80073A00+0x80,D_80073A00+0x90,D_80073A00+0x98,D_80073A00+0xA0,D_80073A00+0xA8,D_80073A00+0xB0,D_80073A00+0xC0,D_80073A00+0xC8,D_80073BA0+0xD0,D_80073BA0+0x110,D_80073BA0+0x118,D_80073BA0+0x120,D_80073BA0+0x128,D_80073BA0+0x130,D_80073BA0+0x138,D_80073BA0+0x140,D_80073BA0+0x148,D_80073BA0+0x150,D_80073BA0+0x158,D_80073BA0+0x160,D_80073BA0+0x168,D_80073BA0+0x170,D_80073BA0+0x178,D_80073BA0+0x180,D_80073BA0+0x188,D_80073BA0+0x190,D_80073BA0+0x198 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5B6B0C	0x5B6B10	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B6B10	0x5B7158	audio	MORT GSM 06.10 speech stream	speech clip 87: 76 frames, 16000 Hz, 0.760 s	table D_80073A00+0x8,D_80073BA0+0xD8 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5B7158	0x5B7160	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B7160	0x5B786C	audio	MORT GSM 06.10 speech stream	speech clip 88: 76 frames, 16000 Hz, 0.760 s	table D_80073A00+0x28,D_80073BA0+0xE0 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5B786C	0x5B7870	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B7870	0x5B7FFC	audio	MORT GSM 06.10 speech stream	speech clip 89: 76 frames, 16000 Hz, 0.760 s	table D_80073A00+0x48,D_80073BA0+0xE8 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5B7FFC	0x5B8000	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B8000	0x5B8668	audio	MORT GSM 06.10 speech stream	speech clip 90: 76 frames, 16000 Hz, 0.760 s	table D_80073A00+0x68,D_80073BA0+0xF0 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5B8668	0x5B8670	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B8670	0x5B8DDC	audio	MORT GSM 06.10 speech stream	speech clip 91: 76 frames, 16000 Hz, 0.760 s	table D_80073A00+0x70,D_80073BA0+0xF8 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5B8DDC	0x5B8DE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B8DE0	0x5B950C	audio	MORT GSM 06.10 speech stream	speech clip 92: 76 frames, 16000 Hz, 0.760 s	table D_80073A00+0x88,D_80073BA0+0x100 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5B950C	0x5B9510	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5B9510	0x5B9CE0	audio	MORT GSM 06.10 speech stream	speech clip 93: 76 frames, 16000 Hz, 0.760 s	table D_80073A00+0xB8,D_80073BA0+0x108 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5B9CE0	0x5BA308	audio	MORT GSM 06.10 speech stream	speech clip 94: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x270,D_80073EE0+0x0 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BA308	0x5BA310	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BA310	0x5BA8B8	audio	MORT GSM 06.10 speech stream	speech clip 95: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x278,D_80073EE0+0x8,D_80073EE0+0x10,D_80074100+0x0,D_80074100+0x8,D_80074100+0x10,D_80074100+0x18 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BA8B8	0x5BA8C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BA8C0	0x5BAFEC	audio	MORT GSM 06.10 speech stream	speech clip 96: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x280,D_80073EE0+0x18,D_80073EE0+0x20,D_80074100+0x20,D_80074100+0x28,D_80074100+0x30,D_80074100+0x38 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BAFEC	0x5BAFF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BAFF0	0x5BB5D8	audio	MORT GSM 06.10 speech stream	speech clip 97: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x288,D_80073EE0+0x28,D_80073EE0+0x30,D_80074100+0x40,D_80074100+0x48,D_80074100+0x50,D_80074100+0x58 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BB5D8	0x5BB5E0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BB5E0	0x5BBC28	audio	MORT GSM 06.10 speech stream	speech clip 98: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x290,D_80073EE0+0x38,D_80073EE0+0x40 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BBC28	0x5BBC30	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BBC30	0x5BC154	audio	MORT GSM 06.10 speech stream	speech clip 99: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x298,D_80073EE0+0x48,D_80073EE0+0x50,D_80074100+0x60,D_80074100+0x68,D_80074100+0x70,D_80074100+0x78 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BC154	0x5BC160	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BC160	0x5BC80C	audio	MORT GSM 06.10 speech stream	speech clip 100: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2A0,D_80073EE0+0x58,D_80074100+0x80 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BC80C	0x5BC810	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BC810	0x5BCEDC	audio	MORT GSM 06.10 speech stream	speech clip 101: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2A8,D_80073EE0+0x60,D_80073EE0+0x68,D_80074100+0x88,D_80074100+0x90 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BCEDC	0x5BCEE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BCEE0	0x5BD5EC	audio	MORT GSM 06.10 speech stream	speech clip 102: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2B0,D_80073EE0+0x70,D_80074100+0x98 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BD5EC	0x5BD5F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BD5F0	0x5BDD9C	audio	MORT GSM 06.10 speech stream	speech clip 103: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2B8,D_80073EE0+0x78,D_80073EE0+0x80,D_80074100+0xA0 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BDD9C	0x5BDDA0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BDDA0	0x5BE48C	audio	MORT GSM 06.10 speech stream	speech clip 104: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2C0,D_80073EE0+0x88,D_80074100+0xA8,D_80074100+0xB0 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BE48C	0x5BE490	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BE490	0x5BEB18	audio	MORT GSM 06.10 speech stream	speech clip 105: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2C8,D_80073EE0+0x90,D_80074100+0xB8,D_80074100+0xC0,D_80074100+0xC8 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BEB18	0x5BEB20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BEB20	0x5BF350	audio	MORT GSM 06.10 speech stream	speech clip 106: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2D0,D_80073EE0+0x98,D_80073EE0+0xA0,D_80074100+0xD0,D_80074100+0xD8,D_80074100+0xE0,D_80074100+0xE8 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BF350	0x5BFA1C	audio	MORT GSM 06.10 speech stream	speech clip 107: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2D8,D_80073EE0+0xA8,D_80074100+0xF0 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5BFA1C	0x5BFA20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5BFA20	0x5C010C	audio	MORT GSM 06.10 speech stream	speech clip 108: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2E0,D_80073EE0+0xB0 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5C010C	0x5C0110	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C0110	0x5C0798	audio	MORT GSM 06.10 speech stream	speech clip 109: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2E8,D_80073EE0+0xB8,D_80073EE0+0xC0,D_80074100+0xF8,D_80074100+0x100,D_80074100+0x108,D_80074100+0x110 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5C0798	0x5C07A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C07A0	0x5C0E8C	audio	MORT GSM 06.10 speech stream	speech clip 110: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2F0 (func_800272C8)	tools/extract_speech.py
+letter	0x5C0E8C	0x5C0E90	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C0E90	0x5C157C	audio	MORT GSM 06.10 speech stream	speech clip 111: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x2F8,D_80073EE0+0xC8,D_80073EE0+0xD0,D_80074100+0x118,D_80074100+0x120,D_80074100+0x128,D_80074100+0x130 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5C157C	0x5C1580	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C1580	0x5C1BE8	audio	MORT GSM 06.10 speech stream	speech clip 112: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x300,D_80073EE0+0xD8,D_80073EE0+0xE0,D_80074100+0x138,D_80074100+0x140,D_80074100+0x148,D_80074100+0x150 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5C1BE8	0x5C1BF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C1BF0	0x5C2218	audio	MORT GSM 06.10 speech stream	speech clip 113: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x308,D_80073EE0+0xE8,D_80073EE0+0xF0,D_80074100+0x158,D_80074100+0x160,D_80074100+0x168,D_80074100+0x170 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5C2218	0x5C2220	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C2220	0x5C28CC	audio	MORT GSM 06.10 speech stream	speech clip 114: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x310 (func_800272C8)	tools/extract_speech.py
+letter	0x5C28CC	0x5C28D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C28D0	0x5C2F38	audio	MORT GSM 06.10 speech stream	speech clip 115: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x318,D_80073EE0+0xF8 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5C2F38	0x5C2F40	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C2F40	0x5C37B0	audio	MORT GSM 06.10 speech stream	speech clip 116: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x320,D_80073EE0+0x100,D_80073EE0+0x108,D_80074100+0x178,D_80074100+0x180,D_80074100+0x188,D_80074100+0x190 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5C37B0	0x5C3E5C	audio	MORT GSM 06.10 speech stream	speech clip 117: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x328 (func_800272C8)	tools/extract_speech.py
+letter	0x5C3E5C	0x5C3E60	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C3E60	0x5C45CC	audio	MORT GSM 06.10 speech stream	speech clip 118: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x330,D_80074100+0x198,D_80074100+0x1A0 (func_800272C8,func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5C45CC	0x5C45D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C45D0	0x5C4BD8	audio	MORT GSM 06.10 speech stream	speech clip 119: 73 frames, 16000 Hz, 0.730 s	table D_80073BA0+0x338 (func_800272C8)	tools/extract_speech.py
+letter	0x5C4BD8	0x5C4BE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5C4BE0	0x5C5430	audio	MORT GSM 06.10 speech stream	speech clip 120: 94 frames, 16000 Hz, 0.940 s	table D_80073760+0x0,D_800737B8+0x0 (func_8002F274)	tools/extract_speech.py
+letter	0x5C5430	0x5C8B24	audio	MORT GSM 06.10 speech stream	speech clip 121: 515 frames, 16000 Hz, 5.150 s	table D_800733D8+0x0 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x5C8B24	0x5C8B30	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5C8B30	0x5CBE38	audio	MORT GSM 06.10 speech stream	speech clip 122: 523 frames, 16000 Hz, 5.230 s	table D_800733E8+0x0 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x5CBE38	0x5CBE40	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5CBE40	0x5CF184	audio	MORT GSM 06.10 speech stream	speech clip 123: 465 frames, 16000 Hz, 4.650 s	table D_80073418+0x0 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x5CF184	0x5CF190	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5CF190	0x5D26B8	audio	MORT GSM 06.10 speech stream	speech clip 124: 471 frames, 16000 Hz, 4.710 s	table D_80073428+0x0 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x5D26B8	0x5D26C0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5D26C0	0x5D637C	audio	MORT GSM 06.10 speech stream	speech clip 125: 682 frames, 16000 Hz, 6.820 s	table D_800733F8+0x0 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x5D637C	0x5D6380	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5D6380	0x5D9940	audio	MORT GSM 06.10 speech stream	speech clip 126: 641 frames, 16000 Hz, 6.410 s	table D_80073408+0x0 (func_8002AB50,func_8003AB7C)	tools/extract_speech.py
+letter	0x5D9940	0x5D9E64	audio	MORT GSM 06.10 speech stream	speech clip 127: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0x18 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5D9E64	0x5D9E70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5D9E70	0x5DA7E4	audio	MORT GSM 06.10 speech stream	speech clip 128: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0x18 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5DA7E4	0x5DA7F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DA7F0	0x5DADD8	audio	MORT GSM 06.10 speech stream	speech clip 129: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0x0,D_80073860+0x8,D_80073860+0x10,D_80073860+0x20,D_80073860+0x28,D_80073860+0x30,D_80073860+0x38,D_80073860+0x48,D_80073860+0x58,D_80073860+0x60,D_80073860+0x68,D_80073860+0x70,D_80073860+0x88,D_80073860+0x90,D_80073860+0xA0,D_80073860+0xB0,D_80073860+0xB8,D_80073860+0xC0 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5DADD8	0x5DADE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DADE0	0x5DB630	audio	MORT GSM 06.10 speech stream	speech clip 130: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0x0,D_80073AD0+0x8,D_80073AD0+0x10,D_80073AD0+0x20,D_80073AD0+0x28,D_80073AD0+0x30,D_80073AD0+0x38,D_80073AD0+0x48,D_80073AD0+0x58,D_80073AD0+0x60,D_80073AD0+0x68,D_80073AD0+0x70,D_80073AD0+0x88,D_80073AD0+0x90,D_80073AD0+0xA0,D_80073AD0+0xB0,D_80073AD0+0xB8,D_80073AD0+0xC0 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5DB630	0x5DBC98	audio	MORT GSM 06.10 speech stream	speech clip 131: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0x40 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5DBC98	0x5DBCA0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DBCA0	0x5DC42C	audio	MORT GSM 06.10 speech stream	speech clip 132: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0x40 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5DC42C	0x5DC430	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DC430	0x5DCAB8	audio	MORT GSM 06.10 speech stream	speech clip 133: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0x50 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5DCAB8	0x5DCAC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DCAC0	0x5DD370	audio	MORT GSM 06.10 speech stream	speech clip 134: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0x50 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5DD370	0x5DD894	audio	MORT GSM 06.10 speech stream	speech clip 135: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0x78 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5DD894	0x5DD8A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DD8A0	0x5DE02C	audio	MORT GSM 06.10 speech stream	speech clip 136: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0x78 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5DE02C	0x5DE030	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DE030	0x5DE5B8	audio	MORT GSM 06.10 speech stream	speech clip 137: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0x80 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5DE5B8	0x5DE5C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DE5C0	0x5DEE74	audio	MORT GSM 06.10 speech stream	speech clip 138: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0x80 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5DEE74	0x5DEE80	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DEE80	0x5DF3E4	audio	MORT GSM 06.10 speech stream	speech clip 139: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0x98 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5DF3E4	0x5DF3F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5DF3F0	0x5DFBC0	audio	MORT GSM 06.10 speech stream	speech clip 140: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0x98 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5DFBC0	0x5E02EC	audio	MORT GSM 06.10 speech stream	speech clip 141: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0xA8 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5E02EC	0x5E02F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E02F0	0x5E0CC8	audio	MORT GSM 06.10 speech stream	speech clip 142: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0xA8 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5E0CC8	0x5E0CD0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E0CD0	0x5E14A0	audio	MORT GSM 06.10 speech stream	speech clip 143: 66 frames, 16000 Hz, 0.660 s	table D_80073860+0xC8 (func_800272C8,func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5E14A0	0x5E1CF0	audio	MORT GSM 06.10 speech stream	speech clip 144: 81 frames, 16000 Hz, 0.810 s	table D_80073AD0+0xC8 (func_800272C8,func_8002AB50)	tools/extract_speech.py
+letter	0x5E1CF0	0x5E4814	audio	MORT GSM 06.10 speech stream	speech clip 145: 471 frames, 16000 Hz, 4.710 s	table D_80074460+0x0 (func_800272C8)	tools/extract_speech.py
+letter	0x5E4814	0x5E4820	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+letter	0x5E4820	0x5E4C60	audio	MORT GSM 06.10 speech stream	speech clip 146: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0x10 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5E4C60	0x5E5658	audio	MORT GSM 06.10 speech stream	speech clip 147: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0x10 (func_800272C8)	tools/extract_speech.py
+letter	0x5E5658	0x5E5660	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E5660	0x5E5BC4	audio	MORT GSM 06.10 speech stream	speech clip 148: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x1B0 (func_800272C8)	tools/extract_speech.py
+letter	0x5E5BC4	0x5E5BD0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E5BD0	0x5E6174	audio	MORT GSM 06.10 speech stream	speech clip 149: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0x0,D_80073930+0x8,D_80073930+0x18,D_80073930+0x20,D_80073930+0x28,D_80073930+0x30,D_80073930+0x40,D_80073930+0x48,D_80073930+0x50,D_80073930+0x68,D_80073930+0x70,D_80073930+0x78,D_80073930+0x80,D_80073930+0x88,D_80073930+0x98,D_80073930+0xA8,D_80073930+0xB8,D_80073930+0xC8 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5E6174	0x5E6180	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E6180	0x5E69F0	audio	MORT GSM 06.10 speech stream	speech clip 150: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0x0,D_80073BA0+0x8,D_80073BA0+0x18,D_80073BA0+0x20,D_80073BA0+0x28,D_80073BA0+0x30,D_80073BA0+0x40,D_80073BA0+0x48,D_80073BA0+0x50,D_80073BA0+0x68,D_80073BA0+0x70,D_80073BA0+0x78,D_80073BA0+0x80,D_80073BA0+0x88,D_80073BA0+0x98,D_80073BA0+0xA8,D_80073BA0+0xB8,D_80073BA0+0xC8,D_80073BA0+0x1A0,D_80073BA0+0x1A8,D_80073BA0+0x1B8,D_80073BA0+0x1C0,D_80073BA0+0x1C8,D_80073BA0+0x1E0,D_80073BA0+0x1E8,D_80073BA0+0x1F0,D_80073BA0+0x208,D_80073BA0+0x210,D_80073BA0+0x218,D_80073BA0+0x220,D_80073BA0+0x228,D_80073BA0+0x238,D_80073BA0+0x248,D_80073BA0+0x258,D_80073BA0+0x268 (func_800272C8)	tools/extract_speech.py
+letter	0x5E69F0	0x5E709C	audio	MORT GSM 06.10 speech stream	speech clip 151: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x1D0 (func_800272C8)	tools/extract_speech.py
+letter	0x5E709C	0x5E70A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E70A0	0x5E7628	audio	MORT GSM 06.10 speech stream	speech clip 152: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0x38 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5E7628	0x5E7630	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E7630	0x5E7EE4	audio	MORT GSM 06.10 speech stream	speech clip 153: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0x38 (func_800272C8)	tools/extract_speech.py
+letter	0x5E7EE4	0x5E7EF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E7EF0	0x5E857C	audio	MORT GSM 06.10 speech stream	speech clip 154: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x1D8 (func_800272C8)	tools/extract_speech.py
+letter	0x5E857C	0x5E8580	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E8580	0x5E8A24	audio	MORT GSM 06.10 speech stream	speech clip 155: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0x58 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5E8A24	0x5E8A30	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E8A30	0x5E91E0	audio	MORT GSM 06.10 speech stream	speech clip 156: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0x58 (func_800272C8)	tools/extract_speech.py
+letter	0x5E91E0	0x5E96E4	audio	MORT GSM 06.10 speech stream	speech clip 157: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x1F8 (func_800272C8)	tools/extract_speech.py
+letter	0x5E96E4	0x5E96F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5E96F0	0x5E9B50	audio	MORT GSM 06.10 speech stream	speech clip 158: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0x60 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5E9B50	0x5EA320	audio	MORT GSM 06.10 speech stream	speech clip 159: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0x60 (func_800272C8)	tools/extract_speech.py
+letter	0x5EA320	0x5EA7E4	audio	MORT GSM 06.10 speech stream	speech clip 160: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x200 (func_800272C8)	tools/extract_speech.py
+letter	0x5EA7E4	0x5EA7F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EA7F0	0x5EAE78	audio	MORT GSM 06.10 speech stream	speech clip 161: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0x90 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5EAE78	0x5EAE80	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EAE80	0x5EB734	audio	MORT GSM 06.10 speech stream	speech clip 162: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0x90 (func_800272C8)	tools/extract_speech.py
+letter	0x5EB734	0x5EB740	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EB740	0x5EBDA8	audio	MORT GSM 06.10 speech stream	speech clip 163: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x230 (func_800272C8)	tools/extract_speech.py
+letter	0x5EBDA8	0x5EBDB0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EBDB0	0x5EC2B4	audio	MORT GSM 06.10 speech stream	speech clip 164: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0xA0 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5EC2B4	0x5EC2C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EC2C0	0x5ECC14	audio	MORT GSM 06.10 speech stream	speech clip 165: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0xA0 (func_800272C8)	tools/extract_speech.py
+letter	0x5ECC14	0x5ECC20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5ECC20	0x5ED1C8	audio	MORT GSM 06.10 speech stream	speech clip 166: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x240 (func_800272C8)	tools/extract_speech.py
+letter	0x5ED1C8	0x5ED1D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5ED1D0	0x5ED838	audio	MORT GSM 06.10 speech stream	speech clip 167: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0xB0 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5ED838	0x5ED840	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5ED840	0x5EE050	audio	MORT GSM 06.10 speech stream	speech clip 168: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0xB0 (func_800272C8)	tools/extract_speech.py
+letter	0x5EE050	0x5EE6B8	audio	MORT GSM 06.10 speech stream	speech clip 169: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x250 (func_800272C8)	tools/extract_speech.py
+letter	0x5EE6B8	0x5EE6C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EE6C0	0x5EEBE4	audio	MORT GSM 06.10 speech stream	speech clip 170: 55 frames, 16000 Hz, 0.550 s	table D_80073930+0xC0 (func_8002AB50,func_800336BC)	tools/extract_speech.py
+letter	0x5EEBE4	0x5EEBF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EEBF0	0x5EF568	audio	MORT GSM 06.10 speech stream	speech clip 171: 86 frames, 16000 Hz, 0.860 s	table D_80073BA0+0xC0 (func_800272C8)	tools/extract_speech.py
+letter	0x5EF568	0x5EF570	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EF570	0x5EFAD4	audio	MORT GSM 06.10 speech stream	speech clip 172: 61 frames, 16000 Hz, 0.610 s	table D_80073BA0+0x260 (func_800272C8)	tools/extract_speech.py
+letter	0x5EFAD4	0x5EFAE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5EFAE0	0x5F014C	audio	MORT GSM 06.10 speech stream	speech clip 173: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F014C	0x5F0150	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F0150	0x5F081C	audio	MORT GSM 06.10 speech stream	speech clip 174: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F081C	0x5F0820	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F0820	0x5F0F0C	audio	MORT GSM 06.10 speech stream	speech clip 175: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x10 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F0F0C	0x5F0F10	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F0F10	0x5F17A4	audio	MORT GSM 06.10 speech stream	speech clip 176: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x18 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F17A4	0x5F17B0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F17B0	0x5F20E4	audio	MORT GSM 06.10 speech stream	speech clip 177: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x20 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F20E4	0x5F20F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F20F0	0x5F2984	audio	MORT GSM 06.10 speech stream	speech clip 178: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x28 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F2984	0x5F2990	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F2990	0x5F2EF8	audio	MORT GSM 06.10 speech stream	speech clip 179: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x30 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F2EF8	0x5F2F00	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F2F00	0x5F36F0	audio	MORT GSM 06.10 speech stream	speech clip 180: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x38 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F36F0	0x5F3E80	audio	MORT GSM 06.10 speech stream	speech clip 181: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x40 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F3E80	0x5F48B8	audio	MORT GSM 06.10 speech stream	speech clip 182: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x48 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F48B8	0x5F48C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F48C0	0x5F5010	audio	MORT GSM 06.10 speech stream	speech clip 183: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x50 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F5010	0x5F56FC	audio	MORT GSM 06.10 speech stream	speech clip 184: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x58 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F56FC	0x5F5700	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F5700	0x5F5C68	audio	MORT GSM 06.10 speech stream	speech clip 185: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x60 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F5C68	0x5F5C70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F5C70	0x5F6440	audio	MORT GSM 06.10 speech stream	speech clip 186: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x68 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F6440	0x5F6B2C	audio	MORT GSM 06.10 speech stream	speech clip 187: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x70 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F6B2C	0x5F6B30	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F6B30	0x5F7404	audio	MORT GSM 06.10 speech stream	speech clip 188: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x78 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F7404	0x5F7410	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F7410	0x5F7998	audio	MORT GSM 06.10 speech stream	speech clip 189: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x80 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F7998	0x5F79A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F79A0	0x5F80EC	audio	MORT GSM 06.10 speech stream	speech clip 190: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x88 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F80EC	0x5F80F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F80F0	0x5F8A24	audio	MORT GSM 06.10 speech stream	speech clip 191: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x90 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F8A24	0x5F8A30	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F8A30	0x5F90FC	audio	MORT GSM 06.10 speech stream	speech clip 192: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x98 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F90FC	0x5F9100	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F9100	0x5F974C	audio	MORT GSM 06.10 speech stream	speech clip 193: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xA0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F974C	0x5F9750	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F9750	0x5F9CF8	audio	MORT GSM 06.10 speech stream	speech clip 194: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xA8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5F9CF8	0x5F9D00	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5F9D00	0x5FA3CC	audio	MORT GSM 06.10 speech stream	speech clip 195: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xB0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FA3CC	0x5FA3D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FA3D0	0x5FAD68	audio	MORT GSM 06.10 speech stream	speech clip 196: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xB8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FAD68	0x5FAD70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FAD70	0x5FB5C0	audio	MORT GSM 06.10 speech stream	speech clip 197: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xC0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FB5C0	0x5FBED4	audio	MORT GSM 06.10 speech stream	speech clip 198: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xC8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FBED4	0x5FBEE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FBEE0	0x5FC794	audio	MORT GSM 06.10 speech stream	speech clip 199: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xD0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FC794	0x5FC7A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FC7A0	0x5FD094	audio	MORT GSM 06.10 speech stream	speech clip 200: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xD8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FD094	0x5FD0A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FD0A0	0x5FD9D4	audio	MORT GSM 06.10 speech stream	speech clip 201: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xE0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FD9D4	0x5FD9E0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FD9E0	0x5FE314	audio	MORT GSM 06.10 speech stream	speech clip 202: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xE8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FE314	0x5FE320	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FE320	0x5FEBF4	audio	MORT GSM 06.10 speech stream	speech clip 203: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xF0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FEBF4	0x5FEC00	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FEC00	0x5FF4F4	audio	MORT GSM 06.10 speech stream	speech clip 204: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0xF8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FF4F4	0x5FF500	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FF500	0x5FFDB4	audio	MORT GSM 06.10 speech stream	speech clip 205: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x100 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x5FFDB4	0x5FFDC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x5FFDC0	0x600654	audio	MORT GSM 06.10 speech stream	speech clip 206: 95 frames, 16000 Hz, 0.950 s	table D_80073FF0+0x108 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x600654	0x600660	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x600660	0x601098	audio	MORT GSM 06.10 speech stream	speech clip 207: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x601098	0x6010A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x6010A0	0x60172C	audio	MORT GSM 06.10 speech stream	speech clip 208: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60172C	0x601730	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x601730	0x6020C8	audio	MORT GSM 06.10 speech stream	speech clip 209: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x10 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x6020C8	0x6020D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x6020D0	0x602698	audio	MORT GSM 06.10 speech stream	speech clip 210: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x18 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x602698	0x6026A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x6026A0	0x602C68	audio	MORT GSM 06.10 speech stream	speech clip 211: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x20 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x602C68	0x602C70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x602C70	0x60325C	audio	MORT GSM 06.10 speech stream	speech clip 212: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x28 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60325C	0x603260	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x603260	0x603B54	audio	MORT GSM 06.10 speech stream	speech clip 213: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x30 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x603B54	0x603B60	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x603B60	0x604474	audio	MORT GSM 06.10 speech stream	speech clip 214: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x38 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x604474	0x604480	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x604480	0x604CF0	audio	MORT GSM 06.10 speech stream	speech clip 215: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x40 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x604CF0	0x6055A4	audio	MORT GSM 06.10 speech stream	speech clip 216: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x48 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x6055A4	0x6055B0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x6055B0	0x605E64	audio	MORT GSM 06.10 speech stream	speech clip 217: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x50 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x605E64	0x605E70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x605E70	0x6062D4	audio	MORT GSM 06.10 speech stream	speech clip 218: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x58 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x6062D4	0x6062E0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x6062E0	0x606AB0	audio	MORT GSM 06.10 speech stream	speech clip 219: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x60 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x606AB0	0x607444	audio	MORT GSM 06.10 speech stream	speech clip 220: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x68 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x607444	0x607450	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x607450	0x607B1C	audio	MORT GSM 06.10 speech stream	speech clip 221: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x70 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x607B1C	0x607B20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x607B20	0x608454	audio	MORT GSM 06.10 speech stream	speech clip 222: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x78 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x608454	0x608460	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x608460	0x6089E8	audio	MORT GSM 06.10 speech stream	speech clip 223: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x80 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x6089E8	0x6089F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x6089F0	0x609304	audio	MORT GSM 06.10 speech stream	speech clip 224: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x88 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x609304	0x609310	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x609310	0x609838	audio	MORT GSM 06.10 speech stream	speech clip 225: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x90 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x609838	0x609840	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x609840	0x60A114	audio	MORT GSM 06.10 speech stream	speech clip 226: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x98 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60A114	0x60A120	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60A120	0x60A76C	audio	MORT GSM 06.10 speech stream	speech clip 227: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xA0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60A76C	0x60A770	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60A770	0x60AF40	audio	MORT GSM 06.10 speech stream	speech clip 228: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xA8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60AF40	0x60B4C8	audio	MORT GSM 06.10 speech stream	speech clip 229: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xB0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60B4C8	0x60B4D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60B4D0	0x60BADC	audio	MORT GSM 06.10 speech stream	speech clip 230: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xB8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60BADC	0x60BAE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60BAE0	0x60C3F4	audio	MORT GSM 06.10 speech stream	speech clip 231: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xC0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60C3F4	0x60C400	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60C400	0x60CBF0	audio	MORT GSM 06.10 speech stream	speech clip 232: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xC8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60CBF0	0x60D648	audio	MORT GSM 06.10 speech stream	speech clip 233: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xD0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60D648	0x60D650	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60D650	0x60DFC8	audio	MORT GSM 06.10 speech stream	speech clip 234: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xD8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60DFC8	0x60DFD0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60DFD0	0x60E65C	audio	MORT GSM 06.10 speech stream	speech clip 235: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xE0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60E65C	0x60E660	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60E660	0x60F11C	audio	MORT GSM 06.10 speech stream	speech clip 236: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xE8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60F11C	0x60F120	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60F120	0x60FB18	audio	MORT GSM 06.10 speech stream	speech clip 237: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xF0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x60FB18	0x60FB20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x60FB20	0x610434	audio	MORT GSM 06.10 speech stream	speech clip 238: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0xF8 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x610434	0x610440	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x610440	0x610C90	audio	MORT GSM 06.10 speech stream	speech clip 239: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x100 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x610C90	0x611258	audio	MORT GSM 06.10 speech stream	speech clip 240: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x108 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x611258	0x611260	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x611260	0x611BB4	audio	MORT GSM 06.10 speech stream	speech clip 241: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x110 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x611BB4	0x611BC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x611BC0	0x61228C	audio	MORT GSM 06.10 speech stream	speech clip 242: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x118 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x61228C	0x612290	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x612290	0x612B24	audio	MORT GSM 06.10 speech stream	speech clip 243: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x120 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x612B24	0x612B30	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x612B30	0x6131BC	audio	MORT GSM 06.10 speech stream	speech clip 244: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x128 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x6131BC	0x6131C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x6131C0	0x613B78	audio	MORT GSM 06.10 speech stream	speech clip 245: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x130 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x613B78	0x613B80	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x613B80	0x614330	audio	MORT GSM 06.10 speech stream	speech clip 246: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x138 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x614330	0x614AA0	audio	MORT GSM 06.10 speech stream	speech clip 247: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x140 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x614AA0	0x615210	audio	MORT GSM 06.10 speech stream	speech clip 248: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x148 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x615210	0x615B88	audio	MORT GSM 06.10 speech stream	speech clip 249: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x150 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x615B88	0x615B90	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x615B90	0x61617C	audio	MORT GSM 06.10 speech stream	speech clip 250: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x158 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x61617C	0x616180	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x616180	0x61678C	audio	MORT GSM 06.10 speech stream	speech clip 251: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x160 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x61678C	0x616790	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x616790	0x617104	audio	MORT GSM 06.10 speech stream	speech clip 252: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x168 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x617104	0x617110	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x617110	0x617980	audio	MORT GSM 06.10 speech stream	speech clip 253: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x170 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x617980	0x618234	audio	MORT GSM 06.10 speech stream	speech clip 254: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x178 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x618234	0x618240	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x618240	0x6189D0	audio	MORT GSM 06.10 speech stream	speech clip 255: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x180 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x6189D0	0x6192A4	audio	MORT GSM 06.10 speech stream	speech clip 256: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x188 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x6192A4	0x6192B0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x6192B0	0x619C68	audio	MORT GSM 06.10 speech stream	speech clip 257: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x190 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x619C68	0x619C70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x619C70	0x61A604	audio	MORT GSM 06.10 speech stream	speech clip 258: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x198 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x61A604	0x61A610	pad	zero	alignment to 16 bytes after a speech stream	-	-
+letter	0x61A610	0x61AFA8	audio	MORT GSM 06.10 speech stream	speech clip 259: 95 frames, 16000 Hz, 0.950 s	table D_800742A8+0x1A0 (func_8002F274,func_80036DE8,func_800377FC)	tools/extract_speech.py
+letter	0x61AFA8	0x61AFB0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4B00C0	0x4B8E70	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4B8E70	0x4BA590	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4BA590	0x4BC400	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4BC400	0x4BCB50	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4BCB50	0x4C12F0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4C12F0	0x4C1970	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4C1970	0x4C6350	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4C6350	0x4C69A0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4C69A0	0x4CB8D0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4CB8D0	0x4CBCD0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4CBCD0	0x4CFEC0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4CFEC0	0x4D0690	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4D0690	0x4D7C90	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4D7C90	0x4D83F0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4D83F0	0x4DF7C0	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4DF7C0	0x4E0870	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4E0870	0x4E1090	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4E1090	0x4E7620	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4E7620	0x4E9810	audio	libmus song (header word 0x00000215, channel offset table)	background music song, loaded with sound bank D_003E4830..D_003EA160 via func_8001933C; size = next start - start (may include trailing pad)	func_8001933C caller	audio agent (libmus)
+number	0x4E9810	0x4EA75C	audio	MORT GSM 06.10 speech stream	speech clip 0: 126 frames, 16000 Hz, 1.260 s	none (unused clip)	tools/extract_speech.py
+number	0x4EA75C	0x4EA760	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4EA760	0x4EE320	audio	MORT GSM 06.10 speech stream	speech clip 1: 473 frames, 16000 Hz, 4.730 s	table D_80074370+0x0 (func_8003C494)	tools/extract_speech.py
+number	0x4EE320	0x4EF8E8	audio	MORT GSM 06.10 speech stream	speech clip 2: 186 frames, 16000 Hz, 1.860 s	table D_80074298+0x0 (func_800356F0)	tools/extract_speech.py
+number	0x4EF8E8	0x4EF8F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4EF8F0	0x4F0574	audio	MORT GSM 06.10 speech stream	speech clip 3: 135 frames, 16000 Hz, 1.350 s	table D_80074298+0x8 (func_800356F0)	tools/extract_speech.py
+number	0x4F0574	0x4F0580	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4F0580	0x4F11C4	audio	MORT GSM 06.10 speech stream	speech clip 4: 136 frames, 16000 Hz, 1.360 s	table D_80074298+0x10 (func_800356F0)	tools/extract_speech.py
+number	0x4F11C4	0x4F11D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4F11D0	0x4F1D70	audio	MORT GSM 06.10 speech stream	speech clip 5: 120 frames, 16000 Hz, 1.200 s	table D_80074298+0x18 (func_800356F0)	tools/extract_speech.py
+number	0x4F1D70	0x4F2D04	audio	MORT GSM 06.10 speech stream	speech clip 6: 154 frames, 16000 Hz, 1.540 s	table D_80074298+0x20 (func_800356F0)	tools/extract_speech.py
+number	0x4F2D04	0x4F2D10	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4F2D10	0x4F3A78	audio	MORT GSM 06.10 speech stream	speech clip 7: 125 frames, 16000 Hz, 1.250 s	table D_80074298+0x28 (func_800356F0)	tools/extract_speech.py
+number	0x4F3A78	0x4F3A80	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4F3A80	0x4F490C	audio	MORT GSM 06.10 speech stream	speech clip 8: 143 frames, 16000 Hz, 1.430 s	table D_80074298+0x30,D_80074298+0x38 (func_800356F0)	tools/extract_speech.py
+number	0x4F490C	0x4F4910	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4F4910	0x4F6CF4	audio	MORT GSM 06.10 speech stream	speech clip 9: 352 frames, 16000 Hz, 3.520 s	none (unused clip)	tools/extract_speech.py
+number	0x4F6CF4	0x4F6D00	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x4F6D00	0x4F7B48	audio	MORT GSM 06.10 speech stream	speech clip 10: 113 frames, 16000 Hz, 1.130 s	table D_800742D8+0x0 (func_800356F0)	tools/extract_speech.py
+number	0x4F7B48	0x4F7B50	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4F7B50	0x4F8094	audio	MORT GSM 06.10 speech stream	speech clip 11: 53 frames, 16000 Hz, 0.530 s	table D_800742D8+0x8 (func_800356F0)	tools/extract_speech.py
+number	0x4F8094	0x4F80A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4F80A0	0x4F8830	audio	MORT GSM 06.10 speech stream	speech clip 12: 67 frames, 16000 Hz, 0.670 s	table D_800742D8+0x10 (func_800356F0)	tools/extract_speech.py
+number	0x4F8830	0x4F9BD0	audio	MORT GSM 06.10 speech stream	speech clip 13: 161 frames, 16000 Hz, 1.610 s	table D_800742D8+0x18 (func_800356F0)	tools/extract_speech.py
+number	0x4F9BD0	0x4FAC88	audio	MORT GSM 06.10 speech stream	speech clip 14: 154 frames, 16000 Hz, 1.540 s	table D_800742D8+0x20 (func_800356F0)	tools/extract_speech.py
+number	0x4FAC88	0x4FAC90	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4FAC90	0x4FB6EC	audio	MORT GSM 06.10 speech stream	speech clip 15: 107 frames, 16000 Hz, 1.070 s	table D_800742D8+0x28 (func_800356F0)	tools/extract_speech.py
+number	0x4FB6EC	0x4FB6F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4FB6F0	0x4FCE64	audio	MORT GSM 06.10 speech stream	speech clip 16: 245 frames, 16000 Hz, 2.450 s	table D_800742D8+0x30 (func_800356F0)	tools/extract_speech.py
+number	0x4FCE64	0x4FCE70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4FCE70	0x4FDF24	audio	MORT GSM 06.10 speech stream	speech clip 17: 143 frames, 16000 Hz, 1.430 s	table D_800742D8+0x38 (func_800356F0)	tools/extract_speech.py
+number	0x4FDF24	0x4FDF30	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4FDF30	0x4FEC38	audio	MORT GSM 06.10 speech stream	speech clip 18: 169 frames, 16000 Hz, 1.690 s	table D_800742D8+0x40 (func_800356F0)	tools/extract_speech.py
+number	0x4FEC38	0x4FEC40	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4FEC40	0x4FF8E4	audio	MORT GSM 06.10 speech stream	speech clip 19: 117 frames, 16000 Hz, 1.170 s	table D_800742D8+0x48 (func_800356F0)	tools/extract_speech.py
+number	0x4FF8E4	0x4FF8F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x4FF8F0	0x5029D0	audio	MORT GSM 06.10 speech stream	speech clip 20: 504 frames, 16000 Hz, 5.040 s	table D_80074A3C+0x0 (func_8002D0A4)	tools/extract_speech.py
+number	0x5029D0	0x503264	audio	MORT GSM 06.10 speech stream	speech clip 21: 72 frames, 16000 Hz, 0.720 s	table D_800742D8+0x68 (func_800356F0)	tools/extract_speech.py
+number	0x503264	0x503270	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x503270	0x503DEC	audio	MORT GSM 06.10 speech stream	speech clip 22: 95 frames, 16000 Hz, 0.950 s	table D_800742D8+0x78 (func_800356F0)	tools/extract_speech.py
+number	0x503DEC	0x503DF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x503DF0	0x5047E8	audio	MORT GSM 06.10 speech stream	speech clip 23: 87 frames, 16000 Hz, 0.870 s	table D_800742D8+0x88 (func_800356F0)	tools/extract_speech.py
+number	0x5047E8	0x5047F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5047F0	0x505B14	audio	MORT GSM 06.10 speech stream	speech clip 24: 243 frames, 16000 Hz, 2.430 s	table D_80074370+0x20 (func_8003C494)	tools/extract_speech.py
+number	0x505B14	0x505B20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x505B20	0x507B34	audio	MORT GSM 06.10 speech stream	speech clip 25: 314 frames, 16000 Hz, 3.140 s	table D_80074370+0x28 (func_8003C494)	tools/extract_speech.py
+number	0x507B34	0x507B40	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x507B40	0x50A458	audio	MORT GSM 06.10 speech stream	speech clip 26: 367 frames, 16000 Hz, 3.670 s	table D_80074E6C+0x0,D_80074E8C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x50A458	0x50A460	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x50A460	0x50C410	audio	MORT GSM 06.10 speech stream	speech clip 27: 264 frames, 16000 Hz, 2.640 s	table D_80074F24+0x0 (func_8003C494)	tools/extract_speech.py
+number	0x50C410	0x5121F0	audio	MORT GSM 06.10 speech stream	speech clip 28: 918 frames, 16000 Hz, 9.180 s	table D_80074370+0x10 (func_8003C494)	tools/extract_speech.py
+number	0x5121F0	0x513FB8	audio	MORT GSM 06.10 speech stream	speech clip 29: 244 frames, 16000 Hz, 2.440 s	table D_80074AAC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x513FB8	0x513FC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x513FC0	0x519EE0	audio	MORT GSM 06.10 speech stream	speech clip 30: 915 frames, 16000 Hz, 9.150 s	none (unused clip)	tools/extract_speech.py
+number	0x519EE0	0x51B920	audio	MORT GSM 06.10 speech stream	speech clip 31: 258 frames, 16000 Hz, 2.580 s	none (unused clip)	tools/extract_speech.py
+number	0x51B920	0x51E5E8	audio	MORT GSM 06.10 speech stream	speech clip 32: 426 frames, 16000 Hz, 4.260 s	none (unused clip)	tools/extract_speech.py
+number	0x51E5E8	0x51E5F0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x51E5F0	0x5208F4	audio	MORT GSM 06.10 speech stream	speech clip 33: 328 frames, 16000 Hz, 3.280 s	none (unused clip)	tools/extract_speech.py
+number	0x5208F4	0x520900	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x520900	0x522B44	audio	MORT GSM 06.10 speech stream	speech clip 34: 351 frames, 16000 Hz, 3.510 s	table D_80074ABC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x522B44	0x522B50	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x522B50	0x523790	audio	MORT GSM 06.10 speech stream	speech clip 35: 106 frames, 16000 Hz, 1.060 s	table D_80074ACC+0x0 (func_80038388)	tools/extract_speech.py
+number	0x523790	0x524E7C	audio	MORT GSM 06.10 speech stream	speech clip 36: 216 frames, 16000 Hz, 2.160 s	table D_80074ADC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x524E7C	0x524E80	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x524E80	0x529470	audio	MORT GSM 06.10 speech stream	speech clip 37: 656 frames, 16000 Hz, 6.560 s	table D_80074AEC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x529470	0x52DFAC	audio	MORT GSM 06.10 speech stream	speech clip 38: 880 frames, 16000 Hz, 8.800 s	none (unused clip)	tools/extract_speech.py
+number	0x52DFAC	0x52DFB0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x52DFB0	0x532070	audio	MORT GSM 06.10 speech stream	speech clip 39: 589 frames, 16000 Hz, 5.890 s	table D_80074B4C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x532070	0x535B74	audio	MORT GSM 06.10 speech stream	speech clip 40: 613 frames, 16000 Hz, 6.130 s	table D_80074B5C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x535B74	0x535B80	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x535B80	0x537378	audio	MORT GSM 06.10 speech stream	speech clip 41: 268 frames, 16000 Hz, 2.680 s	none (unused clip)	tools/extract_speech.py
+number	0x537378	0x537380	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x537380	0x53BDF0	audio	MORT GSM 06.10 speech stream	speech clip 42: 842 frames, 16000 Hz, 8.420 s	table D_80074B6C+0x0 (func_80038A50)	tools/extract_speech.py
+number	0x53BDF0	0x53D7AC	audio	MORT GSM 06.10 speech stream	speech clip 43: 224 frames, 16000 Hz, 2.240 s	table D_80074B7C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x53D7AC	0x53D7B0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x53D7B0	0x540784	audio	MORT GSM 06.10 speech stream	speech clip 44: 434 frames, 16000 Hz, 4.340 s	table D_80074B8C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x540784	0x540790	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x540790	0x544484	audio	MORT GSM 06.10 speech stream	speech clip 45: 613 frames, 16000 Hz, 6.130 s	table D_80074AFC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x544484	0x544490	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x544490	0x547D48	audio	MORT GSM 06.10 speech stream	speech clip 46: 515 frames, 16000 Hz, 5.150 s	table D_80074B0C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x547D48	0x547D50	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x547D50	0x5493A0	audio	MORT GSM 06.10 speech stream	speech clip 47: 237 frames, 16000 Hz, 2.370 s	table D_80074B1C+0x0 (func_800386EC)	tools/extract_speech.py
+number	0x5493A0	0x54AE80	audio	MORT GSM 06.10 speech stream	speech clip 48: 238 frames, 16000 Hz, 2.380 s	table D_80074B2C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x54AE80	0x54E2A8	audio	MORT GSM 06.10 speech stream	speech clip 49: 460 frames, 16000 Hz, 4.600 s	table D_80074B3C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x54E2A8	0x54E2B0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x54E2B0	0x5525D4	audio	MORT GSM 06.10 speech stream	speech clip 50: 610 frames, 16000 Hz, 6.100 s	none (unused clip)	tools/extract_speech.py
+number	0x5525D4	0x5525E0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5525E0	0x5553CC	audio	MORT GSM 06.10 speech stream	speech clip 51: 414 frames, 16000 Hz, 4.140 s	none (unused clip)	tools/extract_speech.py
+number	0x5553CC	0x5553D0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5553D0	0x55A7FC	audio	MORT GSM 06.10 speech stream	speech clip 52: 789 frames, 16000 Hz, 7.890 s	none (unused clip)	tools/extract_speech.py
+number	0x55A7FC	0x55A800	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x55A800	0x55F300	audio	MORT GSM 06.10 speech stream	speech clip 53: 679 frames, 16000 Hz, 6.790 s	none (unused clip)	tools/extract_speech.py
+number	0x55F300	0x5629E4	audio	MORT GSM 06.10 speech stream	speech clip 54: 650 frames, 16000 Hz, 6.500 s	table D_80074A8C+0x0 (func_8002D0A4,func_8003C494)	tools/extract_speech.py
+number	0x5629E4	0x5629F0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5629F0	0x5662F4	audio	MORT GSM 06.10 speech stream	speech clip 55: 601 frames, 16000 Hz, 6.010 s	table D_80074A9C+0x0 (func_8002D0A4,func_8003C494)	tools/extract_speech.py
+number	0x5662F4	0x566300	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x566300	0x56A138	audio	MORT GSM 06.10 speech stream	speech clip 56: 645 frames, 16000 Hz, 6.450 s	table D_80074674+0x0,D_80074694+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x56A138	0x56A140	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x56A140	0x56C1B4	audio	MORT GSM 06.10 speech stream	speech clip 57: 312 frames, 16000 Hz, 3.120 s	table D_800744D4+0x0,D_800744EC+0x0 (func_80016EE4,func_8002D0A4)	tools/extract_speech.py
+number	0x56C1B4	0x56C1C0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x56C1C0	0x56DCC0	audio	MORT GSM 06.10 speech stream	speech clip 58: 263 frames, 16000 Hz, 2.630 s	table D_800744D4+0x8,D_800744F0+0x4 (func_80016EE4,func_800186E8,func_8002D0A4)	tools/extract_speech.py
+number	0x56DCC0	0x56EF1C	audio	MORT GSM 06.10 speech stream	speech clip 59: 171 frames, 16000 Hz, 1.710 s	table D_800744E0+0x4,D_800744F0+0xC (func_800178EC,func_800186E8)	tools/extract_speech.py
+number	0x56EF1C	0x56EF20	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x56EF20	0x570FDC	audio	MORT GSM 06.10 speech stream	speech clip 60: 319 frames, 16000 Hz, 3.190 s	table D_800746CC+0x0,D_800746EC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x570FDC	0x570FE0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x570FE0	0x5750C8	audio	MORT GSM 06.10 speech stream	speech clip 61: 670 frames, 16000 Hz, 6.700 s	table D_80074A6C+0x0 (func_8002D0A4,func_8003C494)	tools/extract_speech.py
+number	0x5750C8	0x5750D0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5750D0	0x577E88	audio	MORT GSM 06.10 speech stream	speech clip 62: 482 frames, 16000 Hz, 4.820 s	table D_80074A7C+0x0 (func_8002D0A4,func_8003C494)	tools/extract_speech.py
+number	0x577E88	0x577E90	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x577E90	0x57D9B4	audio	MORT GSM 06.10 speech stream	speech clip 63: 830 frames, 16000 Hz, 8.300 s	table D_800745A4+0x0,D_800745CC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x57D9B4	0x57D9C0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x57D9C0	0x58084C	audio	MORT GSM 06.10 speech stream	speech clip 64: 402 frames, 16000 Hz, 4.020 s	table D_800745A4+0x10,D_800745CC+0x10 (func_800287AC)	tools/extract_speech.py
+number	0x58084C	0x580850	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x580850	0x5839D0	audio	MORT GSM 06.10 speech stream	speech clip 65: 481 frames, 16000 Hz, 4.810 s	none (unused clip)	tools/extract_speech.py
+number	0x5839D0	0x58448C	audio	MORT GSM 06.10 speech stream	speech clip 66: 145 frames, 16000 Hz, 1.450 s	table D_800745E8+0x4,D_80074634+0x20 (func_8001AA30,func_800287AC)	tools/extract_speech.py
+number	0x58448C	0x584490	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x584490	0x5864E8	audio	MORT GSM 06.10 speech stream	speech clip 67: 310 frames, 16000 Hz, 3.100 s	table D_800743B8+0x18 (func_8002D0A4)	tools/extract_speech.py
+number	0x5864E8	0x5864F0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5864F0	0x5871F8	audio	MORT GSM 06.10 speech stream	speech clip 68: 164 frames, 16000 Hz, 1.640 s	table D_800743B8+0x30 (func_8002D0A4)	tools/extract_speech.py
+number	0x5871F8	0x587200	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x587200	0x588640	audio	MORT GSM 06.10 speech stream	speech clip 69: 180 frames, 16000 Hz, 1.800 s	table D_800743B8+0x38,D_800743B8+0x58,D_800743B8+0x80 (func_8002D0A4)	tools/extract_speech.py
+number	0x588640	0x589384	audio	MORT GSM 06.10 speech stream	speech clip 70: 128 frames, 16000 Hz, 1.280 s	table D_800743B8+0x48,D_800743B8+0x68,D_800743B8+0x90 (func_8002D0A4)	tools/extract_speech.py
+number	0x589384	0x589390	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x589390	0x58B654	audio	MORT GSM 06.10 speech stream	speech clip 71: 332 frames, 16000 Hz, 3.320 s	table D_800743B8+0x70 (func_8002D0A4)	tools/extract_speech.py
+number	0x58B654	0x58B660	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x58B660	0x58C940	audio	MORT GSM 06.10 speech stream	speech clip 72: 183 frames, 16000 Hz, 1.830 s	table D_8007460C+0x0,D_80074634+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x58C940	0x592430	audio	MORT GSM 06.10 speech stream	speech clip 73: 907 frames, 16000 Hz, 9.070 s	table D_8007460C+0x10,D_80074634+0x10 (func_800287AC)	tools/extract_speech.py
+number	0x592430	0x594628	audio	MORT GSM 06.10 speech stream	speech clip 74: 289 frames, 16000 Hz, 2.890 s	table D_80074458+0x10 (func_8002D0A4)	tools/extract_speech.py
+number	0x594628	0x594630	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x594630	0x595DA0	audio	MORT GSM 06.10 speech stream	speech clip 75: 195 frames, 16000 Hz, 1.950 s	table D_80074458+0x20 (func_8002D0A4)	tools/extract_speech.py
+number	0x595DA0	0x59A004	audio	MORT GSM 06.10 speech stream	speech clip 76: 607 frames, 16000 Hz, 6.070 s	table D_80074490+0x0 (func_80013F48,func_80015380)	tools/extract_speech.py
+number	0x59A004	0x59A010	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x59A010	0x59D068	audio	MORT GSM 06.10 speech stream	speech clip 77: 477 frames, 16000 Hz, 4.770 s	table D_80074490+0x18 (func_80013F48,func_80015380)	tools/extract_speech.py
+number	0x59D068	0x59D070	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x59D070	0x59DF3C	audio	MORT GSM 06.10 speech stream	speech clip 78: 148 frames, 16000 Hz, 1.480 s	table D_80074490+0x28 (func_80013F48,func_80015380)	tools/extract_speech.py
+number	0x59DF3C	0x59DF40	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x59DF40	0x5A15F0	audio	MORT GSM 06.10 speech stream	speech clip 79: 517 frames, 16000 Hz, 5.170 s	none (unused clip)	tools/extract_speech.py
+number	0x5A15F0	0x5A4628	audio	MORT GSM 06.10 speech stream	speech clip 80: 449 frames, 16000 Hz, 4.490 s	table D_800743A8+0x0 (func_8002D0A4)	tools/extract_speech.py
+number	0x5A4628	0x5A4630	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5A4630	0x5A6C20	audio	MORT GSM 06.10 speech stream	speech clip 81: 373 frames, 16000 Hz, 3.730 s	table D_800743A8+0x8 (func_8002D0A4)	tools/extract_speech.py
+number	0x5A6C20	0x5A9DE0	audio	MORT GSM 06.10 speech stream	speech clip 82: 512 frames, 16000 Hz, 5.120 s	table D_80074504+0x0,D_8007451C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x5A9DE0	0x5AA6B8	audio	MORT GSM 06.10 speech stream	speech clip 83: 149 frames, 16000 Hz, 1.490 s	table D_8007451C+0x10 (func_800287AC)	tools/extract_speech.py
+number	0x5AA6B8	0x5AA6C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5AA6C0	0x5AD738	audio	MORT GSM 06.10 speech stream	speech clip 84: 479 frames, 16000 Hz, 4.790 s	table D_8007454C+0x0,D_8007456C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x5AD738	0x5AD740	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5AD740	0x5B0654	audio	MORT GSM 06.10 speech stream	speech clip 85: 492 frames, 16000 Hz, 4.920 s	none (unused clip)	tools/extract_speech.py
+number	0x5B0654	0x5B0660	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5B0660	0x5B2D34	audio	MORT GSM 06.10 speech stream	speech clip 86: 370 frames, 16000 Hz, 3.700 s	table D_8007454C+0x8,D_8007456C+0x8 (func_800287AC)	tools/extract_speech.py
+number	0x5B2D34	0x5B2D40	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5B2D40	0x5B5024	audio	MORT GSM 06.10 speech stream	speech clip 87: 358 frames, 16000 Hz, 3.580 s	none (unused clip)	tools/extract_speech.py
+number	0x5B5024	0x5B5030	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5B5030	0x5B6BB4	audio	MORT GSM 06.10 speech stream	speech clip 88: 283 frames, 16000 Hz, 2.830 s	table D_8007456C+0x18 (func_800287AC)	tools/extract_speech.py
+number	0x5B6BB4	0x5B6BC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5B6BC0	0x5B9214	audio	MORT GSM 06.10 speech stream	speech clip 89: 373 frames, 16000 Hz, 3.730 s	none (unused clip)	tools/extract_speech.py
+number	0x5B9214	0x5B9220	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5B9220	0x5BBE48	audio	MORT GSM 06.10 speech stream	speech clip 90: 424 frames, 16000 Hz, 4.240 s	none (unused clip)	tools/extract_speech.py
+number	0x5BBE48	0x5BBE50	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5BBE50	0x5BD684	audio	MORT GSM 06.10 speech stream	speech clip 91: 216 frames, 16000 Hz, 2.160 s	table D_800743B8+0x0 (func_8002D0A4)	tools/extract_speech.py
+number	0x5BD684	0x5BD690	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5BD690	0x5BF0CC	audio	MORT GSM 06.10 speech stream	speech clip 92: 232 frames, 16000 Hz, 2.320 s	table D_800743B8+0x8 (func_8002D0A4)	tools/extract_speech.py
+number	0x5BF0CC	0x5BF0D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5BF0D0	0x5C034C	audio	MORT GSM 06.10 speech stream	speech clip 93: 168 frames, 16000 Hz, 1.680 s	table D_800743B8+0x10 (func_8002D0A4)	tools/extract_speech.py
+number	0x5C034C	0x5C0350	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5C0350	0x5C3A44	audio	MORT GSM 06.10 speech stream	speech clip 94: 515 frames, 16000 Hz, 5.150 s	table D_80074A4C+0x0 (func_8002D0A4,func_8003C494)	tools/extract_speech.py
+number	0x5C3A44	0x5C3A50	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5C3A50	0x5C6D58	audio	MORT GSM 06.10 speech stream	speech clip 95: 523 frames, 16000 Hz, 5.230 s	table D_80074A5C+0x0 (func_8002D0A4,func_8003C494)	tools/extract_speech.py
+number	0x5C6D58	0x5C6D60	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5C6D60	0x5C73A8	audio	MORT GSM 06.10 speech stream	speech clip 96: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x0,D_8007476C+0x48 (func_800287AC)	tools/extract_speech.py
+number	0x5C73A8	0x5C73B0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5C73B0	0x5C7C20	audio	MORT GSM 06.10 speech stream	speech clip 97: 86 frames, 16000 Hz, 0.860 s	table D_80074964+0x0 (func_8002D0A4)	tools/extract_speech.py
+number	0x5C7C20	0x5C8288	audio	MORT GSM 06.10 speech stream	speech clip 98: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x8,D_8007476C+0x50 (func_800287AC)	tools/extract_speech.py
+number	0x5C8288	0x5C8290	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5C8290	0x5C8B20	audio	MORT GSM 06.10 speech stream	speech clip 99: 86 frames, 16000 Hz, 0.860 s	table D_8007496C+0x0 (func_8001AC1C)	tools/extract_speech.py
+number	0x5C8B20	0x5C926C	audio	MORT GSM 06.10 speech stream	speech clip 100: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x10,D_8007476C+0x58 (func_800287AC)	tools/extract_speech.py
+number	0x5C926C	0x5C9270	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5C9270	0x5C9C48	audio	MORT GSM 06.10 speech stream	speech clip 101: 86 frames, 16000 Hz, 0.860 s	table D_8007496C+0x8 (func_8001AC1C)	tools/extract_speech.py
+number	0x5C9C48	0x5C9C50	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5C9C50	0x5CA1D8	audio	MORT GSM 06.10 speech stream	speech clip 102: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x18,D_8007476C+0x60 (func_800287AC)	tools/extract_speech.py
+number	0x5CA1D8	0x5CA1E0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5CA1E0	0x5CA9D0	audio	MORT GSM 06.10 speech stream	speech clip 103: 86 frames, 16000 Hz, 0.860 s	table D_8007496C+0x10 (func_8001AC1C)	tools/extract_speech.py
+number	0x5CA9D0	0x5CB1A0	audio	MORT GSM 06.10 speech stream	speech clip 104: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x20,D_8007476C+0x68 (func_800287AC)	tools/extract_speech.py
+number	0x5CB1A0	0x5CB9F0	audio	MORT GSM 06.10 speech stream	speech clip 105: 86 frames, 16000 Hz, 0.860 s	table D_80074984+0x0 (func_8001AC1C)	tools/extract_speech.py
+number	0x5CB9F0	0x5CC160	audio	MORT GSM 06.10 speech stream	speech clip 106: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x28,D_8007476C+0x70 (func_800287AC)	tools/extract_speech.py
+number	0x5CC160	0x5CCA34	audio	MORT GSM 06.10 speech stream	speech clip 107: 86 frames, 16000 Hz, 0.860 s	table D_80074984+0x8 (func_8001AC1C)	tools/extract_speech.py
+number	0x5CCA34	0x5CCA40	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5CCA40	0x5CD270	audio	MORT GSM 06.10 speech stream	speech clip 108: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x30,D_8007476C+0x78 (func_800287AC)	tools/extract_speech.py
+number	0x5CD270	0x5CDBC4	audio	MORT GSM 06.10 speech stream	speech clip 109: 86 frames, 16000 Hz, 0.860 s	table D_80074984+0x10 (func_8001AC1C)	tools/extract_speech.py
+number	0x5CDBC4	0x5CDBD0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5CDBD0	0x5CE054	audio	MORT GSM 06.10 speech stream	speech clip 110: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x38,D_8007476C+0x80 (func_800287AC)	tools/extract_speech.py
+number	0x5CE054	0x5CE060	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5CE060	0x5CE688	audio	MORT GSM 06.10 speech stream	speech clip 111: 86 frames, 16000 Hz, 0.860 s	table D_80074984+0x18 (func_8001AC1C)	tools/extract_speech.py
+number	0x5CE688	0x5CE690	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5CE690	0x5CEEC0	audio	MORT GSM 06.10 speech stream	speech clip 112: 72 frames, 16000 Hz, 0.720 s	table D_8007476C+0x40,D_800747F4+0x0 (func_8001AC1C,func_800287AC)	tools/extract_speech.py
+number	0x5CEEC0	0x5CF854	audio	MORT GSM 06.10 speech stream	speech clip 113: 86 frames, 16000 Hz, 0.860 s	table D_800749A0+0x4 (func_80001AB4,func_80001DE4,func_8000ADBC,func_8002C424,func_8002E154,func_800327A4,func_8004189C)	tools/extract_speech.py
+number	0x5CF854	0x5CF860	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5CF860	0x5CFE08	audio	MORT GSM 06.10 speech stream	speech clip 114: 71 frames, 16000 Hz, 0.710 s	none (unused clip)	tools/extract_speech.py
+number	0x5CFE08	0x5CFE10	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5CFE10	0x5D055C	audio	MORT GSM 06.10 speech stream	speech clip 115: 71 frames, 16000 Hz, 0.710 s	table D_8007451C+0x20,D_8007456C+0x28 (func_800287AC)	tools/extract_speech.py
+number	0x5D055C	0x5D0560	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D0560	0x5D0DD4	audio	MORT GSM 06.10 speech stream	speech clip 116: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x48 (func_800287AC)	tools/extract_speech.py
+number	0x5D0DD4	0x5D0DE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D0DE0	0x5D1610	audio	MORT GSM 06.10 speech stream	speech clip 117: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x5D1610	0x5D2418	audio	MORT GSM 06.10 speech stream	speech clip 118: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x0 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5D2418	0x5D2420	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D2420	0x5D2E78	audio	MORT GSM 06.10 speech stream	speech clip 119: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x50 (func_800287AC)	tools/extract_speech.py
+number	0x5D2E78	0x5D2E80	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D2E80	0x5D33C8	audio	MORT GSM 06.10 speech stream	speech clip 120: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x8 (func_800287AC)	tools/extract_speech.py
+number	0x5D33C8	0x5D33D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D33D0	0x5D4238	audio	MORT GSM 06.10 speech stream	speech clip 121: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x8 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5D4238	0x5D4240	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D4240	0x5D4FA4	audio	MORT GSM 06.10 speech stream	speech clip 122: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x58 (func_800287AC)	tools/extract_speech.py
+number	0x5D4FA4	0x5D4FB0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D4FB0	0x5D5780	audio	MORT GSM 06.10 speech stream	speech clip 123: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x10 (func_800287AC)	tools/extract_speech.py
+number	0x5D5780	0x5D627C	audio	MORT GSM 06.10 speech stream	speech clip 124: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x10 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5D627C	0x5D6280	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D6280	0x5D6CB8	audio	MORT GSM 06.10 speech stream	speech clip 125: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x60 (func_800287AC)	tools/extract_speech.py
+number	0x5D6CB8	0x5D6CC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D6CC0	0x5D7678	audio	MORT GSM 06.10 speech stream	speech clip 126: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x18 (func_800287AC)	tools/extract_speech.py
+number	0x5D7678	0x5D7680	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D7680	0x5D80FC	audio	MORT GSM 06.10 speech stream	speech clip 127: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x18 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5D80FC	0x5D8100	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D8100	0x5D8E64	audio	MORT GSM 06.10 speech stream	speech clip 128: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x68 (func_800287AC)	tools/extract_speech.py
+number	0x5D8E64	0x5D8E70	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D8E70	0x5D9704	audio	MORT GSM 06.10 speech stream	speech clip 129: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x20 (func_800287AC)	tools/extract_speech.py
+number	0x5D9704	0x5D9710	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5D9710	0x5DA6E0	audio	MORT GSM 06.10 speech stream	speech clip 130: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x20 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5DA6E0	0x5DAFF8	audio	MORT GSM 06.10 speech stream	speech clip 131: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x70 (func_800287AC)	tools/extract_speech.py
+number	0x5DAFF8	0x5DB000	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5DB000	0x5DB958	audio	MORT GSM 06.10 speech stream	speech clip 132: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x28 (func_800287AC)	tools/extract_speech.py
+number	0x5DB958	0x5DB960	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5DB960	0x5DC72C	audio	MORT GSM 06.10 speech stream	speech clip 133: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x28 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5DC72C	0x5DC730	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5DC730	0x5DD474	audio	MORT GSM 06.10 speech stream	speech clip 134: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x78 (func_800287AC)	tools/extract_speech.py
+number	0x5DD474	0x5DD480	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5DD480	0x5DDF9C	audio	MORT GSM 06.10 speech stream	speech clip 135: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x30 (func_800287AC)	tools/extract_speech.py
+number	0x5DDF9C	0x5DDFA0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5DDFA0	0x5DEE28	audio	MORT GSM 06.10 speech stream	speech clip 136: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x30 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5DEE28	0x5DEE30	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5DEE30	0x5DF378	audio	MORT GSM 06.10 speech stream	speech clip 137: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x80 (func_800287AC)	tools/extract_speech.py
+number	0x5DF378	0x5DF380	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5DF380	0x5DF7E4	audio	MORT GSM 06.10 speech stream	speech clip 138: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x38 (func_800287AC)	tools/extract_speech.py
+number	0x5DF7E4	0x5DF7F0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5DF7F0	0x5E0044	audio	MORT GSM 06.10 speech stream	speech clip 139: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x38 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5E0044	0x5E0050	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E0050	0x5E0DD4	audio	MORT GSM 06.10 speech stream	speech clip 140: 113 frames, 16000 Hz, 1.130 s	table D_800747FC+0x88 (func_800287AC)	tools/extract_speech.py
+number	0x5E0DD4	0x5E0DE0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E0DE0	0x5E195C	audio	MORT GSM 06.10 speech stream	speech clip 141: 94 frames, 16000 Hz, 0.940 s	table D_800747FC+0x40 (func_800287AC)	tools/extract_speech.py
+number	0x5E195C	0x5E1960	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E1960	0x5E2AB4	audio	MORT GSM 06.10 speech stream	speech clip 142: 138 frames, 16000 Hz, 1.380 s	table D_800749AC+0x40 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5E2AB4	0x5E2AC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E2AC0	0x5E32B4	audio	MORT GSM 06.10 speech stream	speech clip 143: 146 frames, 16000 Hz, 1.460 s	table D_80074458+0x18,D_800745A4+0x8,D_800745CC+0x8,D_8007460C+0x8,D_80074634+0x8,D_80074B9C+0x0,D_80074EA4+0x8,D_80074ECC+0x8 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5E32B4	0x5E32C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E32C0	0x5E39AC	audio	MORT GSM 06.10 speech stream	speech clip 144: 77 frames, 16000 Hz, 0.770 s	table D_800745EE+0xE,D_80074664+0x0 (func_8001AA30,func_8001AC1C)	tools/extract_speech.py
+number	0x5E39AC	0x5E39B0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E39B0	0x5E65BC	audio	MORT GSM 06.10 speech stream	speech clip 145: 436 frames, 16000 Hz, 4.360 s	table D_80074EA4+0x0,D_80074ECC+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x5E65BC	0x5E65C0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5E65C0	0x5E6B48	audio	MORT GSM 06.10 speech stream	speech clip 146: 86 frames, 16000 Hz, 0.860 s	table D_8007488C+0x0,D_800748C4+0x10 (func_8001AC1C,func_800287AC)	tools/extract_speech.py
+number	0x5E6B48	0x5E6B50	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E6B50	0x5E73C4	audio	MORT GSM 06.10 speech stream	speech clip 147: 113 frames, 16000 Hz, 1.130 s	table D_800749F4+0x0 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5E73C4	0x5E73D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E73D0	0x5E7834	audio	MORT GSM 06.10 speech stream	speech clip 148: 86 frames, 16000 Hz, 0.860 s	table D_8007488C+0x8,D_800748DC+0x0 (func_8001AC1C,func_800287AC)	tools/extract_speech.py
+number	0x5E7834	0x5E7840	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E7840	0x5E80B4	audio	MORT GSM 06.10 speech stream	speech clip 149: 113 frames, 16000 Hz, 1.130 s	table D_800749F4+0x8 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5E80B4	0x5E80C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E80C0	0x5E8584	audio	MORT GSM 06.10 speech stream	speech clip 150: 86 frames, 16000 Hz, 0.860 s	table D_8007488C+0x10,D_800748DC+0x8 (func_8001AC1C,func_800287AC)	tools/extract_speech.py
+number	0x5E8584	0x5E8590	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E8590	0x5E9170	audio	MORT GSM 06.10 speech stream	speech clip 151: 113 frames, 16000 Hz, 1.130 s	table D_800749F4+0x10 (func_800287AC,func_8002D0A4)	tools/extract_speech.py
+number	0x5E9170	0x5E9798	audio	MORT GSM 06.10 speech stream	speech clip 152: 86 frames, 16000 Hz, 0.860 s	table D_8007488C+0x18,D_800748DC+0x10 (func_8001AC1C,func_800287AC)	tools/extract_speech.py
+number	0x5E9798	0x5E97A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5E97A0	0x5EA2DC	audio	MORT GSM 06.10 speech stream	speech clip 153: 113 frames, 16000 Hz, 1.130 s	table D_80074A08+0x4 (func_80001C70,func_80001CC4)	tools/extract_speech.py
+number	0x5EA2DC	0x5EA2E0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5EA2E0	0x5EA868	audio	MORT GSM 06.10 speech stream	speech clip 154: 86 frames, 16000 Hz, 0.860 s	table D_8007488C+0x20,D_800748F4+0x0 (func_8001AC1C,func_800287AC)	tools/extract_speech.py
+number	0x5EA868	0x5EA870	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5EA870	0x5EB490	audio	MORT GSM 06.10 speech stream	speech clip 155: 113 frames, 16000 Hz, 1.130 s	table D_80074A08+0xC (func_80001C70,func_80001CC4)	tools/extract_speech.py
+number	0x5EB490	0x5EBC00	audio	MORT GSM 06.10 speech stream	speech clip 156: 86 frames, 16000 Hz, 0.860 s	table D_8007488C+0x28,D_800748F4+0x8 (func_8001AC1C,func_800287AC)	tools/extract_speech.py
+number	0x5EBC00	0x5EC864	audio	MORT GSM 06.10 speech stream	speech clip 157: 113 frames, 16000 Hz, 1.130 s	table D_80074A08+0x14 (func_80001C70,func_80001CC4)	tools/extract_speech.py
+number	0x5EC864	0x5EC870	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5EC870	0x5ED104	audio	MORT GSM 06.10 speech stream	speech clip 158: 86 frames, 16000 Hz, 0.860 s	table D_8007488C+0x30,D_800748F4+0x10 (func_8001AC1C,func_800287AC)	tools/extract_speech.py
+number	0x5ED104	0x5ED110	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5ED110	0x5EDE74	audio	MORT GSM 06.10 speech stream	speech clip 159: 113 frames, 16000 Hz, 1.130 s	table D_80074A08+0x1C (func_80001C70,func_80001CC4)	tools/extract_speech.py
+number	0x5EDE74	0x5EDE80	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5EDE80	0x5EE260	audio	MORT GSM 06.10 speech stream	speech clip 160: 86 frames, 16000 Hz, 0.860 s	table D_800748C4+0x0,D_8007490C+0x0 (func_8001AC1C)	tools/extract_speech.py
+number	0x5EE260	0x5EEA10	audio	MORT GSM 06.10 speech stream	speech clip 161: 113 frames, 16000 Hz, 1.130 s	table D_80074A08+0x24 (func_80001C70,func_80001CC4)	tools/extract_speech.py
+number	0x5EEA10	0x5EF220	audio	MORT GSM 06.10 speech stream	speech clip 162: 86 frames, 16000 Hz, 0.860 s	table D_800748C4+0x8,D_80074914+0x0 (func_80018CB0,func_80018E08,func_8001AC1C)	tools/extract_speech.py
+number	0x5EF220	0x5EFE20	audio	MORT GSM 06.10 speech stream	speech clip 163: 113 frames, 16000 Hz, 1.130 s	table D_80074A08+0x2C (func_80001C70,func_80001CC4)	tools/extract_speech.py
+number	0x5EFE20	0x5F146C	audio	MORT GSM 06.10 speech stream	speech clip 164: 200 frames, 16000 Hz, 2.000 s	table D_80074674+0x8,D_80074694+0x8,D_800746CC+0x8,D_800746EC+0x8 (func_800287AC)	tools/extract_speech.py
+number	0x5F146C	0x5F1470	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5F1470	0x5F1E8C	audio	MORT GSM 06.10 speech stream	speech clip 165: 126 frames, 16000 Hz, 1.260 s	table D_80074694+0x18,D_800746EC+0x18 (func_800287AC)	tools/extract_speech.py
+number	0x5F1E8C	0x5F1E90	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5F1E90	0x5F4174	audio	MORT GSM 06.10 speech stream	speech clip 166: 348 frames, 16000 Hz, 3.480 s	table D_80074EEC+0x0,D_80074F0C+0x0 (func_800287AC)	tools/extract_speech.py
+number	0x5F4174	0x5F4180	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5F4180	0x5F49F0	audio	MORT GSM 06.10 speech stream	speech clip 167: 72 frames, 16000 Hz, 0.720 s	table D_800746BC+0x0,D_80074714+0x0 (func_8001AC1C,func_800356F0)	tools/extract_speech.py
+number	0x5F49F0	0x5F70E0	audio	MORT GSM 06.10 speech stream	speech clip 168: 375 frames, 16000 Hz, 3.750 s	table D_80074BAC+0x0 (func_8003B620)	tools/extract_speech.py
+number	0x5F70E0	0x5F9F34	audio	MORT GSM 06.10 speech stream	speech clip 169: 417 frames, 16000 Hz, 4.170 s	table D_80074BAC+0x10,D_80074CFC+0x0 (func_8003B620,func_8003B6D8)	tools/extract_speech.py
+number	0x5F9F34	0x5F9F40	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x5F9F40	0x5FBB40	audio	MORT GSM 06.10 speech stream	speech clip 170: 243 frames, 16000 Hz, 2.430 s	table D_80074BAC+0x20,D_80074CFC+0x8 (func_8003B620,func_8003B6D8)	tools/extract_speech.py
+number	0x5FBB40	0x5FD478	audio	MORT GSM 06.10 speech stream	speech clip 171: 215 frames, 16000 Hz, 2.150 s	table D_80074BAC+0x30 (func_8003B620)	tools/extract_speech.py
+number	0x5FD478	0x5FD480	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5FD480	0x5FE410	audio	MORT GSM 06.10 speech stream	speech clip 172: 143 frames, 16000 Hz, 1.430 s	table D_80074BAC+0x40 (func_8003B620)	tools/extract_speech.py
+number	0x5FE410	0x5FF628	audio	MORT GSM 06.10 speech stream	speech clip 173: 150 frames, 16000 Hz, 1.500 s	table D_80074BAC+0x50 (func_8003B620)	tools/extract_speech.py
+number	0x5FF628	0x5FF630	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x5FF630	0x6000C8	audio	MORT GSM 06.10 speech stream	speech clip 174: 96 frames, 16000 Hz, 0.960 s	table D_80074BAC+0x60 (func_8003B620)	tools/extract_speech.py
+number	0x6000C8	0x6000D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x6000D0	0x6015F8	audio	MORT GSM 06.10 speech stream	speech clip 175: 191 frames, 16000 Hz, 1.910 s	table D_80074BAC+0x70,D_80074D1C+0x28,D_80074D6C+0x40,D_80074DEC+0x40 (func_80018CB0,func_80018E08,func_8003B620)	tools/extract_speech.py
+number	0x6015F8	0x601600	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x601600	0x60305C	audio	MORT GSM 06.10 speech stream	speech clip 176: 243 frames, 16000 Hz, 2.430 s	table D_80074BAC+0x80 (func_8003B620)	tools/extract_speech.py
+number	0x60305C	0x603060	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x603060	0x604564	audio	MORT GSM 06.10 speech stream	speech clip 177: 178 frames, 16000 Hz, 1.780 s	table D_80074BAC+0x90 (func_8003B620)	tools/extract_speech.py
+number	0x604564	0x604570	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x604570	0x606564	audio	MORT GSM 06.10 speech stream	speech clip 178: 275 frames, 16000 Hz, 2.750 s	table D_80074BAC+0xA8 (func_8003B620)	tools/extract_speech.py
+number	0x606564	0x606570	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x606570	0x608460	audio	MORT GSM 06.10 speech stream	speech clip 179: 314 frames, 16000 Hz, 3.140 s	table D_80074BAC+0xC0 (func_8003B620)	tools/extract_speech.py
+number	0x608460	0x60A55C	audio	MORT GSM 06.10 speech stream	speech clip 180: 310 frames, 16000 Hz, 3.100 s	table D_80074C7C+0x0 (func_800319A0)	tools/extract_speech.py
+number	0x60A55C	0x60A560	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x60A560	0x60C698	audio	MORT GSM 06.10 speech stream	speech clip 181: 312 frames, 16000 Hz, 3.120 s	table D_80074C7C+0x10,D_80074CFC+0x10 (func_800319A0,func_8003B6D8)	tools/extract_speech.py
+number	0x60C698	0x60C6A0	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x60C6A0	0x60DD50	audio	MORT GSM 06.10 speech stream	speech clip 182: 208 frames, 16000 Hz, 2.080 s	table D_80074C7C+0x20 (func_800319A0)	tools/extract_speech.py
+number	0x60DD50	0x610138	audio	MORT GSM 06.10 speech stream	speech clip 183: 311 frames, 16000 Hz, 3.110 s	table D_80074CAC+0x0 (func_800319A0)	tools/extract_speech.py
+number	0x610138	0x610140	pad	nonzero filler	alignment to 16 bytes after a speech stream (stale non-zero filler bytes, never read: past the stream word count)	-	-
+number	0x610140	0x6120F0	audio	MORT GSM 06.10 speech stream	speech clip 184: 290 frames, 16000 Hz, 2.900 s	table D_80074E6C+0x8,D_80074E8C+0x8,D_80074EA4+0x10,D_80074ECC+0x10,D_80074EEC+0x8,D_80074F0C+0x8 (func_800287AC)	tools/extract_speech.py
+number	0x6120F0	0x613A8C	audio	MORT GSM 06.10 speech stream	speech clip 185: 236 frames, 16000 Hz, 2.360 s	table D_80074E6C+0x10,D_80074EA4+0x18,D_80074EEC+0x10 (func_800287AC)	tools/extract_speech.py
+number	0x613A8C	0x613A90	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x613A90	0x614118	audio	MORT GSM 06.10 speech stream	speech clip 186: 81 frames, 16000 Hz, 0.810 s	table D_80074CAC+0x10 (func_800319A0)	tools/extract_speech.py
+number	0x614118	0x614120	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x614120	0x614AB4	audio	MORT GSM 06.10 speech stream	speech clip 187: 81 frames, 16000 Hz, 0.810 s	table D_80074CAC+0x20,D_80074D1C+0x10,D_80074D1C+0x40,D_80074D6C+0x28,D_80074D6C+0x70,D_80074DEC+0x28,D_80074DEC+0x70 (func_80018CB0,func_80018E08,func_800319A0)	tools/extract_speech.py
+number	0x614AB4	0x614AC0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x614AC0	0x615088	audio	MORT GSM 06.10 speech stream	speech clip 188: 47 frames, 16000 Hz, 0.470 s	table D_80074D6C+0x20,D_80074D6C+0x68,D_80074DEC+0x20,D_80074DEC+0x68 (func_80018CB0,func_80018E08)	tools/extract_speech.py
+number	0x615088	0x615090	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x615090	0x615944	audio	MORT GSM 06.10 speech stream	speech clip 189: 70 frames, 16000 Hz, 0.700 s	table D_80074D6C+0x8,D_80074D6C+0x50 (func_80018CB0,func_80018E08)	tools/extract_speech.py
+number	0x615944	0x615950	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x615950	0x616224	audio	MORT GSM 06.10 speech stream	speech clip 190: 73 frames, 16000 Hz, 0.730 s	table D_80074D1C+0x0,D_80074D1C+0x30,D_80074D6C+0x18,D_80074D6C+0x60,D_80074DEC+0x18,D_80074DEC+0x60 (func_80018CB0,func_80018E08)	tools/extract_speech.py
+number	0x616224	0x616230	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x616230	0x616898	audio	MORT GSM 06.10 speech stream	speech clip 191: 70 frames, 16000 Hz, 0.700 s	table D_80074DEC+0x8,D_80074DEC+0x50 (func_80018CB0,func_80018E08)	tools/extract_speech.py
+number	0x616898	0x6168A0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x6168A0	0x6170F0	audio	MORT GSM 06.10 speech stream	speech clip 192: 81 frames, 16000 Hz, 0.810 s	table D_80074718+0xC (func_8001AC1C)	tools/extract_speech.py
+number	0x6170F0	0x6177BC	audio	MORT GSM 06.10 speech stream	speech clip 193: 81 frames, 16000 Hz, 0.810 s	table D_80074718+0x14 (func_8001AC1C)	tools/extract_speech.py
+number	0x6177BC	0x6177C0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x6177C0	0x617EAC	audio	MORT GSM 06.10 speech stream	speech clip 194: 81 frames, 16000 Hz, 0.810 s	table D_80074718+0x1C (func_8001AC1C)	tools/extract_speech.py
+number	0x617EAC	0x617EB0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x617EB0	0x61861C	audio	MORT GSM 06.10 speech stream	speech clip 195: 81 frames, 16000 Hz, 0.810 s	table D_80074718+0x24 (func_8001AC1C)	tools/extract_speech.py
+number	0x61861C	0x618620	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x618620	0x618E90	audio	MORT GSM 06.10 speech stream	speech clip 196: 81 frames, 16000 Hz, 0.810 s	table D_80074718+0x2C (func_8001AC1C)	tools/extract_speech.py
+number	0x618E90	0x619620	audio	MORT GSM 06.10 speech stream	speech clip 197: 81 frames, 16000 Hz, 0.810 s	table D_8007474C+0x0 (func_800356F0)	tools/extract_speech.py
+number	0x619620	0x619F54	audio	MORT GSM 06.10 speech stream	speech clip 198: 81 frames, 16000 Hz, 0.810 s	table D_8007474C+0x8 (func_800356F0)	tools/extract_speech.py
+number	0x619F54	0x619F60	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x619F60	0x61A528	audio	MORT GSM 06.10 speech stream	speech clip 199: 81 frames, 16000 Hz, 0.810 s	table D_8007474C+0x10 (func_800356F0)	tools/extract_speech.py
+number	0x61A528	0x61A530	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x61A530	0x61ADE4	audio	MORT GSM 06.10 speech stream	speech clip 200: 81 frames, 16000 Hz, 0.810 s	table D_8007474C+0x18 (func_800356F0)	tools/extract_speech.py
+number	0x61ADE4	0x61ADF0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x61ADF0	0x61B640	audio	MORT GSM 06.10 speech stream	speech clip 201: 81 frames, 16000 Hz, 0.810 s	table D_8007491C+0x0 (func_80018CB0,func_80018E08)	tools/extract_speech.py
+number	0x61B640	0x61BD0C	audio	MORT GSM 06.10 speech stream	speech clip 202: 81 frames, 16000 Hz, 0.810 s	table D_80074924+0x0 (func_8001AC1C)	tools/extract_speech.py
+number	0x61BD0C	0x61BD10	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x61BD10	0x61C4C0	audio	MORT GSM 06.10 speech stream	speech clip 203: 81 frames, 16000 Hz, 0.810 s	table D_80074924+0x8 (func_8001AC1C)	tools/extract_speech.py
+number	0x61C4C0	0x61CCF0	audio	MORT GSM 06.10 speech stream	speech clip 204: 81 frames, 16000 Hz, 0.810 s	table D_80074924+0x10 (func_8001AC1C)	tools/extract_speech.py
+number	0x61CCF0	0x61D5C8	audio	MORT GSM 06.10 speech stream	speech clip 205: 81 frames, 16000 Hz, 0.810 s	table D_8007493C+0x0 (func_8001AC1C)	tools/extract_speech.py
+number	0x61D5C8	0x61D5D0	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x61D5D0	0x61DD20	audio	MORT GSM 06.10 speech stream	speech clip 206: 81 frames, 16000 Hz, 0.810 s	table D_80074944+0x0 (func_8001AC1C)	tools/extract_speech.py
+number	0x61DD20	0x61E654	audio	MORT GSM 06.10 speech stream	speech clip 207: 81 frames, 16000 Hz, 0.810 s	table D_8007494C+0x0 (func_8001AC1C)	tools/extract_speech.py
+number	0x61E654	0x61E660	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x61E660	0x61EC28	audio	MORT GSM 06.10 speech stream	speech clip 208: 81 frames, 16000 Hz, 0.810 s	table D_8007494C+0x8 (func_8001AC1C)	tools/extract_speech.py
+number	0x61EC28	0x61EC30	pad	zero	alignment to 16 bytes after a speech stream	-	-
+number	0x61EC30	0x61F504	audio	MORT GSM 06.10 speech stream	speech clip 209: 81 frames, 16000 Hz, 0.810 s	table D_8007495C+0x0 (func_8001AC1C)	tools/extract_speech.py
+number	0x61F504	0x61F510	pad	zero	alignment to 16 bytes after a speech stream	-	-

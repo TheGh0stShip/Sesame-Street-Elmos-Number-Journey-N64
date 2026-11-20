@@ -1,0 +1,40 @@
+game	rom_start	rom_end	class	format	description	referenced_by	extractor
+letter	0x2F9B60	0x2FBD50	libmus_song	libmus song (FORMAT.md)	song_2F9B60: libmus song v0x215, 13 tracks, 9 waves	none (unused: end of bonusabc.bif in func_8001D9D0, no start reference)	tools/extract_songs.py
+letter	0x4D9D80	0x4DB3E0	libmus_song	libmus song (FORMAT.md)	song_4D9D80: libmus song v0x215, 15 tracks, 10 waves	func_80018A60 state 0 (title, mode 21); func_8003AB7C level 19 all-flags branch	tools/extract_songs.py
+letter	0x4DB3E0	0x4DD320	libmus_song	libmus song (FORMAT.md)	song_4DB3E0: libmus song v0x215, 15 tracks, 11 waves	func_80018A60 state 19 (mode 22 screen)	tools/extract_songs.py
+letter	0x4DD320	0x4E32C0	libmus_song	libmus song (FORMAT.md)	song_4DD320: libmus song v0x215, 16 tracks, 21 waves	none (unused: only its end address 0x4E32C0 appears, as the next start)	tools/extract_songs.py
+letter	0x4E32C0	0x4EA530	libmus_song	libmus song (FORMAT.md)	song_4E32C0: libmus song v0x215, 17 tracks, 24 waves	func_80018A60 level start, level 19 bonusabc	tools/extract_songs.py
+letter	0x4EA530	0x4EADF0	libmus_song	libmus song (FORMAT.md)	song_4EA530: libmus song v0x215, 17 tracks, 19 waves	func_8003AB7C level 19 (bonus end jingle, timer 370)	tools/extract_songs.py
+letter	0x4EADF0	0x4F1850	libmus_song	libmus song (FORMAT.md)	song_4EADF0: libmus song v0x215, 17 tracks, 21 waves	func_80018A60 level start, level 18 orchard	tools/extract_songs.py
+letter	0x4F1850	0x4F2030	libmus_song	libmus song (FORMAT.md)	song_4F1850: libmus song v0x215, 16 tracks, 14 waves	func_8003A650 level 18 (item-collected jingle)	tools/extract_songs.py
+letter	0x4F2030	0x4FA460	libmus_song	libmus song (FORMAT.md)	song_4F2030: libmus song v0x215, 16 tracks, 21 waves	func_80018A60 level start, level 17 garden	tools/extract_songs.py
+letter	0x4FA460	0x4FAC20	libmus_song	libmus song (FORMAT.md)	song_4FA460: libmus song v0x215, 17 tracks, 20 waves	func_8003A650 level 17 (item-collected jingle)	tools/extract_songs.py
+letter	0x4FAC20	0x501130	libmus_song	libmus song (FORMAT.md)	song_4FAC20: libmus song v0x215, 17 tracks, 33 waves	func_80018A60 level start, level 15 manor	tools/extract_songs.py
+letter	0x501130	0x501820	libmus_song	libmus song (FORMAT.md)	song_501130: libmus song v0x215, 17 tracks, 23 waves	func_8003A650 level 15 (item-collected jingle)	tools/extract_songs.py
+letter	0x501820	0x507070	libmus_song	libmus song (FORMAT.md)	song_501820: libmus song v0x215, 17 tracks, 40 waves	func_80018A60 level start, level 16 chute	tools/extract_songs.py
+letter	0x507070	0x507890	libmus_song	libmus song (FORMAT.md)	song_507070: libmus song v0x215, 17 tracks, 29 waves	func_8003A650 level 16 (item-collected jingle)	tools/extract_songs.py
+letter	0x507890	0x50C970	libmus_song	libmus song (FORMAT.md)	song_507890: libmus song v0x215, 17 tracks, 24 waves	func_80018A60 level start, levels 13 planet and 14 space	tools/extract_songs.py
+letter	0x50C970	0x50D000	libmus_song	libmus song (FORMAT.md)	song_50C970: libmus song v0x215, 17 tracks, 17 waves	func_8003A650 levels 13/14 (item-collected jingle)	tools/extract_songs.py
+letter	0x50D000	0x50F9E0	libmus_song	libmus song (FORMAT.md)	song_50D000: libmus song v0x215, 15 tracks, 9 waves	func_8003AB7C timer 270, every level except 11/19 (level-complete fanfare)	tools/extract_songs.py
+letter	0x50F9E0	0x510A10	libmus_song	libmus song (FORMAT.md)	song_50F9E0: libmus song v0x215, 10 tracks, 10 waves	none (unused: 0x50F9E0 is only the end symbol of the previous song)	tools/extract_songs.py
+letter	0x3E3FB0	0x3E4830	libmus_fx_bank	libmus fx bank (FORMAT.md)	default sound-effect bank: 70 effect streams, 60-wave map	func_800170B0 copies it to RAM, musConfig default fx bank (relocated by func_8004D43C)	tools/extract_songs.py
+number	0x4B00C0	0x4B8E70	libmus_song	libmus song (FORMAT.md)	song_4B00C0: libmus song v0x215, 16 tracks, 23 waves	func_80019470 level start, level 10 bump	tools/extract_songs.py
+number	0x4B8E70	0x4BA590	libmus_song	libmus song (FORMAT.md)	song_4B8E70: libmus song v0x215, 15 tracks, 10 waves	func_80019470 state 0 (title, mode 21); func_8003C494 level 11 task-7 branch	tools/extract_songs.py
+number	0x4BA590	0x4BC400	libmus_song	libmus song (FORMAT.md)	song_4BA590: libmus song v0x215, 15 tracks, 11 waves	func_80019470 state 19 (mode 22 screen)	tools/extract_songs.py
+number	0x4BC400	0x4BCB50	libmus_song	libmus song (FORMAT.md)	song_4BC400: libmus song v0x215, 18 tracks, 17 waves	func_8003BF64 level 10 (item-collected jingle)	tools/extract_songs.py
+number	0x4BCB50	0x4C12F0	libmus_song	libmus song (FORMAT.md)	song_4BCB50: libmus song v0x215, 15 tracks, 8 waves	func_80019470 level start, level 9 dunk	tools/extract_songs.py
+number	0x4C12F0	0x4C1970	libmus_song	libmus song (FORMAT.md)	song_4C12F0: libmus song v0x215, 15 tracks, 10 waves	func_8003BF64 level 9 (item-collected jingle)	tools/extract_songs.py
+number	0x4C1970	0x4C6350	libmus_song	libmus song (FORMAT.md)	song_4C1970: libmus song v0x215, 17 tracks, 18 waves	func_80019470 level start, level 7 maze	tools/extract_songs.py
+number	0x4C6350	0x4C69A0	libmus_song	libmus song (FORMAT.md)	song_4C6350: libmus song v0x215, 12 tracks, 10 waves	func_8003BF64 level 7 (item-collected jingle)	tools/extract_songs.py
+number	0x4C69A0	0x4CB8D0	libmus_song	libmus song (FORMAT.md)	song_4C69A0: libmus song v0x215, 16 tracks, 25 waves	func_80019470 level start, level 8 mansion	tools/extract_songs.py
+number	0x4CB8D0	0x4CBCD0	libmus_song	libmus song (FORMAT.md)	song_4CB8D0: libmus song v0x215, 17 tracks, 16 waves	func_8003BF64 level 8 (item-collected jingle)	tools/extract_songs.py
+number	0x4CBCD0	0x4CFEC0	libmus_song	libmus song (FORMAT.md)	song_4CBCD0: libmus song v0x215, 14 tracks, 16 waves	func_80019470 level start, level 6 ski	tools/extract_songs.py
+number	0x4CFEC0	0x4D0690	libmus_song	libmus song (FORMAT.md)	song_4CFEC0: libmus song v0x215, 16 tracks, 14 waves	func_8003BF64 level 6 (item-collected jingle)	tools/extract_songs.py
+number	0x4D0690	0x4D7C90	libmus_song	libmus song (FORMAT.md)	song_4D0690: libmus song v0x215, 17 tracks, 17 waves	func_80019470 level start, level 5 river	tools/extract_songs.py
+number	0x4D7C90	0x4D83F0	libmus_song	libmus song (FORMAT.md)	song_4D7C90: libmus song v0x215, 15 tracks, 9 waves	func_8003BF64 level 5 (item-collected jingle)	tools/extract_songs.py
+number	0x4D83F0	0x4DF7C0	libmus_song	libmus song (FORMAT.md)	song_4D83F0: libmus song v0x215, 17 tracks, 25 waves	func_80019470 level start, level 11 bonus123	tools/extract_songs.py
+number	0x4DF7C0	0x4E0870	libmus_song	libmus song (FORMAT.md)	song_4DF7C0: libmus song v0x215, 10 tracks, 10 waves	func_800287AC guide actor state 0x48 when task 7 is reached (hub event)	tools/extract_songs.py
+number	0x4E0870	0x4E1090	libmus_song	libmus song (FORMAT.md)	song_4E0870: libmus song v0x215, 17 tracks, 19 waves	func_8003C494 level 11 (bonus end jingle, timer 470)	tools/extract_songs.py
+number	0x4E1090	0x4E7620	libmus_song	libmus song (FORMAT.md)	song_4E1090: libmus song v0x215, 16 tracks, 21 waves	func_80019470 level start, level 1 street (hub)	tools/extract_songs.py
+number	0x4E7620	0x4E9810	libmus_song	libmus song (FORMAT.md)	song_4E7620: libmus song v0x215, 13 tracks, 9 waves	func_8003C494 timer 270, every level except 11/19 (level-complete fanfare)	tools/extract_songs.py
+number	0x3CB0C0	0x3CB880	libmus_fx_bank	libmus fx bank (FORMAT.md)	default sound-effect bank: 67 effect streams, 58-wave map	func_80017520 copies it to RAM, musConfig default fx bank (relocated by func_8004D43C)	tools/extract_songs.py

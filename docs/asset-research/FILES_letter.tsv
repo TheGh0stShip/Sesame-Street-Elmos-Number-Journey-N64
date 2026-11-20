@@ -1,0 +1,60 @@
+id	rom_start	rom_end	size	class_guess	note	loaded_by
+0	0x07C6B0	0x0A54D0	167456	gfx_pack	menu22: mode 22 screen images: raw, PI-copied to 0x80154000 (0x200-byte TLUT followed by image, drawn by func_8001CAA8; 0x12E00-byte slots at 0x80154000/0x80166E00/0x80179C00/0x8018CA00)	func_8001D9D0 case 22 -> func_80017318
+1	0x0A54D0	0x10D0F0	424992	gfx_pack	menu21: mode 21 screen images: raw, PI-copied to 0x80154000	func_8001D9D0 case 21 -> func_80017318
+2	0x10D0F0	0x1BF6F0	730624	gfx_pack	common: shared world data loaded after every level: raw, PI-copied to 0x8024B000	func_8001D9D0 (all cases) -> func_80017318
+3	0x1BF6F0	0x204D00	284176	gzip_level	streetab.bif: level 2 (Sesame Street hub) world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001D9D0 case 2 -> func_80013560 (inflate to 0x80154000)
+4	0x204D00	0x227BA0	143008	gzip_level	chute.bif: level 16 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001D9D0 case 16 -> func_80013560
+5	0x227BA0	0x243E20	115328	gzip_level	manor.bif: level 15 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001D9D0 case 15 -> func_80013560
+6	0x243E20	0x2604B0	116368	gzip_level	orchard.bif: level 18 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001D9D0 case 18 -> func_80013560
+7	0x2604B0	0x28FDB0	194816	gzip_level	garden.bif: level 17 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001D9D0 case 17 -> func_80013560
+8	0x28FDB0	0x2ACFA0	119280	gzip_level	space.bif: level 14 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001D9D0 case 14 -> func_80013560
+9	0x2ACFA0	0x2D1FB0	151568	gzip_level	planet.bif: level 13 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001D9D0 case 13 -> func_80013560
+10	0x2D1FB0	0x2F9B60	162736	gzip_level	bonusabc.bif: level 19 (bonus) world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables)	func_8001D9D0 case 19 -> func_80013560
+11	0x2F9B60	0x2FBD50	8688	libmus_song	song_unref0: libmus song (header 0x215), not referenced by any code	none (unused)
+12	0x2FBD50	0x2FE8D0	11136	libmus_ptr_bank	sfx.ptr: sound-effect pointer bank "N64 PtrTablesV2"	func_800170B0 -> func_80017318 to 0x800B0CA0; musConfig.ptr
+13	0x2FE8D0	0x3E3FB0	939744	libmus_wave_bank	sfx.wbk: sound-effect wave bank "N64 WaveTables", ROM-resident (DMA on demand)	func_800170B0 musConfig.wbk = D_002FE8D0
+14	0x3E3FB0	0x3E4830	2176	libmus_fx_bank	sfx.fx: libmus default effect bank	func_800170B0 -> func_80017318 to 0x80115390; musConfig.default_fxbank
+15	0x3E4830	0x3EA160	22832	libmus_ptr_bank	music.ptr: music instrument pointer bank	func_8001892C -> func_80017318 (heap); MusPtrBankInitialize
+16	0x3EA160	0x4D9D80	982048	libmus_wave_bank	music.wbk: music wave bank, ROM-resident	func_8001892C (wbk = D_003EA160)
+17	0x4D9D80	0x4DB3E0	5728	libmus_song	song_4D9D80: song	func_80018A60 / func_8003AB7C -> func_8001892C
+18	0x4DB3E0	0x4DD320	8000	libmus_song	song_4DB3E0: song	func_80018A60 -> func_8001892C
+19	0x4DD320	0x4E32C0	24480	libmus_song	song_4DD320: song (only its end is referenced: unused)	none (unused)
+20	0x4E32C0	0x4EA530	29296	libmus_song	song_4E32C0: song	func_80018A60 case 19
+21	0x4EA530	0x4EADF0	2240	libmus_song	song_4EA530: song (jingle)	func_8003AB7C
+22	0x4EADF0	0x4F1850	27232	libmus_song	song_4EADF0: song	func_80018A60 case 18
+23	0x4F1850	0x4F2030	2016	libmus_song	song_4F1850: song (jingle)	func_8003A650 case 18
+24	0x4F2030	0x4FA460	33840	libmus_song	song_4F2030: song	func_80018A60 case 17
+25	0x4FA460	0x4FAC20	1984	libmus_song	song_4FA460: song (jingle)	func_8003A650 case 17
+26	0x4FAC20	0x501130	25872	libmus_song	song_4FAC20: song	func_80018A60 case 15
+27	0x501130	0x501820	1776	libmus_song	song_501130: song (jingle)	func_8003A650 case 15
+28	0x501820	0x507070	22608	libmus_song	song_501820: song	func_80018A60 case 16
+29	0x507070	0x507890	2080	libmus_song	song_507070: song (jingle)	func_8003A650 case 16
+30	0x507890	0x50C970	20704	libmus_song	song_507890: song	func_80018A60 cases 13/14
+31	0x50C970	0x50D000	1680	libmus_song	song_50C970: song (jingle)	func_8003A650 cases 13/14
+32	0x50D000	0x50F9E0	10720	libmus_song	song_50D000: song	func_8003AB7C
+33	0x50F9E0	0x510A10	4144	libmus_song	song_unref1: libmus song (header 0x215), not referenced (only its start is an end symbol)	none (unused)
+34	0x510A10	0x61AFB0	1090976	speech_mort	clips: "MORT" voice/sound clip region played by the sequencer thread func_80012FA0 -> func_80051314 -> func_80069440; clip table {u32 rom, s16 ms} in .data (e.g. 0x800733C8 = ROM 0x73FC8)	.data clip tables (func_8002AB50 etc.)
+35	0x61AFB0	0x620ED0	24352	sprite_anim	anim_61AFB0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+36	0x620ED0	0x624460	13712	sprite_anim	anim_620ED0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+37	0x624460	0x633220	60864	sprite_anim	anim_624460: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+38	0x633220	0x644970	71504	sprite_anim	anim_633220: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+39	0x644970	0x657E70	79104	sprite_anim	anim_644970: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+40	0x657E70	0x668FD0	69984	sprite_anim	anim_657E70: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+41	0x668FD0	0x67BEE0	77584	sprite_anim	anim_668FD0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+42	0x67BEE0	0x68B260	62336	sprite_anim	anim_67BEE0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+43	0x68B260	0x698AE0	55424	sprite_anim	anim_68B260: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+44	0x698AE0	0x6A0760	31872	sprite_anim	anim_698AE0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+45	0x6A0760	0x6A2D50	9712	sprite_anim	anim_6A0760: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+46	0x6A2D50	0x6B4150	70656	sprite_anim	anim_6A2D50: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+47	0x6B4150	0x6C4A80	67888	sprite_anim	anim_6B4150: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+48	0x6C4A80	0x6D5E80	70656	sprite_anim	anim_6C4A80: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+49	0x6D5E80	0x6E3190	54032	sprite_anim	anim_6D5E80: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+50	0x6E3190	0x6F19C0	59440	sprite_anim	anim_6E3190: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+51	0x6F19C0	0x6F9020	30304	sprite_anim	anim_6F19C0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+52	0x6F9020	0x70A5D0	71088	sprite_anim	anim_6F9020: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+53	0x70A5D0	0x718E00	59440	sprite_anim	anim_70A5D0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+54	0x718E00	0x71F230	25648	sprite_anim	anim_718E00: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+55	0x71F230	0x7307E0	71088	sprite_anim	anim_71F230: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+56	0x7307E0	0x73CBA0	50112	sprite_anim	anim_7307E0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+57	0x73CBA0	0x73F930	11664	sprite_anim	anim_73CBA0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)
+58	0x73F930	0x741920	8176	sprite_anim	anim_73F930: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)

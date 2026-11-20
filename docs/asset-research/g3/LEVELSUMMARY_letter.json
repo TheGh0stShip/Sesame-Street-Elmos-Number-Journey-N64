@@ -1,0 +1,227 @@
+{
+ "game": "letter",
+ "owners": {
+  "lvlB": {
+   "exit": 0,
+   "error": null,
+   "image_captures": 4644,
+   "captured_bytes": 1786052,
+   "files_opened": 4266,
+   "tail": [
+    "{\"level\": \"space.bif\", \"rom\": \"0x28fdb0\", \"size\": 245496, \"dl_entries\": 77, \"dl_blocks\": 12, \"dpword_fallbacks\": 0, \"png\": 40, \"overlaps_clipped\": 0, \"bytes\": {\"palette\": 13280, \"texture\": 52784, \"level_data\": 60521, \"vertices\": 93712, \"display_list\": 24840, \"model_header\": 216, \"comment\": 143}, \"objects\": {\"palette\": 40, \"texture\": 40, \"level_data\": 20, \"vertices\": 210, \"display_list\": 12, \"model_header\": 6, \"comment\": 1}, \"common_textures\": 36}",
+    "{\"level\": \"planet.bif\", \"rom\": \"0x2acfa0\", \"size\": 346524, \"dl_entries\": 191, \"dl_blocks\": 142, \"dpword_fallbacks\": 0, \"png\": 36, \"overlaps_clipped\": 2, \"bytes\": {\"palette\": 9632, \"texture\": 59904, \"vertices\": 152844, \"display_list\": 32616, \"level_data\": 91025, \"model_header\": 324, \"comment\": 179}, \"objects\": {\"palette\": 31, \"texture\": 36, \"vertices\": 370, \"display_list\": 142, \"level_data\": 146, \"model_header\": 9, \"comment\": 1}, \"common_textures\": 20}",
+    "{\"level\": \"bonusabc.bif\", \"rom\": \"0x2d1fb0\", \"size\": 354072, \"dl_entries\": 107, \"dl_blocks\": 100, \"dpword_fallbacks\": 0, \"png\": 18, \"overlaps_clipped\": 0, \"bytes\": {\"level_data\": 287861, \"palette\": 9216, \"texture\": 19456, \"display_list\": 10224, \"vertices\": 27136, \"model_header\": 36, \"comment\": 143}, \"objects\": {\"level_data\": 88, \"palette\": 18, \"texture\": 18, \"display_list\": 100, \"vertices\": 89, \"model_header\": 1, \"comment\": 1}, \"common_textures\": 3}",
+    "CHECK OK []"
+   ]
+  },
+  "lvlC": {
+   "exit": 0,
+   "error": null,
+   "image_captures": 4671,
+   "captured_bytes": 189888,
+   "files_opened": 8,
+   "tail": [
+    "space: 54 structures checked",
+    "planet: 426 structures checked",
+    "bonusabc: 273 structures checked",
+    "OK"
+   ]
+  },
+  "lvlD": {
+   "exit": 0,
+   "error": null,
+   "image_captures": 133,
+   "captured_bytes": 370480,
+   "files_opened": 10,
+   "tail": [
+    "letter: 216 structures re-serialised, 0 mismatches -> OK"
+   ]
+  },
+  "r1": {
+   "exit": 0,
+   "error": null,
+   "image_captures": 257,
+   "captured_bytes": 3072,
+   "files_opened": 5,
+   "tail": [
+    "letter common     0x1BF6B0-0x1BF6C8 bbox  common_1BF6B0_bbox.json OK",
+    "letter common     0x1BF6C8-0x1BF6F0 mhdr  common_1BF6C8_model_header.json OK",
+    "letter manor.bif  0x0060B0-0x006AB0 citex manor_0060B0_CI8_32x64.png OK",
+    "check: all 10 objects byte-exact"
+   ]
+  },
+  "lvlE": {
+   "exit": 0,
+   "error": null,
+   "image_captures": 767,
+   "captured_bytes": 648816,
+   "files_opened": 769,
+   "tail": [
+    "check letter OK"
+   ]
+  },
+  "lvlF": {
+   "exit": 0,
+   "error": null,
+   "image_captures": 472,
+   "captured_bytes": 411564,
+   "files_opened": 272,
+   "tail": [
+    "texframe_texture        20480",
+    "unused_palette           1536",
+    "unused_texture           4096",
+    "total 412888 bytes, check OK"
+   ]
+  }
+ },
+ "images": {
+  "streetab.bif": {
+   "size": 509070,
+   "equal": true,
+   "sha1_orig": "9391b645376e6f3cd233d40dae0fb8e2d2cf3c79",
+   "sha1_rebuilt": "9391b645376e6f3cd233d40dae0fb8e2d2cf3c79",
+   "bytes": {
+    "rebuilt-from-extracted": 498784,
+    "extracted-verbatim": 9888,
+    "generated": 398
+   },
+   "unequal": {},
+   "ledger_bytes": 509070,
+   "rebuilt": 498784,
+   "verbatim": 9888,
+   "generated": 398,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "chute.bif": {
+   "size": 259860,
+   "equal": true,
+   "sha1_orig": "9ecb77c0281460e1bf89ba8212b7df6457f3c345",
+   "sha1_rebuilt": "9ecb77c0281460e1bf89ba8212b7df6457f3c345",
+   "bytes": {
+    "rebuilt-from-extracted": 255874,
+    "generated": 514,
+    "extracted-verbatim": 3472
+   },
+   "unequal": {},
+   "ledger_bytes": 259860,
+   "rebuilt": 255874,
+   "verbatim": 3472,
+   "generated": 514,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "manor.bif": {
+   "size": 263356,
+   "equal": true,
+   "sha1_orig": "b4e7fe1c62cb5aa438608e8d29f810036da75b40",
+   "sha1_rebuilt": "b4e7fe1c62cb5aa438608e8d29f810036da75b40",
+   "bytes": {
+    "rebuilt-from-extracted": 262790,
+    "generated": 566
+   },
+   "unequal": {},
+   "ledger_bytes": 263356,
+   "rebuilt": 262790,
+   "verbatim": 0,
+   "generated": 566,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "orchard.bif": {
+   "size": 283384,
+   "equal": true,
+   "sha1_orig": "96d0e996b7d5e1edfc5ab8fc2fb5ab1adba50a1c",
+   "sha1_rebuilt": "96d0e996b7d5e1edfc5ab8fc2fb5ab1adba50a1c",
+   "bytes": {
+    "rebuilt-from-extracted": 282240,
+    "generated": 504,
+    "extracted-verbatim": 640
+   },
+   "unequal": {},
+   "ledger_bytes": 283384,
+   "rebuilt": 282240,
+   "verbatim": 640,
+   "generated": 504,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "garden.bif": {
+   "size": 362576,
+   "equal": true,
+   "sha1_orig": "920ff576f508a0945501dff45070601674451750",
+   "sha1_rebuilt": "920ff576f508a0945501dff45070601674451750",
+   "bytes": {
+    "rebuilt-from-extracted": 361794,
+    "generated": 782
+   },
+   "unequal": {},
+   "ledger_bytes": 362576,
+   "rebuilt": 361794,
+   "verbatim": 0,
+   "generated": 782,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "space.bif": {
+   "size": 245496,
+   "equal": true,
+   "sha1_orig": "7fd9dacc36d5d79c9138817a6083625e0d9d7d4a",
+   "sha1_rebuilt": "7fd9dacc36d5d79c9138817a6083625e0d9d7d4a",
+   "bytes": {
+    "rebuilt-from-extracted": 245270,
+    "generated": 226
+   },
+   "unequal": {},
+   "ledger_bytes": 245496,
+   "rebuilt": 245270,
+   "verbatim": 0,
+   "generated": 226,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "planet.bif": {
+   "size": 346524,
+   "equal": true,
+   "sha1_orig": "bddac2d0a500be2c853dcc6c7831cfb10cb6f052",
+   "sha1_rebuilt": "bddac2d0a500be2c853dcc6c7831cfb10cb6f052",
+   "bytes": {
+    "rebuilt-from-extracted": 346012,
+    "generated": 512
+   },
+   "unequal": {},
+   "ledger_bytes": 346524,
+   "rebuilt": 346012,
+   "verbatim": 0,
+   "generated": 512,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "bonusabc.bif": {
+   "size": 354072,
+   "equal": true,
+   "sha1_orig": "71e81f4fc9fd0c8b7941b93ca5c2a660597264b4",
+   "sha1_rebuilt": "71e81f4fc9fd0c8b7941b93ca5c2a660597264b4",
+   "bytes": {
+    "extracted-verbatim": 48,
+    "rebuilt-from-extracted": 353684,
+    "generated": 340
+   },
+   "unequal": {},
+   "ledger_bytes": 354072,
+   "rebuilt": 353684,
+   "verbatim": 48,
+   "generated": 340,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  }
+ },
+ "total": {
+  "size": 2624338,
+  "rebuilt": 2606448,
+  "verbatim": 14048,
+  "generated": 3842,
+  "excepted": 0,
+  "images_equal": 8
+ }
+}

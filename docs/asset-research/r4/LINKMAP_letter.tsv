@@ -1,0 +1,965 @@
+func	method	sections(name=address/size)
+80000400	no-own-sections	
+80000450	no-own-sections	
+8000092C	no-own-sections	
+80000CA8	no-own-sections	
+80000E50	no-own-sections	
+80000EDC	no-own-sections	
+80000F60	no-own-sections	
+80001000	no-own-sections	
+8000125C	no-own-sections	
+800013B0	no-own-sections	
+80001424	no-own-sections	
+800016C0	no-own-sections	
+80001818	no-own-sections	
+80001AB4	no-own-sections	
+80001BF8	no-own-sections	
+80001C70	no-own-sections	
+80001CC4	no-own-sections	
+80001D18	no-own-sections	
+80001D38	no-own-sections	
+80001DE4	no-own-sections	
+80001EE8	no-own-sections	
+80001F60	typed-evidence	.rodata+0=80079650/8 .rodata+8=80079658/8 .rodata+10=80079660/8
+800030A0	typed-evidence	.rodata+0=80079668/8 .rodata+8=80079670/8 .rodata+10=80079678/8 .rodata+18=80079680/8 .rodata+20=80079688/8 .rodata+28=80079690/8 .rodata+30=80079698/8 .rodata+38=800796A0/8 .rodata+40=800796A8/8 .rodata+48=800796B0/8 .rodata+50=800796B8/8 .rodata+58=800796C0/8 .rodata+60=800796C8/8 .rodata+68=800796D0/8 .rodata+70=800796D8/8 .rodata+78=800796E0/8 .rodata+80=800796E8/8 .rodata+88=800796F0/8
+80003D08	no-own-sections	
+80003F60	no-own-sections	
+80004010	no-own-sections	
+8000A7F0	typed-evidence	.rodata+0=80079700/104
+8000B470	typed-evidence	.rodata+0=80079798/20
+8000BA70	no-own-sections	
+8000BB1C	no-own-sections	
+8000BB84	no-own-sections	
+8000BC64	typed-evidence	.rodata+0=800797B0/28
+8000C0E0	no-own-sections	
+8000C164	no-own-sections	
+8000C3A0	no-own-sections	
+8000C458	no-own-sections	
+8000C588	no-own-sections	
+8000C62C	no-own-sections	
+8000C744	no-own-sections	
+8000C998	no-own-sections	
+8000CA50	no-own-sections	
+8000CB14	no-own-sections	
+8000CCDC	no-own-sections	
+8000CDAC	no-own-sections	
+8000CE6C	no-own-sections	
+8000CF50	no-own-sections	
+8000D060	no-own-sections	
+8000D0CC	typed-evidence	.rodata+0=80079860/8 .rodata+8=80079868/8
+8000D658	no-own-sections	
+8000D690	no-own-sections	
+8000D6C8	no-own-sections	
+8000D6F0	no-own-sections	
+8000D718	no-own-sections	
+8000D74C	no-own-sections	
+8000D774	no-own-sections	
+8000D7A8	no-own-sections	
+8000D7E0	no-own-sections	
+8000D810	no-own-sections	
+8000DB30	no-own-sections	
+8000DBC0	no-own-sections	
+8000DCFC	no-own-sections	
+8000DD40	no-own-sections	
+8000DD7C	no-own-sections	
+8000DDB8	no-own-sections	
+8000DDF4	no-own-sections	
+8000DE60	no-own-sections	
+8000DEBC	no-own-sections	
+8000E010	typed-evidence	.rodata+0=80079888/8 .rodata+8=80079890/8 .rodata+10=80079898/8
+8000E2D4	no-own-sections	
+8000E310	no-own-sections	
+8000E3EC	no-own-sections	
+8000E4DC	typed-evidence(content-differs)	.rodata+0=800798A0/8
+8000E5C4	no-own-sections	
+8000E6B4	no-own-sections	
+8000E7A0	no-own-sections	
+8000E940	no-own-sections	
+8000E9A0	typed-evidence	.rodata+0=800798B0/8 .rodata+8=800798B8/8
+8000EC04	typed-evidence	.rodata+0=800798C0/32
+8000F468	typed-evidence	.rodata+0=800798E0/8
+8000F948	no-own-sections	
+8000FBB8	no-own-sections	
+8001024C	typed-evidence	.rodata+0=800798E8/8
+80010464	no-own-sections	
+800108E4	no-own-sections	
+800109D0	no-own-sections	
+80010FF8	no-own-sections	
+800110E4	typed-evidence	.rodata+0=800798F0/28
+8001185C	no-own-sections	
+800118EC	no-own-sections	
+80011A58	no-own-sections	
+80011D50	no-own-sections	
+80012164	no-own-sections	
+80012998	no-own-sections	
+80012A08	no-own-sections	
+80012AA4	no-own-sections	
+80012B60	no-own-sections	
+80012D30	no-own-sections	
+80012FA0	no-own-sections	
+80013560	no-own-sections	
+8001375C	no-own-sections	
+8001384C	no-own-sections	
+80013AD8	typed-evidence	.rodata+0=80079B98/36
+80014E98	no-own-sections	
+80014F10	typed-evidence	.rodata+0=80079BC0/40
+8001602C	no-own-sections	
+800168C4	no-own-sections	
+8001694C	no-own-sections	
+80016A74	no-own-sections	
+80016D80	no-own-sections	
+80017050	no-own-sections	
+80017084	no-own-sections	
+800170B0	no-own-sections	
+800172B8	no-own-sections	
+80017318	no-own-sections	
+80017408	no-own-sections	
+80017448	no-own-sections	
+8001747C	no-own-sections	
+800174AC	no-own-sections	
+800174E4	no-own-sections	
+80017520	no-own-sections	
+80017568	no-own-sections	
+800175D0	no-own-sections	
+80017658	no-own-sections	
+800176A4	no-own-sections	
+800176F0	no-own-sections	
+8001773C	no-own-sections	
+80017790	no-own-sections	
+80017B28	no-own-sections	
+80017D40	typed-evidence	.rodata+0=80079C00/8 .rodata+8=80079C08/8 .rodata+10=80079C10/8 .rodata+18=80079C18/8 .rodata+20=80079C20/8 .rodata+28=80079C28/8 .rodata+30=80079C30/8 .rodata+38=80079C38/8
+80018278	no-own-sections	
+800184AC	no-own-sections	
+800184E0	no-own-sections	
+80018530	no-own-sections	
+800186A8	no-own-sections	
+80018840	no-own-sections	
+8001892C	no-own-sections	
+80018A60	typed-evidence	.rodata+0=80079CA0/84 .rodata+58=80079CF8/8 .rodata+60=80079D00/72
+8001A12C	no-own-sections	
+8001A318	no-own-sections	
+8001CA6C	no-own-sections	
+8001CAA8	no-own-sections	
+8001D1BC	no-own-sections	
+8001D8E0	no-own-sections	
+8001D9D0	typed-evidence	.rodata+0=80079D48/84
+8001DD10	no-own-sections	
+8001DE6C	no-own-sections	
+8001DFD0	no-own-sections	
+8001E100	no-own-sections	
+8001E314	no-own-sections	
+8001E718	no-own-sections	
+8001E7EC	no-own-sections	
+8001EA68	no-own-sections	
+8001EE68	no-own-sections	
+8001F184	no-own-sections	
+8001F1C8	no-own-sections	
+8001F248	no-own-sections	
+8001F300	typed-evidence	.rodata+0=80079DE0/76
+8001F490	typed-evidence	.rodata+0=80079E30/8 .rodata+8=80079E38/8 .rodata+10=80079E40/8 .rodata+18=80079E48/8 .rodata+20=80079E50/8 .rodata+28=80079E58/8
+8001FD28	no-own-sections	
+8001FE48	no-own-sections	
+8001FFC0	typed-evidence	.rodata+0=80079E60/8 .rodata+8=80079E68/8 .rodata+10=80079E70/8 .rodata+18=80079E78/48 .rodata+48=80079EA8/8
+80020A24	no-own-sections	
+80020D30	no-own-sections	
+80020EB4	no-own-sections	
+80020F60	no-own-sections	
+80020FDC	no-own-sections	
+800210CC	no-own-sections	
+80021110	typed-evidence	.rodata+0=80079F48/72 .rodata+48=80079F90/72
+800229DC	no-own-sections	
+80022A40	no-own-sections	
+80022A9C	no-own-sections	
+80022ADC	no-own-sections	
+80022B18	typed-evidence	.rodata+0=80079FD8/8
+80022C6C	typed-evidence	.rodata+0=80079FE0/8
+80022D8C	no-own-sections	
+80023080	typed-evidence	.rodata+0=8007A010/8
+80023118	no-own-sections	
+800243AC	no-own-sections	
+800246EC	no-own-sections	
+80024820	typed-evidence	.rodata+0=8007A040/8 .rodata+8=8007A048/8
+80024A5C	no-own-sections	
+80024C1C	no-own-sections	
+80024DB0	no-own-sections	
+80024E20	typed-evidence	.rodata+0=8007A078/72
+80025134	no-own-sections	
+80025504	no-own-sections	
+800258A4	no-own-sections	
+80025A00	no-own-sections	
+80025C6C	no-own-sections	
+80025E4C	no-own-sections	
+8002614C	typed-evidence	.rodata+0=8007A100/72
+800264F4	typed-evidence	.rodata+0=8007A148/72
+800268DC	no-own-sections	
+80026920	no-own-sections	
+80026ABC	no-own-sections	
+80026AF8	no-own-sections	
+80026B34	no-own-sections	
+80026B70	typed-evidence	.rodata+0=8007A1A8/72
+800272C8	typed-evidence	.rodata+0=8007A200/8 .rodata+8=8007A208/308 .rodata+140=8007A340/8 .rodata+148=8007A348/8 .rodata+150=8007A350/8 .rodata+158=8007A358/8 .rodata+160=8007A360/8 .rodata+168=8007A368/8
+80029CF4	no-own-sections	
+80029D48	no-own-sections	
+80029EFC	no-own-sections	
+80029FB0	no-own-sections	
+8002A07C	no-own-sections	
+8002A0C8	no-own-sections	
+8002A120	typed-evidence	.rodata+0=8007A388/24 .rodata+18=8007A3B0/72
+8002AB50	typed-evidence	.rodata+0=8007A410/8 .rodata+8=8007A418/72 .rodata+50=8007A460/24
+8002BADC	no-own-sections	
+8002BC90	no-own-sections	
+8002BCE4	typed-evidence	.rodata+0=8007A478/8
+8002BEF0	no-own-sections	
+8002C1B4	typed-evidence	.rodata+0=8007A480/8 .rodata+8=8007A488/8 .rodata+10=8007A490/8 .rodata+18=8007A498/8 .rodata+20=8007A4A0/8 .rodata+28=8007A4A8/8 .rodata+30=8007A4B0/8 .rodata+38=8007A4B8/8 .rodata+40=8007A4C0/8 .rodata+48=8007A4C8/8 .rodata+50=8007A4D0/8 .rodata+58=8007A4D8/8 .rodata+60=8007A4E0/8 .rodata+68=8007A4E8/8 .rodata+70=8007A4F0/8 .rodata+78=8007A4F8/8
+8002CF14	typed-evidence	.rodata+0=8007A500/8 .rodata+8=8007A508/8 .rodata+10=8007A510/8 .rodata+18=8007A518/8
+8002D060	typed-evidence	.rodata+0=8007A520/8 .rodata+8=8007A528/8 .rodata+10=8007A530/8 .rodata+18=8007A538/8 .rodata+20=8007A540/8 .rodata+28=8007A548/8 .rodata+30=8007A550/8 .rodata+38=8007A558/8 .rodata+40=8007A560/8 .rodata+48=8007A568/8 .rodata+50=8007A570/8 .rodata+58=8007A578/8 .rodata+60=8007A580/8 .rodata+68=8007A588/8 .rodata+70=8007A590/8 .rodata+78=8007A598/8 .rodata+80=8007A5A0/8 .rodata+88=8007A5A8/8 .rodata+90=8007A5B0/8 .rodata+98=8007A5B8/8 .rodata+A0=8007A5C0/8 .rodata+A8=8007A5C8/8 .rodata+B0=8007A5D0/8 .rodata+B8=8007A5D8/8 .rodata+C0=8007A5E0/8 .rodata+C8=8007A5E8/8 .rodata+D0=8007A5F0/8 .rodata+D8=8007A5F8/8 .rodata+E0=8007A600/8 .rodata+E8=8007A608/8 .rodata+F0=8007A610/8 .rodata+F8=8007A618/8 .rodata+100=8007A620/8 .rodata+108=8007A628/8 .rodata+110=8007A630/8 .rodata+118=8007A638/8 .rodata+120=8007A640/8
+8002E140	typed-evidence	.rodata+0=8007A648/8 .rodata+8=8007A650/8 .rodata+10=8007A658/8 .rodata+18=8007A660/8 .rodata+20=8007A668/8 .rodata+28=8007A670/8 .rodata+30=8007A678/8 .rodata+38=8007A680/8 .rodata+40=8007A688/8 .rodata+48=8007A690/8 .rodata+50=8007A698/8 .rodata+58=8007A6A0/8 .rodata+60=8007A6A8/8 .rodata+68=8007A6B0/8 .rodata+70=8007A6B8/8 .rodata+78=8007A6C0/8 .rodata+80=8007A6C8/8 .rodata+88=8007A6D0/8 .rodata+90=8007A6D8/8 .rodata+98=8007A6E0/8 .rodata+A0=8007A6E8/8 .rodata+A8=8007A6F0/8 .rodata+B0=8007A6F8/8 .rodata+B8=8007A700/8 .rodata+C0=8007A708/8 .rodata+C8=8007A710/8 .rodata+D0=8007A718/8 .rodata+D8=8007A720/8 .rodata+E0=8007A728/8 .rodata+E8=8007A730/8 .rodata+F0=8007A738/8 .rodata+F8=8007A740/8 .rodata+100=8007A748/8 .rodata+108=8007A750/8 .rodata+110=8007A758/8 .rodata+118=8007A760/8 .rodata+120=8007A768/8 .rodata+128=8007A770/8
+8002F274	typed-evidence	.rodata+0=8007A778/8 .rodata+8=8007A780/8 .rodata+10=8007A788/8 .rodata+18=8007A790/8 .rodata+20=8007A798/8 .rodata+28=8007A7A0/8 .rodata+30=8007A7A8/8 .rodata+38=8007A7B0/8 .rodata+40=8007A7B8/8 .rodata+48=8007A7C0/8 .rodata+50=8007A7C8/8 .rodata+58=8007A7D0/8 .rodata+60=8007A7D8/8 .rodata+68=8007A7E0/8 .rodata+70=8007A7E8/8 .rodata+78=8007A7F0/8 .rodata+80=8007A7F8/8 .rodata+88=8007A800/8 .rodata+90=8007A808/8 .rodata+98=8007A810/8 .rodata+A0=8007A818/8 .rodata+A8=8007A820/8 .rodata+B0=8007A828/8
+8002FEC4	typed-evidence	.rodata+0=8007A830/8 .rodata+8=8007A838/8 .rodata+10=8007A840/8 .rodata+18=8007A848/8 .rodata+20=8007A850/8 .rodata+28=8007A858/8 .rodata+30=8007A860/8
+80030094	no-own-sections	
+80030198	no-own-sections	
+800301C8	no-own-sections	
+800302B8	no-own-sections	
+80030348	typed-evidence	.rodata+0=8007A880/8 .rodata+8=8007A888/8
+8003054C	typed-evidence	.rodata+0=8007A890/8 .rodata+8=8007A898/8 .rodata+10=8007A8A0/8
+800307D4	typed-evidence	.rodata+0=8007A8A8/8 .rodata+8=8007A8B0/8 .rodata+10=8007A8B8/8
+80030A7C	no-own-sections	
+80030C48	no-own-sections	
+80030C80	typed-evidence	.rodata+0=8007A8C0/8
+80030D8C	no-own-sections	
+80030EBC	no-own-sections	
+80030F4C	no-own-sections	
+800310D0	no-own-sections	
+80031274	no-own-sections	
+800314C0	no-own-sections	
+800316BC	no-own-sections	
+80031744	no-own-sections	
+800317C0	no-own-sections	
+80031918	no-own-sections	
+80031BB4	no-own-sections	
+800323F4	no-own-sections	
+800326E0	no-own-sections	
+8003279C	no-own-sections	
+800327E0	no-own-sections	
+80032818	no-own-sections	
+80032EB4	no-own-sections	
+8003322C	no-own-sections	
+800336BC	typed-evidence	.rodata+0=8007A958/24 .rodata+18=8007A980/28
+80034AF4	no-own-sections	
+80034B64	no-own-sections	
+80034CD0	no-own-sections	
+800350F8	typed-evidence	.rodata+0=8007AA30/24
+80035698	no-own-sections	
+800356D0	no-own-sections	
+80035720	no-own-sections	
+80035750	no-own-sections	
+80035788	no-own-sections	
+80035828	no-own-sections	
+80035894	no-own-sections	
+80035930	no-own-sections	
+80035A28	no-own-sections	
+80035A68	no-own-sections	
+80035AF8	no-own-sections	
+80035D64	no-own-sections	
+80035DF4	no-own-sections	
+80035EF4	no-own-sections	
+80035F80	no-own-sections	
+80036068	no-own-sections	
+800361D8	no-own-sections	
+80036248	no-own-sections	
+800362F0	no-own-sections	
+80036338	no-own-sections	
+80036480	no-own-sections	
+8003667C	no-own-sections	
+800367C4	no-own-sections	
+800369C0	no-own-sections	
+80036B08	no-own-sections	
+80036D04	no-own-sections	
+80036D98	no-own-sections	
+80036DE8	no-own-sections	
+80036FB8	typed-evidence	.rodata+0=8007AA98/8 .rodata+8=8007AAA0/8 .rodata+10=8007AAA8/8 .rodata+18=8007AAB0/8 .rodata+20=8007AAB8/8 .rodata+28=8007AAC0/8 .rodata+30=8007AAC8/8 .rodata+38=8007AAD0/8 .rodata+40=8007AAD8/8
+800373DC	no-own-sections	
+800374BC	no-own-sections	
+80037608	no-own-sections	
+800376A4	no-own-sections	
+8003771C	no-own-sections	
+800377FC	typed-evidence	.rodata+0=8007AAE0/8 .rodata+8=8007AAE8/8 .rodata+10=8007AAF0/8 .rodata+18=8007AAF8/8 .rodata+20=8007AB00/8 .rodata+28=8007AB08/8 .rodata+30=8007AB10/8 .rodata+38=8007AB18/8 .rodata+40=8007AB20/8
+80037D8C	no-own-sections	
+80037E50	no-own-sections	
+800380AC	no-own-sections	
+80038138	no-own-sections	
+80038204	no-own-sections	
+800382F0	no-own-sections	
+80038474	no-own-sections	
+80038520	no-own-sections	
+800385EC	no-own-sections	
+800386E0	no-own-sections	
+80038874	no-own-sections	
+80038944	no-own-sections	
+800389DC	no-own-sections	
+80038AAC	typed-evidence	.rodata+0=8007AB60/8
+80038CA8	no-own-sections	
+80038D34	no-own-sections	
+80038E00	no-own-sections	
+80038EEC	no-own-sections	
+80039070	no-own-sections	
+80039168	no-own-sections	
+80039200	no-own-sections	
+800392D0	typed-evidence	.rodata+0=8007AB90/8
+800394D0	no-own-sections	
+8003955C	no-own-sections	
+80039628	no-own-sections	
+80039714	no-own-sections	
+80039898	no-own-sections	
+80039968	no-own-sections	
+80039A00	no-own-sections	
+80039B0C	typed-evidence	.rodata+0=8007ABC0/8
+80039D10	no-own-sections	
+80039D9C	no-own-sections	
+80039E68	no-own-sections	
+80039F54	no-own-sections	
+8003A0D8	no-own-sections	
+8003A1A8	no-own-sections	
+8003A240	no-own-sections	
+8003A34C	typed-evidence	.rodata+0=8007ABF8/8
+8003A568	typed-evidence	.rodata+0=8007AC00/24
+8003A650	typed-evidence	.rodata+0=8007AC18/64
+8003AB7C	typed-evidence	.rodata+0=8007AC58/28
+8003B3D0	no-own-sections	
+8003B4B0	no-own-sections	
+8003B554	no-own-sections	
+8003B5D8	no-own-sections	
+8003B6E4	no-own-sections	
+8003B7C4	no-own-sections	
+8003B87C	no-own-sections	
+8003B900	no-own-sections	
+8003B9D4	no-own-sections	
+8003BA60	no-own-sections	
+8003BB00	no-own-sections	
+8003CF50	typed-evidence	.rodata+0=8007ACB8/8 .rodata+8=8007ACC0/8 .rodata+10=8007ACC8/8 .rodata+18=8007ACD0/8 .rodata+20=8007ACD8/8 .rodata+28=8007ACE0/8 .rodata+30=8007ACE8/8 .rodata+38=8007ACF0/20 .rodata+50=8007AD08/8 .rodata+58=8007AD10/8 .rodata+60=8007AD18/8 .rodata+68=8007AD20/8 .rodata+70=8007AD28/8 .rodata+78=8007AD30/8 .rodata+80=8007AD38/8
+8003E220	no-own-sections	
+8003E3A0	no-own-sections	
+8003E3E0	no-own-sections	
+8003EA30	typed-evidence	.rodata+0=8007AD68/8 .rodata+8=8007AD70/8 .rodata+10=8007AD78/8
+8003EF84	no-own-sections	
+8003F104	no-own-sections	
+8003F140	no-own-sections	
+8003F838	no-own-sections	
+8003FC04	no-own-sections	
+8003FD98	no-own-sections	
+8003FDD0	no-own-sections	
+8003FE00	no-own-sections	
+8004002C	no-own-sections	
+80040190	no-own-sections	
+80040284	no-own-sections	
+80040304	no-own-sections	
+8004038C	no-own-sections	
+80040400	no-own-sections	
+80040680	no-own-sections	
+80040874	no-own-sections	
+800408C4	no-own-sections	
+800409A0	no-own-sections	
+800409C8	no-own-sections	
+80040B00	no-own-sections	
+80040C00	no-own-sections	
+80041090	no-own-sections	
+80041230	no-own-sections	
+800413A0	no-own-sections	
+800414F0	no-own-sections	
+8004166C	no-own-sections	
+80041810	typed-evidence	.rodata+0=8007AE60/44
+80041B4C	no-own-sections	
+80041E78	no-own-sections	
+80041F60	no-own-sections	
+8004216C	no-own-sections	
+80042270	no-own-sections	
+80042398	no-own-sections	
+8004256C	no-own-sections	
+800426C8	no-own-sections	
+80042720	no-own-sections	
+800445A0	no-own-sections	
+800445D0	no-own-sections	
+80044840	no-own-sections	
+80044910	no-own-sections	
+80044B90	no-own-sections	
+80044E3C	no-own-sections	
+800477C0	no-own-sections	
+80047C00	no-own-sections	
+80047CF8	no-own-sections	
+80047E10	no-own-sections	
+80047ED4	no-own-sections	
+80047F60	no-own-sections	
+80047FB0	no-own-sections	
+80048120	no-own-sections	
+80048174	no-own-sections	
+800483A0	no-own-sections	
+80048690	no-own-sections	
+80048958	no-own-sections	
+80048AB8	no-own-sections	
+80049848	no-own-sections	
+80049994	no-own-sections	
+80049A24	no-own-sections	
+80049ABC	no-own-sections	
+80049C08	no-own-sections	
+80049C6C	no-own-sections	
+80049CD8	no-own-sections	
+80049CF8	no-own-sections	
+80049E68	typed-evidence	.rodata+0=8007AFC8/8 .rodata+8=8007AFD0/8 .rodata+10=8007AFD8/8 .rodata+18=8007AFE0/8 .rodata+20=8007AFE8/8 .rodata+28=8007AFF0/8 .rodata+30=8007AFF8/8 .rodata+38=8007B000/8 .rodata+40=8007B008/8 .rodata+48=8007B010/8 .rodata+50=8007B018/8
+8004A150	no-own-sections	
+8004A294	no-own-sections	
+8004A32C	no-own-sections	
+8004A35C	no-own-sections	
+8004A38C	no-own-sections	
+8004A6A0	no-own-sections	
+8004A6E4	no-own-sections	
+8004A73C	no-own-sections	
+8004B074	no-own-sections	
+8004B0E0	no-own-sections	
+8004B234	no-own-sections	
+8004B28C	no-own-sections	
+8004B470	no-own-sections	
+8004B524	no-own-sections	
+8004B568	no-own-sections	
+8004B5E8	no-own-sections	
+8004B93C	no-own-sections	
+8004B980	no-own-sections	
+8004BAE0	no-own-sections	
+8004C06C	no-own-sections	
+8004C0B0	no-own-sections	
+8004C10C	no-own-sections	
+8004C36C	no-own-sections	
+8004C44C	no-own-sections	
+8004C490	no-own-sections	
+8004C500	no-own-sections	
+8004C58C	no-own-sections	
+8004C5B0	typed-evidence	.rodata+0=8007B080/8
+8004C6FC	no-own-sections	
+8004C984	no-own-sections	
+8004C9B0	no-own-sections	
+8004C9E0	no-own-sections	
+8004CC30	no-own-sections	
+8004CCB0	no-own-sections	
+8004CDC8	no-own-sections	
+8004CE94	no-own-sections	
+8004CF14	no-own-sections	
+8004CFC8	no-own-sections	
+8004D020	no-own-sections	
+8004D080	no-own-sections	
+8004D0F0	no-own-sections	
+8004D160	no-own-sections	
+8004D1EC	no-own-sections	
+8004D274	no-own-sections	
+8004D2B0	no-own-sections	
+8004D2D8	no-own-sections	
+8004D2FC	no-own-sections	
+8004D308	no-own-sections	
+8004D364	no-own-sections	
+8004D388	no-own-sections	
+8004D3B0	no-own-sections	
+8004D3E0	no-own-sections	
+8004D43C	no-own-sections	
+8004D4C0	no-own-sections	
+8004D4C8	no-own-sections	
+8004D4D4	no-own-sections	
+8004D4E0	no-own-sections	
+8004D4EC	no-own-sections	
+8004D4F4	no-own-sections	
+8004D4FC	no-own-sections	
+8004D508	no-own-sections	
+8004D56C	no-own-sections	
+8004D5E4	no-own-sections	
+8004D5F0	no-own-sections	
+8004D654	no-own-sections	
+8004D6D4	no-own-sections	
+8004D76C	no-own-sections	
+8004DA5C	typed-evidence	.rodata+0=8007B088/8
+8004DFA4	no-own-sections	
+8004E020	no-own-sections	
+8004E174	typed-evidence	.rodata+0=8007B090/8 .rodata+8=8007B098/8
+8004E280	no-own-sections	
+8004E2F0	no-own-sections	
+8004E4E4	no-own-sections	
+8004E500	no-own-sections	
+8004E5B8	no-own-sections	
+8004E610	no-own-sections	
+8004E674	no-own-sections	
+8004E738	typed-evidence	.rodata+0=8007B0A0/8
+8004E84C	no-own-sections	
+8004E9E0	typed-evidence	.rodata+0=8007B118/8
+8004EB78	no-own-sections	
+8004EC0C	no-own-sections	
+8004ED48	no-own-sections	
+8004EF10	no-own-sections	
+8004EF48	no-own-sections	
+8004EFF8	no-own-sections	
+8004F1A0	no-own-sections	
+8004F40C	no-own-sections	
+8004F460	no-own-sections	
+8004F480	no-own-sections	
+8004F4B0	no-own-sections	
+8004F4D0	no-own-sections	
+8004F4DC	typed-evidence	.rodata+0=8007B120/8
+8004F604	no-own-sections	
+8004F6E8	no-own-sections	
+8004F6FC	no-own-sections	
+8004F720	typed-evidence	.rodata+0=8007B128/8 .rodata+8=8007B130/8
+8004F790	typed-evidence	.rodata+0=8007B138/8 .rodata+8=8007B140/8
+8004F804	no-own-sections	
+8004F814	no-own-sections	
+8004F844	no-own-sections	
+8004F854	no-own-sections	
+8004F864	no-own-sections	
+8004F874	typed-evidence	.rodata+0=8007B148/8
+8004F8CC	no-own-sections	
+8004F8DC	no-own-sections	
+8004F8E8	no-own-sections	
+8004F8F8	no-own-sections	
+8004F904	no-own-sections	
+8004F970	no-own-sections	
+8004FA0C	no-own-sections	
+8004FA34	no-own-sections	
+8004FA40	no-own-sections	
+8004FA50	no-own-sections	
+8004FA5C	no-own-sections	
+8004FA70	no-own-sections	
+8004FA84	no-own-sections	
+8004FA8C	no-own-sections	
+8004FAD4	no-own-sections	
+8004FAE0	no-own-sections	
+8004FAE8	no-own-sections	
+8004FB58	no-own-sections	
+8004FB68	no-own-sections	
+8004FBB8	no-own-sections	
+8004FC08	no-own-sections	
+8004FC58	no-own-sections	
+8004FC68	no-own-sections	
+8004FD38	no-own-sections	
+8004FD74	no-own-sections	
+8004FD84	no-own-sections	
+8004FDC8	no-own-sections	
+8004FE38	no-own-sections	
+8004FE50	no-own-sections	
+8004FEB8	no-own-sections	
+80050128	no-own-sections	
+80050178	no-own-sections	
+800502C0	typed-evidence	.rodata+0=8007B160/8 .rodata+8=8007B168/8
+800505A0	no-own-sections	
+800505B8	no-own-sections	
+800505FC	no-own-sections	
+80050640	no-own-sections	
+800506A0	no-own-sections	
+80050814	no-own-sections	
+800508E4	no-own-sections	
+800508F0	no-own-sections	
+8005095C	no-own-sections	
+80050AF0	no-own-sections	
+80050AFC	no-own-sections	
+80050B60	no-own-sections	
+80050BC0	no-own-sections	
+80050CA0	no-own-sections	
+80050DD8	no-own-sections	
+80050F80	no-own-sections	
+80050FCC	no-own-sections	
+80050FFC	no-own-sections	
+80051014	no-own-sections	
+80051020	no-own-sections	
+8005104C	no-own-sections	
+800510C0	no-own-sections	
+800511D4	no-own-sections	
+80051314	no-own-sections	
+80051418	no-own-sections	
+80051474	no-own-sections	
+800514D4	no-own-sections	
+8005173C	no-own-sections	
+80051C04	no-own-sections	
+80051CB0	no-own-sections	
+80051D54	no-own-sections	
+80051DE0	no-own-sections	
+80051E80	typed-evidence	.rodata+0=8007B170/24 .rodata+18=8007B188/8 .rodata+20=8007B190/8
+8005226C	no-own-sections	
+800523A0	typed-evidence	.rodata+0=8007B1A0/68
+80052918	no-own-sections	
+800529BC	no-own-sections	
+80052BDC	typed-evidence	.rodata+0=8007B1E8/8 .rodata+8=8007B1F0/8 .rodata+10=8007B1F8/8 .rodata+18=8007B200/8
+80052D1C	no-own-sections	
+80052D70	no-own-sections	
+800531B8	no-own-sections	
+80053344	no-own-sections	
+80053490	typed-evidence	.rodata+0=8007B210/8
+8005364C	no-own-sections	
+80053670	no-own-sections	
+80053980	typed-evidence	.rodata+0=8007B220/32 .rodata+20=8007B240/8 .rodata+28=8007B248/8
+80053B70	typed-evidence	.rodata+0=8007B250/8
+80053D80	no-own-sections	
+80053EA8	no-own-sections	
+80053FC0	no-own-sections	
+80054060	no-own-sections	
+800540A4	no-own-sections	
+800540E0	no-own-sections	
+80054130	no-own-sections	
+80054248	no-own-sections	
+80054310	no-own-sections	
+80054320	no-own-sections	
+800543C0	no-own-sections	
+80054450	no-own-sections	
+800544E0	no-own-sections	
+80054590	no-own-sections	
+80054620	no-own-sections	
+800546A0	no-own-sections	
+80054910	no-own-sections	
+80054A78	no-own-sections	
+80054AA4	no-own-sections	
+80054ABC	no-own-sections	
+80054B1C	no-own-sections	
+80054B54	typed-evidence	.rodata+0=8007B260/8 .rodata+8=8007B268/8
+80054BA4	no-own-sections	
+80054C00	no-own-sections	
+80054C50	no-own-sections	
+80054CA0	no-own-sections	
+80054D20	no-own-sections	
+80054D30	contiguous,typed-evidence	.rodata+0=8007B2E8/8 .rodata+8=8007B288/8 .rodata+10=8007B290/8 .rodata+18=8007B298/8 .rodata+20=8007B2A0/8 .rodata+28=8007B2A8/8 .rodata+30=8007B2B0/8 .rodata+38=8007B2B8/8 .rodata+40=8007B2C0/8 .rodata+48=8007B2C8/8 .rodata+50=8007B2D0/8
+80054E80	contiguous,typed-evidence	.rodata+0=8007B2E0/8 .rodata+8=8007B2E8/4 .rodata+C=8007B2EC/4
+80055200	contiguous,typed-evidence	.rodata+0=8007B2F0/8 .rodata+8=8007B2F8/4 .rodata+C=8007B2FC/4
+80055590	no-own-sections	
+80055628	no-own-sections	
+800556D0	no-own-sections	
+80055720	no-own-sections	
+80055810	no-own-sections	
+800558EC	no-own-sections	
+800559A0	no-own-sections	
+80055A14	no-own-sections	
+80055AA0	typed-evidence	.rodata+0=8007B300/8 .rodata+8=8007B308/8 .rodata+10=8007B310/8 .rodata+18=8007B318/8
+80055C50	typed-evidence	.rodata+0=8007B320/8 .rodata+8=8007B328/8 .rodata+10=8007B330/8 .rodata+18=8007B338/8
+80055E20	no-own-sections	
+80055F7C	typed-evidence	.data+0=800773C0/8
+80056100	typed-evidence	.data+0=800773D0/8
+80056288	typed-evidence	.data+0=800773D0/8
+80056420	no-own-sections	
+80056480	no-own-sections	
+80056500	contiguous,typed-evidence,typed-evidence(content-differs)	.rodata+0=8007B348/8 .rodata+8=8007B348/8 .rodata+10=8007B350/8 .rodata+18=8007B358/8 .rodata+20=8007B360/8 .rodata+28=8007B368/8 .rodata+30=8007B370/8 .rodata+38=8007B378/8 .rodata+40=8007B380/8 .rodata+48=8007B388/8 .rodata+50=8007B390/8
+800566A0	typed-evidence	.data+0=800773E0/8
+80056878	typed-evidence	.data+0=800773E0/8
+80056A60	no-own-sections	
+80056B70	no-own-sections	
+80056C10	no-own-sections	
+80056C40	no-own-sections	
+80056C70	no-own-sections	
+80056D40	no-own-sections	
+80056DD0	no-own-sections	
+800570F0	no-own-sections	
+80057100	no-own-sections	
+80057230	no-own-sections	
+80057360	no-own-sections	
+800573C0	no-own-sections	
+80057490	no-own-sections	
+80057530	no-own-sections	
+80057650	no-own-sections	
+80057710	no-own-sections	
+80057750	no-own-sections	
+800577A4	no-own-sections	
+80057988	no-own-sections	
+800579E8	no-own-sections	
+80057AF0	no-own-sections	
+80057B50	no-own-sections	
+80057BD0	no-own-sections	
+80057C00	typed-evidence	.rodata+0=8007B440/8
+80057CA4	typed-evidence	.rodata+0=8007B448/24 .rodata+18=8007B460/8 .rodata+20=8007B468/8 .rodata+28=8007B470/8
+8005813C	no-own-sections	
+800581F4	no-own-sections	
+800582A4	no-own-sections	
+80058330	no-own-sections	
+8005838C	no-own-sections	
+800583E8	no-own-sections	
+80058430	no-own-sections	
+80058874	no-own-sections	
+80058C10	no-own-sections	
+80058DBC	no-own-sections	
+80058F40	no-own-sections	
+8005901C	no-own-sections	
+80059050	typed-evidence	.rodata+0=8007B480/68
+80059550	no-own-sections	
+80059624	no-own-sections	
+800598F8	typed-evidence	.rodata+0=8007B4C8/8 .rodata+8=8007B4D0/8 .rodata+10=8007B4D8/8
+800599D8	no-own-sections	
+800599FC	typed-evidence	.rodata+0=8007B520/8 .rodata+8=8007B528/8 .rodata+10=8007B530/8 .rodata+18=8007B538/8 .rodata+20=8007B540/8 .rodata+28=8007B548/8 .rodata+30=8007B550/8 .rodata+38=8007B558/8 .rodata+40=8007B560/8 .rodata+48=8007B568/8
+80059C7C	no-own-sections	
+80059D00	no-own-sections	
+80059D20	no-own-sections	
+80059E60	no-own-sections	
+80059E90	typed-evidence	.rodata+0=8007B570/8
+8005A07C	typed-evidence	.rodata+0=8007B578/36
+8005A140	no-own-sections	
+8005A4B4	no-own-sections	
+8005A4C8	typed-evidence	.rodata+0=8007B5A0/32 .rodata+20=8007B5C0/8 .rodata+28=8007B5C8/8
+8005A6B8	typed-evidence	.rodata+0=8007B5D0/8
+8005A8D0	no-own-sections	
+8005AA40	no-own-sections	
+8005ABB0	no-own-sections	
+8005AC4C	typed-evidence	.rodata+0=8007B5D8/8 .rodata+8=8007B5E0/8 .rodata+10=8007B5E8/8
+8005ACE0	no-own-sections	
+8005AD88	no-own-sections	
+8005ADB0	no-own-sections	
+8005ADDC	no-own-sections	
+8005AE0C	no-own-sections	
+8005AE2C	no-own-sections	
+8005AE60	no-own-sections	
+8005AEA0	no-own-sections	
+8005AEF0	no-own-sections	
+8005AF30	no-own-sections	
+8005B1FC	no-own-sections	
+8005B3AC	no-own-sections	
+8005B3D8	no-own-sections	
+8005B3F0	no-own-sections	
+8005B444	no-own-sections	
+8005B484	typed-evidence	.rodata+0=8007B5F0/8 .rodata+8=8007B5F8/8
+8005B4CC	typed-evidence	.rodata+0=8007B600/8 .rodata+8=8007B608/8
+8005B518	no-own-sections	
+8005B570	no-own-sections	
+8005B580	no-own-sections	
+8005B620	no-own-sections	
+8005B640	no-own-sections	
+8005B660	no-own-sections	
+8005B6E0	no-own-sections	
+8005B6F0	no-own-sections	
+8005B6F8	no-own-sections	
+8005B704	no-own-sections	
+8005B728	no-own-sections	
+8005C9D0	no-own-sections	
+8005CB88	no-own-sections	
+8005D7FC	no-own-sections	
+8005D8C0	no-own-sections	
+8005D8D0	no-own-sections	
+8005D8E0	typed-evidence	.rodata+0=8007B610/8
+8005DA10	no-own-sections	
+8005DAB0	no-own-sections	
+8005DC20	no-own-sections	
+8005DC80	no-own-sections	
+8005DCD0	no-own-sections	
+8005DD20	no-own-sections	
+8005DDA8	no-own-sections	
+8005DE44	no-own-sections	
+8005DF00	no-own-sections	
+8005E09C	no-own-sections	
+8005E150	no-own-sections	
+8005E210	no-own-sections	
+8005E260	no-own-sections	
+8005E42C	no-own-sections	
+8005E510	no-own-sections	
+8005E6E0	no-own-sections	
+8005E780	no-own-sections	
+8005E860	no-own-sections	
+8005E960	typed-evidence	.rodata+0=8007B620/28
+8005ED20	no-own-sections	
+8005ED74	no-own-sections	
+8005EDE0	no-own-sections	
+8005EE10	no-own-sections	
+8005EEC0	no-own-sections	
+8005EF28	no-own-sections	
+8005EFE0	no-own-sections	
+8005F0D0	no-own-sections	
+8005F260	no-own-sections	
+8005F2BC	no-own-sections	
+8005F2F8	no-own-sections	
+8005F354	no-own-sections	
+8005F410	no-own-sections	
+8005F4B0	no-own-sections	
+8005F4E8	no-own-sections	
+8005F50C	no-own-sections	
+8005F540	no-own-sections	
+8005F598	no-own-sections	
+8005F5D0	no-own-sections	
+8005F808	no-own-sections	
+8005F86C	no-own-sections	
+8005F8B4	no-own-sections	
+8005F920	no-own-sections	
+8005FA68	no-own-sections	
+8005FAC0	no-own-sections	
+8005FB50	no-own-sections	
+8005FB58	data-image-search	.data+0=8006D4E4/8
+8005FC5C	no-own-sections	
+8005FD5C	no-own-sections	
+8005FE84	no-own-sections	
+8005FF14	no-own-sections	
+8005FF68	typed-evidence	.data+0=8007779C/8
+80060034	no-own-sections	
+8006008C	contiguous,typed-evidence	.data+0=80077794/4 .data+4=80077798/8
+80060168	no-own-sections	
+800601A0	typed-evidence	.rodata+0=8007B640/28
+800603C0	no-own-sections	
+80060470	no-own-sections	
+80060480	no-own-sections	
+800604A0	no-own-sections	
+80060544	no-own-sections	
+80060E6C	no-own-sections	
+80060F3C	no-own-sections	
+80060F5C	no-own-sections	
+80061064	no-own-sections	
+800610AC	no-own-sections	
+800610BC	no-own-sections	
+80061250	no-own-sections	
+80061260	no-own-sections	
+80061270	no-own-sections	
+800612F0	no-own-sections	
+80061310	no-own-sections	
+80061330	no-own-sections	
+800613F0	no-own-sections	
+80061400	no-own-sections	
+80061410	no-own-sections	
+80061420	no-own-sections	
+800614A0	no-own-sections	
+80061500	no-own-sections	
+800615D0	no-own-sections	
+800615F0	no-own-sections	
+80061730	no-own-sections	
+800618D8	no-own-sections	
+800619F0	no-own-sections	
+80061A40	no-own-sections	
+80061A80	no-own-sections	
+80061AD0	no-own-sections	
+80061CF0	no-own-sections	
+80061DC0	no-own-sections	
+80061DE0	no-own-sections	
+80061E80	no-own-sections	
+80061ED0	no-own-sections	
+800620DC	no-own-sections	
+80062110	no-own-sections	
+80062130	no-own-sections	
+80062180	no-own-sections	
+80062290	no-own-sections	
+800622D0	no-own-sections	
+80062310	no-own-sections	
+800624A8	no-own-sections	
+80062640	no-own-sections	
+800626A0	no-own-sections	
+800626F0	no-own-sections	
+80062740	typed-evidence	.rodata+0=8007B6E0/8
+80062A30	no-own-sections	
+80062A50	no-own-sections	
+80062AF0	no-own-sections	
+80062B44	no-own-sections	
+80062BB0	no-own-sections	
+80062BE0	no-own-sections	
+80062CB0	no-own-sections	
+80062CD0	no-own-sections	
+80062E20	no-own-sections	
+80062F70	no-own-sections	
+8006347C	no-own-sections	
+8006354C	no-own-sections	
+80063600	no-own-sections	
+80063778	no-own-sections	
+80063780	no-own-sections	
+8006389C	typed-evidence	.rodata+0=8007B6F0/96
+80063A1C	no-own-sections	
+80063BC8	no-own-sections	
+80063C04	no-own-sections	
+80063CE0	no-own-sections	
+80063D6C	no-own-sections	
+80063D98	no-own-sections	
+80063FA0	no-own-sections	
+80064020	no-own-sections	
+80064030	no-own-sections	
+80064070	no-own-sections	
+800640B0	no-own-sections	
+800640E0	no-own-sections	
+80064110	no-own-sections	
+80064280	no-own-sections	
+800644A4	no-own-sections	
+800644FC	no-own-sections	
+80064504	no-own-sections	
+800645C0	no-own-sections	
+80064614	no-own-sections	
+800647A0	no-own-sections	
+800647DC	no-own-sections	
+800648AC	no-own-sections	
+800648B4	no-own-sections	
+800648F0	no-own-sections	
+800649C8	no-own-sections	
+80064AB8	no-own-sections	
+80064B44	no-own-sections	
+80064BD0	no-own-sections	
+80064CA4	no-own-sections	
+80064E3C	no-own-sections	
+80064FA8	no-own-sections	
+80065180	no-own-sections	
+80065334	no-own-sections	
+800653B0	no-own-sections	
+80065418	no-own-sections	
+8006547C	no-own-sections	
+80065564	no-own-sections	
+80065660	no-own-sections	
+80065838	no-own-sections	
+80065890	no-own-sections	
+80065A44	no-own-sections	
+80065C80	no-own-sections	
+80065FA0	no-own-sections	
+80066510	typed-evidence	.rodata+0=8007B788/336
+800669D0	no-own-sections	
+800669E0	no-own-sections	
+800669F0	no-own-sections	
+80066AB0	no-own-sections	
+80066AD0	no-own-sections	
+80066AF0	no-own-sections	
+80066B00	no-own-sections	
+80066B10	no-own-sections	
+80066B40	no-own-sections	
+80066B90	no-own-sections	
+80066C20	no-own-sections	
+80066C30	no-own-sections	
+80066C54	no-own-sections	
+80066C98	no-own-sections	
+80066CAC	no-own-sections	
+80066CD0	no-own-sections	
+80066F20	typed-evidence	.rodata+0=8007B8E0/72 .rodata+48=8007B928/4 .rodata+4C=8007B92C/4 .rodata+50=8007B930/8 .rodata+58=8007B938/8
+80067360	no-own-sections	
+800673F8	typed-evidence	.rodata+0=8007B940/4
+800679A0	no-own-sections	
+80067A24	no-own-sections	
+80067B60	typed-evidence	.rodata+0=8007B958/8 .rodata+8=8007B960/8 .rodata+10=8007B968/8
+80067C38	typed-evidence	.rodata+0=8007B978/8 .rodata+8=8007B980/8 .rodata+10=8007B988/8
+80067CE0	typed-evidence	.rodata+0=8007B990/8
+80067E98	typed-evidence	.rodata+0=8007B998/8 .rodata+8=8007B9A0/8 .rodata+10=8007B9A8/8 .rodata+18=8007B9B0/8
+80067FB0	typed-evidence	.rodata+0=8007B9C0/8 .rodata+8=8007B9C8/8 .rodata+10=8007B9D0/8 .rodata+18=8007B9D8/8 .rodata+20=8007B9E0/8
+80068120	no-own-sections	
+800681A8	no-own-sections	
+80068204	typed-evidence	.rodata+0=8007B9F0/8
+80068280	typed-evidence	.rodata+0=8007B9F8/8
+80068300	no-own-sections	
+800683A0	no-own-sections	
+800683D0	no-own-sections	
+80068404	no-own-sections	
+80068410	typed-evidence	.rodata+0=8007BA00/8 .rodata+8=8007BA08/8
+80068630	typed-evidence	.rodata+0=8007BA10/8 .rodata+8=8007BA18/8 .rodata+10=8007BA20/8 .rodata+18=8007BA28/8 .rodata+20=8007BA30/8 .rodata+28=8007BA38/8
+80068710	typed-evidence	.rodata+0=8007BA40/8 .rodata+8=8007BA48/8 .rodata+10=8007BA50/8 .rodata+18=8007BA58/8
+800687A8	typed-evidence	.rodata+0=8007BA60/8 .rodata+8=8007BA68/8 .rodata+10=8007BA70/8 .rodata+18=8007BA78/8 .rodata+20=8007BA80/8 .rodata+28=8007BA88/8
+80068880	typed-evidence	.rodata+0=8007BA98/8 .rodata+8=8007BAA0/8
+80068AA0	no-own-sections	
+80068B70	no-own-sections	
+80068BE0	no-own-sections	
+80068C20	no-own-sections	
+80068C54	no-own-sections	
+80068C88	no-own-sections	
+80068D84	no-own-sections	
+80068E50	no-own-sections	
+80068F00	no-own-sections	
+80068FC0	no-own-sections	
+80068FE0	no-own-sections	
+80069020	no-own-sections	
+80069140	no-own-sections	
+80069240	no-own-sections	
+80069330	no-own-sections	
+80069430	no-own-sections	
+80069440	no-own-sections	
+80069504	no-own-sections	
+8006987C	no-own-sections	
+800698E8	no-own-sections	
+80069908	no-own-sections	
+80069920	no-own-sections	
+80069B18	no-own-sections	
+80069C00	no-own-sections	
+80069E90	no-own-sections	
+8006AD90	no-own-sections	
+8006ADA4	no-own-sections	
+8006AE84	no-own-sections	
+8006AEB0	no-own-sections	
+8006AF38	no-own-sections	
+8006B104	no-own-sections	

@@ -1,0 +1,39 @@
+{
+  "format": "decomphub.progress/v1",
+  "repository": "https://github.com/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64",
+  "tracks": [
+    {
+      "id": "matching-code",
+      "label": "Matching decompiled C code",
+      "scope": "USA ROM SHA-1 7195ea96d9fe5de065af61f70d55c92c8ee905e6. All catalogued executable functions were independently rebuilt word-exact in verification run v17. Assembly-assisted sources are complete but excluded from ordinary-C credit. Asset regeneration is reported separately.",
+      "measurement": {
+        "kind": "ratio",
+        "completed": 434764,
+        "total": 444672,
+        "unit": "bytes"
+      }
+    },
+    {
+      "id": "matching-functions",
+      "label": "C-decompiled functions",
+      "scope": "USA ROM SHA-1 7195ea96d9fe5de065af61f70d55c92c8ee905e6. All catalogued executable functions were independently rebuilt word-exact in verification run v17. Assembly-assisted sources are complete but excluded from ordinary-C credit. Asset regeneration is reported separately.",
+      "measurement": {
+        "kind": "ratio",
+        "completed": 920,
+        "total": 973,
+        "unit": "functions"
+      }
+    },
+    {
+      "id": "source-complete-code",
+      "label": "Code reproduced from verified source",
+      "scope": "USA ROM SHA-1 7195ea96d9fe5de065af61f70d55c92c8ee905e6. All catalogued executable functions were independently rebuilt word-exact in verification run v17. Assembly-assisted sources are complete but excluded from ordinary-C credit. Asset regeneration is reported separately.",
+      "measurement": {
+        "kind": "ratio",
+        "completed": 444672,
+        "total": 444672,
+        "unit": "bytes"
+      }
+    }
+  ]
+}

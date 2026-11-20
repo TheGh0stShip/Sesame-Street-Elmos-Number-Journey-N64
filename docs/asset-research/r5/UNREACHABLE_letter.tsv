@@ -1,0 +1,220 @@
+func	library	cls	size	status	referenced_by(unreachable code only)	description(matched C)
+func_80000CA8	game	game	424	unreferenced	-	Adds signed byte deltas from an animation record to a position vector.
+func_80000E50	game	game	140	unreferenced	-	stub: compares a word with its earlier value and clears *arg4 when it changed; always returns 1
+func_8000125C	game	game	340	unreferenced	-	controller edge detection: for each connected pad, new-press bits = (held XOR previous) AND held
+func_80001BF8	game	game	120	unreferenced	-	appends gsDPFullSync-like 0xE9 and gsSPEndDisplayList to the current display list
+func_8000C3A0	game	game	184	unreferenced	-	init a scalar first-order smoother {time, target, value, rate = k / period}
+func_8000C458	game	game	304	unreferenced	-	step the scalar smoother to time t in bounded sub-steps (value += (target-value)*dt*rate)
+func_8000C588	game	game	164	unreferenced	-	change the scalar smoother's rate from a new period; returns the old rate
+func_8000C62C	game	game	280	unreferenced	-	init a 3D vector smoother {time, target xyz, value xyz, rate}
+func_8000C744	game	game	596	unreferenced	-	step the 3D vector smoother to time t in bounded sub-steps
+func_8000C998	game	game	184	unreferenced	-	set the 3D smoother's value and/or target vector
+func_8000CA50	game	game	196	unreferenced	-	init an angle smoother with a wrap period {time, target, value, rate, period}
+func_8000CB14	game	game	456	unreferenced	-	step the angle smoother along the shortest wrapped path and re-wrap the result
+func_8000CCDC	game	game	208	unreferenced	-	set the angle smoother's target, wrapped into (-period/2, period/2]
+func_8000CDAC	game	game	192	unreferenced	-	init an s16 smoother {time, target, value, rate}
+func_8000CE6C	game	game	228	unreferenced	-	step the s16 smoother to time t; returns the new value
+func_8000D060	game	game	108	unreferenced	-	reset the frame-timing statistics counters
+func_8000D0CC	game	game	1420	unreferenced	-	Per-frame timing: measures the frame time, frame rate and accumulated lag counters.
+func_8000D658	game	game	56	unreferenced	-	frame-timing setter (D_80070780)
+func_8000D690	game	game	56	unreferenced	-	frame-timing setter (D_8007077C)
+func_8000D6C8	game	game	40	unreferenced	-	frame-timing getter (D_80070774)
+func_8000D6F0	game	game	40	unreferenced	-	frame-timing getter (D_80070778)
+func_8000D718	game	game	52	unreferenced	-	frame-timing setter (D_80070784)
+func_8000D74C	game	game	40	unreferenced	-	frame-timing getter (D_80070784)
+func_8000D774	game	game	52	unreferenced	-	frame-timing: set flag D_8007078C = 1
+func_8000D7A8	game	game	56	unreferenced	-	frame-timing setter (D_80070790)
+func_8000D7E0	game	game	48	unreferenced	-	frame-timing getter (D_80070790)
+func_8000DDB8	game	game	60	unreferenced	-	stores two doubles into globals
+func_8000E2D4	game	game	60	unreferenced	-	disable the cyclic random table (D_80071E5C = 0)
+func_8000E310	game	game	220	unreferenced	-	reposition both cursors of the cyclic random table; returns the old cursor (-1 when disabled)
+func_8000E3EC	game	game	240	unreferenced	-	next value of the cyclic random table (cursor 1) modulo n; -1 when disabled
+func_8000E4DC	game	game	232	unreferenced	-	Returns a + b * next entry of a cyclic table, or a constant when disabled.
+func_8000E5C4	game	game	240	unreferenced	-	next value of the cyclic random table (cursor 2) modulo n; -1 when disabled
+func_8000E6B4	game	game	236	unreferenced	-	Returns base + scale * next value from a cyclic table, or a default when disabled.
+func_8000F468	game	game	1248	referenced only from unreachable code	addr:8000F948	size 0x10
+func_8000F948	game	game	624	unreferenced	-	periodically spawn a randomised particle at an offset rotated by the actor's facing
+func_80010464	game	game	1152	referenced only from unreachable code	addr:800108E4	moves a falling particle and draws it as a camera-facing triangle
+func_800108E4	game	game	236	unreferenced	-	allocates an object at (x, y, z) * 4 with randomised fields
+func_800109D0	game	game	1576	referenced only from unreachable code	addr:80010FF8	move a falling particle and draw it as a camera-facing triangle
+func_80010FF8	game	game	236	unreferenced	-	allocates an object at (x, y, z) * 4 with randomised fields
+func_80016D80	game	game	720	unreferenced	-	picks three distinct slots (avoiding ones rejected by func_80017084) and random values for them
+func_80017050	game	game	52	unreferenced	-	increment counter D_80133E58
+func_80017084	game	game	44	referenced only from unreachable code	call:80016D80	stub: returns 1
+func_800172B8	game	game	96	unreferenced	-	PI-copy a ROM range [start, end) to RAM (wrapper of func_80017318)
+func_80017408	game	game	64	unreferenced	-	stop sound effects: returns at once (the body after the return is dead code)
+func_80017448	game	game	52	referenced only from unreachable code	call:8001747C	stop all libmus effects with id arg0
+func_8001747C	game	game	48	unreferenced	-	stop the effect whose id is in D_800744E0
+func_800174E4	game	game	60	unreferenced	-	count playing libmus effects with an id
+func_800175D0	game	game	136	unreferenced	-	start sound effect n (0..100) through the libmus player
+func_80017658	game	game	76	unreferenced	-	set a libmus effect parameter (func_8004D1EC) when the handle is non-zero
+func_800176A4	game	game	76	unreferenced	-	set a libmus effect pitch-like value (func_8004D0F0) when the handle is non-zero
+func_800176F0	game	game	76	unreferenced	-	set a libmus effect value (func_8004D080) when the handle is non-zero
+func_8001773C	game	game	84	unreferenced	-	set a libmus effect value (func_8004D020) when the handle is non-zero
+func_800184AC	game	game	52	unreferenced	-	set bit 0 of an actor's flags at +0x74
+func_800186A8	game	game	408	unreferenced	-	builds a camera-relative basis from the view matrix D_80075C20 and transforms a point with it
+func_8001D1BC	game	game	1828	unreferenced	-	draws a full-screen CI4 background as textured rectangles
+func_8001DFD0	game	game	304	unreferenced	-	fills a 4x4 float matrix from three basis vectors and a translation
+func_8001E314	game	game	1028	referenced only from unreachable code	call:8001E7EC	project a point by a 4x4 matrix and classify it against the clip volume (prints "DIVIDE BY ZERO!!!" when w == 0)
+func_8001E718	game	game	212	unreferenced	-	draws each display list of a NULL-terminated list whose bounding box passes func_8001E7EC
+func_8001E7EC	game	game	636	referenced only from unreachable code	call:8001E718	bounding-box visibility: projects the 8 corners with func_8001E314
+func_8001EA68	game	game	1024	unreferenced	-	builds a look-at basis (normalised forward, side and up vectors)
+func_8001EE68	game	game	796	unreferenced	-	advance a camera frame along its velocity and re-orthonormalise its axes
+func_8001F184	game	game	68	unreferenced	-	convert a float matrix built by func_8001DD10 into a fixed-point Mtx
+func_8001F248	game	game	184	unreferenced	-	build translate * rotate * scale into a fixed-point Mtx (guRotateF, guScaleF, guMtxCatF)
+func_8001F490	game	game	2200	referenced only from unreachable code	call:8001FD28,call:8001FE48	Samples a translation/rotation/scale keyframe track at time t into a 4x4 matrix.
+func_8001FD28	game	game	288	unreferenced	-	Builds a node matrix, emits matrix + display list commands, recurses into children.
+func_8001FE48	game	game	376	referenced only from unreachable code	call:8001FD28	Recursively emits matrix load, display list and pop matrix for each node of a tree.
+func_80020F60	game	game	124	unreferenced	-	initialise a mini actor (type 2) with update func_80020FDC and destroy func_800210CC
+func_80020FDC	game	game	240	referenced only from unreachable code	addr:80020F60	update of the type-2 mini actor: reacts to pad buttons, ends itself when the game state >= 8
+func_800210CC	game	game	68	referenced only from unreachable code	addr:80020F60	destroy callback: free the actor (func_80040680)
+func_80022B18	game	game	340	unreferenced	-	unpacks fields of an object into locals (results unused)
+func_80023080	game	game	152	unreferenced	-	half the XZ distance between two points of the object's position block
+func_800246EC	game	game	308	referenced only from unreachable code	call:80024820	decay a signed byte pair towards zero by steps of 2
+func_80024820	game	game	572	unreferenced	-	per-frame update: applies offset, calls placement, then registers a callback
+func_800258A4	game	game	348	referenced only from unreachable code	call:80025A00	point-in-box test against an s16 bounding box; on failure computes the nearest point
+func_80025A00	game	game	620	unreferenced	-	distance test of the camera position against a box (uses func_800258A4)
+func_80029EFC	game	game	180	unreferenced	-	is an actor within a squared distance of the player (XZ plane)
+func_8002A07C	game	game	76	unreferenced	-	Sets fields 0x1B4/0x1BC, clears 0x1CC and flag 0x80.
+func_8002A0C8	game	game	88	unreferenced	-	Sets two fields of an object, clears 0x1CC, sets flag 0x80 and clears flag 0x8.
+func_80030198	game	game	48	unreferenced	-	switch to game mode 12 (func_8001D8E0(12))
+func_800301C8	game	game	240	unreferenced	-	level-select text: when D_80075D53 != 0 prints "Level select = %s" with name D_80075D78[D_80075D52] at (70,20)
+func_8003054C	game	game	648	unreferenced	-	sqrt wrapper is a statement-expression macro returning double
+func_800307D4	game	game	680	unreferenced	-	Camera update: builds the view matrices, or follows the player while easing in.
+func_800316BC	game	game	136	unreferenced	-	post a message to the speech/mailbox thread with two arguments and the D_800732A8 table
+func_80035720	game	game	48	unreferenced	-	store an animation index at actor+0x1D4
+func_8003F140	game	game	1784	unreferenced	-	spawn an actor of type 21 (424 bytes) from table D_80076B30, with its mesh and animation
+func_8003F838	game	game	972	referenced only from unreachable code	addr:8003F140	update of the type-21 actor: moves it, ends itself when the game state >= 8
+func_8003FC04	game	game	404	referenced only from unreachable code	addr:8003F838	draw of the type-21 actor: emits combine mode and segment setup then its display list
+func_8003FD98	game	game	56	referenced only from unreachable code	addr:8003F140	destroy callback of the type-21 actor: free it
+func_80040874	game	game	80	unreferenced	-	advance a 16-byte aligned id counter (D_800A8D38 += 16, low bits set)
+func_800408C4	game	game	220	unreferenced	-	free every actor whose id (flags & ~15) equals arg
+func_80041090	game	game	416	unreferenced	-	transform a collision shape by a basis built from two vectors (func_80042398, func_8004256C)
+func_800413A0	game	game	336	unreferenced	-	walk a collider list and run the shape test for each type (3, 1, 12, ...)
+func_80041E78	game	game	232	unreferenced	-	advance a moving sphere along its direction by its remaining distance
+func_80041F60	game	game	524	unreferenced	-	4x4 matrix multiply: dst = a * b, warns if dst aliases an input
+func_8004216C	game	game	260	unreferenced	-	build a diagonal (scale) 4x4 matrix from a vector
+func_80042270	game	game	296	unreferenced	-	build a translation 4x4 matrix from a vector
+func_80042398	game	game	468	referenced only from unreachable code	call:80041090	build a 4x4 basis matrix from two vectors and their cross product
+func_8004256C	game	game	348	referenced only from unreachable code	call:80041090	transform a vector by the 3x3 part of a 4x4 matrix
+func_800445A0	game	game	48	unreferenced	-	clear a two-pointer list head
+func_80044840	game	game	208	unreferenced	-	unlink a node from a doubly linked list and fix the head/tail
+func_800477C0	game	game	1088	unreferenced	-	Catmull-Rom interpolation along a path at parameter t
+func_80047E10	game	game	196	unreferenced	-	send a mail message to every actor of a list that matches a type/id
+func_80048120	game	game	84	unreferenced	-	free an actor's mail queue and its timers, then the actor
+func_80049994	game	game	144	unreferenced	-	call the handler of every timer node of an actor whose id matches
+func_80049A24	game	game	152	referenced only from unreachable code	call:80048120	free every timer node of an actor, calling each handler first
+func_80049C6C	game	game	108	referenced only from unreachable code	call:80048120	free every node of an actor's second list
+func_8004C500	libmus	game	140	unreferenced	-	
+func_8004C58C	libmus	game	36	unreferenced	-	
+func_8004C9E0	libmus	sdk	592	unreferenced	-	Sequence player: run each matching player's command stream up to a 0xAB marker equal to `marker`
+func_8004CCB0	libmus	game	280	referenced only from unreachable code	call:800175D0	play/queue on the pending object, reusing a matching active entry when search is set
+func_8004CE94	libmus	game	128	unreferenced	-	count active entries matching flag bit 1 (unk_78 set) or bit 2 (unk_78 clear)
+func_8004D080	libmus	game	112	referenced only from unreachable code	call:800176F0	size 0x13C
+func_8004D0F0	libmus	game	112	referenced only from unreachable code	call:800176A4	Sets unk_30 = unk_90 + val on every object whose unk_44 equals id; returns how many.
+func_8004D160	libmus	game	140	unreferenced	-	set volume-like value on all entries with id; returns count
+func_8004D2D8	libmus	sdk	36	unreferenced	-	
+func_8004D2FC	libmus	game	12	unreferenced	-	
+func_8004D308	libmus	game	92	unreferenced	-	find entry with id arg0, return its unk_7C
+func_8004D364	libmus	sdk	36	unreferenced	-	posts a type-0 message carrying one argument
+func_8004D3E0	libmus	game	92	unreferenced	-	
+func_8004D4C0	libmus	game	8	unreferenced	-	
+func_8004D4C8	libmus	game	12	unreferenced	-	
+func_8004D4D4	libmus	game	12	unreferenced	-	
+func_8004D4E0	libmus	game	12	unreferenced	-	
+func_8004D4EC	libmus	game	8	unreferenced	-	
+func_8004D4F4	libmus	game	8	unreferenced	-	
+func_8004D4FC	libmus	game	12	unreferenced	-	
+func_8004D508	libmus	game	100	unreferenced	-	Finds the entry whose unk_44 equals id and returns unk_8 of its unk_74 (or unk_78 if NULL).
+func_8004D56C	libmus	game	120	unreferenced	-	looks up entry with id and returns its value from attached object
+func_8004D5E4	libmus	game	12	unreferenced	-	
+func_8004EF48	libmus	game	176	referenced only from unreachable code	call:8004CCB0	initialises an object from a definition and assigns it the next serial id, which it returns
+func_80051474	libmus	game	96	unreferenced	-	is an entity with id arg0 present
+func_80051E80	libmus	sdk	1004	referenced only from unreachable code	call:80054C50	alFxNew variant (libultra drvrnew.c style): allocates the ALFx itself and builds its delay sections
+func_8005364C	libmus	sdk	36	unreferenced	-	extern
+func_80053980	libmus	game	496	unreferenced	-	alFxParamHdl (reverb.c): set one delay-line parameter, selected by (paramID-2)%8, of delay (paramID-2)/8
+func_80054060	libmus	sdk	68	unreferenced	-	alInit: set the audio globals once and create the synthesizer
+func_800540A4	libmus	sdk	60	unreferenced	-	if active, shuts down via func_80054310 and clears the two state words
+func_80054310	libmus	game	16	referenced only from unreachable code	call:800540A4	
+func_800546A0	libmus	game	624	referenced only from unreachable code	call:80054060	n_alSynNew: build the n_audio synthesizer driver from its config
+func_80054C50	libmus	game	80	referenced only from unreachable code	call:800546A0	
+func_80055200	libultra	sdk	912	unreferenced	-	guLookAt (libultra gu/lookat.c), with guLookAtF inlined
+func_80055720	libultra	sdk	240	unreferenced	-	guMtxIdent: load identity into fixed-point Mtx
+func_80055A14	libultra	sdk	140	unreferenced	-	converts a fixed-point matrix to float, then runs a 6-float matrix routine on it
+func_80055C50	libultra	sdk	464	unreferenced	-	guPerspective: perspective projection matrix (guPerspectiveF inlined)
+func_80055E20	libultra	sdk	348	referenced only from unreachable code	call:8001F248	guRotateF
+func_80055F7C	libultra	sdk	388	unreferenced	-	guRotate: build a rotation matrix (float, inlined guRotateF) and convert to fixed point
+func_80056100	libultra	sdk	392	unreferenced	-	guRotateRPYF: roll/pitch/yaw rotation matrix (float)
+func_80056480	libultra	sdk	128	unreferenced	-	guScale (guScaleF inlined)
+func_800566A0	libultra	sdk	472	unreferenced	-	sinf
+func_800570F0	libultra	game	16	unreferenced	-	alSynFreeFX: empty in this build
+func_80057CA4	libultra	sdk	1176	referenced only from unreachable code	call:8005B580	alFxNew: build the reverb/chorus effect from a preset or custom parameter list
+func_8005813C	libultra	sdk	184	referenced only from unreachable code	call:8005AF30	alEnvmixerNew (libultra 2.0F audio/drvrnew.c)
+func_800581F4	libultra	sdk	176	referenced only from unreachable code	call:8005AF30	alLoadNew (libultra audio/drvrnew.c)
+func_800582A4	libultra	sdk	140	referenced only from unreachable code	call:8005AF30	alResampleNew
+func_80058330	libultra	sdk	92	referenced only from unreachable code	call:8005AF30	alAuxBusNew / alMainBusNew (libultra audio/drvrnew.c): init a bus filter
+func_8005838C	libultra	sdk	92	referenced only from unreachable code	call:8005AF30	initialises a type-7 audio filter (alFilterNew) and its three state words
+func_800583E8	libultra	sdk	72	referenced only from unreachable code	call:8005AF30	alSaveNew: init the save filter (AL_SAVE)
+func_80058430	libultra	sdk	1092	referenced only from unreachable code	addr:800581F4,addr:80058C10	alAdpcmPull: ADPCM loader filter command-list builder, with loop handling
+func_80058874	libultra	sdk	924	referenced only from unreachable code	addr:80058C10	alRaw16Pull: 16-bit raw loader filter command-list builder, with loop handling
+func_80058C10	libultra	sdk	428	referenced only from unreachable code	addr:800581F4,call:8005AF30	libultra audio alLoadParam
+func_80058DBC	libultra	game	388	referenced only from unreachable code	call:80058430	emit audio commands: load sample data via dma, optional state reset, decode
+func_80058F40	libultra	sdk	220	referenced only from unreachable code	addr:80058330	alAuxBusPull: clear aux outputs, then pull every source
+func_8005901C	libultra	sdk	52	referenced only from unreachable code	addr:80058330,call:8005AF30	event handler: on message type 2 append data to the object's list
+func_80059050	libultra	sdk	1280	referenced only from unreachable code	addr:8005813C	libultra env.c alEnvmixerPull: process envelope mixer parameter updates and build RSP commands
+func_80059550	libultra	sdk	212	referenced only from unreachable code	addr:8005813C,call:8005AF30	alEnvmixerParam
+func_80059624	libultra	sdk	724	referenced only from unreachable code	call:80059050	libultra env.c _pullSubFrame: envelope mixer RSP commands for a subframe
+func_800598F8	libultra	sdk	224	unreferenced	-	_frexpf (env.c): split value into mantissa in [0.5,1) and binary exponent
+func_800599D8	libultra	sdk	36	unreferenced	-	
+func_800599FC	libultra	game	640	referenced only from unreachable code	call:80059624	Splits x into a mantissa in [0.5, 1) and a power-of-two exponent.
+func_80059C7C	libultra	game	132	referenced only from unreachable code	call:80059050	libultra audio envelope volume step: ivol * rate^(samples/8)
+func_80059D00	libultra	game	32	referenced only from unreachable code	call:80057CA4,call:8005813C,call:800581F4,call:800582A4,call:80058330,call:8005838C,call:800583E8	alFilterNew: initialise an ALFilter
+func_80059D20	libultra	sdk	320	referenced only from unreachable code	addr:8005838C	alMainBusPull: clear main outputs, pull each source and mix its aux outputs into main
+func_80059E60	libultra	sdk	48	referenced only from unreachable code	addr:8005838C,call:8005AF30,call:8005B580	appends a value to a pointer list when the command is 2; returns 0
+func_80059E90	libultra	sdk	492	referenced only from unreachable code	addr:800582A4	alResamplePull: resampler filter command-list builder
+func_8005A07C	libultra	sdk	196	referenced only from unreachable code	addr:800582A4,call:8005AF30	alResampleParam: resampler filter parameter handler
+func_8005A140	libultra	sdk	884	referenced only from unreachable code	addr:80057CA4	alFxPull (libultra audio reverb.c)
+func_8005A6B8	libultra	sdk	536	referenced only from unreachable code	call:8005A140	_loadOutputBuffer (reverb, 2.0I form): load a delay line's output, resampled when chorus-modulated
+func_8005A8D0	libultra	sdk	368	referenced only from unreachable code	call:8005A140,call:8005A6B8	reverb _loadBuffer: DMA a ring-buffer span, split at the wrap
+func_8005AA40	libultra	sdk	368	referenced only from unreachable code	call:8005A140	reverb _saveBuffer: DMA a ring-buffer span, split at the wrap
+func_8005ABB0	libultra	sdk	156	referenced only from unreachable code	call:8005A140	_filterBuffer (reverb.c): emits SETBUFF, LOADADPCM (coefs) and POLEF commands for a low-pass
+func_8005ACE0	libultra	sdk	168	referenced only from unreachable code	addr:800583E8	alSavePull
+func_8005AD88	libultra	sdk	40	referenced only from unreachable code	addr:800583E8,call:8005AF30	parameter setter switch: 1 -> unk_00, 6 -> unk_14
+func_8005ADB0	libultra	sdk	44	unreferenced	-	extern
+func_8005ADDC	libultra	sdk	48	unreferenced	-	if D_800776F0 is set, call func_8005B570 and clear it
+func_8005AF30	libultra	sdk	716	referenced only from unreachable code	call:8005ADB0	alSynNew: initialise the synthesis driver from a config
+func_8005B1FC	libultra	sdk	432	unreferenced	-	libultra audio alAudioFrame
+func_8005B3AC	libultra	game	44	unreferenced	-	__allocParam: pop an ALParam off the synth driver's free list
+func_8005B3D8	libultra	game	24	referenced only from unreachable code	call:80059050	push a node onto the pool's free list
+func_8005B3F0	libultra	sdk	84	referenced only from unreachable code	call:8005B1FC	moves every node of the list at +0x14 back onto the free list at +0x4 (alUnlink / alLink)
+func_8005B444	libultra	sdk	64	referenced only from unreachable code	call:80059050	_freePVoice: move a voice from the allocated list to the lame list
+func_8005B484	libultra	sdk	72	referenced only from unreachable code	call:8005B1FC	converts ticks to microseconds: ticks * uspt / 1e6, rounded
+func_8005B4CC	libultra	sdk	76	unreferenced	-	convert microseconds to output samples, rounded and aligned to 16
+func_8005B518	libultra	sdk	88	referenced only from unreachable code	call:8005B1FC	__nextSampleTime: find the client with the earliest next sample time
+func_8005B570	libultra	game	16	referenced only from unreachable code	call:8005ADDC	alSynDelete
+func_8005B580	libultra	sdk	160	referenced only from unreachable code	call:8005AF30	set up entry idx of p->unk_34 (its sub-object at 0x20), register it, and return it
+func_8005B6F0	libultra	game	8	unreferenced	-	Provisional declarations recovered from machine code by n64dk. Evidence, not truth.
+func_8005B704	libultra	game	36	unreferenced	-	
+func_8005E860	libultra	sdk	256	unreferenced	-	osLeoDiskInit
+func_8005F86C	libultra	sdk	72	unreferenced	-	osSyncPrintf: formats through _Printf when a print hook is installed
+func_8005FAC0	libultra	sdk	144	unreferenced	-	osScRemoveClient: unlink a client from the scheduler
+func_8005FF14	libultra	sdk	84	unreferenced	-	__scTaskReady: task may run unless a framebuffer swap is pending
+func_800603C0	libultra	sdk	176	referenced only from unreachable code	call:80055E20,call:80055F7C	guNormalize
+func_80061CF0	libultra	sdk	208	unreferenced	-	one-time creates a queue bound to OS event 15, stores two values, polls func_80061AD0 until it succeeds, then waits for the event
+func_80062F70	libultra	sdk	1292	unreferenced	-	__osLeoInterrupt (libultra io/leointerrupt.c)
+func_8006347C	libultra	sdk	208	referenced only from unreachable code	call:80062F70	__osLeoAbnormalResume: reset the disk ASIC buffer manager, resume, re-enable PI interrupts
+func_8006354C	libultra	sdk	180	referenced only from unreachable code	call:80062F70,call:8006347C	send a fixed event message to its queue without blocking (interrupt-side osSendMesg)
+func_800648AC	libultra	game	8	unreferenced	-	Spins forever.
+func_80067C38	libm/libc/libgcc	game	168	unreferenced	-	acos
+func_80068120	libm/libc/libgcc	game	136	referenced only from unreachable code	call:800681A8,call:80068204,call:80068280	truncates a double toward zero by masking off fraction bits
+func_800681A8	libm/libc/libgcc	game	92	referenced only from unreachable code	call:8000CB14,call:8000CCDC	extern
+func_80068204	libm/libc/libgcc	game	124	unreferenced	-	rounds via 80068120 and adds 1.0 when x >= 0 and result != x (ceil-like)
+func_80068280	libm/libc/libgcc	game	128	unreferenced	-	floor(): truncate, step down for negative non-integers
+func_800683A0	libm/libc/libgcc	game	48	unreferenced	-	extern
+func_800687A8	libm/libc/libgcc	game	216	unreferenced	-	tangent: reduce by pi, small values return x, else sin/cos ratio
+func_80068C20	libm/libc/libgcc	game	52	unreferenced	-	hand-written asm tail of a 64-bit unsigned compare: (a0:a1) vs (a2:a3); branches into the neighbouring less-than / greater-than exits at 0x80068C10 / 0x80068C18
+func_80068C54	libm/libc/libgcc	game	52	unreferenced	-	64-bit multiply (a0:a1 * a2:a3), low 64 bits in v0:v1
+func_80068F00	libm/libc/libgcc	game	192	unreferenced	-	signed 64-bit remainder/divide wrapper: negates negative operands, calls the unsigned routine with ra kept in t5, negates the result
+func_80069240	libm/libc/libgcc	game	240	unreferenced	-	float (f12) to 64-bit integer conversion, saturating to 0x80000000:00000000 on overflow
+func_80069908	GSM	game	24	unreferenced	-	
+func_80069C00	GSM	game	656	unreferenced	-	unpacks a bit-packed frame header (5 bytes) and 4 sub-blocks (7 bytes each), then decodes

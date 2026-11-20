@@ -1,0 +1,15 @@
+letter	8000C164	init; the nop before the infinite else-loop needs an (unused) label before for(;;) -- ugly but only form found
+letter	80036480	stores after sin/cos calls need a register Actor* local reassigned from arg0 before each store (ugly form, s0)
+letter	800367C4	s0 from block-scoped register Obj *q = p before each sin/cos store (ugly form)
+letter	80036B08	actor update/face target; store-after-call via $s0 needs a register Actor *p = a before each store (ugly but only form found; lhs-first tree shapes ruled 
+letter	80038EEC	ugly: rhs written (a = a, f(a)) so the call is not pre-expanded and obj ptr is held in s0 over the call (target probably used a COMPOUND/COND-wrapped call
+letter	8003B5D8	nested if with early return; empty else {} kept (ugly but needed)
+letter	8003CF50	ugly-only forms: ({ call; }) on rhs to get lhs-first evaluation (s1), if (1) {...} else {} for an extra jump level, filler locals; vectors via (&v)->x mac
+letter	80049CF8	outer loop as label+goto (ugly form only one matching)
+letter	8004D508	UGLY: needs empty __asm__("" :: "r"(e)) after the table load. sreg dumps: table pseudo (2 refs/4 insns, prio .5) ranked below count (3 refs/5, .6) in glob
+letter	8004DA5C	env pointer via inline helper doing integer (i*7 + (u32)base) (ugly cast form only); rate reused for env bytes; vol local reused for bend byte; n as terna
+letter	8004E9E0	fixes: one f32 local f reused for both sign-extended values; Num* n reused (cast) as the Item pointer; s32 v=unk_0; v+=arg1; store v. Cast-reuse of n is u
+number	80025DF0	display list; needs unused s32[2] local after g for 0x18 frame (ugly)
+number	8003B6D8	register Actor* reassigned before stores after calls (ugly form, s0)
+number	8003E078	chained `goto L1; L1: goto L2; L2:` needed to reproduce two consecutive jumps; no cleaner spelling found
+number	80040E34	empty `else { }` followed by a separate `if` needed for a jump-to-next instruction

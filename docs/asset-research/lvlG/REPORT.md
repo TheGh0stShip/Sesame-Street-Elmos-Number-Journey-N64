@@ -1,0 +1,6 @@
+# lvlG report: Number Journey street, dunk, bump, mansion
+Territory: 402,620 bytes outside lvlB graphics and lvlC (street 171,377; dunk 2,261; bump 128,945; mansion 100,037). MAP.tsv: 540 rows tiling the territory; check: 540 items, 0 mismatches.
+Bytes per class: morph_anim 360,820; texture 17,536; palette 6,720; texload_dl 1,920; vertex_runs 2,912; coll_quad 3,440; coll_quad_ptrs 172; coll_quad_set 120; mesh_bbox 576; mesh_header_tail 96; display_list 48; pad 1,572; unknown 6,688 (all in bump).
+Findings: 16 vertex morph animations (sprA format) reached via D_800768A0 entries 10-15, func_8003D3D0 (mesh header +0x28), and table 0x80077494. data_off = (hdr_end + 8) & ~7. Animation vertex counts equal mesh run-list unique-vertex counts (94, 78, 52, 72, 318). Collision quads (0x50-byte type-3 shapes) for character actors via func_80023A38. Model header is 0x28 bytes (+0x24 = bbox pointer).
+Unreferenced (probably unused): animations street 0x741D0, bump 0x6A3E0/0x71B48/0x74818, mansion 0x39AF0; 15 texture-load display lists with palettes/textures (street 9, mansion 6).
+Unknown: bump four all-zero 0x600 blocks (0x262C0, 0x30250, 0x3A1E0, 0x44170) and 0x4FB80 (0x220 bytes, looks like 16-colour TLUT + CI4 32x32); nothing references them.

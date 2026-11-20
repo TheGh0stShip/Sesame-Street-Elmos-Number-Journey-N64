@@ -1,0 +1,19 @@
+struct gd_204_s32 { u8 pad[0x204]; s32 v; };
+extern s16 D_800A7F6A;
+extern u16 D_80107CBA;
+extern u8 D_80107CF0;
+extern s8 D_8012F150;
+s32 func_800375A8();
+
+void f(s32 arg0) {
+    if (((struct gd_204_s32 *)arg0)->v != 0) {
+        func_800375A8(arg0, 23);
+    }
+    if (((D_80107CBA & 0x1000) & 0xFFFF) != 0) {
+        if (D_80107CF0 != 0) {
+            D_8012F150 = 1;
+            D_800A7F6A = 0;
+        } else {
+        }
+    }
+}

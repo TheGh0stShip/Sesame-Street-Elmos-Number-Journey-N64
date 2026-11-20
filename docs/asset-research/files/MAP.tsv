@@ -1,0 +1,146 @@
+game	rom_start	rom_end	class	format	description	reference	extractor
+letter	0x07C6B0	0x0A54D0	gfx	raw_screen_images	menu22: mode 22 screen images: raw, PI-copied to 0x80154000 (0x200-byte TLUT followed by image, drawn by func_8001CAA8; 0x12E00-byte slots at 0x80154000/0x80166E00/0x80179C00/0x8018CA00)	func_8001D9D0 case 22 -> func_80017318	files/tools/extract_files.py
+letter	0x0A54D0	0x10D0F0	gfx	raw_screen_images	menu21: mode 21 screen images: raw, PI-copied to 0x80154000	func_8001D9D0 case 21 -> func_80017318	files/tools/extract_files.py
+letter	0x10D0F0	0x1BF6F0	gfx	raw_prelinked	common: shared world data loaded after every level: raw, PI-copied to 0x8024B000	func_8001D9D0 (all cases) -> func_80017318	files/tools/extract_files.py
+letter	0x1BF6F0	0x204CFA	files	gzip(deflate, FNAME "streetab.bif")	streetab.bif: level 2 (Sesame Street hub) world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 509070 bytes	func_8001D9D0 case 2 -> func_80013560 (inflate to 0x80154000)	files/tools/extract_files.py
+letter	0x204CFA	0x204D00	pad	junk	streetab.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001D9D0 case 2 -> func_80013560 (inflate to 0x80154000)	files/tools/extract_files.py
+letter	0x204D00	0x227B97	files	gzip(deflate, FNAME "chute.bif")	chute.bif: level 16 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 259860 bytes	func_8001D9D0 case 16 -> func_80013560	files/tools/extract_files.py
+letter	0x227B97	0x227BA0	pad	junk	chute.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001D9D0 case 16 -> func_80013560	files/tools/extract_files.py
+letter	0x227BA0	0x243E18	files	gzip(deflate, FNAME "manor.bif")	manor.bif: level 15 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 263356 bytes	func_8001D9D0 case 15 -> func_80013560	files/tools/extract_files.py
+letter	0x243E18	0x243E20	pad	junk	manor.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001D9D0 case 15 -> func_80013560	files/tools/extract_files.py
+letter	0x243E20	0x2604A6	files	gzip(deflate, FNAME "orchard.bif")	orchard.bif: level 18 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 283384 bytes	func_8001D9D0 case 18 -> func_80013560	files/tools/extract_files.py
+letter	0x2604A6	0x2604B0	pad	junk	orchard.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001D9D0 case 18 -> func_80013560	files/tools/extract_files.py
+letter	0x2604B0	0x28FDA4	files	gzip(deflate, FNAME "garden.bif")	garden.bif: level 17 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 362576 bytes	func_8001D9D0 case 17 -> func_80013560	files/tools/extract_files.py
+letter	0x28FDA4	0x28FDB0	pad	junk	garden.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001D9D0 case 17 -> func_80013560	files/tools/extract_files.py
+letter	0x28FDB0	0x2ACF97	files	gzip(deflate, FNAME "space.bif")	space.bif: level 14 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 245496 bytes	func_8001D9D0 case 14 -> func_80013560	files/tools/extract_files.py
+letter	0x2ACF97	0x2ACFA0	pad	junk	space.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001D9D0 case 14 -> func_80013560	files/tools/extract_files.py
+letter	0x2ACFA0	0x2D1FA6	files	gzip(deflate, FNAME "planet.bif")	planet.bif: level 13 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 346524 bytes	func_8001D9D0 case 13 -> func_80013560	files/tools/extract_files.py
+letter	0x2D1FA6	0x2D1FB0	pad	junk	planet.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001D9D0 case 13 -> func_80013560	files/tools/extract_files.py
+letter	0x2D1FB0	0x2F9B52	files	gzip(deflate, FNAME "bonusabc.bif")	bonusabc.bif: level 19 (bonus) world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 354072 bytes	func_8001D9D0 case 19 -> func_80013560	files/tools/extract_files.py
+letter	0x2F9B52	0x2F9B60	pad	junk	bonusabc.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001D9D0 case 19 -> func_80013560	files/tools/extract_files.py
+letter	0x2F9B60	0x2FBD50	music	libmus_song	song_unref0: libmus song (header 0x215), not referenced by any code	none (unused)	files/tools/extract_files.py
+letter	0x2FBD50	0x2FE8D0	audio_bank	libmus_ptrbank	sfx.ptr: sound-effect pointer bank "N64 PtrTablesV2"	func_800170B0 -> func_80017318 to 0x800B0CA0; musConfig.ptr	files/tools/extract_files.py
+letter	0x2FE8D0	0x3E3FB0	audio_bank	libmus_wavebank	sfx.wbk: sound-effect wave bank "N64 WaveTables", ROM-resident (DMA on demand)	func_800170B0 musConfig.wbk = D_002FE8D0	files/tools/extract_files.py
+letter	0x3E3FB0	0x3E4830	audio_bank	libmus_fxbank	sfx.fx: libmus default effect bank	func_800170B0 -> func_80017318 to 0x80115390; musConfig.default_fxbank	files/tools/extract_files.py
+letter	0x3E4830	0x3EA160	audio_bank	libmus_ptrbank	music.ptr: music instrument pointer bank	func_8001892C -> func_80017318 (heap); MusPtrBankInitialize	files/tools/extract_files.py
+letter	0x3EA160	0x4D9D80	audio_bank	libmus_wavebank	music.wbk: music wave bank, ROM-resident	func_8001892C (wbk = D_003EA160)	files/tools/extract_files.py
+letter	0x4D9D80	0x4DB3E0	music	libmus_song	song_4D9D80: song	func_80018A60 / func_8003AB7C -> func_8001892C	files/tools/extract_files.py
+letter	0x4DB3E0	0x4DD320	music	libmus_song	song_4DB3E0: song	func_80018A60 -> func_8001892C	files/tools/extract_files.py
+letter	0x4DD320	0x4E32C0	music	libmus_song	song_4DD320: song (only its end is referenced: unused)	none (unused)	files/tools/extract_files.py
+letter	0x4E32C0	0x4EA530	music	libmus_song	song_4E32C0: song	func_80018A60 case 19	files/tools/extract_files.py
+letter	0x4EA530	0x4EADF0	music	libmus_song	song_4EA530: song (jingle)	func_8003AB7C	files/tools/extract_files.py
+letter	0x4EADF0	0x4F1850	music	libmus_song	song_4EADF0: song	func_80018A60 case 18	files/tools/extract_files.py
+letter	0x4F1850	0x4F2030	music	libmus_song	song_4F1850: song (jingle)	func_8003A650 case 18	files/tools/extract_files.py
+letter	0x4F2030	0x4FA460	music	libmus_song	song_4F2030: song	func_80018A60 case 17	files/tools/extract_files.py
+letter	0x4FA460	0x4FAC20	music	libmus_song	song_4FA460: song (jingle)	func_8003A650 case 17	files/tools/extract_files.py
+letter	0x4FAC20	0x501130	music	libmus_song	song_4FAC20: song	func_80018A60 case 15	files/tools/extract_files.py
+letter	0x501130	0x501820	music	libmus_song	song_501130: song (jingle)	func_8003A650 case 15	files/tools/extract_files.py
+letter	0x501820	0x507070	music	libmus_song	song_501820: song	func_80018A60 case 16	files/tools/extract_files.py
+letter	0x507070	0x507890	music	libmus_song	song_507070: song (jingle)	func_8003A650 case 16	files/tools/extract_files.py
+letter	0x507890	0x50C970	music	libmus_song	song_507890: song	func_80018A60 cases 13/14	files/tools/extract_files.py
+letter	0x50C970	0x50D000	music	libmus_song	song_50C970: song (jingle)	func_8003A650 cases 13/14	files/tools/extract_files.py
+letter	0x50D000	0x50F9E0	music	libmus_song	song_50D000: song	func_8003AB7C	files/tools/extract_files.py
+letter	0x50F9E0	0x510A10	music	libmus_song	song_unref1: libmus song (header 0x215), not referenced (only its start is an end symbol)	none (unused)	files/tools/extract_files.py
+letter	0x510A10	0x61AFB0	speech	mort_clips	clips: "MORT" voice/sound clip region played by the sequencer thread func_80012FA0 -> func_80051314 -> func_80069440; clip table {u32 rom, s16 ms} in .data (e.g. 0x800733C8 = ROM 0x73FC8)	.data clip tables (func_8002AB50 etc.)	files/tools/extract_files.py
+letter	0x61AFB0	0x620ED0	sprite_anim	sprite_anim	anim_61AFB0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x620ED0	0x624460	sprite_anim	sprite_anim	anim_620ED0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x624460	0x633220	sprite_anim	sprite_anim	anim_624460: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x633220	0x644970	sprite_anim	sprite_anim	anim_633220: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x644970	0x657E70	sprite_anim	sprite_anim	anim_644970: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x657E70	0x668FD0	sprite_anim	sprite_anim	anim_657E70: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x668FD0	0x67BEE0	sprite_anim	sprite_anim	anim_668FD0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x67BEE0	0x68B260	sprite_anim	sprite_anim	anim_67BEE0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x68B260	0x698AE0	sprite_anim	sprite_anim	anim_68B260: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x698AE0	0x6A0760	sprite_anim	sprite_anim	anim_698AE0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x6A0760	0x6A2D50	sprite_anim	sprite_anim	anim_6A0760: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x6A2D50	0x6B4150	sprite_anim	sprite_anim	anim_6A2D50: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x6B4150	0x6C4A80	sprite_anim	sprite_anim	anim_6B4150: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x6C4A80	0x6D5E80	sprite_anim	sprite_anim	anim_6C4A80: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x6D5E80	0x6E3190	sprite_anim	sprite_anim	anim_6D5E80: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x6E3190	0x6F19C0	sprite_anim	sprite_anim	anim_6E3190: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x6F19C0	0x6F9020	sprite_anim	sprite_anim	anim_6F19C0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x6F9020	0x70A5D0	sprite_anim	sprite_anim	anim_6F9020: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x70A5D0	0x718E00	sprite_anim	sprite_anim	anim_70A5D0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x718E00	0x71F230	sprite_anim	sprite_anim	anim_718E00: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x71F230	0x7307E0	sprite_anim	sprite_anim	anim_71F230: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x7307E0	0x73CBA0	sprite_anim	sprite_anim	anim_7307E0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x73CBA0	0x73F930	sprite_anim	sprite_anim	anim_73CBA0: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x73F930	0x741920	sprite_anim	sprite_anim	anim_73F930: sprite animation file loaded whole into RAM by thread func_80026920	func_800272C8 / func_80026B70 (D_80106874/D_800A75E0)	
+letter	0x741920	0x800000	pad	zero	tail: unused cartridge space, all 0x00	none	files/tools/extract_files.py
+number	0x07CB20	0x0A5940	gfx	raw_screen_images	menu22: mode 22 screen images: raw, PI-copied to 0x80154000	func_8001E2CC case 22 -> func_80017788	files/tools/extract_files.py
+number	0x0A5940	0x10D560	gfx	raw_screen_images	menu21: mode 21 screen images: raw, PI-copied to 0x80154000	func_8001E2CC case 21 -> func_80017788	files/tools/extract_files.py
+number	0x10D560	0x177680	gfx	raw_prelinked	common: shared world data: raw, PI-copied to 0x8024B000	func_8001E2CC (all cases) -> func_80017788	files/tools/extract_files.py
+number	0x177680	0x1BCE88	files	gzip(deflate, FNAME "street.bif")	street.bif: level 1 (hub) world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 509902 bytes	func_8001E2CC case 1 -> func_800139D0 (inflate)	files/tools/extract_files.py
+number	0x1BCE88	0x1BCE90	pad	junk	street.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001E2CC case 1 -> func_800139D0 (inflate)	files/tools/extract_files.py
+number	0x1BCE90	0x1D6C94	files	gzip(deflate, FNAME "dunk.bif")	dunk.bif: level 9 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 237750 bytes	func_8001E2CC case 9	files/tools/extract_files.py
+number	0x1D6C94	0x1D6CA0	pad	junk	dunk.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001E2CC case 9	files/tools/extract_files.py
+number	0x1D6CA0	0x206CB8	files	gzip(deflate, FNAME "bump.bif")	bump.bif: level 10 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 488874 bytes	func_8001E2CC case 10	files/tools/extract_files.py
+number	0x206CB8	0x206CC0	pad	junk	bump.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001E2CC case 10	files/tools/extract_files.py
+number	0x206CC0	0x22EC01	files	gzip(deflate, FNAME "mansion.bif")	mansion.bif: level 8 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 305762 bytes	func_8001E2CC case 8	files/tools/extract_files.py
+number	0x22EC01	0x22EC10	pad	junk	mansion.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001E2CC case 8	files/tools/extract_files.py
+number	0x22EC10	0x25AF7D	files	gzip(deflate, FNAME "maze.bif")	maze.bif: level 7 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 376982 bytes	func_8001E2CC case 7	files/tools/extract_files.py
+number	0x25AF7D	0x25AF80	pad	junk	maze.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001E2CC case 7	files/tools/extract_files.py
+number	0x25AF80	0x27ADBC	files	gzip(deflate, FNAME "ski.bif")	ski.bif: level 6 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 275326 bytes	func_8001E2CC case 6	files/tools/extract_files.py
+number	0x27ADBC	0x27ADC0	pad	junk	ski.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001E2CC case 6	files/tools/extract_files.py
+number	0x27ADC0	0x2B8FC3	files	gzip(deflate, FNAME "river.bif")	river.bif: level 5 world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 442490 bytes	func_8001E2CC case 5	files/tools/extract_files.py
+number	0x2B8FC3	0x2B8FD0	pad	junk	river.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001E2CC case 5	files/tools/extract_files.py
+number	0x2B8FD0	0x2E6FBE	files	gzip(deflate, FNAME "bonus123.bif")	bonus123.bif: level 11 (bonus) world file (prelinked RAM image for 0x80154000: RGBA16/CI textures, vertices, F3DEX display lists with absolute 0x8015xxxx pointers, level tables); inflates to 328682 bytes	func_8001E2CC case 11	files/tools/extract_files.py
+number	0x2E6FBE	0x2E6FC0	pad	junk	bonus123.bif.pad: alignment fill to 16 bytes after the gzip trailer (non-zero leftover bytes; inside the loaded range, ignored by inflate)	func_8001E2CC case 11	files/tools/extract_files.py
+number	0x2E6FC0	0x2E9A90	audio_bank	libmus_ptrbank	sfx.ptr: sound-effect pointer bank	func_80017520 -> func_80017788 to 0x800B10A0; musConfig.ptr	files/tools/extract_files.py
+number	0x2E9A90	0x3CB0C0	audio_bank	libmus_wavebank	sfx.wbk: sound-effect wave bank, ROM-resident	func_80017520 musConfig.wbk	files/tools/extract_files.py
+number	0x3CB0C0	0x3CB880	audio_bank	libmus_fxbank	sfx.fx: libmus default effect bank	func_80017520 -> func_80017788 to 0x80115530	files/tools/extract_files.py
+number	0x3CB880	0x3D0980	audio_bank	libmus_ptrbank	music.ptr: music pointer bank	func_8001933C	files/tools/extract_files.py
+number	0x3D0980	0x4B00C0	audio_bank	libmus_wavebank	music.wbk: music wave bank, ROM-resident	func_8001933C (wbk = D_003D0980)	files/tools/extract_files.py
+number	0x4B00C0	0x4B8E70	music	libmus_song	song_4B00C0: song	func_80019470	files/tools/extract_files.py
+number	0x4B8E70	0x4BA590	music	libmus_song	song_4B8E70: song	func_80019470 / func_8003C494	files/tools/extract_files.py
+number	0x4BA590	0x4BC400	music	libmus_song	song_4BA590: song	func_80019470	files/tools/extract_files.py
+number	0x4BC400	0x4BCB50	music	libmus_song	song_4BC400: song	func_8003BF64	files/tools/extract_files.py
+number	0x4BCB50	0x4C12F0	music	libmus_song	song_4BCB50: song	func_80019470	files/tools/extract_files.py
+number	0x4C12F0	0x4C1970	music	libmus_song	song_4C12F0: song	func_8003BF64	files/tools/extract_files.py
+number	0x4C1970	0x4C6350	music	libmus_song	song_4C1970: song	func_80019470	files/tools/extract_files.py
+number	0x4C6350	0x4C69A0	music	libmus_song	song_4C6350: song	func_8003BF64	files/tools/extract_files.py
+number	0x4C69A0	0x4CB8D0	music	libmus_song	song_4C69A0: song	func_80019470	files/tools/extract_files.py
+number	0x4CB8D0	0x4CBCD0	music	libmus_song	song_4CB8D0: song	func_8003BF64	files/tools/extract_files.py
+number	0x4CBCD0	0x4CFEC0	music	libmus_song	song_4CBCD0: song	func_80019470	files/tools/extract_files.py
+number	0x4CFEC0	0x4D0690	music	libmus_song	song_4CFEC0: song	func_8003BF64	files/tools/extract_files.py
+number	0x4D0690	0x4D7C90	music	libmus_song	song_4D0690: song	func_80019470	files/tools/extract_files.py
+number	0x4D7C90	0x4D83F0	music	libmus_song	song_4D7C90: song	func_8003BF64	files/tools/extract_files.py
+number	0x4D83F0	0x4DF7C0	music	libmus_song	song_4D83F0: song	func_80019470	files/tools/extract_files.py
+number	0x4DF7C0	0x4E0870	music	libmus_song	song_4DF7C0: song	func_800287AC	files/tools/extract_files.py
+number	0x4E0870	0x4E1090	music	libmus_song	song_4E0870: song	func_8003C494	files/tools/extract_files.py
+number	0x4E1090	0x4E7620	music	libmus_song	song_4E1090: song	func_80019470	files/tools/extract_files.py
+number	0x4E7620	0x4E9810	music	libmus_song	song_4E7620: song	func_8003C494	files/tools/extract_files.py
+number	0x4E9810	0x61F510	speech	mort_clips	clips: "MORT" voice/sound clip region played by func_80012FA0 -> func_80051314; clip table {u32 rom, s16 ms} in .data (ROM 0x75700..0x75B30)	.data clip tables	files/tools/extract_files.py
+number	0x61F510	0x625430	sprite_anim	sprite_anim	anim_61F510: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x625430	0x6289C0	sprite_anim	sprite_anim	anim_625430: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x6289C0	0x637780	sprite_anim	sprite_anim	anim_6289C0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x637780	0x6482F0	sprite_anim	sprite_anim	anim_637780: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0	
+number	0x6482F0	0x6505B0	sprite_anim	sprite_anim	anim_6482F0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x6505B0	0x6634C0	sprite_anim	sprite_anim	anim_6505B0: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0	
+number	0x6634C0	0x674C10	sprite_anim	sprite_anim	anim_6634C0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x674C10	0x67C2F0	sprite_anim	sprite_anim	anim_674C10: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x67C2F0	0x687B30	sprite_anim	sprite_anim	anim_67C2F0: sprite animation file loaded whole into RAM by the streaming thread (unused: start never referenced)	none (unused)	
+number	0x687B30	0x691BB0	sprite_anim	sprite_anim	anim_687B30: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x691BB0	0x6A44D0	sprite_anim	sprite_anim	anim_691BB0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x6A44D0	0x6A99B0	sprite_anim	sprite_anim	anim_6A44D0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x6A99B0	0x6B92E0	sprite_anim	sprite_anim	anim_6A99B0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x6B92E0	0x6C6700	sprite_anim	sprite_anim	anim_6B92E0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x6C6700	0x6D25E0	sprite_anim	sprite_anim	anim_6C6700: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x6D25E0	0x6E3450	sprite_anim	sprite_anim	anim_6D25E0: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0	
+number	0x6E3450	0x6F8CF0	sprite_anim	sprite_anim	anim_6E3450: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x6F8CF0	0x701190	sprite_anim	sprite_anim	anim_6F8CF0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x701190	0x712000	sprite_anim	sprite_anim	anim_701190: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0	
+number	0x712000	0x723E50	sprite_anim	sprite_anim	anim_712000: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x723E50	0x732CF0	sprite_anim	sprite_anim	anim_723E50: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x732CF0	0x739C20	sprite_anim	sprite_anim	anim_732CF0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x739C20	0x75F380	sprite_anim	sprite_anim	anim_739C20: sprite animation file loaded whole into RAM by the streaming thread (unused: start never referenced)	none (unused)	
+number	0x75F380	0x7710B0	sprite_anim	sprite_anim	anim_75F380: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x7710B0	0x780C00	sprite_anim	sprite_anim	anim_7710B0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x780C00	0x78E0B0	sprite_anim	sprite_anim	anim_780C00: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x78E0B0	0x79CD90	sprite_anim	sprite_anim	anim_78E0B0: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0	
+number	0x79CD90	0x7AB810	sprite_anim	sprite_anim	anim_79CD90: sprite animation file loaded whole into RAM by the streaming thread (unused: start never referenced)	none (unused)	
+number	0x7AB810	0x7B35C0	sprite_anim	sprite_anim	anim_7AB810: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x7B35C0	0x7BB850	sprite_anim	sprite_anim	anim_7B35C0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x7BB850	0x7C57E0	sprite_anim	sprite_anim	anim_7BB850: sprite animation file loaded whole into RAM by the streaming thread	func_80027FE0	
+number	0x7C57E0	0x7CE410	sprite_anim	sprite_anim	anim_7C57E0: sprite animation file loaded whole into RAM by the streaming thread	func_800287AC	
+number	0x7CE410	0x800000	pad	zero	tail: unused cartridge space, all 0x00	none	files/tools/extract_files.py

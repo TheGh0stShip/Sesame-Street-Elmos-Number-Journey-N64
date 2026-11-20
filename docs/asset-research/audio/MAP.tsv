@@ -1,0 +1,702 @@
+game	rom_start	rom_end	class	format	description	referenced_by	extractor
+letter	0x2FBD50	0x2FE8D0	audio	libmus ptr bank (N64 PtrTablesV2)	instrument bank 1: header, 63 wave-table entries, ADPCM books and loops, base notes, detunes	default bank for sound effects: config.ptr/wbk in func_800170B0, relocated by func_8004E9E0 (letter)	tools/extract_audio.py
+letter	0x2FE8D0	0x2FE8E0	audio	N64 WaveTables header	wave bank 1 signature	sample addresses = wave bank ROM address + entry base (func_8004E9E0)	tools/extract_audio.py
+letter	0x2FE8E0	0x3008CC	audio	VADPCM sample	bank1 wave 0, 908 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3008CC	0x3008D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3008D0	0x30359A	audio	VADPCM sample	bank1 wave 1, 1274 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x30359A	0x3035A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3035A0	0x313F29	audio	VADPCM sample	bank1 wave 2, 7553 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x313F29	0x313F30	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x313F30	0x314572	audio	VADPCM sample	bank1 wave 3, 178 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x314572	0x314580	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x314580	0x3147A5	audio	VADPCM sample	bank1 wave 4, 61 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3147A5	0x3147B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3147B0	0x31532F	audio	VADPCM sample	bank1 wave 5, 327 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x31532F	0x315330	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x315330	0x315624	audio	VADPCM sample	bank1 wave 6, 84 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x315624	0x315630	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x315630	0x31966B	audio	VADPCM sample	bank1 wave 7, 1827 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x31966B	0x319670	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x319670	0x31AD89	audio	VADPCM sample	bank1 wave 8, 657 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x31AD89	0x31AD90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x31AD90	0x31B6C6	audio	VADPCM sample	bank1 wave 9, 262 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x31B6C6	0x31B6D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x31B6D0	0x31C045	audio	VADPCM sample	bank1 wave 10, 269 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x31C045	0x31C050	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x31C050	0x31CDAC	audio	VADPCM sample	bank1 wave 11, 380 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x31CDAC	0x31CDB0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x31CDB0	0x31D9E3	audio	VADPCM sample	bank1 wave 12, 347 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x31D9E3	0x31D9F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x31D9F0	0x31EC5C	audio	VADPCM sample	bank1 wave 13, 524 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x31EC5C	0x31EC60	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x31EC60	0x3218C7	audio	VADPCM sample	bank1 wave 14, 1263 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3218C7	0x3218D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3218D0	0x323340	audio	VADPCM sample	bank1 wave 15, 752 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x323340	0x3248B2	audio	VADPCM sample	bank1 wave 16, 610 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3248B2	0x3248C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3248C0	0x325424	audio	VADPCM sample	bank1 wave 17, 324 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x325424	0x325430	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x325430	0x326492	audio	VADPCM sample	bank1 wave 18, 466 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x326492	0x3264A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3264A0	0x326FB3	audio	VADPCM sample	bank1 wave 19, 315 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x326FB3	0x326FC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x326FC0	0x32FF30	audio	VADPCM sample	bank1 wave 20, 4080 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x32FF30	0x331B74	audio	VADPCM sample	bank1 wave 21, 804 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x331B74	0x331B80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x331B80	0x3384C2	audio	VADPCM sample	bank1 wave 22, 2994 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3384C2	0x3384D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3384D0	0x341CB9	audio	VADPCM sample	bank1 wave 23, 4321 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x341CB9	0x341CC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x341CC0	0x3453F2	audio	VADPCM sample	bank1 wave 24, 1570 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3453F2	0x345400	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x345400	0x349186	audio	VADPCM sample	bank1 wave 25, 1750 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x349186	0x349190	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x349190	0x359B19	audio	VADPCM sample	bank1 wave 26, 7553 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x359B19	0x359B20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x359B20	0x35B872	audio	VADPCM sample	bank1 wave 27, 834 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x35B872	0x35B880	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x35B880	0x35C7E6	audio	VADPCM sample	bank1 wave 28, 438 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x35C7E6	0x35C7F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x35C7F0	0x35EA49	audio	VADPCM sample	bank1 wave 29, 977 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x35EA49	0x35EA50	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x35EA50	0x35F1A0	audio	VADPCM sample	bank1 wave 30, 208 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x35F1A0	0x360EFB	audio	VADPCM sample	bank1 wave 31, 835 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x360EFB	0x360F00	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x360F00	0x3624BA	audio	VADPCM sample	bank1 wave 32, 618 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3624BA	0x3624C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3624C0	0x363000	audio	VADPCM sample	bank1 wave 33, 320 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x363000	0x36827A	audio	VADPCM sample	bank1 wave 34, 2346 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x36827A	0x368280	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x368280	0x36BD6C	audio	VADPCM sample	bank1 wave 35, 1676 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x36BD6C	0x36BD70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x36BD70	0x36D05A	audio	VADPCM sample	bank1 wave 36, 538 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x36D05A	0x36D060	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x36D060	0x371E12	audio	VADPCM sample	bank1 wave 37, 2210 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x371E12	0x371E20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x371E20	0x37562A	audio	VADPCM sample	bank1 wave 38, 1594 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x37562A	0x375630	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x375630	0x37739D	audio	VADPCM sample	bank1 wave 39, 837 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x37739D	0x3773A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3773A0	0x379D52	audio	VADPCM sample	bank1 wave 40, 1186 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x379D52	0x379D60	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x379D60	0x37EC05	audio	VADPCM sample	bank1 wave 41, 2237 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x37EC05	0x37EC10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x37EC10	0x383DFA	audio	VADPCM sample	bank1 wave 42, 2330 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x383DFA	0x383E00	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x383E00	0x389B4E	audio	VADPCM sample	bank1 wave 43, 2654 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x389B4E	0x389B50	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x389B50	0x38D039	audio	VADPCM sample	bank1 wave 44, 1505 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x38D039	0x38D040	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x38D040	0x397678	audio	VADPCM sample	bank1 wave 45, 4728 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x397678	0x397680	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x397680	0x39B5DA	audio	VADPCM sample	bank1 wave 46, 1802 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x39B5DA	0x39B5E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x39B5E0	0x39D40A	audio	VADPCM sample	bank1 wave 47, 858 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x39D40A	0x39D410	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x39D410	0x3A35BA	audio	VADPCM sample	bank1 wave 48, 2778 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3A35BA	0x3A35C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3A35C0	0x3A59AE	audio	VADPCM sample	bank1 wave 49, 1022 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3A59AE	0x3A59B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3A59B0	0x3AA17A	audio	VADPCM sample	bank1 wave 50, 2042 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3AA17A	0x3AA180	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3AA180	0x3AB7EE	audio	VADPCM sample	bank1 wave 51, 638 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3AB7EE	0x3AB7F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3AB7F0	0x3B40B2	audio	VADPCM sample	bank1 wave 52, 3890 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3B40B2	0x3B40C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3B40C0	0x3B7948	audio	VADPCM sample	bank1 wave 53, 1608 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3B7948	0x3B7950	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3B7950	0x3BACDA	audio	VADPCM sample	bank1 wave 54, 1466 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3BACDA	0x3BACE0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3BACE0	0x3BE2F2	audio	VADPCM sample	bank1 wave 55, 1538 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3BE2F2	0x3BE300	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3BE300	0x3C6F19	audio	VADPCM sample	bank1 wave 56, 3985 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3C6F19	0x3C6F20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3C6F20	0x3C7DF6	audio	VADPCM sample	bank1 wave 57, 422 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3C7DF6	0x3C7E00	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3C7E00	0x3D17CF	audio	VADPCM sample	bank1 wave 58, 4375 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3D17CF	0x3D17D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3D17D0	0x3D7FF2	audio	VADPCM sample	bank1 wave 59, 2962 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3D7FF2	0x3D8000	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3D8000	0x3DAFB5	audio	VADPCM sample	bank1 wave 60, 1357 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3DAFB5	0x3DAFC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3DAFC0	0x3DD77A	audio	VADPCM sample	bank1 wave 61, 1130 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3DD77A	0x3DD780	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3DD780	0x3E3FA2	audio	VADPCM sample	bank1 wave 62, 2962 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+letter	0x3E3FA2	0x3E3FB0	pad	fill (non-zero)	alignment after wave bank 1 (non-zero leftover bytes, not referenced)	none	tools/extract_audio.py
+letter	0x3E4830	0x3EA160	audio	libmus ptr bank (N64 PtrTablesV2)	instrument bank 2: header, 124 wave-table entries, ADPCM books and loops, base notes, detunes	song bank: loaded by func_8001892C, relocated by func_8004E9E0 (letter) and made the next-song bank by func_8004D2B0 (letter)	tools/extract_audio.py
+letter	0x3EA160	0x3EA170	audio	N64 WaveTables header	wave bank 2 signature	sample addresses = wave bank ROM address + entry base (func_8004E9E0)	tools/extract_audio.py
+letter	0x3EA170	0x3EC81C	audio	VADPCM sample	bank2 wave 0, 1100 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x3EC81C	0x3EC820	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3EC820	0x3EDA7A	audio	VADPCM sample	bank2 wave 1, 522 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x3EDA7A	0x3EDA80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3EDA80	0x3F2A06	audio	VADPCM sample	bank2 wave 2, 2262 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x3F2A06	0x3F2A10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3F2A10	0x3F4951	audio	VADPCM sample	bank2 wave 3, 889 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x3F4951	0x3F4960	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3F4960	0x3F6CBE	audio	VADPCM sample	bank2 wave 4, 1006 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x3F6CBE	0x3F6CC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3F6CC0	0x3F911A	audio	VADPCM sample	bank2 wave 5, 1034 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x3F911A	0x3F9120	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3F9120	0x3FA6AD	audio	VADPCM sample	bank2 wave 6, 613 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x3FA6AD	0x3FA6B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3FA6B0	0x3FEC43	audio	VADPCM sample	bank2 wave 7, 1979 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x3FEC43	0x3FEC50	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x3FEC50	0x400D65	audio	VADPCM sample	bank2 wave 8, 941 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x400D65	0x400D70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x400D70	0x40140C	audio	VADPCM sample	bank2 wave 9, 188 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x40140C	0x401410	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x401410	0x4040B6	audio	VADPCM sample	bank2 wave 10, 1270 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4040B6	0x4040C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4040C0	0x407C72	audio	VADPCM sample	bank2 wave 11, 1698 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x407C72	0x407C80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x407C80	0x4083EB	audio	VADPCM sample	bank2 wave 12, 211 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4083EB	0x4083F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4083F0	0x4092C6	audio	VADPCM sample	bank2 wave 13, 422 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4092C6	0x4092D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4092D0	0x40AA43	audio	VADPCM sample	bank2 wave 14, 667 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x40AA43	0x40AA50	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x40AA50	0x40DAC2	audio	VADPCM sample	bank2 wave 15, 1378 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x40DAC2	0x40DAD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x40DAD0	0x411682	audio	VADPCM sample	bank2 wave 16, 1698 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x411682	0x411690	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x411690	0x41494B	audio	VADPCM sample	bank2 wave 17, 1443 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x41494B	0x414950	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x414950	0x4153B8	audio	VADPCM sample	bank2 wave 18, 296 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4153B8	0x4153C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4153C0	0x41730A	audio	VADPCM sample	bank2 wave 19, 890 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x41730A	0x417310	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x417310	0x418561	audio	VADPCM sample	bank2 wave 20, 521 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x418561	0x418570	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x418570	0x419D61	audio	VADPCM sample	bank2 wave 21, 681 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x419D61	0x419D70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x419D70	0x41B0C6	audio	VADPCM sample	bank2 wave 22, 550 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x41B0C6	0x41B0D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x41B0D0	0x41BF82	audio	VADPCM sample	bank2 wave 23, 418 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x41BF82	0x41BF90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x41BF90	0x41D8C5	audio	VADPCM sample	bank2 wave 24, 717 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x41D8C5	0x41D8D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x41D8D0	0x41E9A7	audio	VADPCM sample	bank2 wave 25, 479 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x41E9A7	0x41E9B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x41E9B0	0x41EEB7	audio	VADPCM sample	bank2 wave 26, 143 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x41EEB7	0x41EEC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x41EEC0	0x428229	audio	VADPCM sample	bank2 wave 27, 4193 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x428229	0x428230	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x428230	0x4291BA	audio	VADPCM sample	bank2 wave 28, 442 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4291BA	0x4291C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4291C0	0x42A5B8	audio	VADPCM sample	bank2 wave 29, 568 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x42A5B8	0x42A5C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x42A5C0	0x42AFD7	audio	VADPCM sample	bank2 wave 30, 287 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x42AFD7	0x42AFE0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x42AFE0	0x42C2C1	audio	VADPCM sample	bank2 wave 31, 537 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x42C2C1	0x42C2D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x42C2D0	0x42DF92	audio	VADPCM sample	bank2 wave 32, 818 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x42DF92	0x42DFA0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x42DFA0	0x43009A	audio	VADPCM sample	bank2 wave 33, 938 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x43009A	0x4300A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4300A0	0x434F18	audio	VADPCM sample	bank2 wave 34, 2232 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x434F18	0x434F20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x434F20	0x438EB0	audio	VADPCM sample	bank2 wave 35, 1808 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x438EB0	0x43E61F	audio	VADPCM sample	bank2 wave 36, 2487 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x43E61F	0x43E620	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x43E620	0x43F574	audio	VADPCM sample	bank2 wave 37, 436 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x43F574	0x43F580	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x43F580	0x43FD33	audio	VADPCM sample	bank2 wave 38, 219 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x43FD33	0x43FD40	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x43FD40	0x444669	audio	VADPCM sample	bank2 wave 39, 2081 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x444669	0x444670	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x444670	0x44814A	audio	VADPCM sample	bank2 wave 40, 1674 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44814A	0x448150	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x448150	0x44900B	audio	VADPCM sample	bank2 wave 41, 419 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44900B	0x449010	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x449010	0x44A3C9	audio	VADPCM sample	bank2 wave 42, 561 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44A3C9	0x44A3D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x44A3D0	0x44ABF8	audio	VADPCM sample	bank2 wave 43, 232 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44ABF8	0x44AC00	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x44AC00	0x44B683	audio	VADPCM sample	bank2 wave 44, 299 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44B683	0x44B690	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x44B690	0x44BF7E	audio	VADPCM sample	bank2 wave 45, 254 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44BF7E	0x44BF80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x44BF80	0x44E43D	audio	VADPCM sample	bank2 wave 46, 1045 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44E43D	0x44E440	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x44E440	0x44EEA8	audio	VADPCM sample	bank2 wave 47, 296 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44EEA8	0x44EEB0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x44EEB0	0x44F6C6	audio	VADPCM sample	bank2 wave 48, 230 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x44F6C6	0x44F6D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x44F6D0	0x450AD1	audio	VADPCM sample	bank2 wave 49, 569 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x450AD1	0x450AE0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x450AE0	0x451CAA	audio	VADPCM sample	bank2 wave 50, 506 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x451CAA	0x451CB0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x451CB0	0x45310B	audio	VADPCM sample	bank2 wave 51, 579 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x45310B	0x453110	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x453110	0x45399B	audio	VADPCM sample	bank2 wave 52, 243 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x45399B	0x4539A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4539A0	0x453F1C	audio	VADPCM sample	bank2 wave 53, 156 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x453F1C	0x453F20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x453F20	0x456602	audio	VADPCM sample	bank2 wave 54, 1106 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x456602	0x456610	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x456610	0x458FC2	audio	VADPCM sample	bank2 wave 55, 1186 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x458FC2	0x458FD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x458FD0	0x45B6D6	audio	VADPCM sample	bank2 wave 56, 1110 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x45B6D6	0x45B6E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x45B6E0	0x45CD72	audio	VADPCM sample	bank2 wave 57, 642 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x45CD72	0x45CD80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x45CD80	0x45EA81	audio	VADPCM sample	bank2 wave 58, 825 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x45EA81	0x45EA90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x45EA90	0x460725	audio	VADPCM sample	bank2 wave 59, 813 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x460725	0x460730	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x460730	0x4639E2	audio	VADPCM sample	bank2 wave 60, 1442 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4639E2	0x4639F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4639F0	0x466F72	audio	VADPCM sample	bank2 wave 61, 1522 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x466F72	0x466F80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x466F80	0x469DB2	audio	VADPCM sample	bank2 wave 62, 1314 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x469DB2	0x469DC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x469DC0	0x46E32F	audio	VADPCM sample	bank2 wave 63, 1975 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x46E32F	0x46E330	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x46E330	0x4712DC	audio	VADPCM sample	bank2 wave 64, 1356 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4712DC	0x4712E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4712E0	0x473FE0	audio	VADPCM sample	bank2 wave 65, 1280 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x473FE0	0x476B54	audio	VADPCM sample	bank2 wave 66, 1236 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x476B54	0x476B60	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x476B60	0x478FDE	audio	VADPCM sample	bank2 wave 67, 1038 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x478FDE	0x478FE0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x478FE0	0x47C2DA	audio	VADPCM sample	bank2 wave 68, 1450 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x47C2DA	0x47C2E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x47C2E0	0x47ED8E	audio	VADPCM sample	bank2 wave 69, 1214 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x47ED8E	0x47ED90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x47ED90	0x48181A	audio	VADPCM sample	bank2 wave 70, 1210 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x48181A	0x481820	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x481820	0x4833D4	audio	VADPCM sample	bank2 wave 71, 788 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4833D4	0x4833E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4833E0	0x484A06	audio	VADPCM sample	bank2 wave 72, 630 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x484A06	0x484A10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x484A10	0x4862AC	audio	VADPCM sample	bank2 wave 73, 700 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4862AC	0x4862B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4862B0	0x4879D2	audio	VADPCM sample	bank2 wave 74, 658 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4879D2	0x4879E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4879E0	0x489D62	audio	VADPCM sample	bank2 wave 75, 1010 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x489D62	0x489D70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x489D70	0x48C2A2	audio	VADPCM sample	bank2 wave 76, 1058 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x48C2A2	0x48C2B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x48C2B0	0x491DD0	audio	VADPCM sample	bank2 wave 77, 2592 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x491DD0	0x493837	audio	VADPCM sample	bank2 wave 78, 751 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x493837	0x493840	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x493840	0x494FE0	audio	VADPCM sample	bank2 wave 79, 672 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x494FE0	0x4967C8	audio	VADPCM sample	bank2 wave 80, 680 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4967C8	0x4967D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4967D0	0x497FA6	audio	VADPCM sample	bank2 wave 81, 678 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x497FA6	0x497FB0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x497FB0	0x499F9C	audio	VADPCM sample	bank2 wave 82, 908 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x499F9C	0x499FA0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x499FA0	0x49C052	audio	VADPCM sample	bank2 wave 83, 930 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x49C052	0x49C060	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x49C060	0x49CBB2	audio	VADPCM sample	bank2 wave 84, 322 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x49CBB2	0x49CBC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x49CBC0	0x49D736	audio	VADPCM sample	bank2 wave 85, 326 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x49D736	0x49D740	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x49D740	0x49F4F5	audio	VADPCM sample	bank2 wave 86, 845 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x49F4F5	0x49F500	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x49F500	0x4A0E1A	audio	VADPCM sample	bank2 wave 87, 714 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4A0E1A	0x4A0E20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4A0E20	0x4A2AD9	audio	VADPCM sample	bank2 wave 88, 817 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4A2AD9	0x4A2AE0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4A2AE0	0x4A4196	audio	VADPCM sample	bank2 wave 89, 646 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4A4196	0x4A41A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4A41A0	0x4A546F	audio	VADPCM sample	bank2 wave 90, 535 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4A546F	0x4A5470	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4A5470	0x4A7666	audio	VADPCM sample	bank2 wave 91, 966 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4A7666	0x4A7670	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4A7670	0x4A86DB	audio	VADPCM sample	bank2 wave 92, 467 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4A86DB	0x4A86E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4A86E0	0x4A9F8E	audio	VADPCM sample	bank2 wave 93, 702 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4A9F8E	0x4A9F90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4A9F90	0x4AB5C8	audio	VADPCM sample	bank2 wave 94, 632 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4AB5C8	0x4AB5D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4AB5D0	0x4AC21E	audio	VADPCM sample	bank2 wave 95, 350 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4AC21E	0x4AC220	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4AC220	0x4ACD8D	audio	VADPCM sample	bank2 wave 96, 325 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4ACD8D	0x4ACD90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4ACD90	0x4AEAEB	audio	VADPCM sample	bank2 wave 97, 835 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4AEAEB	0x4AEAF0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4AEAF0	0x4B0893	audio	VADPCM sample	bank2 wave 98, 843 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4B0893	0x4B08A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4B08A0	0x4B19F5	audio	VADPCM sample	bank2 wave 99, 493 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4B19F5	0x4B1A00	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4B1A00	0x4B3872	audio	VADPCM sample	bank2 wave 100, 866 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4B3872	0x4B3880	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4B3880	0x4B59CB	audio	VADPCM sample	bank2 wave 101, 947 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4B59CB	0x4B59D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4B59D0	0x4B76E3	audio	VADPCM sample	bank2 wave 102, 827 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4B76E3	0x4B76F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4B76F0	0x4B8EB4	audio	VADPCM sample	bank2 wave 103, 676 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4B8EB4	0x4B8EC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4B8EC0	0x4BAA62	audio	VADPCM sample	bank2 wave 104, 786 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4BAA62	0x4BAA70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4BAA70	0x4BC6AB	audio	VADPCM sample	bank2 wave 105, 803 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4BC6AB	0x4BC6B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4BC6B0	0x4BD48A	audio	VADPCM sample	bank2 wave 106, 394 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4BD48A	0x4BD490	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4BD490	0x4BE6CF	audio	VADPCM sample	bank2 wave 107, 519 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4BE6CF	0x4BE6D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4BE6D0	0x4BF9D5	audio	VADPCM sample	bank2 wave 108, 541 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4BF9D5	0x4BF9E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4BF9E0	0x4C0211	audio	VADPCM sample	bank2 wave 109, 233 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4C0211	0x4C0220	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4C0220	0x4C09E5	audio	VADPCM sample	bank2 wave 110, 221 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4C09E5	0x4C09F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4C09F0	0x4C2A87	audio	VADPCM sample	bank2 wave 111, 927 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4C2A87	0x4C2A90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4C2A90	0x4C53E8	audio	VADPCM sample	bank2 wave 112, 1176 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4C53E8	0x4C53F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4C53F0	0x4C85D3	audio	VADPCM sample	bank2 wave 113, 1419 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4C85D3	0x4C85E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4C85E0	0x4C90D8	audio	VADPCM sample	bank2 wave 114, 312 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4C90D8	0x4C90E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4C90E0	0x4C9C20	audio	VADPCM sample	bank2 wave 115, 320 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4C9C20	0x4CD928	audio	VADPCM sample	bank2 wave 116, 1736 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4CD928	0x4CD930	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4CD930	0x4CF559	audio	VADPCM sample	bank2 wave 117, 801 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4CF559	0x4CF560	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4CF560	0x4D1A2F	audio	VADPCM sample	bank2 wave 118, 1047 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4D1A2F	0x4D1A30	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4D1A30	0x4D3D61	audio	VADPCM sample	bank2 wave 119, 1001 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4D3D61	0x4D3D70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4D3D70	0x4D4AE7	audio	VADPCM sample	bank2 wave 120, 383 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4D4AE7	0x4D4AF0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4D4AF0	0x4D5D6E	audio	VADPCM sample	bank2 wave 121, 526 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4D5D6E	0x4D5D70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4D5D70	0x4D861D	audio	VADPCM sample	bank2 wave 122, 1157 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4D861D	0x4D8620	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+letter	0x4D8620	0x4D9D78	audio	VADPCM sample	bank2 wave 123, 664 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+letter	0x4D9D78	0x4D9D80	pad	fill (non-zero)	alignment after wave bank 2 (non-zero leftover bytes, not referenced)	none	tools/extract_audio.py
+number	0x2E6FC0	0x2E9A90	audio	libmus ptr bank (N64 PtrTablesV2)	instrument bank 1: header, 62 wave-table entries, ADPCM books and loops, base notes, detunes	default bank for sound effects: config.ptr/wbk in func_80017520, relocated by func_8004E9E0 (letter)	tools/extract_audio.py
+number	0x2E9A90	0x2E9AA0	audio	N64 WaveTables header	wave bank 1 signature	sample addresses = wave bank ROM address + entry base (func_8004E9E0)	tools/extract_audio.py
+number	0x2E9AA0	0x2EC596	audio	VADPCM sample	bank1 wave 0, 1222 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x2EC596	0x2EC5A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x2EC5A0	0x2EE58C	audio	VADPCM sample	bank1 wave 1, 908 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x2EE58C	0x2EE590	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x2EE590	0x2F125A	audio	VADPCM sample	bank1 wave 2, 1274 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x2F125A	0x2F1260	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x2F1260	0x2FAD10	audio	VADPCM sample	bank1 wave 3, 4400 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x2FAD10	0x2FF3F9	audio	VADPCM sample	bank1 wave 4, 2017 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x2FF3F9	0x2FF400	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x2FF400	0x30146A	audio	VADPCM sample	bank1 wave 5, 922 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x30146A	0x301470	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x301470	0x311DF9	audio	VADPCM sample	bank1 wave 6, 7553 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x311DF9	0x311E00	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x311E00	0x31D3C2	audio	VADPCM sample	bank1 wave 7, 5170 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x31D3C2	0x31D3D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x31D3D0	0x31E0D2	audio	VADPCM sample	bank1 wave 8, 370 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x31E0D2	0x31E0E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x31E0E0	0x322589	audio	VADPCM sample	bank1 wave 9, 1953 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x322589	0x322590	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x322590	0x3232E3	audio	VADPCM sample	bank1 wave 10, 379 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3232E3	0x3232F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3232F0	0x3247F6	audio	VADPCM sample	bank1 wave 11, 598 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3247F6	0x324800	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x324800	0x328DB7	audio	VADPCM sample	bank1 wave 12, 1983 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x328DB7	0x328DC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x328DC0	0x329A71	audio	VADPCM sample	bank1 wave 13, 361 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x329A71	0x329A80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x329A80	0x32A956	audio	VADPCM sample	bank1 wave 14, 422 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x32A956	0x32A960	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x32A960	0x32B932	audio	VADPCM sample	bank1 wave 15, 450 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x32B932	0x32B940	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x32B940	0x32CCBA	audio	VADPCM sample	bank1 wave 16, 554 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x32CCBA	0x32CCC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x32CCC0	0x3391B2	audio	VADPCM sample	bank1 wave 17, 5602 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3391B2	0x3391C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3391C0	0x33CDB1	audio	VADPCM sample	bank1 wave 18, 1705 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x33CDB1	0x33CDC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x33CDC0	0x33D44A	audio	VADPCM sample	bank1 wave 19, 186 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x33D44A	0x33D450	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x33D450	0x33E99E	audio	VADPCM sample	bank1 wave 20, 606 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x33E99E	0x33E9A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x33E9A0	0x3424C2	audio	VADPCM sample	bank1 wave 21, 1682 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3424C2	0x3424D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3424D0	0x342B12	audio	VADPCM sample	bank1 wave 22, 178 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x342B12	0x342B20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x342B20	0x342D45	audio	VADPCM sample	bank1 wave 23, 61 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x342D45	0x342D50	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x342D50	0x3438CF	audio	VADPCM sample	bank1 wave 24, 327 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3438CF	0x3438D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3438D0	0x344D19	audio	VADPCM sample	bank1 wave 25, 577 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x344D19	0x344D20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x344D20	0x345014	audio	VADPCM sample	bank1 wave 26, 84 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x345014	0x345020	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x345020	0x349373	audio	VADPCM sample	bank1 wave 27, 1915 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x349373	0x349380	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x349380	0x34D3BB	audio	VADPCM sample	bank1 wave 28, 1827 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x34D3BB	0x34D3C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x34D3C0	0x3534B6	audio	VADPCM sample	bank1 wave 29, 2758 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3534B6	0x3534C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3534C0	0x35777A	audio	VADPCM sample	bank1 wave 30, 1898 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x35777A	0x357780	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x357780	0x35BF02	audio	VADPCM sample	bank1 wave 31, 2034 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x35BF02	0x35BF10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x35BF10	0x36DCE2	audio	VADPCM sample	bank1 wave 32, 8130 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x36DCE2	0x36DCF0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x36DCF0	0x3719C2	audio	VADPCM sample	bank1 wave 33, 1730 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3719C2	0x3719D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3719D0	0x37B6D2	audio	VADPCM sample	bank1 wave 34, 4466 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x37B6D2	0x37B6E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x37B6E0	0x37F0E2	audio	VADPCM sample	bank1 wave 35, 1650 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x37F0E2	0x37F0F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x37F0F0	0x386722	audio	VADPCM sample	bank1 wave 36, 3362 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x386722	0x386730	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x386730	0x38825D	audio	VADPCM sample	bank1 wave 37, 773 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x38825D	0x388260	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x388260	0x38BD70	audio	VADPCM sample	bank1 wave 38, 1680 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x38BD70	0x38D489	audio	VADPCM sample	bank1 wave 39, 657 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x38D489	0x38D490	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x38D490	0x38DDC6	audio	VADPCM sample	bank1 wave 40, 262 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x38DDC6	0x38DDD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x38DDD0	0x38E745	audio	VADPCM sample	bank1 wave 41, 269 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x38E745	0x38E750	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x38E750	0x38F4AC	audio	VADPCM sample	bank1 wave 42, 380 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x38F4AC	0x38F4B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x38F4B0	0x3900E3	audio	VADPCM sample	bank1 wave 43, 347 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3900E3	0x3900F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3900F0	0x39135C	audio	VADPCM sample	bank1 wave 44, 524 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x39135C	0x391360	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x391360	0x393FC7	audio	VADPCM sample	bank1 wave 45, 1263 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x393FC7	0x393FD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x393FD0	0x395A40	audio	VADPCM sample	bank1 wave 46, 752 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x395A40	0x396FB2	audio	VADPCM sample	bank1 wave 47, 610 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x396FB2	0x396FC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x396FC0	0x397B24	audio	VADPCM sample	bank1 wave 48, 324 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x397B24	0x397B30	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x397B30	0x398B92	audio	VADPCM sample	bank1 wave 49, 466 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x398B92	0x398BA0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x398BA0	0x3996B3	audio	VADPCM sample	bank1 wave 50, 315 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3996B3	0x3996C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3996C0	0x3A2630	audio	VADPCM sample	bank1 wave 51, 4080 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3A2630	0x3A4274	audio	VADPCM sample	bank1 wave 52, 804 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3A4274	0x3A4280	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3A4280	0x3AABC2	audio	VADPCM sample	bank1 wave 53, 2994 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3AABC2	0x3AABD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3AABD0	0x3AC74E	audio	VADPCM sample	bank1 wave 54, 782 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3AC74E	0x3AC750	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3AC750	0x3ADD0A	audio	VADPCM sample	bank1 wave 55, 618 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3ADD0A	0x3ADD10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3ADD10	0x3AEF10	audio	VADPCM sample	bank1 wave 56, 512 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3AEF10	0x3B1EC5	audio	VADPCM sample	bank1 wave 57, 1357 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3B1EC5	0x3B1ED0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3B1ED0	0x3BB89F	audio	VADPCM sample	bank1 wave 58, 4375 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3BB89F	0x3BB8A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3BB8A0	0x3C20C2	audio	VADPCM sample	bank1 wave 59, 2962 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3C20C2	0x3C20D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3C20D0	0x3C488A	audio	VADPCM sample	bank1 wave 60, 1130 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3C488A	0x3C4890	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3C4890	0x3CB0B2	audio	VADPCM sample	bank1 wave 61, 2962 frames	wave-table entry of ptr bank 1	tools/extract_audio.py
+number	0x3CB0B2	0x3CB0C0	pad	fill (non-zero)	alignment after wave bank 1 (non-zero leftover bytes, not referenced)	none	tools/extract_audio.py
+number	0x3CB880	0x3D0980	audio	libmus ptr bank (N64 PtrTablesV2)	instrument bank 2: header, 107 wave-table entries, ADPCM books and loops, base notes, detunes	song bank: loaded by func_8001933C, relocated by func_8004E9E0 (letter) and made the next-song bank by func_8004D2B0 (letter)	tools/extract_audio.py
+number	0x3D0980	0x3D0990	audio	N64 WaveTables header	wave bank 2 signature	sample addresses = wave bank ROM address + entry base (func_8004E9E0)	tools/extract_audio.py
+number	0x3D0990	0x3D3C66	audio	VADPCM sample	bank2 wave 0, 1446 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3D3C66	0x3D3C70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3D3C70	0x3D511C	audio	VADPCM sample	bank2 wave 1, 588 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3D511C	0x3D5120	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3D5120	0x3D5D0B	audio	VADPCM sample	bank2 wave 2, 339 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3D5D0B	0x3D5D10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3D5D10	0x3D856C	audio	VADPCM sample	bank2 wave 3, 1148 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3D856C	0x3D8570	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3D8570	0x3DA63D	audio	VADPCM sample	bank2 wave 4, 933 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3DA63D	0x3DA640	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3DA640	0x3DD199	audio	VADPCM sample	bank2 wave 5, 1233 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3DD199	0x3DD1A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3DD1A0	0x3DFCCC	audio	VADPCM sample	bank2 wave 6, 1228 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3DFCCC	0x3DFCD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3DFCD0	0x3E237C	audio	VADPCM sample	bank2 wave 7, 1100 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3E237C	0x3E2380	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3E2380	0x3E35DA	audio	VADPCM sample	bank2 wave 8, 522 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3E35DA	0x3E35E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3E35E0	0x3E8566	audio	VADPCM sample	bank2 wave 9, 2262 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3E8566	0x3E8570	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3E8570	0x3EA4B1	audio	VADPCM sample	bank2 wave 10, 889 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3EA4B1	0x3EA4C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3EA4C0	0x3EC81E	audio	VADPCM sample	bank2 wave 11, 1006 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3EC81E	0x3EC820	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3EC820	0x3EEC7A	audio	VADPCM sample	bank2 wave 12, 1034 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3EEC7A	0x3EEC80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3EEC80	0x3F020D	audio	VADPCM sample	bank2 wave 13, 613 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3F020D	0x3F0210	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3F0210	0x3F47A3	audio	VADPCM sample	bank2 wave 14, 1979 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3F47A3	0x3F47B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3F47B0	0x3F68C5	audio	VADPCM sample	bank2 wave 15, 941 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3F68C5	0x3F68D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3F68D0	0x3F6F6C	audio	VADPCM sample	bank2 wave 16, 188 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3F6F6C	0x3F6F70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3F6F70	0x3F77FB	audio	VADPCM sample	bank2 wave 17, 243 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3F77FB	0x3F7800	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3F7800	0x3F7D7C	audio	VADPCM sample	bank2 wave 18, 156 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3F7D7C	0x3F7D80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3F7D80	0x3FA462	audio	VADPCM sample	bank2 wave 19, 1106 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3FA462	0x3FA470	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3FA470	0x3FE784	audio	VADPCM sample	bank2 wave 20, 1908 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x3FE784	0x3FE790	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x3FE790	0x4011F6	audio	VADPCM sample	bank2 wave 21, 1206 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4011F6	0x401200	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x401200	0x40379E	audio	VADPCM sample	bank2 wave 22, 1070 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x40379E	0x4037A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4037A0	0x40546B	audio	VADPCM sample	bank2 wave 23, 819 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x40546B	0x405470	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x405470	0x408116	audio	VADPCM sample	bank2 wave 24, 1270 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x408116	0x408120	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x408120	0x40BCD2	audio	VADPCM sample	bank2 wave 25, 1698 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x40BCD2	0x40BCE0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x40BCE0	0x40C32B	audio	VADPCM sample	bank2 wave 26, 179 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x40C32B	0x40C330	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x40C330	0x40CB6A	audio	VADPCM sample	bank2 wave 27, 234 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x40CB6A	0x40CB70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x40CB70	0x40DA46	audio	VADPCM sample	bank2 wave 28, 422 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x40DA46	0x40DA50	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x40DA50	0x40EDC1	audio	VADPCM sample	bank2 wave 29, 553 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x40EDC1	0x40EDD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x40EDD0	0x410192	audio	VADPCM sample	bank2 wave 30, 562 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x410192	0x4101A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4101A0	0x41090B	audio	VADPCM sample	bank2 wave 31, 211 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x41090B	0x410910	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x410910	0x4117E6	audio	VADPCM sample	bank2 wave 32, 422 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4117E6	0x4117F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4117F0	0x412F63	audio	VADPCM sample	bank2 wave 33, 667 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x412F63	0x412F70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x412F70	0x415FE2	audio	VADPCM sample	bank2 wave 34, 1378 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x415FE2	0x415FF0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x415FF0	0x419BA2	audio	VADPCM sample	bank2 wave 35, 1698 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x419BA2	0x419BB0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x419BB0	0x41CE6B	audio	VADPCM sample	bank2 wave 36, 1443 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x41CE6B	0x41CE70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x41CE70	0x41D8D8	audio	VADPCM sample	bank2 wave 37, 296 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x41D8D8	0x41D8E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x41D8E0	0x41F82A	audio	VADPCM sample	bank2 wave 38, 890 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x41F82A	0x41F830	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x41F830	0x420A81	audio	VADPCM sample	bank2 wave 39, 521 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x420A81	0x420A90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x420A90	0x422281	audio	VADPCM sample	bank2 wave 40, 681 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x422281	0x422290	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x422290	0x4235E6	audio	VADPCM sample	bank2 wave 41, 550 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4235E6	0x4235F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4235F0	0x4249F1	audio	VADPCM sample	bank2 wave 42, 569 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4249F1	0x424A00	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x424A00	0x425E5B	audio	VADPCM sample	bank2 wave 43, 579 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x425E5B	0x425E60	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x425E60	0x42702A	audio	VADPCM sample	bank2 wave 44, 506 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x42702A	0x427030	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x427030	0x427EE2	audio	VADPCM sample	bank2 wave 45, 418 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x427EE2	0x427EF0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x427EF0	0x429825	audio	VADPCM sample	bank2 wave 46, 717 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x429825	0x429830	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x429830	0x42A907	audio	VADPCM sample	bank2 wave 47, 479 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x42A907	0x42A910	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x42A910	0x42AE17	audio	VADPCM sample	bank2 wave 48, 143 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x42AE17	0x42AE20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x42AE20	0x42C12E	audio	VADPCM sample	bank2 wave 49, 542 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x42C12E	0x42C130	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x42C130	0x4398F1	audio	VADPCM sample	bank2 wave 50, 6137 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4398F1	0x439900	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x439900	0x442C69	audio	VADPCM sample	bank2 wave 51, 4193 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x442C69	0x442C70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x442C70	0x444392	audio	VADPCM sample	bank2 wave 52, 658 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x444392	0x4443A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4443A0	0x444E59	audio	VADPCM sample	bank2 wave 53, 305 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x444E59	0x444E60	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x444E60	0x445DEA	audio	VADPCM sample	bank2 wave 54, 442 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x445DEA	0x445DF0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x445DF0	0x4471E8	audio	VADPCM sample	bank2 wave 55, 568 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4471E8	0x4471F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4471F0	0x44EE1C	audio	VADPCM sample	bank2 wave 56, 3532 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x44EE1C	0x44EE20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x44EE20	0x451325	audio	VADPCM sample	bank2 wave 57, 1053 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x451325	0x451330	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x451330	0x451D47	audio	VADPCM sample	bank2 wave 58, 287 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x451D47	0x451D50	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x451D50	0x453031	audio	VADPCM sample	bank2 wave 59, 537 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x453031	0x453040	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x453040	0x454D02	audio	VADPCM sample	bank2 wave 60, 818 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x454D02	0x454D10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x454D10	0x456E0A	audio	VADPCM sample	bank2 wave 61, 938 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x456E0A	0x456E10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x456E10	0x45BC88	audio	VADPCM sample	bank2 wave 62, 2232 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x45BC88	0x45BC90	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x45BC90	0x45FC20	audio	VADPCM sample	bank2 wave 63, 1808 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x45FC20	0x46538F	audio	VADPCM sample	bank2 wave 64, 2487 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x46538F	0x465390	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x465390	0x4662E4	audio	VADPCM sample	bank2 wave 65, 436 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4662E4	0x4662F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4662F0	0x466B06	audio	VADPCM sample	bank2 wave 66, 230 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x466B06	0x466B10	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x466B10	0x4672C3	audio	VADPCM sample	bank2 wave 67, 219 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4672C3	0x4672D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4672D0	0x468CB9	audio	VADPCM sample	bank2 wave 68, 737 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x468CB9	0x468CC0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x468CC0	0x46D5E9	audio	VADPCM sample	bank2 wave 69, 2081 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x46D5E9	0x46D5F0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x46D5F0	0x46F339	audio	VADPCM sample	bank2 wave 70, 833 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x46F339	0x46F340	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x46F340	0x472E1A	audio	VADPCM sample	bank2 wave 71, 1674 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x472E1A	0x472E20	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x472E20	0x473CDB	audio	VADPCM sample	bank2 wave 72, 419 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x473CDB	0x473CE0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x473CE0	0x475987	audio	VADPCM sample	bank2 wave 73, 815 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x475987	0x475990	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x475990	0x476C3B	audio	VADPCM sample	bank2 wave 74, 531 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x476C3B	0x476C40	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x476C40	0x477F2A	audio	VADPCM sample	bank2 wave 75, 538 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x477F2A	0x477F30	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x477F30	0x478CB0	audio	VADPCM sample	bank2 wave 76, 384 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x478CB0	0x4792F2	audio	VADPCM sample	bank2 wave 77, 178 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4792F2	0x479300	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x479300	0x479C2D	audio	VADPCM sample	bank2 wave 78, 261 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x479C2D	0x479C30	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x479C30	0x47A377	audio	VADPCM sample	bank2 wave 79, 207 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x47A377	0x47A380	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x47A380	0x47B979	audio	VADPCM sample	bank2 wave 80, 625 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x47B979	0x47B980	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x47B980	0x47C25C	audio	VADPCM sample	bank2 wave 81, 252 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x47C25C	0x47C260	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x47C260	0x47CA76	audio	VADPCM sample	bank2 wave 82, 230 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x47CA76	0x47CA80	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x47CA80	0x482372	audio	VADPCM sample	bank2 wave 83, 2530 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x482372	0x482380	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x482380	0x48649C	audio	VADPCM sample	bank2 wave 84, 1852 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x48649C	0x4864A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4864A0	0x488F60	audio	VADPCM sample	bank2 wave 85, 1216 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x488F60	0x48B480	audio	VADPCM sample	bank2 wave 86, 1056 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x48B480	0x490094	audio	VADPCM sample	bank2 wave 87, 2164 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x490094	0x4900A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4900A0	0x492DFA	audio	VADPCM sample	bank2 wave 88, 1290 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x492DFA	0x492E00	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x492E00	0x493ACC	audio	VADPCM sample	bank2 wave 89, 364 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x493ACC	0x493AD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x493AD0	0x4949D3	audio	VADPCM sample	bank2 wave 90, 427 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4949D3	0x4949E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4949E0	0x495D99	audio	VADPCM sample	bank2 wave 91, 561 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x495D99	0x495DA0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x495DA0	0x4965C8	audio	VADPCM sample	bank2 wave 92, 232 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4965C8	0x4965D0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4965D0	0x497053	audio	VADPCM sample	bank2 wave 93, 299 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x497053	0x497060	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x497060	0x497AC8	audio	VADPCM sample	bank2 wave 94, 296 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x497AC8	0x497AD0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x497AD0	0x49D947	audio	VADPCM sample	bank2 wave 95, 2687 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x49D947	0x49D950	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x49D950	0x4A2792	audio	VADPCM sample	bank2 wave 96, 2226 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4A2792	0x4A27A0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4A27A0	0x4A4E9D	audio	VADPCM sample	bank2 wave 97, 1109 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4A4E9D	0x4A4EA0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4A4EA0	0x4A69BB	audio	VADPCM sample	bank2 wave 98, 771 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4A69BB	0x4A69C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4A69C0	0x4A772E	audio	VADPCM sample	bank2 wave 99, 382 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4A772E	0x4A7730	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4A7730	0x4A801E	audio	VADPCM sample	bank2 wave 100, 254 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4A801E	0x4A8020	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4A8020	0x4AA4DD	audio	VADPCM sample	bank2 wave 101, 1045 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4AA4DD	0x4AA4E0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4AA4E0	0x4AB7A6	audio	VADPCM sample	bank2 wave 102, 534 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4AB7A6	0x4AB7B0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4AB7B0	0x4AC113	audio	VADPCM sample	bank2 wave 103, 267 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4AC113	0x4AC120	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4AC120	0x4ACD65	audio	VADPCM sample	bank2 wave 104, 349 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4ACD65	0x4ACD70	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4ACD70	0x4AE5BB	audio	VADPCM sample	bank2 wave 105, 691 frames	wave-table entry of ptr bank 2	tools/extract_audio.py
+number	0x4AE5BB	0x4AE5C0	pad	gap	gap between samples (zero)	none	tools/extract_audio.py
+number	0x4AE5C0	0x4B00C0	audio	VADPCM sample	bank2 wave 106, 768 frames	wave-table entry of ptr bank 2	tools/extract_audio.py

@@ -1,0 +1,313 @@
+{
+ "game": "number",
+ "owners": {
+  "lvlB": {
+   "encoder_fallback": [],
+   "exit": 0,
+   "error": null,
+   "image_captures": 5178,
+   "captured_bytes": 1826400,
+   "files_opened": 4669,
+   "tail": [
+    "{\"level\": \"ski.bif\", \"rom\": \"0x25af80\", \"size\": 275326, \"dl_entries\": 283, \"dl_blocks\": 246, \"dpword_fallbacks\": 0, \"png\": 51, \"overlaps_clipped\": 6, \"bytes\": {\"level_data\": 92269, \"palette\": 8832, \"texture\": 30288, \"display_list\": 33816, \"vertices\": 109600, \"model_header\": 324, \"comment\": 197}, \"objects\": {\"level_data\": 242, \"palette\": 51, \"texture\": 51, \"display_list\": 246, \"vertices\": 301, \"model_header\": 9, \"comment\": 1}, \"common_textures\": 21}",
+    "{\"level\": \"river.bif\", \"rom\": \"0x27adc0\", \"size\": 442490, \"dl_entries\": 284, \"dl_blocks\": 267, \"dpword_fallbacks\": 0, \"png\": 64, \"overlaps_clipped\": 1, \"bytes\": {\"palette\": 20288, \"texture\": 57424, \"level_data\": 241241, \"display_list\": 29432, \"vertices\": 93728, \"model_header\": 216, \"comment\": 161}, \"objects\": {\"palette\": 64, \"texture\": 64, \"level_data\": 256, \"display_list\": 267, \"vertices\": 285, \"model_header\": 6, \"comment\": 1}, \"common_textures\": 26}",
+    "{\"level\": \"bonus123.bif\", \"rom\": \"0x2b8fd0\", \"size\": 328682, \"dl_entries\": 140, \"dl_blocks\": 128, \"dpword_fallbacks\": 0, \"png\": 29, \"overlaps_clipped\": 1, \"bytes\": {\"palette\": 10496, \"texture\": 37432, \"level_data\": 179561, \"display_list\": 21872, \"vertices\": 78944, \"model_header\": 216, \"comment\": 161}, \"objects\": {\"palette\": 28, \"texture\": 29, \"level_data\": 132, \"display_list\": 128, \"vertices\": 207, \"model_header\": 6, \"comment\": 1}, \"common_textures\": 14}",
+    "CHECK OK []"
+   ]
+  },
+  "lvlC": {
+   "encoder_fallback": [],
+   "exit": 0,
+   "error": null,
+   "image_captures": 5679,
+   "captured_bytes": 228340,
+   "files_opened": 8,
+   "tail": [
+    "ski: 744 structures checked",
+    "river: 1128 structures checked",
+    "bonus123: 344 structures checked",
+    "OK"
+   ]
+  },
+  "lvlD": {
+   "encoder_fallback": [],
+   "exit": 0,
+   "error": null,
+   "image_captures": 174,
+   "captured_bytes": 516356,
+   "files_opened": 10,
+   "tail": [
+    "number: 230 structures re-serialised, 0 mismatches -> OK"
+   ]
+  },
+  "r1": {
+   "encoder_fallback": [],
+   "exit": 0,
+   "error": null,
+   "image_captures": 1045,
+   "captured_bytes": 8768,
+   "files_opened": 11,
+   "tail": [
+    "number bump.bif   0x03A1E0-0x03A7E0 citex bump_03A1E0_CI8_32x32.png OK",
+    "number bump.bif   0x044170-0x044770 citex bump_044170_CI8_32x32.png OK",
+    "number bump.bif   0x04FB80-0x04FDA0 citex bump_04FB80_CI4_32x32.png OK",
+    "check: all 13 objects byte-exact"
+   ]
+  },
+  "lvlG": {
+   "encoder_fallback": [
+    [
+     "bump.bif",
+     "0x00000"
+    ],
+    [
+     "bump.bif",
+     "0x00018"
+    ],
+    [
+     "bump.bif",
+     "0x3EB08"
+    ],
+    [
+     "bump.bif",
+     "0x3EB44"
+    ],
+    [
+     "mansion.bif",
+     "0x08800"
+    ],
+    [
+     "mansion.bif",
+     "0x08980"
+    ],
+    [
+     "mansion.bif",
+     "0x08A80"
+    ],
+    [
+     "mansion.bif",
+     "0x08B00"
+    ],
+    [
+     "mansion.bif",
+     "0x08B80"
+    ],
+    [
+     "mansion.bif",
+     "0x08C00"
+    ],
+    [
+     "street.bif",
+     "0x3A930"
+    ],
+    [
+     "street.bif",
+     "0x3AEB0"
+    ],
+    [
+     "street.bif",
+     "0x3B1B0"
+    ],
+    [
+     "street.bif",
+     "0x3B2B0"
+    ],
+    [
+     "street.bif",
+     "0x3B330"
+    ],
+    [
+     "street.bif",
+     "0x3B3B0"
+    ],
+    [
+     "street.bif",
+     "0x3B430"
+    ],
+    [
+     "street.bif",
+     "0x3B4B0"
+    ],
+    [
+     "street.bif",
+     "0x3B530"
+    ]
+   ],
+   "exit": 0,
+   "error": null,
+   "image_captures": 50422,
+   "captured_bytes": 803428,
+   "files_opened": 206,
+   "tail": [
+    "check: 531 items, 0 mismatches"
+   ]
+  },
+  "lvlH": {
+   "encoder_fallback": [],
+   "exit": 0,
+   "error": null,
+   "image_captures": 1072,
+   "captured_bytes": 507780,
+   "files_opened": 1076,
+   "tail": [
+    "  anim 0x801A2BD8 nvert 26 models with that many animated vertices: 0x801A4304",
+    "  anim 0x801A2E58 nvert 26 models with that many animated vertices: 0x801A4304",
+    "bonus123 items 102 gaps 0 anim_header=312 anim_tail=56 anim_vertices=153432 bounds=144 display_list=448 pad=237 palette=2048 texture=4096 texture_block_unused=2560 vertex_order=2480",
+    "check OK"
+   ]
+  }
+ },
+ "images": {
+  "street.bif": {
+   "size": 509902,
+   "equal": true,
+   "sha1_orig": "88a16b5765cf9cb21f8218477a3f0d721ec6e822",
+   "sha1_rebuilt": "88a16b5765cf9cb21f8218477a3f0d721ec6e822",
+   "bytes": {
+    "rebuilt-from-extracted": 508316,
+    "extracted-verbatim": 1152,
+    "generated": 434
+   },
+   "unequal": {},
+   "ledger_bytes": 509902,
+   "rebuilt": 508316,
+   "verbatim": 1152,
+   "generated": 434,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "dunk.bif": {
+   "size": 237750,
+   "equal": true,
+   "sha1_orig": "93a6a858d31cf5d78b3568898a6e6b573d3c4fa1",
+   "sha1_rebuilt": "93a6a858d31cf5d78b3568898a6e6b573d3c4fa1",
+   "bytes": {
+    "rebuilt-from-extracted": 237224,
+    "generated": 526
+   },
+   "unequal": {},
+   "ledger_bytes": 237750,
+   "rebuilt": 237224,
+   "verbatim": 0,
+   "generated": 526,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "bump.bif": {
+   "size": 488874,
+   "equal": true,
+   "sha1_orig": "7b02560bdce0baf3c2137280ea2613b8e455e517",
+   "sha1_rebuilt": "7b02560bdce0baf3c2137280ea2613b8e455e517",
+   "bytes": {
+    "extracted-verbatim": 48,
+    "rebuilt-from-extracted": 488312,
+    "generated": 514
+   },
+   "unequal": {},
+   "ledger_bytes": 488874,
+   "rebuilt": 488312,
+   "verbatim": 48,
+   "generated": 514,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "mansion.bif": {
+   "size": 305762,
+   "equal": true,
+   "sha1_orig": "784a402c4953e4abf02e1fec2721b67c1e7ac985",
+   "sha1_rebuilt": "784a402c4953e4abf02e1fec2721b67c1e7ac985",
+   "bytes": {
+    "rebuilt-from-extracted": 304324,
+    "extracted-verbatim": 768,
+    "generated": 670
+   },
+   "unequal": {},
+   "ledger_bytes": 305762,
+   "rebuilt": 304324,
+   "verbatim": 768,
+   "generated": 670,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "maze.bif": {
+   "size": 376982,
+   "equal": true,
+   "sha1_orig": "e0b51b1be0a16c7d164033d904d708fcb5241d44",
+   "sha1_rebuilt": "e0b51b1be0a16c7d164033d904d708fcb5241d44",
+   "bytes": {
+    "rebuilt-from-extracted": 375100,
+    "generated": 813,
+    "extracted-verbatim": 1069
+   },
+   "unequal": {},
+   "ledger_bytes": 376982,
+   "rebuilt": 375100,
+   "verbatim": 1069,
+   "generated": 813,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "ski.bif": {
+   "size": 275326,
+   "equal": true,
+   "sha1_orig": "89bea83f514ed1b54651f25996588c6d7b1db8bc",
+   "sha1_rebuilt": "89bea83f514ed1b54651f25996588c6d7b1db8bc",
+   "bytes": {
+    "rebuilt-from-extracted": 272482,
+    "generated": 679,
+    "extracted-verbatim": 2165
+   },
+   "unequal": {},
+   "ledger_bytes": 275326,
+   "rebuilt": 272482,
+   "verbatim": 2165,
+   "generated": 679,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "river.bif": {
+   "size": 442490,
+   "equal": true,
+   "sha1_orig": "671f86c1266f12b1a4a4cfcc03a603fe111073ba",
+   "sha1_rebuilt": "671f86c1266f12b1a4a4cfcc03a603fe111073ba",
+   "bytes": {
+    "rebuilt-from-extracted": 391422,
+    "generated": 932,
+    "extracted-verbatim": 50136
+   },
+   "unequal": {},
+   "ledger_bytes": 442490,
+   "rebuilt": 391422,
+   "verbatim": 50136,
+   "generated": 932,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  },
+  "bonus123.bif": {
+   "size": 328682,
+   "equal": true,
+   "sha1_orig": "cd7e145b142c36c21a0bac242a0a64343bf8b4d8",
+   "sha1_rebuilt": "cd7e145b142c36c21a0bac242a0a64343bf8b4d8",
+   "bytes": {
+    "rebuilt-from-extracted": 325668,
+    "generated": 398,
+    "extracted-verbatim": 2616
+   },
+   "unequal": {},
+   "ledger_bytes": 328682,
+   "rebuilt": 325668,
+   "verbatim": 2616,
+   "generated": 398,
+   "excepted": 0,
+   "equal_without_exceptions": true
+  }
+ },
+ "total": {
+  "size": 2965768,
+  "rebuilt": 2902848,
+  "verbatim": 57954,
+  "generated": 4966,
+  "excepted": 0,
+  "images_equal": 8
+ }
+}

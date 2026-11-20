@@ -1,0 +1,226 @@
+game	rom_start	rom_end	class	format	description	referenced_by	extractor
+letter	0x00103C	0x001050	pad	zero fill	pad_8000043C not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x06D5AC	0x06E0E4	rsp_ucode	C u32[718]	rsp_text_tail_8006C9AC tail of an RSP microcode text block (RSP instructions, not R4300); owned/decoded by the ucode agent, kept here as words	kit rsp range 8006CB00-8006D4C0 plus disassembly of the bytes as RSP code; no CPU reference	tools/gen_data.py
+letter	0x06E0E4	0x06E0F0	pad	zero fill	pad_8006D4E4 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x06E0F0	0x06E0F4	data	C void *	D_8006D4F0 pointer to the program bss start (first free RAM after the image); unreferenced by matched code	value equals .bss start; no ref	tools/gen_data.py
+letter	0x06E0F4	0x06E100	pad	zero fill	pad_8006D4F4 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x06E100	0x06E104	data	C s32	D_8006D500 controller-present bit mask (bit n = port n); read as byte (lbu) and word	func_8000125C/func_80001000 test (D_8006D500>>n)&1; lw in func_80000F60	tools/gen_data.py
+letter	0x06E104	0x06E10C	data	C u16[4]	D_8006D504 previous button state per controller (4 ports), XORed with the new state to get edges	func_80001000/func_8000125C index &D_8006D504 by n*2 with u16 loads/s16 stores	tools/gen_data.py
+letter	0x06E10C	0x06E110	pad	zero fill	pad_8006D50C not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x06E110	0x06E114	data	C u32	D_8006D510 per-frame angle step added to D_80106894	func_800030A0 lw	tools/gen_data.py
+letter	0x06E114	0x06E118	data	C u32	D_8006D514 per-frame angle step added to D_800A7AB8	func_800030A0 lw	tools/gen_data.py
+letter	0x06E118	0x06E918	texture	C u16[1024]	D_8006D518 32x32 RGBA5551 texture (G_SETTIMG fmt RGBA siz 16b width 32)	func_800030A0 gDPSetTextureImage 0xFD10001F w1=&D_8006D518	tools/gen_data.py
+letter	0x06E918	0x06E958	data	C NodeList[8]	D_8006DD18 8-entry callback list {in-use flag, function pointer called with 0}	func_800013B0 clears .m0; func_800016C0 calls ((fn)D_8006DD18[i].m4)(0)	tools/gen_data.py
+letter	0x06E958	0x06E95C	data	C s32	D_8006DD58 callback list counter	func_800013B0/func_80001424/func_80001EE8 lw/sw	tools/gen_data.py
+letter	0x06E95C	0x06E960	data	C s32	D_8006DD5C callback list state	func_800013B0/func_80001D38/func_80001DE4 lw/sw	tools/gen_data.py
+letter	0x06E960	0x06E964	pad	zero fill	pad_8006DD60 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x06E964	0x06E968	data	C s32	D_8006DD64 flag tested by func_80001818	func_80001818 lw/sw	tools/gen_data.py
+letter	0x06E968	0x06E9A8	vtx	C Vtx[4]	D_8006DD68 4-vertex quad (background), x/y rewritten each frame	func_800030A0 address + sh to +0x0/+0x2 of each vertex	tools/gen_data.py
+letter	0x06E9A8	0x06E9E8	vtx	C Vtx[4]	D_8006DDA8 second 4-vertex quad	func_800030A0 address + sh	tools/gen_data.py
+letter	0x06E9E8	0x06E9EC	data	C f32	D_8006DDE8 camera angle (degrees, = atan result * 57.2957)	func_800030A0 lwc1/swc1	tools/gen_data.py
+letter	0x06E9EC	0x06E9F0	data	C f32	D_8006DDEC camera field of view passed to func_80056878	func_800030A0/func_80018A60/func_80031274 lwc1	tools/gen_data.py
+letter	0x06E9F0	0x06EA28	table	C TexPair[7]	D_8006DDF0 7 {TLUT address, texture address} pairs into the loaded-asset heap, put into G_SETTIMG commands	func_80004010 D_8006DDF0[k].m0/.m4 -> gd w1	tools/gen_data.py
+letter	0x06EA28	0x06EBC8	table	C TexPair[52]	D_8006DE28 52 {TLUT, texture} RAM address pairs (heap)	func_80004010 D_8006DE28[i].m0/.m4	tools/gen_data.py
+letter	0x06EBC8	0x06ED68	table	C TexPair[52]	D_8006DFC8 52 {TLUT, texture} RAM address pairs (heap); +4 read directly as D_8006DFCC	func_80004010 D_8006DFC8[0].m0, D_8006DFCC, [i].m4	tools/gen_data.py
+letter	0x06ED68	0x06ED74	table	C s32[3]	D_8006E168 per-world count (index D_80106870, 3 worlds)	func_80004010 *(&D_8006E168 + world*4) << 1 loop bound	tools/gen_data.py
+letter	0x06ED74	0x06EDD4	table	C s32[24]	D_8006E174 world 0 coordinate list A	func_80004010 world switch case 0 sp18	tools/gen_data.py
+letter	0x06EDD4	0x06EE54	table	C s32[32]	D_8006E1D4 world 1 coordinate list A	func_80004010 case 1 sp18	tools/gen_data.py
+letter	0x06EE54	0x06EEF4	table	C s32[40]	D_8006E254 world 2 coordinate list A	func_80004010 case 2 sp18	tools/gen_data.py
+letter	0x06EEF4	0x06EF54	table	C s32[24]	D_8006E2F4 world 0 coordinate list B	func_80004010 case 0 sp1C	tools/gen_data.py
+letter	0x06EF54	0x06EFD4	table	C s32[32]	D_8006E354 world 1 coordinate list B	func_80004010 case 1 sp1C	tools/gen_data.py
+letter	0x06EFD4	0x06F074	table	C s32[40]	D_8006E3D4 world 2 coordinate list B	func_80004010 case 2 sp1C	tools/gen_data.py
+letter	0x06F074	0x06F080	table	C s32[3]	D_8006E474 per-world count for the second loop	func_80004010 *(&D_8006E474 + world*4)	tools/gen_data.py
+letter	0x06F080	0x06F0B0	table	C s32[12]	D_8006E480 world 0 coordinate list C	func_80004010 case 0 sp20	tools/gen_data.py
+letter	0x06F0B0	0x06F0D0	table	C s32[8]	D_8006E4B0 world 1 coordinate list C	func_80004010 case 1 sp20	tools/gen_data.py
+letter	0x06F0D0	0x06F0F8	table	C s32[10]	D_8006E4D0 world 2 coordinate list C	func_80004010 case 2 sp20	tools/gen_data.py
+letter	0x06F0F8	0x06F110	table	C s32[6]	D_8006E4F8 texture-rectangle lower-right x,y pairs (3 pairs, <<2 into G_TEXRECT w1)	func_80004010 &D_8006E4F8 / &D_8006E4FC indexed sp10*4	tools/gen_data.py
+letter	0x06F110	0x06F140	table	C s32[12]	D_8006E510 world 0 coordinate list D	func_80004010 case 0 sp24	tools/gen_data.py
+letter	0x06F140	0x06F160	table	C s32[8]	D_8006E540 world 1 coordinate list D	func_80004010 case 1 sp24	tools/gen_data.py
+letter	0x06F160	0x06F188	table	C s32[10]	D_8006E560 world 2 coordinate list D	func_80004010 case 2 sp24	tools/gen_data.py
+letter	0x06F188	0x06F1A0	table	C s32[6]	D_8006E588 texture-rectangle upper-left x,y pairs (3 pairs, <<2 into G_TEXRECT w0)	func_80004010 &D_8006E588 / &D_8006E58C	tools/gen_data.py
+letter	0x06F1A0	0x06F2B0	table	C TexPair[34]	D_8006E5A0 34 {TLUT, texture} pairs (heap)	func_80004010 D_8006E5A0[D_800745F0]	tools/gen_data.py
+letter	0x06F2B0	0x06F3C0	table	C TexPair[34]	D_8006E6B0 34 {TLUT, texture} pairs	func_80004010 D_8006E6B0[D_800745F4]	tools/gen_data.py
+letter	0x06F3C0	0x06F4D0	table	C TexPair[34]	D_8006E7C0 34 {TLUT, texture} pairs	func_80004010 D_8006E7C0[D_800745F5]	tools/gen_data.py
+letter	0x06F4D0	0x06F678	table	C TexPair[53]	D_8006E8D0 53 {TLUT, texture} pairs	func_80004010 D_8006E8D0[D_800745F0]	tools/gen_data.py
+letter	0x06F678	0x06F820	table	C TexPair[53]	D_8006EA78 53 {TLUT, texture} pairs	func_80004010 D_8006EA78[D_800745F4]	tools/gen_data.py
+letter	0x06F820	0x06F9C8	table	C TexPair[53]	D_8006EC20 53 {TLUT, texture} pairs	func_80004010 D_8006EC20[D_800745F5]	tools/gen_data.py
+letter	0x06F9C8	0x06F9CC	data	C s32	D_8006EDC8 blink frame counter (wraps at 30)	func_80004010 D_8006EDC8++ / >=30	tools/gen_data.py
+letter	0x06F9CC	0x06F9D0	pad	zero fill	pad_8006EDCC not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x06F9D0	0x06F9D4	data	C s32	D_8006EDD0 pulsing alpha value 0..255	func_80004010 ±8 clamp	tools/gen_data.py
+letter	0x06F9D4	0x06F9D8	data	C s32	D_8006EDD4 pulse direction flag	func_80004010	tools/gen_data.py
+letter	0x06F9D8	0x06F9DC	data	C u32	D_8006EDD8 HUD element enable bit mask (bits 0..12)	func_80004010 tests &1,&2,..,&0x1000; set by func_80018A60 etc.	tools/gen_data.py
+letter	0x06F9DC	0x06F9E0	pad	zero fill	pad_8006EDDC not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x06F9E0	0x06F9E1	data	C u8	D_8006EDE0 byte flag set by func_80018A60	func_80018A60 sb	tools/gen_data.py
+letter	0x06F9E1	0x06F9E2	data	C u8	D_8006EDE1 HUD counter (compared < 4)	func_80004010 lbu	tools/gen_data.py
+letter	0x06F9E2	0x06F9E3	data	C u8	D_8006EDE2 HUD mode flag	func_80004010/func_80018A60/func_8002F274 lbu/sb	tools/gen_data.py
+letter	0x06F9E3	0x06F9E8	pad	zero fill	pad_8006EDE3 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x06F9E8	0x06FA6C	table	C u8[132]	D_8006EDE8 credits line colour index (0..4 -> white/green/yellow/blue/white), one per line	func_8000A7F0 switch (D_8006EDE8[i])	tools/gen_data.py
+letter	0x06FA6C	0x0712CC	text	C CreditLine[130]	D_8006EE6C 130 staff-credit lines {x, y, text}	func_8000A7F0 typedef CreditLine {s32 x; s32 y; char text[0x28]}	tools/gen_data.py
+letter	0x0712CC	0x0712D0	data	C s32	D_800706CC credits scroll timer	func_8000A7F0 lw/sw	tools/gen_data.py
+letter	0x0712D0	0x0712D4	data	C s32	D_800706D0 credits fade alpha (its low byte is also read as u8 D_800706D3)	func_8000A7F0 -=5	tools/gen_data.py
+letter	0x0712D4	0x0712D8	data	C u32	D_800706D4 credits page index (switch)	func_8000A7F0 switch(D_800706D4)	tools/gen_data.py
+letter	0x0712D8	0x0712D9	data	C u8	D_800706D8 credits start flag	func_8000A7F0	tools/gen_data.py
+letter	0x0712D9	0x0712DA	data	C s8	D_800706D9 credits state byte	func_8000A7F0 sb	tools/gen_data.py
+letter	0x0712DA	0x0712DB	data	C u8	D_800706DA first credits line of the page	func_8000A7F0	tools/gen_data.py
+letter	0x0712DB	0x0712DC	data	C u8	D_800706DB last credits line of the page	func_8000A7F0	tools/gen_data.py
+letter	0x0712DC	0x0712E0	pad	zero fill	pad_800706DC not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x0712E0	0x071360	mtx	C Mtx[2]	D_800706E0 2 double-buffered matrices indexed by D_80070760	func_800264F4 &((Mtx*)&D_800706E0)[D_80070760]	tools/gen_data.py
+letter	0x071360	0x071364	data	C s32	D_80070760 frame buffer / display list double-buffer index	used by 10+ functions as index into Mtx/Gfx buffers	tools/gen_data.py
+letter	0x071364	0x071370	pad	zero fill	pad_80070764 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x071370	0x071374	data	C s32	D_80070770 timing initialised flag	func_8000D0CC: if 0 call func_8000CF50	tools/gen_data.py
+letter	0x071374	0x071378	data	C s32	D_80070774 frame timing counter	func_8000CF50 reset; func_8000D0CC/func_8000D060	tools/gen_data.py
+letter	0x071378	0x07137C	data	C s32	D_80070778 frame timing counter	same	tools/gen_data.py
+letter	0x07137C	0x071380	data	C s32	D_8007077C frame timing counter	same	tools/gen_data.py
+letter	0x071380	0x071384	data	C s32	D_80070780 frame timing counter	same	tools/gen_data.py
+letter	0x071384	0x071388	data	C s32	D_80070784 frame timing counter (getter func_8000D6C8 etc.)	same	tools/gen_data.py
+letter	0x071388	0x07138C	data	C s32	D_80070788 lag flag	func_8000D0CC sw 0/1	tools/gen_data.py
+letter	0x07138C	0x071390	data	C s32	D_8007078C frame timing counter	same	tools/gen_data.py
+letter	0x071390	0x071394	data	C s32	D_80070790 frame timing counter	same	tools/gen_data.py
+letter	0x071394	0x0713A0	pad	zero fill	pad_80070794 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x0713A0	0x0713A8	gfx	C Gfx[1]	D_800707A0 orphan one-command display list (gsSPEndDisplayList); nothing points to it	no CPU or data reference; G_ENDDL opcode 0xB8	tools/gen_data.py
+letter	0x0713A8	0x0723A8	texture	C u8[4096]	D_800707A8 debug/menu font texture sheet (64 texels wide, referenced by every glyph Bitmap)	pointer from the 80 Bitmap entries at D_800717FC (.buf)	tools/gen_data.py
+letter	0x0723A8	0x0723FC	text	C char[84]	D_800717A8 font character order string (80 glyphs), NUL-terminated	pointer at D_80071CFC+4	tools/gen_data.py
+letter	0x0723FC	0x0728FC	table	C Bitmap[80]	D_800717FC 80 libultra sprite Bitmaps, one per glyph {width, width_img, s, t, buf, actualHeight, LUToffset}	pointer at D_80071CFC+8; used through the Sprite D_80071D08	tools/gen_data.py
+letter	0x0728FC	0x072908	data	C FontDesc	D_80071CFC font descriptor {character order string, glyph Bitmaps, font texture}	func_8000DEBC passes &D_80071CFC to func_8000D810	tools/gen_data.py
+letter	0x072908	0x07294C	sprite	C Sprite	D_80071D08 libultra Sprite for text drawing	func_8000DE60/func_8000DEBC: spSetAttribute/spClearAttribute/spMove/spColor/spScale/spDraw; func_8000DBC0 lw D_80071D40 (rsp_dl) sw D_80071D44 (rsp_dl_next)	tools/gen_data.py
+letter	0x07294C	0x072950	pad	zero fill	pad_80071D4C not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x072950	0x072960	vp	C Vp	D_80071D50 viewport for the text display list	pointer at D_80071D60+4 (G_MOVEMEM viewport)	tools/gen_data.py
+letter	0x072960	0x072988	gfx	C Gfx[5]	D_80071D60 text setup display list part 1 (viewport, geometry/othermode setup)	func_8000DBC0 address	tools/gen_data.py
+letter	0x072988	0x072A10	gfx	C Gfx[17]	D_80071D88 text setup display list part 2 (RDP modes)	func_8000DBC0 address	tools/gen_data.py
+letter	0x072A10	0x072A11	data	C u8	D_80071E10 text colour red	func_8000DDF4 sb; func_8000DEBC spColor	tools/gen_data.py
+letter	0x072A11	0x072A12	data	C u8	D_80071E11 text colour green	same	tools/gen_data.py
+letter	0x072A12	0x072A13	data	C u8	D_80071E12 text colour blue	same	tools/gen_data.py
+letter	0x072A13	0x072A14	data	C u8	D_80071E13 text colour alpha	same	tools/gen_data.py
+letter	0x072A14	0x072A18	data	C s32	D_80071E14 text x	func_8000DD7C sw; spMove	tools/gen_data.py
+letter	0x072A18	0x072A1C	data	C s32	D_80071E18 text y	same	tools/gen_data.py
+letter	0x072A1C	0x072A20	data	C s32	D_80071E1C text columns	func_8000DD40; sprite width = n*8+8	tools/gen_data.py
+letter	0x072A20	0x072A24	data	C s32	D_80071E20 text rows	func_8000DD40; sprite height = n*16+8	tools/gen_data.py
+letter	0x072A24	0x072A28	pad	zero fill	pad_80071E24 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x072A28	0x072A30	data	C f64	D_80071E28 text scale x	func_8000DDB8 sdc1; spScale	tools/gen_data.py
+letter	0x072A30	0x072A38	data	C f64	D_80071E30 text scale y	same	tools/gen_data.py
+letter	0x072A38	0x072A40	pad	zero fill	pad_80071E38 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+letter	0x072A40	0x072A44	data	C s32	D_80071E40 debug print state	func_8000E010 group	tools/gen_data.py
+letter	0x072A44	0x072A48	data	C void *	D_80071E44 debug print int* target	func_8000E3EC/func_8000E5C4 (s32 *)	tools/gen_data.py
+letter	0x072A48	0x072A4C	data	C void *	D_80071E48 debug print f64* target	func_8000E4DC/func_8000E6B4 (f64 *)	tools/gen_data.py
+letter	0x072A4C	0x072A50	data	C s32	D_80071E4C debug print value	func_8000E010/func_8000E310	tools/gen_data.py
+letter	0x072A50	0x072A54	data	C s32	D_80071E50 debug print value	same	tools/gen_data.py
+letter	0x072A54	0x072A58	data	C s32	D_80071E54 debug print value	same	tools/gen_data.py
+letter	0x072A58	0x072A5C	data	C s32	D_80071E58 debug print value	same	tools/gen_data.py
+letter	0x072A5C	0x072A60	data	C s32	D_80071E5C debug print value	same	tools/gen_data.py
+letter	0x072A60	0x072D60	texture	C u8[768]	D_80071E60 8x8 1-bit font, 96 glyphs for ASCII 32..127, 8 bytes each	func_8000E7A0 ((c-32)<<3) + D_80071E60	tools/gen_data.py
+letter	0x072D60	0x073D60	texture	C u8[4096]	D_80072160 4 KB I-format texture loaded with G_SETTIMG fmt I	func_80012164 gDPSetTextureImage 0xFD900000 w1=&D_80072160	tools/gen_data.py
+number	0x00103C	0x001050	pad	zero fill	pad_8000043C not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x06EF1C	0x06FA54	rsp_ucode	C u32[718]	rsp_text_tail_8006E31C tail of an RSP microcode text block (RSP instructions, not R4300); owned/decoded by the ucode agent, kept here as words	letter twin D_8006C9AC (kit rsp range 8006CB00-8006D4C0 plus disassembly of the bytes as RSP code; no CPU reference) | no direct number ref	tools/gen_data.py
+number	0x06FA54	0x06FA60	pad	zero fill	pad_8006EE54 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x06FA60	0x06FA64	data	C void *	D_8006EE60 pointer to the program bss start (first free RAM after the image); unreferenced by matched code	letter twin D_8006D4F0 (value equals .bss start; no ref) | no direct number ref	tools/gen_data.py
+number	0x06FA64	0x06FA70	pad	zero fill	pad_8006EE64 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x06FA70	0x06FA74	data	C s32	D_8006EE70 controller-present bit mask (bit n = port n); read as byte (lbu) and word	letter twin D_8006D500 (func_8000125C/func_80001000 test (D_8006D500>>n)&1; lw in func_80000F60) | number refs: func_80000F60 addr; func_80001000 lbu; func_8000125C lbu; func_8000C188 lw; func_80019470 lbu	tools/gen_data.py
+number	0x06FA74	0x06FA7C	data	C u16[4]	D_8006EE74 previous button state per controller (4 ports), XORed with the new state to get edges	letter twin D_8006D504 (func_80001000/func_8000125C index &D_8006D504 by n*2 with u16 loads/s16 stores) | number refs: func_80001000 addr; func_8000125C addr	tools/gen_data.py
+number	0x06FA7C	0x06FA80	pad	zero fill	pad_8006EE7C not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x06FA80	0x06FA84	data	C u32	D_8006EE80 per-frame angle step added to D_80106894	letter twin D_8006D510 (func_800030A0 lw) | number refs: func_80002EA8 lw	tools/gen_data.py
+number	0x06FA84	0x06FA88	data	C u32	D_8006EE84 per-frame angle step added to D_800A7AB8	letter twin D_8006D514 (func_800030A0 lw) | number refs: func_80002EA8 lw	tools/gen_data.py
+number	0x06FA88	0x070288	texture	C u16[1024]	D_8006EE88 32x32 RGBA5551 texture (G_SETTIMG fmt RGBA siz 16b width 32)	letter twin D_8006D518 (func_800030A0 gDPSetTextureImage 0xFD10001F w1=&D_8006D518) | number refs: func_80002EA8 addr	tools/gen_data.py
+number	0x070288	0x0702C8	data	C NodeList[8]	D_8006F688 8-entry callback list {in-use flag, function pointer called with 0}	letter twin D_8006DD18 (func_800013B0 clears .m0; func_800016C0 calls ((fn)D_8006DD18[i].m4)(0)) | number refs: func_800013B0 sw[]; func_80001424 lw[]; func_80001424 sw[]; func_800016C0 lw[]	tools/gen_data.py
+number	0x0702C8	0x0702CC	data	C s32	D_8006F6C8 callback list counter	letter twin D_8006DD58 (func_800013B0/func_80001424/func_80001EE8 lw/sw) | number refs: func_800013B0 sw; func_80001424 lw; func_80001424 sw; func_80001EE8 sw	tools/gen_data.py
+number	0x0702CC	0x0702D0	data	C s32	D_8006F6CC callback list state	letter twin D_8006DD5C (func_800013B0/func_80001D38/func_80001DE4 lw/sw) | number refs: func_800013B0 sw; func_80001D38 lw; func_80001D38 sw; func_80001DE4 lw	tools/gen_data.py
+number	0x0702D0	0x0702D4	pad	zero fill	pad_8006F6D0 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x0702D4	0x0702D8	data	C s32	D_8006F6D4 flag tested by func_80001818	letter twin D_8006DD64 (func_80001818 lw/sw) | number refs: func_80001818 lw; func_80001818 sw	tools/gen_data.py
+number	0x0702D8	0x070318	vtx	C Vtx[4]	D_8006F6D8 4-vertex quad (background), x/y rewritten each frame	letter twin D_8006DD68 (func_800030A0 address + sh to +0x0/+0x2 of each vertex) | number refs: func_80002EA8 addr	tools/gen_data.py
+number	0x070318	0x070358	vtx	C Vtx[4]	D_8006F718 second 4-vertex quad	letter twin D_8006DDA8 (func_800030A0 address + sh) | number refs: func_80002EA8 addr	tools/gen_data.py
+number	0x070358	0x07035C	data	C f32	D_8006F758 camera angle (degrees, = atan result * 57.2957)	letter twin D_8006DDE8 (func_800030A0 lwc1/swc1) | number refs: func_80002EA8 lw; func_80002EA8 lwc1; func_80002EA8 swc1	tools/gen_data.py
+number	0x07035C	0x070360	data	C f32	D_8006F75C camera field of view passed to func_80056878	letter twin D_8006DDEC (func_800030A0/func_80018A60/func_80031274 lwc1) | number refs: func_80002EA8 lw; func_80019470 sw; func_80033850 lwc1; func_80033850 swc1	tools/gen_data.py
+number	0x070360	0x070398	table	C TexPair[7]	D_8006F760 7 {TLUT, texture} RAM address pairs (heap)	func_80003E18 D_8006F760[D_8013ECA8[i].m4].m0/.m4 | number refs: func_80003E18 lw[]	tools/gen_data.py
+number	0x070398	0x0703E0	table	C TexPair[9]	D_8006F798 9 {TLUT, texture} pairs	func_80003E18 D_8006F798[i].m0/.m4 | number refs: func_80003E18 lw[]	tools/gen_data.py
+number	0x0703E0	0x070428	table	C TexPair[9]	D_8006F7E0 9 {TLUT, texture} pairs; +4 read directly	func_80003E18 D_8006F7E0[0].m0, D_8006F7E4, [i].m4 | number refs: func_80003E18 lw; func_80003E18 lw[]	tools/gen_data.py
+number	0x070428	0x070434	table	C s32[3]	D_8006F828 per-world count (index D_80106C70)	func_80003E18 *(&D_8006F828 + world*4) | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070434	0x070494	table	C s32[24]	D_8006F834 world 0 coordinate list A	func_80003E18 case 0 sp18 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070494	0x070514	table	C s32[32]	D_8006F894 world 1 coordinate list A	case 1 sp18 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070514	0x0705B4	table	C s32[40]	D_8006F914 world 2 coordinate list A	case 2 sp18 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x0705B4	0x070614	table	C s32[24]	D_8006F9B4 world 0 coordinate list B	case 0 sp1C | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070614	0x070694	table	C s32[32]	D_8006FA14 world 1 coordinate list B	case 1 sp1C | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070694	0x070734	table	C s32[40]	D_8006FA94 world 2 coordinate list B	case 2 sp1C | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070734	0x070740	table	C s32[3]	D_8006FB34 per-world count for the second loop	*(&D_8006FB34 + world*4) | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070740	0x070770	table	C s32[12]	D_8006FB40 world 0 coordinate list C	case 0 sp20 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070770	0x070790	table	C s32[8]	D_8006FB70 world 1 coordinate list C	case 1 sp20 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070790	0x0707A0	table	C s32[4]	D_8006FB90 world 2 coordinate list C	case 2 sp20 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x0707A0	0x0707D0	table	C s32[12]	D_8006FBA0 texture-rectangle lower-right x,y pairs	&D_8006FBA0/&D_8006FBA4 indexed sp10*4 (G_TEXRECT w1) | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x0707D0	0x070800	table	C s32[12]	D_8006FBD0 world 0 coordinate list D	case 0 sp24 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070800	0x070820	table	C s32[8]	D_8006FC00 world 1 coordinate list D	case 1 sp24 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070820	0x070830	table	C s32[4]	D_8006FC20 world 2 coordinate list D	case 2 sp24 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070830	0x070860	table	C s32[12]	D_8006FC30 texture-rectangle upper-left x,y pairs	&D_8006FC30/&D_8006FC34 (G_TEXRECT w0) | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070860	0x0708A8	table	C TexPair[9]	D_8006FC60 9 {TLUT, texture} pairs	D_8006FC60[D_8006FE5C / D_8006FE5D] | number refs: func_80003E18 lw[]	tools/gen_data.py
+number	0x0708A8	0x0708F8	table	C TexPair[10]	D_8006FCA8 10 {TLUT, texture} pairs	D_8006FCA8[D_8006FE5C / D_8006FE5E] | number refs: func_80003E18 lw[]	tools/gen_data.py
+number	0x0708F8	0x070910	table	C s32[6]	D_8006FCF8 texrect lower-right pairs, case D_8006FE5E < 4	&D_8006FCF8/&D_8006FCFC | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070910	0x070928	table	C s32[6]	D_8006FD10 texrect upper-left pairs, case < 4	&D_8006FD10/&D_8006FD14 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070928	0x070948	table	C s32[8]	D_8006FD28 texrect lower-right pairs, case 4	&D_8006FD28/&D_8006FD2C | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070948	0x070968	table	C s32[8]	D_8006FD48 texrect upper-left pairs, case 4	&D_8006FD48/&D_8006FD4C | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070968	0x070990	table	C s32[10]	D_8006FD68 texrect lower-right pairs, case 5	&D_8006FD68/&D_8006FD6C | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070990	0x0709B8	table	C s32[10]	D_8006FD90 texrect upper-left pairs, case 5	&D_8006FD90/&D_8006FD94 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x0709B8	0x070A00	table	C s32[18]	D_8006FDB8 texrect lower-right pairs, other cases	&D_8006FDB8/&D_8006FDBC | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070A00	0x070A48	table	C s32[18]	D_8006FE00 texrect upper-left pairs, other cases	&D_8006FE00/&D_8006FE04 | number refs: func_80003E18 addr	tools/gen_data.py
+number	0x070A48	0x070A4C	data	C s32	D_8006FE48 blink frame counter (wraps at 30)	func_80003E18 ++ / >=30 | number refs: func_80003E18 lw; func_80003E18 sw	tools/gen_data.py
+number	0x070A4C	0x070A50	pad	zero fill	pad_8006FE4C not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x070A50	0x070A54	data	C s32	D_8006FE50 pulsing alpha value 0..255	func_80003E18 | number refs: func_80003E18 lw; func_80003E18 sw	tools/gen_data.py
+number	0x070A54	0x070A58	data	C s32	D_8006FE54 pulse direction flag	func_80003E18 | number refs: func_80003E18 lw; func_80003E18 sw	tools/gen_data.py
+number	0x070A58	0x070A5C	data	C u32	D_8006FE58 HUD element enable bit mask	func_80003E18 tests &1..&0x1000 | number refs: func_80003E18 lw; func_80019470 lw; func_80019470 sw; func_800287AC lw; func_800287AC sw; func_8002D0A4 lw; func_8002D0A4 sw; func_800319A0 lw; func_800319A0 sw; func_800356F0 lw; func_800356F0 sw; func_80038388 lw; func_800386EC lw; func_80038A50 lw; func_8003C494 lw; func_8003C494 sw	tools/gen_data.py
+number	0x070A5C	0x070A5D	data	C u8	D_8006FE5C HUD index A	D_8006FCA8[D_8006FE5C] | number refs: func_80003E18 lbu; func_80018CB0 lbu; func_80018E08 lbu; func_80018F60 lbu; func_80018F60 sb	tools/gen_data.py
+number	0x070A5D	0x070A5E	data	C u8	D_8006FE5D HUD index B	D_8006FC60[D_8006FE5D] | number refs: func_80003E18 lbu; func_80018CB0 lbu; func_80018E08 lbu; func_80018F60 sb	tools/gen_data.py
+number	0x070A5E	0x070A5F	data	C u8	D_8006FE5E HUD count/case selector	if (D_8006FE5E < 4 / ==4 / ==5) | number refs: func_80003E18 lbu; func_80018F60 sb; func_800319A0 lbu; func_8003BAF0 lbu; func_8003BAF0 sb; func_8003BE04 lbu; func_8003BE04 sb; func_80040E34 lbu	tools/gen_data.py
+number	0x070A5F	0x070A60	data	C u8	D_8006FE5F HUD flag	if (D_8006FE5F == 0) | number refs: func_80003E18 lbu; func_80018CB0 lbu; func_80018E08 lbu; func_80018F60 sb	tools/gen_data.py
+number	0x070A60	0x070A61	data	C u8	D_8006FE60 HUD counter (compared < 4)	func_80003E18 | number refs: func_80003E18 lbu; func_80019470 sb; func_8003C494 lbu; func_80040E34 lbu; func_80040E34 sb	tools/gen_data.py
+number	0x070A61	0x070A68	pad	zero fill	pad_8006FE61 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x070A68	0x070AEC	table	C u8[132]	D_8006FE68 credits line colour index (0..4 -> white/green/yellow/blue/white), one per line	letter twin D_8006EDE8 (func_8000A7F0 switch (D_8006EDE8[i])) | number refs: func_8000ADBC addr	tools/gen_data.py
+number	0x070AEC	0x07234C	text	C CreditLine[130]	D_8006FEEC 130 staff-credit lines {x, y, text}	letter twin D_8006EE6C (func_8000A7F0 typedef CreditLine {s32 x; s32 y; char text[0x28]}) | number refs: func_8000ADBC lw[]; func_8000ADBC sw[]	tools/gen_data.py
+number	0x07234C	0x072350	data	C s32	D_8007174C credits scroll timer	letter twin D_800706CC (func_8000A7F0 lw/sw) | number refs: func_8000ADBC lw; func_8000ADBC sw	tools/gen_data.py
+number	0x072350	0x072354	data	C s32	D_80071750 credits fade alpha (its low byte is also read as u8 D_800706D3)	letter twin D_800706D0 (func_8000A7F0 -=5) | number refs: func_8000ADBC lw; func_8000ADBC sw	tools/gen_data.py
+number	0x072354	0x072358	data	C u32	D_80071754 credits page index (switch)	letter twin D_800706D4 (func_8000A7F0 switch(D_800706D4)) | number refs: func_8000ADBC lw; func_8000ADBC sw	tools/gen_data.py
+number	0x072358	0x072359	data	C u8	D_80071758 credits start flag	letter twin D_800706D8 (func_8000A7F0) | number refs: func_8000ADBC lbu; func_8000ADBC sb	tools/gen_data.py
+number	0x072359	0x07235A	data	C s8	D_80071759 credits state byte	letter twin D_800706D9 (func_8000A7F0 sb) | number refs: func_8000ADBC sb	tools/gen_data.py
+number	0x07235A	0x07235B	data	C u8	D_8007175A first credits line of the page	letter twin D_800706DA (func_8000A7F0) | number refs: func_8000ADBC lbu; func_8000ADBC sb	tools/gen_data.py
+number	0x07235B	0x07235C	data	C u8	D_8007175B last credits line of the page	letter twin D_800706DB (func_8000A7F0) | number refs: func_8000ADBC lbu; func_8000ADBC sb	tools/gen_data.py
+number	0x07235C	0x072360	pad	zero fill	pad_8007175C not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x072360	0x0723E0	mtx	C Mtx[2]	D_80071760 2 double-buffered matrices indexed by D_80070760	letter twin D_800706E0 (func_800264F4 &((Mtx*)&D_800706E0)[D_80070760]) | number refs: func_80027838 addr	tools/gen_data.py
+number	0x0723E0	0x0723E4	data	C s32	D_800717E0 frame buffer / display list double-buffer index	letter twin D_80070760 (used by 10+ functions as index into Mtx/Gfx buffers) | number refs: func_80001F60 lw; func_80002EA8 lw; func_8000C188 lw; func_8000C188 sw; func_800125D4 lw; func_80017F98 lw; func_80024F58 lw; func_800254C4 lw; func_80025700 lw; func_800258C0 lw; func_80027838 lw; func_800287AC lw; func_8002D0A4 lw; func_80034EE8 lw; func_800356F0 lw; func_8003670C lw; func_8003E07	tools/gen_data.py
+number	0x0723E4	0x0723F0	pad	zero fill	pad_800717E4 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x0723F0	0x0723F4	data	C s32	D_800717F0 timing initialised flag	letter twin D_80070770 (func_8000D0CC: if 0 call func_8000CF50) | number refs: func_8000D3C0 sw; func_8000D53C lw	tools/gen_data.py
+number	0x0723F4	0x0723F8	data	C s32	D_800717F4 frame timing counter	letter twin D_80070774 (func_8000CF50 reset; func_8000D0CC/func_8000D060) | number refs: func_8000D3C0 sw; func_8000D4D0 sw; func_8000D53C lw; func_8000D53C sw; func_8000DB38 lw	tools/gen_data.py
+number	0x0723F8	0x0723FC	data	C s32	D_800717F8 frame timing counter	letter twin D_80070778 (same) | number refs: func_8000D3C0 sw; func_8000D4D0 sw; func_8000D53C lw; func_8000D53C sw; func_8000DB60 lw	tools/gen_data.py
+number	0x0723FC	0x072400	data	C s32	D_800717FC frame timing counter	letter twin D_8007077C (same) | number refs: func_8000D3C0 sw; func_8000D4D0 sw; func_8000D53C lw; func_8000D53C sw; func_8000DB00 lw; func_8000DB00 sw	tools/gen_data.py
+number	0x072400	0x072404	data	C s32	D_80071800 frame timing counter	letter twin D_80070780 (same) | number refs: func_8000D3C0 sw; func_8000D4D0 sw; func_8000D53C lw; func_8000D53C sw; func_8000DAC8 lw; func_8000DAC8 sw	tools/gen_data.py
+number	0x072404	0x072408	data	C s32	D_80071804 frame timing counter (getter func_8000D6C8 etc.)	letter twin D_80070784 (same) | number refs: func_8000D3C0 sw; func_8000D4D0 sw; func_8000D53C lw; func_8000DB88 sw; func_8000DBBC lw	tools/gen_data.py
+number	0x072408	0x07240C	data	C s32	D_80071808 lag flag	letter twin D_80070788 (func_8000D0CC sw 0/1) | number refs: func_8000D53C sw	tools/gen_data.py
+number	0x07240C	0x072410	data	C s32	D_8007180C frame timing counter	letter twin D_8007078C (same) | number refs: func_8000D3C0 sw; func_8000D4D0 sw; func_8000D53C lw; func_8000D53C sw; func_8000DBE4 lw; func_8000DBE4 sw	tools/gen_data.py
+number	0x072410	0x072414	data	C s32	D_80071810 frame timing counter	letter twin D_80070790 (same) | number refs: func_8000D3C0 sw; func_8000D4D0 sw; func_8000D53C lw; func_8000DC18 lw; func_8000DC18 sw; func_8000DC50 lw	tools/gen_data.py
+number	0x072414	0x072420	pad	zero fill	pad_80071814 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x072420	0x072428	gfx	C Gfx[1]	D_80071820 orphan one-command display list (gsSPEndDisplayList); nothing points to it	letter twin D_800707A0 (no CPU or data reference; G_ENDDL opcode 0xB8) | no direct number ref	tools/gen_data.py
+number	0x072428	0x073428	texture	C u8[4096]	D_80071828 debug/menu font texture sheet (64 texels wide, referenced by every glyph Bitmap)	letter twin D_800707A8 (pointer from the 80 Bitmap entries at D_800717FC (.buf)) | number refs: data_80072884 ptr; data_80072894 ptr; data_800728A4 ptr; data_800728B4 ptr; data_800728C4 ptr; data_800728D4 ptr; data_800728E4 ptr; data_800728F4 ptr; data_80072904 ptr; data_80072914 ptr; data_80072924 ptr; data_80072934 ptr; data_80072944 ptr; data_80072954 ptr; data_80072964 ptr; data_80072974 p	tools/gen_data.py
+number	0x073428	0x07347C	text	C char[84]	D_80072828 font character order string (80 glyphs), NUL-terminated	letter twin D_800717A8 (pointer at D_80071CFC+4) | number refs: data_80072D7C ptr	tools/gen_data.py
+number	0x07347C	0x07397C	table	C Bitmap[80]	D_8007287C 80 libultra sprite Bitmaps, one per glyph {width, width_img, s, t, buf, actualHeight, LUToffset}	letter twin D_800717FC (pointer at D_80071CFC+8; used through the Sprite D_80071D08) | number refs: data_80072D80 ptr	tools/gen_data.py
+number	0x07397C	0x073988	data	C FontDesc	D_80072D7C font descriptor {character order string, glyph Bitmaps, font texture}	letter twin D_80071CFC (func_8000DEBC passes &D_80071CFC to func_8000D810) | number refs: func_8000E32C addr	tools/gen_data.py
+number	0x073988	0x0739CC	sprite	C Sprite	D_80072D88 libultra Sprite for text drawing	letter twin D_80071D08 (func_8000DE60/func_8000DEBC: spSetAttribute/spClearAttribute/spMove/spColor/spScale/spDraw; func_8000DBC0 lw D_80071D40 (rsp_dl) sw D_80071D44 (rsp_dl_next)) | number refs: func_8000E2D0 addr; func_8000E32C addr	tools/gen_data.py
+number	0x0739CC	0x0739D0	pad	zero fill	pad_80072DCC not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x0739D0	0x0739E0	vp	C Vp	D_80072DD0 viewport for the text display list	letter twin D_80071D50 (pointer at D_80071D60+4 (G_MOVEMEM viewport)) | number refs: data_80072DE4 ptr	tools/gen_data.py
+number	0x0739E0	0x073A08	gfx	C Gfx[5]	D_80072DE0 text setup display list part 1 (viewport, geometry/othermode setup)	letter twin D_80071D60 (func_8000DBC0 address) | number refs: func_8000E030 addr	tools/gen_data.py
+number	0x073A08	0x073A90	gfx	C Gfx[17]	D_80072E08 text setup display list part 2 (RDP modes)	letter twin D_80071D88 (func_8000DBC0 address) | number refs: func_8000E030 addr	tools/gen_data.py
+number	0x073A90	0x073A91	data	C u8	D_80072E90 text colour red	letter twin D_80071E10 (func_8000DDF4 sb; func_8000DEBC spColor) | number refs: func_8000E030 sb; func_8000E264 sb; func_8000E32C lbu	tools/gen_data.py
+number	0x073A91	0x073A92	data	C u8	D_80072E91 text colour green	letter twin D_80071E11 (same) | number refs: func_8000E030 sb; func_8000E264 sb; func_8000E32C lbu	tools/gen_data.py
+number	0x073A92	0x073A93	data	C u8	D_80072E92 text colour blue	letter twin D_80071E12 (same) | number refs: func_8000E030 sb; func_8000E264 sb; func_8000E32C lbu	tools/gen_data.py
+number	0x073A93	0x073A94	data	C u8	D_80072E93 text colour alpha	letter twin D_80071E13 (same) | number refs: func_8000E030 sb; func_8000E264 sb; func_8000E32C lbu	tools/gen_data.py
+number	0x073A94	0x073A98	data	C s32	D_80072E94 text x	letter twin D_80071E14 (func_8000DD7C sw; spMove) | number refs: func_8000E030 sw; func_8000E1EC sw; func_8000E32C lw	tools/gen_data.py
+number	0x073A98	0x073A9C	data	C s32	D_80072E98 text y	letter twin D_80071E18 (same) | number refs: func_8000E030 sw; func_8000E1EC sw; func_8000E32C lw	tools/gen_data.py
+number	0x073A9C	0x073AA0	data	C s32	D_80072E9C text columns	letter twin D_80071E1C (func_8000DD40; sprite width = n*8+8) | number refs: func_8000E030 sw; func_8000E1B0 sw; func_8000E32C lw	tools/gen_data.py
+number	0x073AA0	0x073AA4	data	C s32	D_80072EA0 text rows	letter twin D_80071E20 (func_8000DD40; sprite height = n*16+8) | number refs: func_8000E030 sw; func_8000E1B0 sw; func_8000E32C lw	tools/gen_data.py
+number	0x073AA4	0x073AA8	pad	zero fill	pad_80072EA4 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x073AA8	0x073AB0	data	C f64	D_80072EA8 text scale x	letter twin D_80071E28 (func_8000DDB8 sdc1; spScale) | number refs: func_8000E030 sdc1; func_8000E228 sdc1; func_8000E32C ldc1	tools/gen_data.py
+number	0x073AB0	0x073AB8	data	C f64	D_80072EB0 text scale y	letter twin D_80071E30 (same) | number refs: func_8000E030 sdc1; func_8000E228 sdc1; func_8000E32C ldc1	tools/gen_data.py
+number	0x073AB8	0x073AC0	pad	zero fill	pad_80072EB8 not referenced by any matched function	gap between table objects	tools/gen_data.py (pad)
+number	0x073AC0	0x073AC4	data	C s32	D_80072EC0 debug print state	letter twin D_80071E40 (func_8000E010 group) | number refs: func_8000E480 lw; func_8000E480 sw; func_8000E780 lw; func_8000E85C lw; func_8000E94C lw; func_8000EA34 lw; func_8000EB24 lw	tools/gen_data.py
+number	0x073AC4	0x073AC8	data	C void *	D_80072EC4 debug print int* target	letter twin D_80071E44 (func_8000E3EC/func_8000E5C4 (s32 *)) | number refs: func_8000E480 lw; func_8000E480 sw; func_8000E85C lw; func_8000EA34 lw	tools/gen_data.py
+number	0x073AC8	0x073ACC	data	C void *	D_80072EC8 debug print f64* target	letter twin D_80071E48 (func_8000E4DC/func_8000E6B4 (f64 *)) | number refs: func_8000E480 lw; func_8000E480 sw; func_8000E94C lw; func_8000EB24 lw	tools/gen_data.py
+number	0x073ACC	0x073AD0	data	C s32	D_80072ECC debug print value	letter twin D_80071E4C (func_8000E010/func_8000E310) | number refs: func_8000E480 sw; func_8000E780 lw; func_8000E780 sw; func_8000E85C lw; func_8000E85C sw	tools/gen_data.py
+number	0x073AD0	0x073AD4	data	C s32	D_80072ED0 debug print value	letter twin D_80071E50 (same) | number refs: func_8000E480 sw; func_8000E780 lw; func_8000E780 sw; func_8000E94C lw; func_8000E94C sw	tools/gen_data.py
+number	0x073AD4	0x073AD8	data	C s32	D_80072ED4 debug print value	letter twin D_80071E54 (same) | number refs: func_8000E480 sw; func_8000E780 sw; func_8000EA34 lw; func_8000EA34 sw	tools/gen_data.py
+number	0x073AD8	0x073ADC	data	C s32	D_80072ED8 debug print value	letter twin D_80071E58 (same) | number refs: func_8000E480 sw; func_8000E780 sw; func_8000EB24 lw; func_8000EB24 sw	tools/gen_data.py
+number	0x073ADC	0x073AE0	data	C s32	D_80072EDC debug print value	letter twin D_80071E5C (same) | number refs: func_8000E480 sw; func_8000E744 lw; func_8000E744 sw; func_8000E780 lw; func_8000E85C lw; func_8000E94C lw; func_8000EA34 lw; func_8000EB24 lw	tools/gen_data.py
+number	0x073AE0	0x073DE0	texture	C u8[768]	D_80072EE0 8x8 1-bit font, 96 glyphs for ASCII 32..127, 8 bytes each	letter twin D_80071E60 (func_8000E7A0 ((c-32)<<3) + D_80071E60) | number refs: func_8000EC10 addr	tools/gen_data.py
+number	0x073DE0	0x074DE0	texture	C u8[4096]	D_800731E0 4 KB I-format texture loaded with G_SETTIMG fmt I	letter twin D_80072160 (func_80012164 gDPSetTextureImage 0xFD900000 w1=&D_80072160) | number refs: func_800125D4 addr	tools/gen_data.py

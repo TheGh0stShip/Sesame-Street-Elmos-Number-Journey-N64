@@ -1,0 +1,760 @@
+game	start	end	class	format	description	reference	extractor
+letter	garden.bif:0x01C98	garden.bif:0x01CB0	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80155CB0 +0x24	tools/extract_level_rest.py
+letter	garden.bif:0x01CD4	garden.bif:0x01CD8	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80155CB0	tools/extract_level_rest.py
+letter	garden.bif:0x01CD8	garden.bif:0x01CE0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x04088	garden.bif:0x040A0	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 801580A0 +0x24	tools/extract_level_rest.py
+letter	garden.bif:0x040C4	garden.bif:0x040C8	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 801580A0	tools/extract_level_rest.py
+letter	garden.bif:0x040C8	garden.bif:0x040D0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x0BF00	garden.bif:0x0C02A	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 80160058	model_header 80160058 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	garden.bif:0x0C02A	garden.bif:0x0C030	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x0C040	garden.bif:0x0C058	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80160058 +0x24	tools/extract_level_rest.py
+letter	garden.bif:0x0C07C	garden.bif:0x0C080	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80160058	tools/extract_level_rest.py
+letter	garden.bif:0x0C080	garden.bif:0x0CD40	morph_anim	sprA keyframed vertex morph	116 verts x 7 keys	func_8003BB00:addr	tools/extract_level_rest.py
+letter	garden.bif:0x2A2BC	garden.bif:0x2A2C0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2A4AC	garden.bif:0x2A4B0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2AB04	garden.bif:0x2AB08	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2AECC	garden.bif:0x2AED0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2B0D4	garden.bif:0x2B0D8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2B494	garden.bif:0x2B498	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2B694	garden.bif:0x2B698	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2C05C	garden.bif:0x2C060	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2C78C	garden.bif:0x2C790	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2CA04	garden.bif:0x2CA08	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2CB24	garden.bif:0x2CB28	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2CC94	garden.bif:0x2CC98	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2CE64	garden.bif:0x2CE68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2D02C	garden.bif:0x2D030	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2D664	garden.bif:0x2D668	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2D88C	garden.bif:0x2D890	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2DD64	garden.bif:0x2DD68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2E95C	garden.bif:0x2E960	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2F3FC	garden.bif:0x2F400	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2F61C	garden.bif:0x2F620	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2FA3C	garden.bif:0x2FA40	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x2FC6C	garden.bif:0x2FC70	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x30004	garden.bif:0x30008	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x30274	garden.bif:0x30278	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x308CC	garden.bif:0x308D0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x30B34	garden.bif:0x30B38	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x30E4C	garden.bif:0x30E50	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x31624	garden.bif:0x31628	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x31B64	garden.bif:0x31B68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x31D7C	garden.bif:0x31D80	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x31FAC	garden.bif:0x31FB0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x32344	garden.bif:0x32348	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3266C	garden.bif:0x32670	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x32F04	garden.bif:0x32F08	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x334F4	garden.bif:0x334F8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x33E64	garden.bif:0x33E68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x340DC	garden.bif:0x340E0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x34684	garden.bif:0x34688	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x34D24	garden.bif:0x34D28	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3541C	garden.bif:0x35420	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x35654	garden.bif:0x35658	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x358D4	garden.bif:0x358D8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x35B84	garden.bif:0x35B88	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x35D9C	garden.bif:0x35DA0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x361AC	garden.bif:0x361B0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3637C	garden.bif:0x36380	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x36564	garden.bif:0x36568	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x36754	garden.bif:0x36758	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3692C	garden.bif:0x36930	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x36B44	garden.bif:0x36B48	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x36DB4	garden.bif:0x36DB8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3739C	garden.bif:0x373A0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x37814	garden.bif:0x37818	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x37B14	garden.bif:0x37B18	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x37D84	garden.bif:0x37D88	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x37F34	garden.bif:0x37F38	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3829C	garden.bif:0x382A0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x38614	garden.bif:0x38618	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x38864	garden.bif:0x38868	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x38C1C	garden.bif:0x38C20	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x38E7C	garden.bif:0x38E80	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x39054	garden.bif:0x39058	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x39404	garden.bif:0x39408	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x39A44	garden.bif:0x39A48	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x39CC4	garden.bif:0x39CC8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3A254	garden.bif:0x3A258	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3B2DC	garden.bif:0x3B2E0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3B714	garden.bif:0x3B718	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3BCFC	garden.bif:0x3BD00	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3BF0C	garden.bif:0x3BF10	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3C19C	garden.bif:0x3C1A0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3C904	garden.bif:0x3C908	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3CD54	garden.bif:0x3CD58	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3D564	garden.bif:0x3D568	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3DA74	garden.bif:0x3DA78	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3DC5C	garden.bif:0x3DC60	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3DE9C	garden.bif:0x3DEA0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3E6CC	garden.bif:0x3E6D0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3EB2C	garden.bif:0x3EB30	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3ED14	garden.bif:0x3ED18	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3F574	garden.bif:0x3F578	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x3F784	garden.bif:0x3F788	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4093C	garden.bif:0x40940	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x40D14	garden.bif:0x40D18	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4179C	garden.bif:0x417A0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x41B94	garden.bif:0x41B98	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x41E64	garden.bif:0x41E68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x422C4	garden.bif:0x422C8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x426AC	garden.bif:0x426B0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x42B8C	garden.bif:0x42B90	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x42D3C	garden.bif:0x42D40	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x42F94	garden.bif:0x42F98	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4479C	garden.bif:0x447A0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x44974	garden.bif:0x44978	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x44E64	garden.bif:0x44E68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x454BC	garden.bif:0x454C0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x458BC	garden.bif:0x458C0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x45B44	garden.bif:0x45B48	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4632C	garden.bif:0x46330	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x46584	garden.bif:0x46588	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x46764	garden.bif:0x46768	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x46A24	garden.bif:0x46A28	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x46D8C	garden.bif:0x46D90	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x46F64	garden.bif:0x46F68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x47164	garden.bif:0x47168	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4733C	garden.bif:0x47340	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x475B4	garden.bif:0x475B8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4778C	garden.bif:0x47790	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4798C	garden.bif:0x47990	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x47B64	garden.bif:0x47B68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x47D8C	garden.bif:0x47D90	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x47F64	garden.bif:0x47F68	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x48164	garden.bif:0x48168	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4833C	garden.bif:0x48340	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4858C	garden.bif:0x48590	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x48CC4	garden.bif:0x48CC8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x48FD4	garden.bif:0x48FD8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4934C	garden.bif:0x49350	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4B2AC	garden.bif:0x4B2B0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4B484	garden.bif:0x4B488	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4B684	garden.bif:0x4B688	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4B85C	garden.bif:0x4B860	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4BEDC	garden.bif:0x4BEE0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4C34C	garden.bif:0x4C350	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4C54C	garden.bif:0x4C550	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4C77C	garden.bif:0x4C780	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4CB9C	garden.bif:0x4CBA0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4D3CC	garden.bif:0x4D3D0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4D614	garden.bif:0x4D618	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4D81C	garden.bif:0x4D820	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4D9F4	garden.bif:0x4D9F8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4DBF4	garden.bif:0x4DBF8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4DDC4	garden.bif:0x4DDC8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4E22C	garden.bif:0x4E230	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4E8C4	garden.bif:0x4E8C8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4F034	garden.bif:0x4F038	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4F49C	garden.bif:0x4F4A0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4F70C	garden.bif:0x4F710	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x4FDC4	garden.bif:0x4FDC8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x502F4	garden.bif:0x502F8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x5052C	garden.bif:0x50530	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x50C84	garden.bif:0x50C88	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x51184	garden.bif:0x51188	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x5151C	garden.bif:0x51520	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x5170C	garden.bif:0x51710	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x51AD4	garden.bif:0x51AD8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x51E4C	garden.bif:0x51E50	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x523C4	garden.bif:0x523C8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x52BD4	garden.bif:0x52BD8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x52FBC	garden.bif:0x52FC0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x531E4	garden.bif:0x531E8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x53D7C	garden.bif:0x53D80	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x53FFC	garden.bif:0x54000	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x54724	garden.bif:0x54728	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x548BC	garden.bif:0x548C0	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x54B1C	garden.bif:0x54B20	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x54FE4	garden.bif:0x54FE8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x5522C	garden.bif:0x55230	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x5555C	garden.bif:0x55560	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x557C4	garden.bif:0x557C8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x5664C	garden.bif:0x56650	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x56D34	garden.bif:0x56D38	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x576C4	garden.bif:0x576C8	pad	zero	zero fill	none	check only (zero)
+letter	garden.bif:0x587E4	garden.bif:0x58809	pad	zero	zero fill	none	check only (zero)
+letter	space.bif:0x00C40	space.bif:0x00E40	unused_palette	TLUT RGBA5551 256 colours	palette of an unreferenced texture in the texture bank	none (unused)	tools/extract_level_rest.py
+letter	space.bif:0x00E40	space.bif:0x01240	unused_texture	CI8 32x32	texture never loaded by any display list or code; size from the gap, width from its neighbours	none (unused)	tools/extract_level_rest.py
+letter	space.bif:0x071E8	space.bif:0x0779E	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 8015B7C8	model_header 8015B7C8 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	space.bif:0x0779E	space.bif:0x077A0	pad	zero	zero fill	none	check only (zero)
+letter	space.bif:0x077B0	space.bif:0x077C8	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 8015B7C8 +0x24	tools/extract_level_rest.py
+letter	space.bif:0x077EC	space.bif:0x077F0	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 8015B7C8	tools/extract_level_rest.py
+letter	space.bif:0x09A58	space.bif:0x09CF2	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 8015DD20	model_header 8015DD20 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	space.bif:0x09CF2	space.bif:0x09CF8	pad	zero	zero fill	none	check only (zero)
+letter	space.bif:0x09D08	space.bif:0x09D20	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 8015DD20 +0x24	tools/extract_level_rest.py
+letter	space.bif:0x09D44	space.bif:0x09D48	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 8015DD20	tools/extract_level_rest.py
+letter	space.bif:0x09D48	space.bif:0x0A1F8	morph_anim	sprA keyframed vertex morph	74 verts x 4 keys	func_8003BB00:addr	tools/extract_level_rest.py
+letter	space.bif:0x0A1F8	space.bif:0x0A200	pad	zero	zero fill	none	check only (zero)
+letter	space.bif:0x0A200	space.bif:0x0DD68	morph_anim	sprA keyframed vertex morph	292 verts x 13 keys	data_word@0x80075D3C	tools/extract_level_rest.py
+letter	space.bif:0x0DD68	space.bif:0x0DD70	pad	zero	zero fill	none	check only (zero)
+letter	space.bif:0x17D70	space.bif:0x17F70	unused_palette	TLUT RGBA5551 256 colours	palette of an unreferenced texture in the texture bank	none (unused)	tools/extract_level_rest.py
+letter	space.bif:0x17F70	space.bif:0x18770	unused_texture	CI8 64x32	texture never loaded by any display list or code; size from the gap, width from its neighbours	none (unused)	tools/extract_level_rest.py
+letter	space.bif:0x18D70	space.bif:0x18F70	unused_palette	TLUT RGBA5551 256 colours	palette of an unreferenced texture in the texture bank	none (unused)	tools/extract_level_rest.py
+letter	space.bif:0x18F70	space.bif:0x19370	unused_texture	CI8 32x32	texture never loaded by any display list or code; size from the gap, width from its neighbours	none (unused)	tools/extract_level_rest.py
+letter	space.bif:0x28E10	space.bif:0x29C80	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 8017DCA8	model_header 8017DCA8 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	space.bif:0x29C90	space.bif:0x29CA8	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 8017DCA8 +0x24	tools/extract_level_rest.py
+letter	space.bif:0x29CCC	space.bif:0x29CD0	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 8017DCA8	tools/extract_level_rest.py
+letter	space.bif:0x2E3E0	space.bif:0x2ED92	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 80182DAC	model_header 80182DAC +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	space.bif:0x2ED92	space.bif:0x2ED94	pad	zero	zero fill	none	check only (zero)
+letter	space.bif:0x2ED94	space.bif:0x2EDAC	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80182DAC +0x24	tools/extract_level_rest.py
+letter	space.bif:0x2EDD0	space.bif:0x2EDD4	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80182DAC	tools/extract_level_rest.py
+letter	space.bif:0x2EDD4	space.bif:0x2EDE0	pad	zero	zero fill	none	check only (zero)
+letter	space.bif:0x347D0	space.bif:0x34DF8	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 80188E20	model_header 80188E20 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	space.bif:0x34E08	space.bif:0x34E20	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80188E20 +0x24	tools/extract_level_rest.py
+letter	space.bif:0x34E44	space.bif:0x34E48	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80188E20	tools/extract_level_rest.py
+letter	space.bif:0x34E48	space.bif:0x34E50	pad	zero	zero fill	none	check only (zero)
+letter	space.bif:0x34E50	space.bif:0x35050	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C58	tools/extract_level_rest.py
+letter	space.bif:0x35050	space.bif:0x35850	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C58	tools/extract_level_rest.py
+letter	space.bif:0x35850	space.bif:0x35A50	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C54	tools/extract_level_rest.py
+letter	space.bif:0x35A50	space.bif:0x36250	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C54	tools/extract_level_rest.py
+letter	space.bif:0x36250	space.bif:0x36450	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C50	tools/extract_level_rest.py
+letter	space.bif:0x36450	space.bif:0x36C50	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C50	tools/extract_level_rest.py
+letter	space.bif:0x36C50	space.bif:0x36E50	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C4C	tools/extract_level_rest.py
+letter	space.bif:0x36E50	space.bif:0x37650	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C4C	tools/extract_level_rest.py
+letter	space.bif:0x37650	space.bif:0x37850	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C48	tools/extract_level_rest.py
+letter	space.bif:0x37850	space.bif:0x38050	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C48	tools/extract_level_rest.py
+letter	space.bif:0x38050	space.bif:0x38250	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C44	tools/extract_level_rest.py
+letter	space.bif:0x38250	space.bif:0x38A50	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C44	tools/extract_level_rest.py
+letter	space.bif:0x38A50	space.bif:0x38C50	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C40	tools/extract_level_rest.py
+letter	space.bif:0x38C50	space.bif:0x39450	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C40	tools/extract_level_rest.py
+letter	space.bif:0x39450	space.bif:0x39650	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C3C	tools/extract_level_rest.py
+letter	space.bif:0x39650	space.bif:0x39E50	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C3C	tools/extract_level_rest.py
+letter	space.bif:0x39E50	space.bif:0x3A050	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C38	tools/extract_level_rest.py
+letter	space.bif:0x3A050	space.bif:0x3A850	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C38	tools/extract_level_rest.py
+letter	space.bif:0x3A850	space.bif:0x3AA50	texframe_palette	TLUT RGBA5551 256 colours	actor 0x4002 texture frame: palette	data_word@0x80075C34	tools/extract_level_rest.py
+letter	space.bif:0x3AA50	space.bif:0x3B250	texframe_texture	CI8 32x64	actor 0x4002 texture frame: texels	data_word@0x80075C34	tools/extract_level_rest.py
+letter	space.bif:0x3BE44	space.bif:0x3BE69	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x0A740	planet.bif:0x0B37C	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 8015F3A8	model_header 8015F3A8 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	planet.bif:0x0B37C	planet.bif:0x0B380	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x0B390	planet.bif:0x0B3A8	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 8015F3A8 +0x24	tools/extract_level_rest.py
+letter	planet.bif:0x0B3CC	planet.bif:0x0B3D0	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 8015F3A8	tools/extract_level_rest.py
+letter	planet.bif:0x0CA60	planet.bif:0x0CA70	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 80160A88	model_header 80160A88 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	planet.bif:0x0CA70	planet.bif:0x0CA88	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80160A88 +0x24	tools/extract_level_rest.py
+letter	planet.bif:0x0CAAC	planet.bif:0x0CAB0	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80160A88	tools/extract_level_rest.py
+letter	planet.bif:0x0CAB0	planet.bif:0x0DC48	morph_anim	sprA keyframed vertex morph	80 verts x 14 keys	func_8003BB00:addr	tools/extract_level_rest.py
+letter	planet.bif:0x0DC48	planet.bif:0x0DC50	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x0F2E0	planet.bif:0x0F2F0	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 80163308	model_header 80163308 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	planet.bif:0x0F2F0	planet.bif:0x0F308	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80163308 +0x24	tools/extract_level_rest.py
+letter	planet.bif:0x0F32C	planet.bif:0x0F330	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80163308	tools/extract_level_rest.py
+letter	planet.bif:0x0F330	planet.bif:0x104C8	morph_anim	sprA keyframed vertex morph	80 verts x 14 keys	func_8003BB00:addr	tools/extract_level_rest.py
+letter	planet.bif:0x104C8	planet.bif:0x104D0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x11B60	planet.bif:0x11B70	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 80165B88	model_header 80165B88 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	planet.bif:0x11B70	planet.bif:0x11B88	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80165B88 +0x24	tools/extract_level_rest.py
+letter	planet.bif:0x11BAC	planet.bif:0x11BB0	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80165B88	tools/extract_level_rest.py
+letter	planet.bif:0x11BB0	planet.bif:0x12D48	morph_anim	sprA keyframed vertex morph	80 verts x 14 keys	func_8003BB00:addr	tools/extract_level_rest.py
+letter	planet.bif:0x12D48	planet.bif:0x12D50	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x15DF8	planet.bif:0x15ED8	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 80169F00	model_header 80169F00 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	planet.bif:0x15EE8	planet.bif:0x15F00	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80169F00 +0x24	tools/extract_level_rest.py
+letter	planet.bif:0x15F24	planet.bif:0x15F28	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80169F00	tools/extract_level_rest.py
+letter	planet.bif:0x15F28	planet.bif:0x165C8	morph_anim	sprA keyframed vertex morph	70 verts x 6 keys	func_8003BB00:addr	tools/extract_level_rest.py
+letter	planet.bif:0x165C8	planet.bif:0x165D0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x1A240	planet.bif:0x1A432	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 8016E460	model_header 8016E460 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	planet.bif:0x1A432	planet.bif:0x1A438	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x1A448	planet.bif:0x1A460	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 8016E460 +0x24	tools/extract_level_rest.py
+letter	planet.bif:0x1A484	planet.bif:0x1A488	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 8016E460	tools/extract_level_rest.py
+letter	planet.bif:0x1A488	planet.bif:0x1CD90	morph_anim	sprA keyframed vertex morph	109 verts x 24 keys	func_8003BB00:addr	tools/extract_level_rest.py
+letter	planet.bif:0x1FE38	planet.bif:0x1FF18	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 80173F40	model_header 80173F40 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	planet.bif:0x1FF28	planet.bif:0x1FF40	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 80173F40 +0x24	tools/extract_level_rest.py
+letter	planet.bif:0x1FF64	planet.bif:0x1FF68	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 80173F40	tools/extract_level_rest.py
+letter	planet.bif:0x1FF68	planet.bif:0x20A70	morph_anim	sprA keyframed vertex morph	70 verts x 10 keys	func_8003BB00:addr	tools/extract_level_rest.py
+letter	planet.bif:0x37300	planet.bif:0x38E96	morph_vertex_order	u16 list {n, m, idx[m]}... 0	vertex expansion list for morph animation of model 8018CEC0	model_header 8018CEC0 +0x14 (func_80000450)	tools/extract_level_rest.py
+letter	planet.bif:0x38E96	planet.bif:0x38E98	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x38EA8	planet.bif:0x38EC0	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 8018CEC0 +0x24	tools/extract_level_rest.py
+letter	planet.bif:0x38EE4	planet.bif:0x38EE8	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 8018CEC0	tools/extract_level_rest.py
+letter	planet.bif:0x38EE8	planet.bif:0x38EF0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x38EF0	planet.bif:0x3D030	morph_anim	sprA keyframed vertex morph	596 verts x 7 keys	data_word@0x80075D40	tools/extract_level_rest.py
+letter	planet.bif:0x3D030	planet.bif:0x41170	morph_anim	sprA keyframed vertex morph	596 verts x 7 keys	data_word@0x80075D44	tools/extract_level_rest.py
+letter	planet.bif:0x44834	planet.bif:0x44838	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x44B94	planet.bif:0x44B98	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x45224	planet.bif:0x45228	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x454F4	planet.bif:0x454F8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x456B4	planet.bif:0x456B8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x45ADC	planet.bif:0x45AE0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4636C	planet.bif:0x46370	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4657C	planet.bif:0x46580	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x46BA4	planet.bif:0x46BA8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x47224	planet.bif:0x47228	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x474AC	planet.bif:0x474B0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4772C	planet.bif:0x47730	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4797C	planet.bif:0x47980	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x47E74	planet.bif:0x47E78	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4872C	planet.bif:0x48730	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x48B34	planet.bif:0x48B38	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x491F4	planet.bif:0x491F8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x49B2C	planet.bif:0x49B30	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x49C5C	planet.bif:0x49C60	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4A05C	planet.bif:0x4A060	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4A244	planet.bif:0x4A248	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4A494	planet.bif:0x4A498	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4A6B4	planet.bif:0x4A6B8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4B89C	planet.bif:0x4B8A0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4BA84	planet.bif:0x4BA88	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4BD3C	planet.bif:0x4BD40	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4C2DC	planet.bif:0x4C2E0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4C4FC	planet.bif:0x4C500	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4C78C	planet.bif:0x4C790	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4C8A4	planet.bif:0x4C8A8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4CAD4	planet.bif:0x4CAD8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4CF24	planet.bif:0x4CF28	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4D0F4	planet.bif:0x4D0F8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4D284	planet.bif:0x4D288	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4D67C	planet.bif:0x4D680	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4DAAC	planet.bif:0x4DAB0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4DF1C	planet.bif:0x4DF20	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4E114	planet.bif:0x4E118	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4E344	planet.bif:0x4E348	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4E484	planet.bif:0x4E488	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4E854	planet.bif:0x4E858	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4EAB4	planet.bif:0x4EAB8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4EBFC	planet.bif:0x4EC00	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4ED14	planet.bif:0x4ED18	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4EF64	planet.bif:0x4EF68	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4F7BC	planet.bif:0x4F7C0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4FA6C	planet.bif:0x4FA70	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4FD0C	planet.bif:0x4FD10	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x4FFC4	planet.bif:0x4FFC8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x5073C	planet.bif:0x50740	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x50A34	planet.bif:0x50A38	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x50D9C	planet.bif:0x50DA0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x50FA4	planet.bif:0x50FA8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x516E4	planet.bif:0x516E8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x51974	planet.bif:0x51978	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x51F84	planet.bif:0x51F88	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x5213C	planet.bif:0x52140	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x525C4	planet.bif:0x525C8	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x52BBC	planet.bif:0x52BC0	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x5305C	planet.bif:0x53060	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x53204	planet.bif:0x53208	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x53474	planet.bif:0x53478	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x53A6C	planet.bif:0x53A70	pad	zero	zero fill	none	check only (zero)
+letter	planet.bif:0x548CC	planet.bif:0x548E9	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x00000	bonusabc.bif:0x00018	display_list	F3DEX	gsDPPipeSync; gsDPSetCombineMode; gsSPEndDisplayList (missed by lvlB)	80154000 func_8001D9D0/func_8000B470	tools/extract_level_rest.py
+letter	bonusabc.bif:0x00018	bonusabc.bif:0x00030	display_list	F3DEX	gsDPPipeSync; gsDPSetCombineMode; gsSPEndDisplayList (missed by lvlB)	none found (twin of streetab 0x18)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x06C7C	bonusabc.bif:0x06C80	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x06E1C	bonusabc.bif:0x06E20	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0776C	bonusabc.bif:0x07770	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0858C	bonusabc.bif:0x08590	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x08B14	bonusabc.bif:0x08B18	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0934C	bonusabc.bif:0x09350	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x09564	bonusabc.bif:0x09568	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x09ACC	bonusabc.bif:0x09AD0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0A06C	bonusabc.bif:0x0A070	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0A284	bonusabc.bif:0x0A288	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0A45C	bonusabc.bif:0x0A460	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0A6D4	bonusabc.bif:0x0A6D8	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0A8FC	bonusabc.bif:0x0A900	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0B3AC	bonusabc.bif:0x0B3B0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0BABC	bonusabc.bif:0x0BAC0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0C134	bonusabc.bif:0x0C138	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0C5C4	bonusabc.bif:0x0C5C8	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0CB7C	bonusabc.bif:0x0CB80	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0CF24	bonusabc.bif:0x0CF28	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0D15C	bonusabc.bif:0x0D160	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0D2AC	bonusabc.bif:0x0D2B0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0D854	bonusabc.bif:0x0D858	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0DBBC	bonusabc.bif:0x0DBC0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0DD34	bonusabc.bif:0x0DD38	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0DF7C	bonusabc.bif:0x0DF80	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0E30C	bonusabc.bif:0x0E310	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0E58C	bonusabc.bif:0x0E590	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0E7B4	bonusabc.bif:0x0E7B8	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0EBAC	bonusabc.bif:0x0EBB0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0EEEC	bonusabc.bif:0x0EEF0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0F1CC	bonusabc.bif:0x0F1D0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0F40C	bonusabc.bif:0x0F410	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0F7DC	bonusabc.bif:0x0F7E0	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0F93C	bonusabc.bif:0x0F940	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x0FED4	bonusabc.bif:0x0FED8	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x107C4	bonusabc.bif:0x107C8	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x1112C	bonusabc.bif:0x11130	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x11130	bonusabc.bif:0x11150	hud_palette	TLUT RGBA5551 16 colours	palette for 80165150	func_80004010 literal (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11150	bonusabc.bif:0x11350	hud_texture	CI4 32x32	bonus-game HUD letter/picture	func_80004010 literal (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11350	bonusabc.bif:0x11370	hud_palette	TLUT RGBA5551 16 colours	palette for 80165370	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11370	bonusabc.bif:0x11570	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11570	bonusabc.bif:0x11590	hud_palette	TLUT RGBA5551 16 colours	palette for 80165590	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11590	bonusabc.bif:0x11790	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11790	bonusabc.bif:0x117B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801657B0	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x117B0	bonusabc.bif:0x119B0	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x119B0	bonusabc.bif:0x119D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801659D0	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x119D0	bonusabc.bif:0x11BD0	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11BD0	bonusabc.bif:0x11BF0	hud_palette	TLUT RGBA5551 16 colours	palette for 80165BF0	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11BF0	bonusabc.bif:0x11DF0	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11DF0	bonusabc.bif:0x11E10	hud_palette	TLUT RGBA5551 16 colours	palette for 80165E10	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x11E10	bonusabc.bif:0x12010	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12010	bonusabc.bif:0x12030	hud_palette	TLUT RGBA5551 16 colours	palette for 80166030	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12030	bonusabc.bif:0x12230	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12230	bonusabc.bif:0x12250	hud_palette	TLUT RGBA5551 16 colours	palette for 80166250	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12250	bonusabc.bif:0x12450	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12450	bonusabc.bif:0x12470	hud_palette	TLUT RGBA5551 16 colours	palette for 80166470	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12470	bonusabc.bif:0x12670	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12670	bonusabc.bif:0x12690	hud_palette	TLUT RGBA5551 16 colours	palette for 80166690	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12690	bonusabc.bif:0x12890	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12890	bonusabc.bif:0x128B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801668B0	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x128B0	bonusabc.bif:0x12AB0	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12AB0	bonusabc.bif:0x12AD0	hud_palette	TLUT RGBA5551 16 colours	palette for 80166AD0	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12AD0	bonusabc.bif:0x12CD0	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12CD0	bonusabc.bif:0x12CF0	hud_palette	TLUT RGBA5551 16 colours	palette for 80166CF0	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12CF0	bonusabc.bif:0x12EF0	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12EF0	bonusabc.bif:0x12F10	hud_palette	TLUT RGBA5551 16 colours	palette for 80166F10	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x12F10	bonusabc.bif:0x13110	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13110	bonusabc.bif:0x13130	hud_palette	TLUT RGBA5551 16 colours	palette for 80167130	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13130	bonusabc.bif:0x13330	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13330	bonusabc.bif:0x13350	hud_palette	TLUT RGBA5551 16 colours	palette for 80167350	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13350	bonusabc.bif:0x13550	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13550	bonusabc.bif:0x13570	hud_palette	TLUT RGBA5551 16 colours	unreferenced (no table entry) palette for 80167570	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13570	bonusabc.bif:0x13770	hud_texture	CI4 32x32	unreferenced bonus-game picture	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13770	bonusabc.bif:0x13790	hud_palette	TLUT RGBA5551 16 colours	palette for 80167790	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13790	bonusabc.bif:0x13990	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13990	bonusabc.bif:0x139B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801679B0	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x139B0	bonusabc.bif:0x13BB0	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13BB0	bonusabc.bif:0x13BD0	hud_palette	TLUT RGBA5551 16 colours	palette for 80167BD0	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13BD0	bonusabc.bif:0x13DD0	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13DD0	bonusabc.bif:0x13DF0	hud_palette	TLUT RGBA5551 16 colours	unreferenced (no table entry) palette for 80167DF0	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13DF0	bonusabc.bif:0x13FF0	hud_texture	CI4 32x32	unreferenced bonus-game picture	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x13FF0	bonusabc.bif:0x14010	hud_palette	TLUT RGBA5551 16 colours	palette for 80168010	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14010	bonusabc.bif:0x14210	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E5A0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14210	bonusabc.bif:0x14230	hud_palette	TLUT RGBA5551 16 colours	palette for 80168230	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14230	bonusabc.bif:0x14430	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14430	bonusabc.bif:0x14450	hud_palette	TLUT RGBA5551 16 colours	unreferenced (no table entry) palette for 80168450	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14450	bonusabc.bif:0x14650	hud_texture	CI4 32x32	unreferenced bonus-game picture	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14650	bonusabc.bif:0x14670	hud_palette	TLUT RGBA5551 16 colours	palette for 80168670	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14670	bonusabc.bif:0x14870	hud_texture	CI4 32x32	bonus-game HUD letter/picture	table 8006E8D0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14870	bonusabc.bif:0x14890	hud_palette	TLUT RGBA5551 16 colours	unreferenced (no table entry) palette for 80168890	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14890	bonusabc.bif:0x14A90	hud_texture	CI4 32x32	unreferenced bonus-game picture	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14A90	bonusabc.bif:0x14AB0	hud_palette	TLUT RGBA5551 16 colours	palette for 80168AB0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14AB0	bonusabc.bif:0x14EB0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14EB0	bonusabc.bif:0x14ED0	hud_palette	TLUT RGBA5551 16 colours	palette for 80168ED0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x14ED0	bonusabc.bif:0x152D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x152D0	bonusabc.bif:0x152F0	hud_palette	TLUT RGBA5551 16 colours	palette for 801692F0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x152F0	bonusabc.bif:0x156F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x156F0	bonusabc.bif:0x15710	hud_palette	TLUT RGBA5551 16 colours	palette for 80169710	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x15710	bonusabc.bif:0x15B10	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x15B10	bonusabc.bif:0x15B30	hud_palette	TLUT RGBA5551 16 colours	palette for 80169B30	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x15B30	bonusabc.bif:0x15F30	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x15F30	bonusabc.bif:0x15F50	hud_palette	TLUT RGBA5551 16 colours	palette for 80169F50	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x15F50	bonusabc.bif:0x16350	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x16350	bonusabc.bif:0x16370	hud_palette	TLUT RGBA5551 16 colours	palette for 8016A370	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x16370	bonusabc.bif:0x16770	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x16770	bonusabc.bif:0x16790	hud_palette	TLUT RGBA5551 16 colours	palette for 8016A790	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x16790	bonusabc.bif:0x16B90	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x16B90	bonusabc.bif:0x16BB0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016ABB0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x16BB0	bonusabc.bif:0x16FB0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x16FB0	bonusabc.bif:0x16FD0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016AFD0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x16FD0	bonusabc.bif:0x173D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x173D0	bonusabc.bif:0x173F0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016B3F0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x173F0	bonusabc.bif:0x177F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x177F0	bonusabc.bif:0x17810	hud_palette	TLUT RGBA5551 16 colours	palette for 8016B810	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x17810	bonusabc.bif:0x17C10	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x17C10	bonusabc.bif:0x17C30	hud_palette	TLUT RGBA5551 16 colours	palette for 8016BC30	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x17C30	bonusabc.bif:0x18030	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x18030	bonusabc.bif:0x18050	hud_palette	TLUT RGBA5551 16 colours	palette for 8016C050	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x18050	bonusabc.bif:0x18450	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x18450	bonusabc.bif:0x18470	hud_palette	TLUT RGBA5551 16 colours	palette for 8016C470	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x18470	bonusabc.bif:0x18870	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x18870	bonusabc.bif:0x18890	hud_palette	TLUT RGBA5551 16 colours	palette for 8016C890	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x18890	bonusabc.bif:0x18C90	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x18C90	bonusabc.bif:0x18CB0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016CCB0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x18CB0	bonusabc.bif:0x190B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x190B0	bonusabc.bif:0x190D0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016D0D0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x190D0	bonusabc.bif:0x194D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x194D0	bonusabc.bif:0x194F0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016D4F0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x194F0	bonusabc.bif:0x198F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x198F0	bonusabc.bif:0x19910	hud_palette	TLUT RGBA5551 16 colours	palette for 8016D910	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x19910	bonusabc.bif:0x19D10	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x19D10	bonusabc.bif:0x19D30	hud_palette	TLUT RGBA5551 16 colours	palette for 8016DD30	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x19D30	bonusabc.bif:0x1A130	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1A130	bonusabc.bif:0x1A150	hud_palette	TLUT RGBA5551 16 colours	palette for 8016E150	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1A150	bonusabc.bif:0x1A550	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1A550	bonusabc.bif:0x1A570	hud_palette	TLUT RGBA5551 16 colours	palette for 8016E570	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1A570	bonusabc.bif:0x1A970	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1A970	bonusabc.bif:0x1A990	hud_palette	TLUT RGBA5551 16 colours	palette for 8016E990	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1A990	bonusabc.bif:0x1AD90	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1AD90	bonusabc.bif:0x1ADB0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016EDB0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1ADB0	bonusabc.bif:0x1B1B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1B1B0	bonusabc.bif:0x1B1D0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016F1D0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1B1D0	bonusabc.bif:0x1B5D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1B5D0	bonusabc.bif:0x1B5F0	hud_palette	TLUT RGBA5551 16 colours	palette for 8016F5F0	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1B5F0	bonusabc.bif:0x1B9F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1B9F0	bonusabc.bif:0x1BA10	hud_palette	TLUT RGBA5551 16 colours	palette for 8016FA10	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1BA10	bonusabc.bif:0x1BE10	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1BE10	bonusabc.bif:0x1BE30	hud_palette	TLUT RGBA5551 16 colours	palette for 8016FE30	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1BE30	bonusabc.bif:0x1C230	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E6B0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1C230	bonusabc.bif:0x1C250	hud_palette	TLUT RGBA5551 16 colours	palette for 80170250	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1C250	bonusabc.bif:0x1C650	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1C650	bonusabc.bif:0x1C670	hud_palette	TLUT RGBA5551 16 colours	palette for 80170670	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1C670	bonusabc.bif:0x1CA70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1CA70	bonusabc.bif:0x1CA90	hud_palette	TLUT RGBA5551 16 colours	palette for 80170A90	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1CA90	bonusabc.bif:0x1CE90	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1CE90	bonusabc.bif:0x1CEB0	hud_palette	TLUT RGBA5551 16 colours	palette for 80170EB0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1CEB0	bonusabc.bif:0x1D2B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1D2B0	bonusabc.bif:0x1D2D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801712D0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1D2D0	bonusabc.bif:0x1D6D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1D6D0	bonusabc.bif:0x1D6F0	hud_palette	TLUT RGBA5551 16 colours	palette for 801716F0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1D6F0	bonusabc.bif:0x1DAF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1DAF0	bonusabc.bif:0x1DB10	hud_palette	TLUT RGBA5551 16 colours	palette for 80171B10	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1DB10	bonusabc.bif:0x1DF10	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1DF10	bonusabc.bif:0x1DF30	hud_palette	TLUT RGBA5551 16 colours	palette for 80171F30	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1DF30	bonusabc.bif:0x1E330	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1E330	bonusabc.bif:0x1E350	hud_palette	TLUT RGBA5551 16 colours	palette for 80172350	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1E350	bonusabc.bif:0x1E750	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1E750	bonusabc.bif:0x1E770	hud_palette	TLUT RGBA5551 16 colours	palette for 80172770	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1E770	bonusabc.bif:0x1EB70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1EB70	bonusabc.bif:0x1EB90	hud_palette	TLUT RGBA5551 16 colours	palette for 80172B90	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1EB90	bonusabc.bif:0x1EF90	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1EF90	bonusabc.bif:0x1EFB0	hud_palette	TLUT RGBA5551 16 colours	palette for 80172FB0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1EFB0	bonusabc.bif:0x1F3B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1F3B0	bonusabc.bif:0x1F3D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801733D0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1F3D0	bonusabc.bif:0x1F7D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1F7D0	bonusabc.bif:0x1F7F0	hud_palette	TLUT RGBA5551 16 colours	palette for 801737F0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1F7F0	bonusabc.bif:0x1FBF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1FBF0	bonusabc.bif:0x1FC10	hud_palette	TLUT RGBA5551 16 colours	palette for 80173C10	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x1FC10	bonusabc.bif:0x20010	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x20010	bonusabc.bif:0x20030	hud_palette	TLUT RGBA5551 16 colours	palette for 80174030	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x20030	bonusabc.bif:0x20430	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x20430	bonusabc.bif:0x20450	hud_palette	TLUT RGBA5551 16 colours	palette for 80174450	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x20450	bonusabc.bif:0x20850	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x20850	bonusabc.bif:0x20870	hud_palette	TLUT RGBA5551 16 colours	palette for 80174870	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x20870	bonusabc.bif:0x20C70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x20C70	bonusabc.bif:0x20C90	hud_palette	TLUT RGBA5551 16 colours	palette for 80174C90	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x20C90	bonusabc.bif:0x21090	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x21090	bonusabc.bif:0x210B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801750B0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x210B0	bonusabc.bif:0x214B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x214B0	bonusabc.bif:0x214D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801754D0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x214D0	bonusabc.bif:0x218D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x218D0	bonusabc.bif:0x218F0	hud_palette	TLUT RGBA5551 16 colours	palette for 801758F0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x218F0	bonusabc.bif:0x21CF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x21CF0	bonusabc.bif:0x21D10	hud_palette	TLUT RGBA5551 16 colours	palette for 80175D10	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x21D10	bonusabc.bif:0x22110	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x22110	bonusabc.bif:0x22130	hud_palette	TLUT RGBA5551 16 colours	palette for 80176130	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x22130	bonusabc.bif:0x22530	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x22530	bonusabc.bif:0x22550	hud_palette	TLUT RGBA5551 16 colours	palette for 80176550	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x22550	bonusabc.bif:0x22950	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x22950	bonusabc.bif:0x22970	hud_palette	TLUT RGBA5551 16 colours	palette for 80176970	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x22970	bonusabc.bif:0x22D70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x22D70	bonusabc.bif:0x22D90	hud_palette	TLUT RGBA5551 16 colours	palette for 80176D90	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x22D90	bonusabc.bif:0x23190	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x23190	bonusabc.bif:0x231B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801771B0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x231B0	bonusabc.bif:0x235B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x235B0	bonusabc.bif:0x235D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801775D0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x235D0	bonusabc.bif:0x239D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x239D0	bonusabc.bif:0x239F0	hud_palette	TLUT RGBA5551 16 colours	palette for 801779F0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x239F0	bonusabc.bif:0x23DF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x23DF0	bonusabc.bif:0x23E10	hud_palette	TLUT RGBA5551 16 colours	palette for 80177E10	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x23E10	bonusabc.bif:0x24210	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x24210	bonusabc.bif:0x24230	hud_palette	TLUT RGBA5551 16 colours	palette for 80178230	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x24230	bonusabc.bif:0x24630	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x24630	bonusabc.bif:0x24650	hud_palette	TLUT RGBA5551 16 colours	palette for 80178650	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x24650	bonusabc.bif:0x24A50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x24A50	bonusabc.bif:0x24A70	hud_palette	TLUT RGBA5551 16 colours	palette for 80178A70	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x24A70	bonusabc.bif:0x24E70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x24E70	bonusabc.bif:0x24E90	hud_palette	TLUT RGBA5551 16 colours	palette for 80178E90	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x24E90	bonusabc.bif:0x25290	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x25290	bonusabc.bif:0x252B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801792B0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x252B0	bonusabc.bif:0x256B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x256B0	bonusabc.bif:0x256D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801796D0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x256D0	bonusabc.bif:0x25AD0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x25AD0	bonusabc.bif:0x25AF0	hud_palette	TLUT RGBA5551 16 colours	palette for 80179AF0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x25AF0	bonusabc.bif:0x25EF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x25EF0	bonusabc.bif:0x25F10	hud_palette	TLUT RGBA5551 16 colours	palette for 80179F10	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x25F10	bonusabc.bif:0x26310	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x26310	bonusabc.bif:0x26330	hud_palette	TLUT RGBA5551 16 colours	palette for 8017A330	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x26330	bonusabc.bif:0x26730	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x26730	bonusabc.bif:0x26750	hud_palette	TLUT RGBA5551 16 colours	palette for 8017A750	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x26750	bonusabc.bif:0x26B50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x26B50	bonusabc.bif:0x26B70	hud_palette	TLUT RGBA5551 16 colours	palette for 8017AB70	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x26B70	bonusabc.bif:0x26F70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x26F70	bonusabc.bif:0x26F90	hud_palette	TLUT RGBA5551 16 colours	palette for 8017AF90	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x26F90	bonusabc.bif:0x27390	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x27390	bonusabc.bif:0x273B0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017B3B0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x273B0	bonusabc.bif:0x277B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x277B0	bonusabc.bif:0x277D0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017B7D0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x277D0	bonusabc.bif:0x27BD0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x27BD0	bonusabc.bif:0x27BF0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017BBF0	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x27BF0	bonusabc.bif:0x27FF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EA78 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x27FF0	bonusabc.bif:0x28010	hud_palette	TLUT RGBA5551 16 colours	palette for 8017C010	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x28010	bonusabc.bif:0x28410	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x28410	bonusabc.bif:0x28430	hud_palette	TLUT RGBA5551 16 colours	palette for 8017C430	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x28430	bonusabc.bif:0x28830	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x28830	bonusabc.bif:0x28850	hud_palette	TLUT RGBA5551 16 colours	palette for 8017C850	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x28850	bonusabc.bif:0x28C50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x28C50	bonusabc.bif:0x28C70	hud_palette	TLUT RGBA5551 16 colours	palette for 8017CC70	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x28C70	bonusabc.bif:0x29070	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x29070	bonusabc.bif:0x29090	hud_palette	TLUT RGBA5551 16 colours	palette for 8017D090	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x29090	bonusabc.bif:0x29490	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x29490	bonusabc.bif:0x294B0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017D4B0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x294B0	bonusabc.bif:0x298B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x298B0	bonusabc.bif:0x298D0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017D8D0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x298D0	bonusabc.bif:0x29CD0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x29CD0	bonusabc.bif:0x29CF0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017DCF0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x29CF0	bonusabc.bif:0x2A0F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2A0F0	bonusabc.bif:0x2A110	hud_palette	TLUT RGBA5551 16 colours	palette for 8017E110	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2A110	bonusabc.bif:0x2A510	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2A510	bonusabc.bif:0x2A530	hud_palette	TLUT RGBA5551 16 colours	palette for 8017E530	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2A530	bonusabc.bif:0x2A930	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2A930	bonusabc.bif:0x2A950	hud_palette	TLUT RGBA5551 16 colours	palette for 8017E950	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2A950	bonusabc.bif:0x2AD50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2AD50	bonusabc.bif:0x2AD70	hud_palette	TLUT RGBA5551 16 colours	palette for 8017ED70	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2AD70	bonusabc.bif:0x2B170	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2B170	bonusabc.bif:0x2B190	hud_palette	TLUT RGBA5551 16 colours	palette for 8017F190	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2B190	bonusabc.bif:0x2B590	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2B590	bonusabc.bif:0x2B5B0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017F5B0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2B5B0	bonusabc.bif:0x2B9B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2B9B0	bonusabc.bif:0x2B9D0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017F9D0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2B9D0	bonusabc.bif:0x2BDD0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2BDD0	bonusabc.bif:0x2BDF0	hud_palette	TLUT RGBA5551 16 colours	palette for 8017FDF0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2BDF0	bonusabc.bif:0x2C1F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2C1F0	bonusabc.bif:0x2C210	hud_palette	TLUT RGBA5551 16 colours	palette for 80180210	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2C210	bonusabc.bif:0x2C610	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2C610	bonusabc.bif:0x2C630	hud_palette	TLUT RGBA5551 16 colours	palette for 80180630	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2C630	bonusabc.bif:0x2CA30	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2CA30	bonusabc.bif:0x2CA50	hud_palette	TLUT RGBA5551 16 colours	palette for 80180A50	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2CA50	bonusabc.bif:0x2CE50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2CE50	bonusabc.bif:0x2CE70	hud_palette	TLUT RGBA5551 16 colours	palette for 80180E70	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2CE70	bonusabc.bif:0x2D270	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2D270	bonusabc.bif:0x2D290	hud_palette	TLUT RGBA5551 16 colours	palette for 80181290	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2D290	bonusabc.bif:0x2D690	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2D690	bonusabc.bif:0x2D6B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801816B0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2D6B0	bonusabc.bif:0x2DAB0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2DAB0	bonusabc.bif:0x2DAD0	hud_palette	TLUT RGBA5551 16 colours	palette for 80181AD0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2DAD0	bonusabc.bif:0x2DED0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2DED0	bonusabc.bif:0x2DEF0	hud_palette	TLUT RGBA5551 16 colours	palette for 80181EF0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2DEF0	bonusabc.bif:0x2E2F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2E2F0	bonusabc.bif:0x2E310	hud_palette	TLUT RGBA5551 16 colours	palette for 80182310	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2E310	bonusabc.bif:0x2E710	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2E710	bonusabc.bif:0x2E730	hud_palette	TLUT RGBA5551 16 colours	palette for 80182730	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2E730	bonusabc.bif:0x2EB30	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2EB30	bonusabc.bif:0x2EF30	hud_texture	CI4 64x32	unreferenced second texture without own palette (PNG uses the preceding palette)	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2EF30	bonusabc.bif:0x2EF50	hud_palette	TLUT RGBA5551 16 colours	palette for 80182F50	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2EF50	bonusabc.bif:0x2F350	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2F350	bonusabc.bif:0x2F370	hud_palette	TLUT RGBA5551 16 colours	palette for 80183370	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2F370	bonusabc.bif:0x2F770	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2F770	bonusabc.bif:0x2F790	hud_palette	TLUT RGBA5551 16 colours	palette for 80183790	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2F790	bonusabc.bif:0x2FB90	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2FB90	bonusabc.bif:0x2FBB0	hud_palette	TLUT RGBA5551 16 colours	palette for 80183BB0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2FBB0	bonusabc.bif:0x2FFB0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2FFB0	bonusabc.bif:0x2FFD0	hud_palette	TLUT RGBA5551 16 colours	palette for 80183FD0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x2FFD0	bonusabc.bif:0x303D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x303D0	bonusabc.bif:0x303F0	hud_palette	TLUT RGBA5551 16 colours	palette for 801843F0	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x303F0	bonusabc.bif:0x307F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x307F0	bonusabc.bif:0x30810	hud_palette	TLUT RGBA5551 16 colours	palette for 80184810	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x30810	bonusabc.bif:0x30C10	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x30C10	bonusabc.bif:0x31010	hud_texture	CI4 64x32	unreferenced second texture without own palette (PNG uses the preceding palette)	none (unused)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x31010	bonusabc.bif:0x31030	hud_palette	TLUT RGBA5551 16 colours	palette for 80185030	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x31030	bonusabc.bif:0x31430	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006E7C0 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x31430	bonusabc.bif:0x31450	hud_palette	TLUT RGBA5551 16 colours	palette for 80185450	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x31450	bonusabc.bif:0x31850	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x31850	bonusabc.bif:0x31870	hud_palette	TLUT RGBA5551 16 colours	palette for 80185870	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x31870	bonusabc.bif:0x31C70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x31C70	bonusabc.bif:0x31C90	hud_palette	TLUT RGBA5551 16 colours	palette for 80185C90	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x31C90	bonusabc.bif:0x32090	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x32090	bonusabc.bif:0x320B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801860B0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x320B0	bonusabc.bif:0x324B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x324B0	bonusabc.bif:0x324D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801864D0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x324D0	bonusabc.bif:0x328D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x328D0	bonusabc.bif:0x328F0	hud_palette	TLUT RGBA5551 16 colours	palette for 801868F0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x328F0	bonusabc.bif:0x32CF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x32CF0	bonusabc.bif:0x32D10	hud_palette	TLUT RGBA5551 16 colours	palette for 80186D10	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x32D10	bonusabc.bif:0x33110	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x33110	bonusabc.bif:0x33130	hud_palette	TLUT RGBA5551 16 colours	palette for 80187130	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x33130	bonusabc.bif:0x33530	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x33530	bonusabc.bif:0x33550	hud_palette	TLUT RGBA5551 16 colours	palette for 80187550	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x33550	bonusabc.bif:0x33950	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x33950	bonusabc.bif:0x33970	hud_palette	TLUT RGBA5551 16 colours	palette for 80187970	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x33970	bonusabc.bif:0x33D70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x33D70	bonusabc.bif:0x33D90	hud_palette	TLUT RGBA5551 16 colours	palette for 80187D90	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x33D90	bonusabc.bif:0x34190	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x34190	bonusabc.bif:0x341B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801881B0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x341B0	bonusabc.bif:0x345B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x345B0	bonusabc.bif:0x345D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801885D0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x345D0	bonusabc.bif:0x349D0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x349D0	bonusabc.bif:0x349F0	hud_palette	TLUT RGBA5551 16 colours	palette for 801889F0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x349F0	bonusabc.bif:0x34DF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x34DF0	bonusabc.bif:0x34E10	hud_palette	TLUT RGBA5551 16 colours	palette for 80188E10	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x34E10	bonusabc.bif:0x35210	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x35210	bonusabc.bif:0x35230	hud_palette	TLUT RGBA5551 16 colours	palette for 80189230	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x35230	bonusabc.bif:0x35630	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x35630	bonusabc.bif:0x35650	hud_palette	TLUT RGBA5551 16 colours	palette for 80189650	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x35650	bonusabc.bif:0x35A50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x35A50	bonusabc.bif:0x35A70	hud_palette	TLUT RGBA5551 16 colours	palette for 80189A70	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x35A70	bonusabc.bif:0x35E70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x35E70	bonusabc.bif:0x35E90	hud_palette	TLUT RGBA5551 16 colours	palette for 80189E90	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x35E90	bonusabc.bif:0x36290	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x36290	bonusabc.bif:0x362B0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018A2B0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x362B0	bonusabc.bif:0x366B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x366B0	bonusabc.bif:0x366D0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018A6D0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x366D0	bonusabc.bif:0x36AD0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x36AD0	bonusabc.bif:0x36AF0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018AAF0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x36AF0	bonusabc.bif:0x36EF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x36EF0	bonusabc.bif:0x36F10	hud_palette	TLUT RGBA5551 16 colours	palette for 8018AF10	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x36F10	bonusabc.bif:0x37310	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x37310	bonusabc.bif:0x37330	hud_palette	TLUT RGBA5551 16 colours	palette for 8018B330	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x37330	bonusabc.bif:0x37730	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x37730	bonusabc.bif:0x37750	hud_palette	TLUT RGBA5551 16 colours	palette for 8018B750	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x37750	bonusabc.bif:0x37B50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x37B50	bonusabc.bif:0x37B70	hud_palette	TLUT RGBA5551 16 colours	palette for 8018BB70	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x37B70	bonusabc.bif:0x37F70	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x37F70	bonusabc.bif:0x37F90	hud_palette	TLUT RGBA5551 16 colours	palette for 8018BF90	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x37F90	bonusabc.bif:0x38390	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x38390	bonusabc.bif:0x383B0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018C3B0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x383B0	bonusabc.bif:0x387B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x387B0	bonusabc.bif:0x387D0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018C7D0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x387D0	bonusabc.bif:0x38BD0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x38BD0	bonusabc.bif:0x38BF0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018CBF0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x38BF0	bonusabc.bif:0x38FF0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x38FF0	bonusabc.bif:0x39010	hud_palette	TLUT RGBA5551 16 colours	palette for 8018D010	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x39010	bonusabc.bif:0x39410	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x39410	bonusabc.bif:0x39430	hud_palette	TLUT RGBA5551 16 colours	palette for 8018D430	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x39430	bonusabc.bif:0x39830	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x39830	bonusabc.bif:0x39850	hud_palette	TLUT RGBA5551 16 colours	palette for 8018D850	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x39850	bonusabc.bif:0x39C50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x39C50	bonusabc.bif:0x39C70	hud_palette	TLUT RGBA5551 16 colours	palette for 8018DC70	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x39C70	bonusabc.bif:0x3A070	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3A070	bonusabc.bif:0x3A090	hud_palette	TLUT RGBA5551 16 colours	palette for 8018E090	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3A090	bonusabc.bif:0x3A490	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3A490	bonusabc.bif:0x3A4B0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018E4B0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3A4B0	bonusabc.bif:0x3A8B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3A8B0	bonusabc.bif:0x3A8D0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018E8D0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3A8D0	bonusabc.bif:0x3ACD0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3ACD0	bonusabc.bif:0x3ACF0	hud_palette	TLUT RGBA5551 16 colours	palette for 8018ECF0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3ACF0	bonusabc.bif:0x3B0F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3B0F0	bonusabc.bif:0x3B110	hud_palette	TLUT RGBA5551 16 colours	palette for 8018F110	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3B110	bonusabc.bif:0x3B510	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3B510	bonusabc.bif:0x3B530	hud_palette	TLUT RGBA5551 16 colours	palette for 8018F530	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3B530	bonusabc.bif:0x3B930	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3B930	bonusabc.bif:0x3B950	hud_palette	TLUT RGBA5551 16 colours	palette for 8018F950	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3B950	bonusabc.bif:0x3BD50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3BD50	bonusabc.bif:0x3BD70	hud_palette	TLUT RGBA5551 16 colours	palette for 8018FD70	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3BD70	bonusabc.bif:0x3C170	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3C170	bonusabc.bif:0x3C190	hud_palette	TLUT RGBA5551 16 colours	palette for 80190190	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3C190	bonusabc.bif:0x3C590	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3C590	bonusabc.bif:0x3C5B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801905B0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3C5B0	bonusabc.bif:0x3C9B0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3C9B0	bonusabc.bif:0x3C9D0	hud_palette	TLUT RGBA5551 16 colours	palette for 801909D0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3C9D0	bonusabc.bif:0x3CDD0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3CDD0	bonusabc.bif:0x3CDF0	hud_palette	TLUT RGBA5551 16 colours	palette for 80190DF0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3CDF0	bonusabc.bif:0x3D1F0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3D1F0	bonusabc.bif:0x3D210	hud_palette	TLUT RGBA5551 16 colours	palette for 80191210	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3D210	bonusabc.bif:0x3D610	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3D610	bonusabc.bif:0x3D630	hud_palette	TLUT RGBA5551 16 colours	palette for 80191630	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3D630	bonusabc.bif:0x3DA30	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3DA30	bonusabc.bif:0x3DA50	hud_palette	TLUT RGBA5551 16 colours	palette for 80191A50	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3DA50	bonusabc.bif:0x3DE50	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3DE50	bonusabc.bif:0x3DE70	hud_palette	TLUT RGBA5551 16 colours	palette for 80191E70	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3DE70	bonusabc.bif:0x3E270	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3E270	bonusabc.bif:0x3E290	hud_palette	TLUT RGBA5551 16 colours	palette for 80192290	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3E290	bonusabc.bif:0x3E690	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3E690	bonusabc.bif:0x3E6B0	hud_palette	TLUT RGBA5551 16 colours	palette for 801926B0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3E6B0	bonusabc.bif:0x3EAB0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3EAB0	bonusabc.bif:0x3EAD0	hud_palette	TLUT RGBA5551 16 colours	palette for 80192AD0	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3EAD0	bonusabc.bif:0x3EED0	hud_texture	CI4 64x32	bonus-game HUD letter/picture	table 8006EC20 (func_80004010)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x3EED0	bonusabc.bif:0x49A14	morph_anim	sprA keyframed vertex morph	267 verts x 41 keys	data_word@0x80075D48	tools/extract_level_rest.py
+letter	bonusabc.bif:0x49A14	bonusabc.bif:0x54984	morph_anim	sprA keyframed vertex morph	267 verts x 42 keys	data_word@0x80075D4C	tools/extract_level_rest.py
+letter	bonusabc.bif:0x54984	bonusabc.bif:0x54990	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x55B90	bonusabc.bif:0x55C80	coll_quad	0x50: u32 type=3,0,mask,0; f32 normal[3],dist; f32 corners[4][3]	collision quad (two triangles) tested by func_80040C00	set 801A9C8C (func_80023118 case 0x1501)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x55C80	bonusabc.bif:0x55C8C	coll_quad_ptrs	u32[3]	pointers to the 3 quads	set 801A9C8C +4	tools/extract_level_rest.py
+letter	bonusabc.bif:0x55C8C	bonusabc.bif:0x55C94	coll_quad_set	u32 count, u32 ptr	quad set of actor 0x1501 (copied count*0x50 bytes)	func_80023118 case 0x1501 (spD4)	tools/extract_level_rest.py
+letter	bonusabc.bif:0x55C94	bonusabc.bif:0x55C98	pad	zero	zero fill	none	check only (zero)
+letter	bonusabc.bif:0x56628	bonusabc.bif:0x56640	model_bounds	f32[6]	bounding box min x,y,z / max x,y,z	model_header 801AA640 +0x24	tools/extract_level_rest.py
+letter	bonusabc.bif:0x56664	bonusabc.bif:0x56668	model_header_ext	u32 ptr	model header +0x24: pointer to its bounds box (0 if none); header is 0x28 bytes (func_80018530 copies 10 words)	model_header 801AA640	tools/extract_level_rest.py
+letter	bonusabc.bif:0x56668	bonusabc.bif:0x56689	pad	zero	zero fill	none	check only (zero)

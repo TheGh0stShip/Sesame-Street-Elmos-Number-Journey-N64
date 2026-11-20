@@ -1,0 +1,90 @@
+# game	address	one-line description written from the matched C (sesverify/v16/<game>/src/func_X.c); used when the source has no comment. Number twins (same hash) inherit Letter's line.
+letter	80000E50	stub: compares a word with its earlier value and clears *arg4 when it changed; always returns 1
+letter	8000125C	controller edge detection: for each connected pad, new-press bits = (held XOR previous) AND held
+letter	80001BF8	appends gsDPFullSync-like 0xE9 and gsSPEndDisplayList to the current display list
+letter	8000C3A0	init a scalar first-order smoother {time, target, value, rate = k / period}
+letter	8000C458	step the scalar smoother to time t in bounded sub-steps (value += (target-value)*dt*rate)
+letter	8000C588	change the scalar smoother's rate from a new period; returns the old rate
+letter	8000C62C	init a 3D vector smoother {time, target xyz, value xyz, rate}
+letter	8000C744	step the 3D vector smoother to time t in bounded sub-steps
+letter	8000C998	set the 3D smoother's value and/or target vector
+letter	8000CA50	init an angle smoother with a wrap period {time, target, value, rate, period}
+letter	8000CB14	step the angle smoother along the shortest wrapped path and re-wrap the result
+letter	8000CCDC	set the angle smoother's target, wrapped into (-period/2, period/2]
+letter	8000CDAC	init an s16 smoother {time, target, value, rate}
+letter	8000CE6C	step the s16 smoother to time t; returns the new value
+letter	8000D060	reset the frame-timing statistics counters
+letter	8000D658	frame-timing setter (D_80070780)
+letter	8000D690	frame-timing setter (D_8007077C)
+letter	8000D6C8	frame-timing getter (D_80070774)
+letter	8000D6F0	frame-timing getter (D_80070778)
+letter	8000D718	frame-timing setter (D_80070784)
+letter	8000D74C	frame-timing getter (D_80070784)
+letter	8000D774	frame-timing: set flag D_8007078C = 1
+letter	8000D7A8	frame-timing setter (D_80070790)
+letter	8000D7E0	frame-timing getter (D_80070790)
+letter	8000E2D4	disable the cyclic random table (D_80071E5C = 0)
+letter	8000E310	reposition both cursors of the cyclic random table; returns the old cursor (-1 when disabled)
+letter	8000E3EC	next value of the cyclic random table (cursor 1) modulo n; -1 when disabled
+letter	8000E5C4	next value of the cyclic random table (cursor 2) modulo n; -1 when disabled
+letter	80017050	increment counter D_80133E58
+letter	80017084	stub: returns 1
+letter	800172B8	PI-copy a ROM range [start, end) to RAM (wrapper of func_80017318)
+letter	80017408	stop sound effects: returns at once (the body after the return is dead code)
+letter	80017448	stop all libmus effects with id arg0
+letter	8001747C	stop the effect whose id is in D_800744E0
+letter	800174E4	count playing libmus effects with an id
+letter	800175D0	start sound effect n (0..100) through the libmus player
+letter	80017658	set a libmus effect parameter (func_8004D1EC) when the handle is non-zero
+letter	800176A4	set a libmus effect pitch-like value (func_8004D0F0) when the handle is non-zero
+letter	800176F0	set a libmus effect value (func_8004D080) when the handle is non-zero
+letter	8001773C	set a libmus effect value (func_8004D020) when the handle is non-zero
+letter	800184AC	set bit 0 of an actor's flags at +0x74
+letter	800186A8	builds a camera-relative basis from the view matrix D_80075C20 and transforms a point with it
+letter	8001D1BC	draws a full-screen CI4 background as textured rectangles
+letter	8001DFD0	fills a 4x4 float matrix from three basis vectors and a translation
+letter	8001E314	project a point by a 4x4 matrix and classify it against the clip volume (prints "DIVIDE BY ZERO!!!" when w == 0)
+letter	8001E718	draws each display list of a NULL-terminated list whose bounding box passes func_8001E7EC
+letter	8001E7EC	bounding-box visibility: projects the 8 corners with func_8001E314
+letter	8001EA68	builds a look-at basis (normalised forward, side and up vectors)
+letter	8001EE68	advance a camera frame along its velocity and re-orthonormalise its axes
+letter	8001F184	convert a float matrix built by func_8001DD10 into a fixed-point Mtx
+letter	8001F248	build translate * rotate * scale into a fixed-point Mtx (guRotateF, guScaleF, guMtxCatF)
+letter	80020F60	initialise a mini actor (type 2) with update func_80020FDC and destroy func_800210CC
+letter	80020FDC	update of the type-2 mini actor: reacts to pad buttons, ends itself when the game state >= 8
+letter	800210CC	destroy callback: free the actor (func_80040680)
+letter	800246EC	decay a signed byte pair towards zero by steps of 2
+letter	800258A4	point-in-box test against an s16 bounding box; on failure computes the nearest point
+letter	80025A00	distance test of the camera position against a box (uses func_800258A4)
+letter	80029EFC	is an actor within a squared distance of the player (XZ plane)
+letter	80030198	switch to game mode 12 (func_8001D8E0(12))
+letter	800301C8	level-select text: when D_80075D53 != 0 prints "Level select = %s" with name D_80075D78[D_80075D52] at (70,20)
+letter	800316BC	post a message to the speech/mailbox thread with two arguments and the D_800732A8 table
+letter	80035720	store an animation index at actor+0x1D4
+letter	8003F140	spawn an actor of type 21 (424 bytes) from table D_80076B30, with its mesh and animation
+letter	8003F838	update of the type-21 actor: moves it, ends itself when the game state >= 8
+letter	8003FC04	draw of the type-21 actor: emits combine mode and segment setup then its display list
+letter	8003FD98	destroy callback of the type-21 actor: free it
+letter	80040874	advance a 16-byte aligned id counter (D_800A8D38 += 16, low bits set)
+letter	800408C4	free every actor whose id (flags & ~15) equals arg
+letter	80041090	transform a collision shape by a basis built from two vectors (func_80042398, func_8004256C)
+letter	800413A0	walk a collider list and run the shape test for each type (3, 1, 12, ...)
+letter	80041E78	advance a moving sphere along its direction by its remaining distance
+letter	8004216C	build a diagonal (scale) 4x4 matrix from a vector
+letter	80042270	build a translation 4x4 matrix from a vector
+letter	80042398	build a 4x4 basis matrix from two vectors and their cross product
+letter	8004256C	transform a vector by the 3x3 part of a 4x4 matrix
+letter	800445A0	clear a two-pointer list head
+letter	80044840	unlink a node from a doubly linked list and fix the head/tail
+letter	80047E10	send a mail message to every actor of a list that matches a type/id
+letter	80048120	free an actor's mail queue and its timers, then the actor
+letter	80049994	call the handler of every timer node of an actor whose id matches
+letter	80049A24	free every timer node of an actor, calling each handler first
+letter	80049C6C	free every node of an actor's second list
+number	800174DC	increment counter D_80133FC0 and clear D_80133FD0
+number	800336AC	update of a flying actor (Number): moves it by its velocity while its timer runs, when D_800AD03A is set it instead draws itself through a fixed 40-degree perspective and returns
+number	80033850	variant of func_800336AC that also drifts the position and a global angle each frame
+number	8003BC9C	set an actor's state to 7 and set three bits of its flags at +0x200
+number	8003EFE0	spawn an actor of type 20 (536 bytes) at a position (its mesh table pointer is constant 0, so no mesh is loaded)
+number	8003FA80	draw of the type-20 actor: combine mode, segment setup, then its display list
+number	8003FC00	destroy callback of the type-20 actor: free it

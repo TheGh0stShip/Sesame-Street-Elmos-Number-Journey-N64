@@ -1,0 +1,545 @@
+game	start	end	class	format	description	referenced_by	extractor
+number	street.bif:0x29050	street.bif:0x29070	palette	TLUT RGBA5551	16 colours	texload_dl 3A930	tools/extract_level_rest.py -> out/street/palette_29050.*
+number	street.bif:0x29070	street.bif:0x29470	texture	CI4 64x32	palette 8017D050	texload_dl 3A930	tools/extract_level_rest.py -> out/street/texture_29070.*
+number	street.bif:0x2D090	street.bif:0x2D290	palette	TLUT RGBA5551	256 colours	texload_dl 3AEB0	tools/extract_level_rest.py -> out/street/palette_2D090.*
+number	street.bif:0x2D290	street.bif:0x2D690	texture	CI8 32x32	palette 80181090	texload_dl 3AEB0	tools/extract_level_rest.py -> out/street/texture_2D290.*
+number	street.bif:0x30090	street.bif:0x30290	palette	TLUT RGBA5551	256 colours	texload_dl 3B1B0	tools/extract_level_rest.py -> out/street/palette_30090.*
+number	street.bif:0x30290	street.bif:0x30690	texture	CI8 32x32	palette 80184090	texload_dl 3B1B0	tools/extract_level_rest.py -> out/street/texture_30290.*
+number	street.bif:0x31090	street.bif:0x31290	palette	TLUT RGBA5551	256 colours	texload_dl 3B2B0	tools/extract_level_rest.py -> out/street/palette_31090.*
+number	street.bif:0x31290	street.bif:0x31690	texture	CI8 32x32	palette 80185090	texload_dl 3B2B0	tools/extract_level_rest.py -> out/street/texture_31290.*
+number	street.bif:0x31690	street.bif:0x31890	palette	TLUT RGBA5551	256 colours	texload_dl 3B330	tools/extract_level_rest.py -> out/street/palette_31690.*
+number	street.bif:0x31890	street.bif:0x31C90	texture	CI8 32x32	palette 80185690	texload_dl 3B330	tools/extract_level_rest.py -> out/street/texture_31890.*
+number	street.bif:0x31C90	street.bif:0x31E90	palette	TLUT RGBA5551	256 colours	texload_dl 3B3B0	tools/extract_level_rest.py -> out/street/palette_31C90.*
+number	street.bif:0x31E90	street.bif:0x32290	texture	CI8 32x32	palette 80185C90	texload_dl 3B3B0	tools/extract_level_rest.py -> out/street/texture_31E90.*
+number	street.bif:0x32290	street.bif:0x32490	palette	TLUT RGBA5551	256 colours	texload_dl 3B430	tools/extract_level_rest.py -> out/street/palette_32290.*
+number	street.bif:0x32490	street.bif:0x32890	texture	CI8 32x32	palette 80186290	texload_dl 3B430	tools/extract_level_rest.py -> out/street/texture_32490.*
+number	street.bif:0x32890	street.bif:0x32A90	palette	TLUT RGBA5551	256 colours	texload_dl 3B4B0	tools/extract_level_rest.py -> out/street/palette_32890.*
+number	street.bif:0x32A90	street.bif:0x32E90	texture	CI8 32x32	palette 80186890	texload_dl 3B4B0	tools/extract_level_rest.py -> out/street/texture_32A90.*
+number	street.bif:0x32E90	street.bif:0x33090	palette	TLUT RGBA5551	256 colours	texload_dl 3B530	tools/extract_level_rest.py -> out/street/palette_32E90.*
+number	street.bif:0x33090	street.bif:0x33490	texture	CI8 32x32	palette 80186E90	texload_dl 3B530	tools/extract_level_rest.py -> out/street/texture_33090.*
+number	street.bif:0x3A930	street.bif:0x3A9B0	texload_dl	F3DEX 1.23 GBI	loads 16-colour TLUT 8017D050 + CI4 64x32 8017D070	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3A930.*
+number	street.bif:0x3AEB0	street.bif:0x3AF30	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80181090 + CI8 32x32 80181290	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3AEB0.*
+number	street.bif:0x3B1B0	street.bif:0x3B230	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80184090 + CI8 32x32 80184290	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3B1B0.*
+number	street.bif:0x3B2B0	street.bif:0x3B330	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80185090 + CI8 32x32 80185290	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3B2B0.*
+number	street.bif:0x3B330	street.bif:0x3B3B0	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80185690 + CI8 32x32 80185890	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3B330.*
+number	street.bif:0x3B3B0	street.bif:0x3B430	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80185C90 + CI8 32x32 80185E90	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3B3B0.*
+number	street.bif:0x3B430	street.bif:0x3B4B0	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80186290 + CI8 32x32 80186490	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3B430.*
+number	street.bif:0x3B4B0	street.bif:0x3B530	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80186890 + CI8 32x32 80186A90	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3B4B0.*
+number	street.bif:0x3B530	street.bif:0x3B5B0	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80186E90 + CI8 32x32 80187090	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/street/texload_dl_3B530.*
+number	street.bif:0x3BA6C	street.bif:0x3BA70	pad	zero	alignment / unused	-	-
+number	street.bif:0x3BE6C	street.bif:0x3BE70	pad	zero	alignment / unused	-	-
+number	street.bif:0x3CC5C	street.bif:0x3CC60	pad	zero	alignment / unused	-	-
+number	street.bif:0x3D08C	street.bif:0x3D090	pad	zero	alignment / unused	-	-
+number	street.bif:0x3D1D4	street.bif:0x3D1D8	pad	zero	alignment / unused	-	-
+number	street.bif:0x3D8AC	street.bif:0x3D8B0	pad	zero	alignment / unused	-	-
+number	street.bif:0x3DB04	street.bif:0x3DB08	pad	zero	alignment / unused	-	-
+number	street.bif:0x3DCBC	street.bif:0x3DCC0	pad	zero	alignment / unused	-	-
+number	street.bif:0x3E08C	street.bif:0x3E090	pad	zero	alignment / unused	-	-
+number	street.bif:0x3E24C	street.bif:0x3E250	pad	zero	alignment / unused	-	-
+number	street.bif:0x3E4C4	street.bif:0x3E4C8	pad	zero	alignment / unused	-	-
+number	street.bif:0x3FB5C	street.bif:0x3FB60	pad	zero	alignment / unused	-	-
+number	street.bif:0x3FDD4	street.bif:0x3FDD8	pad	zero	alignment / unused	-	-
+number	street.bif:0x3FFCC	street.bif:0x3FFD0	pad	zero	alignment / unused	-	-
+number	street.bif:0x4018C	street.bif:0x40190	pad	zero	alignment / unused	-	-
+number	street.bif:0x4047C	street.bif:0x40480	pad	zero	alignment / unused	-	-
+number	street.bif:0x407DC	street.bif:0x407E0	pad	zero	alignment / unused	-	-
+number	street.bif:0x40A2C	street.bif:0x40A30	pad	zero	alignment / unused	-	-
+number	street.bif:0x40E4C	street.bif:0x40E50	pad	zero	alignment / unused	-	-
+number	street.bif:0x4102C	street.bif:0x41030	pad	zero	alignment / unused	-	-
+number	street.bif:0x411BC	street.bif:0x411C0	pad	zero	alignment / unused	-	-
+number	street.bif:0x41B5C	street.bif:0x41B60	pad	zero	alignment / unused	-	-
+number	street.bif:0x41D9C	street.bif:0x41DA0	pad	zero	alignment / unused	-	-
+number	street.bif:0x420B4	street.bif:0x420B8	pad	zero	alignment / unused	-	-
+number	street.bif:0x42284	street.bif:0x42288	pad	zero	alignment / unused	-	-
+number	street.bif:0x426F4	street.bif:0x426F8	pad	zero	alignment / unused	-	-
+number	street.bif:0x43B84	street.bif:0x43B88	pad	zero	alignment / unused	-	-
+number	street.bif:0x43D14	street.bif:0x43D18	pad	zero	alignment / unused	-	-
+number	street.bif:0x448DC	street.bif:0x448E0	pad	zero	alignment / unused	-	-
+number	street.bif:0x44C44	street.bif:0x44C48	pad	zero	alignment / unused	-	-
+number	street.bif:0x455C4	street.bif:0x455C8	pad	zero	alignment / unused	-	-
+number	street.bif:0x45864	street.bif:0x45868	pad	zero	alignment / unused	-	-
+number	street.bif:0x45D7C	street.bif:0x45D80	pad	zero	alignment / unused	-	-
+number	street.bif:0x45F6C	street.bif:0x45F70	pad	zero	alignment / unused	-	-
+number	street.bif:0x4672C	street.bif:0x46730	pad	zero	alignment / unused	-	-
+number	street.bif:0x46C8C	street.bif:0x46C90	pad	zero	alignment / unused	-	-
+number	street.bif:0x47324	street.bif:0x47328	pad	zero	alignment / unused	-	-
+number	street.bif:0x474FC	street.bif:0x47500	pad	zero	alignment / unused	-	-
+number	street.bif:0x47764	street.bif:0x47768	pad	zero	alignment / unused	-	-
+number	street.bif:0x4795C	street.bif:0x47960	pad	zero	alignment / unused	-	-
+number	street.bif:0x47B6C	street.bif:0x47B70	pad	zero	alignment / unused	-	-
+number	street.bif:0x47E0C	street.bif:0x47E10	pad	zero	alignment / unused	-	-
+number	street.bif:0x484B4	street.bif:0x484B8	pad	zero	alignment / unused	-	-
+number	street.bif:0x48D7C	street.bif:0x48D80	pad	zero	alignment / unused	-	-
+number	street.bif:0x497BC	street.bif:0x497C0	pad	zero	alignment / unused	-	-
+number	street.bif:0x49DA4	street.bif:0x49DA8	pad	zero	alignment / unused	-	-
+number	street.bif:0x4A91C	street.bif:0x4A920	pad	zero	alignment / unused	-	-
+number	street.bif:0x4ACBC	street.bif:0x4ACC0	pad	zero	alignment / unused	-	-
+number	street.bif:0x4B36C	street.bif:0x4B370	pad	zero	alignment / unused	-	-
+number	street.bif:0x4B57C	street.bif:0x4B580	pad	zero	alignment / unused	-	-
+number	street.bif:0x4B754	street.bif:0x4B758	pad	zero	alignment / unused	-	-
+number	street.bif:0x4BBB4	street.bif:0x4BBB8	pad	zero	alignment / unused	-	-
+number	street.bif:0x4CB24	street.bif:0x4CB28	pad	zero	alignment / unused	-	-
+number	street.bif:0x4CF44	street.bif:0x4CF48	pad	zero	alignment / unused	-	-
+number	street.bif:0x4DF8C	street.bif:0x4DF90	pad	zero	alignment / unused	-	-
+number	street.bif:0x4E484	street.bif:0x4E488	pad	zero	alignment / unused	-	-
+number	street.bif:0x4EC74	street.bif:0x4EC78	pad	zero	alignment / unused	-	-
+number	street.bif:0x4EE1C	street.bif:0x4EE20	pad	zero	alignment / unused	-	-
+number	street.bif:0x4F2D4	street.bif:0x4F2D8	pad	zero	alignment / unused	-	-
+number	street.bif:0x4F604	street.bif:0x4F608	pad	zero	alignment / unused	-	-
+number	street.bif:0x4F82C	street.bif:0x4F830	pad	zero	alignment / unused	-	-
+number	street.bif:0x4F9AC	street.bif:0x4F9B0	pad	zero	alignment / unused	-	-
+number	street.bif:0x4FE74	street.bif:0x4FE78	pad	zero	alignment / unused	-	-
+number	street.bif:0x5002C	street.bif:0x50030	pad	zero	alignment / unused	-	-
+number	street.bif:0x5022C	street.bif:0x50230	pad	zero	alignment / unused	-	-
+number	street.bif:0x503E4	street.bif:0x503E8	pad	zero	alignment / unused	-	-
+number	street.bif:0x50A0C	street.bif:0x50A10	pad	zero	alignment / unused	-	-
+number	street.bif:0x51584	street.bif:0x51588	pad	zero	alignment / unused	-	-
+number	street.bif:0x51764	street.bif:0x51768	pad	zero	alignment / unused	-	-
+number	street.bif:0x51FFC	street.bif:0x52000	pad	zero	alignment / unused	-	-
+number	street.bif:0x5273C	street.bif:0x52740	pad	zero	alignment / unused	-	-
+number	street.bif:0x52924	street.bif:0x52928	pad	zero	alignment / unused	-	-
+number	street.bif:0x52B74	street.bif:0x52B78	pad	zero	alignment / unused	-	-
+number	street.bif:0x53134	street.bif:0x53138	pad	zero	alignment / unused	-	-
+number	street.bif:0x53294	street.bif:0x53298	pad	zero	alignment / unused	-	-
+number	street.bif:0x53474	street.bif:0x53478	pad	zero	alignment / unused	-	-
+number	street.bif:0x536AC	street.bif:0x536B0	pad	zero	alignment / unused	-	-
+number	street.bif:0x53AB4	street.bif:0x53AB8	pad	zero	alignment / unused	-	-
+number	street.bif:0x5473C	street.bif:0x54740	pad	zero	alignment / unused	-	-
+number	street.bif:0x548C4	street.bif:0x548C8	pad	zero	alignment / unused	-	-
+number	street.bif:0x54A74	street.bif:0x54A78	pad	zero	alignment / unused	-	-
+number	street.bif:0x54BFC	street.bif:0x54C00	pad	zero	alignment / unused	-	-
+number	street.bif:0x54E0C	street.bif:0x54E10	pad	zero	alignment / unused	-	-
+number	street.bif:0x551E4	street.bif:0x551E8	pad	zero	alignment / unused	-	-
+number	street.bif:0x55394	street.bif:0x55398	pad	zero	alignment / unused	-	-
+number	street.bif:0x5596C	street.bif:0x55970	pad	zero	alignment / unused	-	-
+number	street.bif:0x562FC	street.bif:0x56300	pad	zero	alignment / unused	-	-
+number	street.bif:0x56300	street.bif:0x56350	coll_quad	0x50 type-3 shape	wall quad of set 56450	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/street/coll_quad_56300.*
+number	street.bif:0x56350	street.bif:0x563A0	coll_quad	0x50 type-3 shape	wall quad of set 56450	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/street/coll_quad_56350.*
+number	street.bif:0x563A0	street.bif:0x563F0	coll_quad	0x50 type-3 shape	wall quad of set 56450	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/street/coll_quad_563A0.*
+number	street.bif:0x563F0	street.bif:0x56440	coll_quad	0x50 type-3 shape	wall quad of set 56450	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/street/coll_quad_563F0.*
+number	street.bif:0x56440	street.bif:0x56450	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 56450	coll_quad_set +4	tools/extract_level_rest.py -> out/street/coll_quad_ptrs_56440.*
+number	street.bif:0x56450	street.bif:0x56458	coll_quad_set	u32 count, u32 ptr	4 quads, array 801AA440	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/street/coll_quad_set_56450.*
+number	street.bif:0x56558	street.bif:0x56570	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 56570	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/street/mesh_bbox_56558.*
+number	street.bif:0x56594	street.bif:0x56598	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 801AA558	part of the mesh header at 56570 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/street/mesh_header_tail_56594.*
+number	street.bif:0x56598	street.bif:0x565A0	pad	zero	alignment / unused	-	-
+number	street.bif:0x565A0	street.bif:0x63AA4	morph_anim	vertex morph animation (sprA format)	51 keys, 198 ticks, 267 vertices	data_word@0x800768C8 | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/street/morph_anim_565A0.*
+number	street.bif:0x63AA4	street.bif:0x68E34	morph_anim	vertex morph animation (sprA format)	20 keys, 76 ticks, 267 vertices	data_word@0x800768CC | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/street/morph_anim_63AA4.*
+number	street.bif:0x68E34	street.bif:0x741D0	morph_anim	vertex morph animation (sprA format)	43 keys, 166 ticks, 267 vertices	data_word@0x800768D0 | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/street/morph_anim_68E34.*
+number	street.bif:0x741D0	street.bif:0x7C780	morph_anim	vertex morph animation (sprA format)	32 keys, 124 ticks, 267 vertices	no reference found in code, program data or the image (unused?) | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/street/morph_anim_741D0.*
+number	street.bif:0x7C780	street.bif:0x7C799	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0BCEC	dunk.bif:0x0BCF0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0BE74	dunk.bif:0x0BE78	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0C7CC	dunk.bif:0x0C7D0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0D15C	dunk.bif:0x0D160	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0D80C	dunk.bif:0x0D810	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0DAEC	dunk.bif:0x0DAF0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0DDCC	dunk.bif:0x0DDD0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0DFEC	dunk.bif:0x0DFF0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0ED4C	dunk.bif:0x0ED50	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x0F58C	dunk.bif:0x0F590	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x112CC	dunk.bif:0x112D0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x11734	dunk.bif:0x11738	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x121CC	dunk.bif:0x121D0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x128EC	dunk.bif:0x128F0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x12CBC	dunk.bif:0x12CC0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x12EDC	dunk.bif:0x12EE0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x13184	dunk.bif:0x13188	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1381C	dunk.bif:0x13820	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x13934	dunk.bif:0x13938	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x13B04	dunk.bif:0x13B08	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x13D8C	dunk.bif:0x13D90	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x15494	dunk.bif:0x15498	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x15BEC	dunk.bif:0x15BF0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x15D8C	dunk.bif:0x15D90	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x15FDC	dunk.bif:0x15FE0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x16324	dunk.bif:0x16328	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x17344	dunk.bif:0x17348	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x174D4	dunk.bif:0x174D8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1799C	dunk.bif:0x179A0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x17DA4	dunk.bif:0x17DA8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x17EE4	dunk.bif:0x17EE8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1812C	dunk.bif:0x18130	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x183EC	dunk.bif:0x183F0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x18844	dunk.bif:0x18848	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x18CFC	dunk.bif:0x18D00	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x18F1C	dunk.bif:0x18F20	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x197FC	dunk.bif:0x19800	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x19ACC	dunk.bif:0x19AD0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x19D1C	dunk.bif:0x19D20	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x19F0C	dunk.bif:0x19F10	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1A1FC	dunk.bif:0x1A200	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1A42C	dunk.bif:0x1A430	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1A61C	dunk.bif:0x1A620	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1AA94	dunk.bif:0x1AA98	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1AD34	dunk.bif:0x1AD38	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1AF6C	dunk.bif:0x1AF70	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1B16C	dunk.bif:0x1B170	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1B3EC	dunk.bif:0x1B3F0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1BFE4	dunk.bif:0x1BFE8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1C204	dunk.bif:0x1C208	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1CA7C	dunk.bif:0x1CA80	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1CEC4	dunk.bif:0x1CEC8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1D04C	dunk.bif:0x1D050	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1D294	dunk.bif:0x1D298	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1D804	dunk.bif:0x1D808	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1E8BC	dunk.bif:0x1E8C0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1EACC	dunk.bif:0x1EAD0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1ECC4	dunk.bif:0x1ECC8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1F554	dunk.bif:0x1F558	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1F8EC	dunk.bif:0x1F8F0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x1FE94	dunk.bif:0x1FE98	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x2031C	dunk.bif:0x20320	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x20524	dunk.bif:0x20528	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x2071C	dunk.bif:0x20720	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x2127C	dunk.bif:0x21280	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x21DEC	dunk.bif:0x21DF0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x2201C	dunk.bif:0x22020	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x22464	dunk.bif:0x22468	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x2279C	dunk.bif:0x227A0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x22BD4	dunk.bif:0x22BD8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x232D4	dunk.bif:0x232D8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x23DCC	dunk.bif:0x23DD0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x23FFC	dunk.bif:0x24000	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x241F4	dunk.bif:0x241F8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x24454	dunk.bif:0x24458	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x246FC	dunk.bif:0x24700	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x24B04	dunk.bif:0x24B08	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x24FA4	dunk.bif:0x24FA8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x25164	dunk.bif:0x25168	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x26454	dunk.bif:0x26458	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x26D2C	dunk.bif:0x26D30	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x26F64	dunk.bif:0x26F68	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x27164	dunk.bif:0x27168	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x2770C	dunk.bif:0x27710	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x27BA4	dunk.bif:0x27BA8	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x29984	dunk.bif:0x29990	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x2A390	dunk.bif:0x2A3E0	coll_quad	0x50 type-3 shape	wall quad of set 2A4E0	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2A390.*
+number	dunk.bif:0x2A3E0	dunk.bif:0x2A430	coll_quad	0x50 type-3 shape	wall quad of set 2A4E0	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2A3E0.*
+number	dunk.bif:0x2A430	dunk.bif:0x2A480	coll_quad	0x50 type-3 shape	wall quad of set 2A4E0	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2A430.*
+number	dunk.bif:0x2A480	dunk.bif:0x2A4D0	coll_quad	0x50 type-3 shape	wall quad of set 2A4E0	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2A480.*
+number	dunk.bif:0x2A4D0	dunk.bif:0x2A4E0	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 2A4E0	coll_quad_set +4	tools/extract_level_rest.py -> out/dunk/coll_quad_ptrs_2A4D0.*
+number	dunk.bif:0x2A4E0	dunk.bif:0x2A4E8	coll_quad_set	u32 count, u32 ptr	4 quads, array 8017E4D0	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/dunk/coll_quad_set_2A4E0.*
+number	dunk.bif:0x2A7F8	dunk.bif:0x2A810	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 2A810	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/dunk/mesh_bbox_2A7F8.*
+number	dunk.bif:0x2A834	dunk.bif:0x2A838	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 8017E7F8	part of the mesh header at 2A810 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/dunk/mesh_header_tail_2A834.*
+number	dunk.bif:0x2A838	dunk.bif:0x2A840	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x2D640	dunk.bif:0x2D690	coll_quad	0x50 type-3 shape	wall quad of set 2D790	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2D640.*
+number	dunk.bif:0x2D690	dunk.bif:0x2D6E0	coll_quad	0x50 type-3 shape	wall quad of set 2D790	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2D690.*
+number	dunk.bif:0x2D6E0	dunk.bif:0x2D730	coll_quad	0x50 type-3 shape	wall quad of set 2D790	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2D6E0.*
+number	dunk.bif:0x2D730	dunk.bif:0x2D780	coll_quad	0x50 type-3 shape	wall quad of set 2D790	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2D730.*
+number	dunk.bif:0x2D780	dunk.bif:0x2D790	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 2D790	coll_quad_set +4	tools/extract_level_rest.py -> out/dunk/coll_quad_ptrs_2D780.*
+number	dunk.bif:0x2D790	dunk.bif:0x2D798	coll_quad_set	u32 count, u32 ptr	4 quads, array 80181780	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/dunk/coll_quad_set_2D790.*
+number	dunk.bif:0x2F170	dunk.bif:0x2F188	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 2F188	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/dunk/mesh_bbox_2F170.*
+number	dunk.bif:0x2F1AC	dunk.bif:0x2F1B0	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80183170	part of the mesh header at 2F188 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/dunk/mesh_header_tail_2F1AC.*
+number	dunk.bif:0x2F1B0	dunk.bif:0x2F200	coll_quad	0x50 type-3 shape	wall quad of set 30B00	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2F1B0.*
+number	dunk.bif:0x2F200	dunk.bif:0x2F250	coll_quad	0x50 type-3 shape	wall quad of set 30B00	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2F200.*
+number	dunk.bif:0x2F250	dunk.bif:0x2F2A0	coll_quad	0x50 type-3 shape	wall quad of set 30B00	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2F250.*
+number	dunk.bif:0x2F2A0	dunk.bif:0x2F2F0	coll_quad	0x50 type-3 shape	wall quad of set 30B00	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_2F2A0.*
+number	dunk.bif:0x30AF0	dunk.bif:0x30B00	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 30B00	coll_quad_set +4	tools/extract_level_rest.py -> out/dunk/coll_quad_ptrs_30AF0.*
+number	dunk.bif:0x30B00	dunk.bif:0x30B08	coll_quad_set	u32 count, u32 ptr	4 quads, array 80184AF0	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/dunk/coll_quad_set_30B00.*
+number	dunk.bif:0x32288	dunk.bif:0x322A0	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 322A0	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/dunk/mesh_bbox_32288.*
+number	dunk.bif:0x322C4	dunk.bif:0x322C8	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80186288	part of the mesh header at 322A0 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/dunk/mesh_header_tail_322C4.*
+number	dunk.bif:0x322C8	dunk.bif:0x322D0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x322D0	dunk.bif:0x32320	coll_quad	0x50 type-3 shape	wall quad of set 33C20	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_322D0.*
+number	dunk.bif:0x32320	dunk.bif:0x32370	coll_quad	0x50 type-3 shape	wall quad of set 33C20	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_32320.*
+number	dunk.bif:0x32370	dunk.bif:0x323C0	coll_quad	0x50 type-3 shape	wall quad of set 33C20	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_32370.*
+number	dunk.bif:0x323C0	dunk.bif:0x32410	coll_quad	0x50 type-3 shape	wall quad of set 33C20	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_323C0.*
+number	dunk.bif:0x33C10	dunk.bif:0x33C20	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 33C20	coll_quad_set +4	tools/extract_level_rest.py -> out/dunk/coll_quad_ptrs_33C10.*
+number	dunk.bif:0x33C20	dunk.bif:0x33C28	coll_quad_set	u32 count, u32 ptr	4 quads, array 80187C10	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/dunk/coll_quad_set_33C20.*
+number	dunk.bif:0x353A8	dunk.bif:0x353C0	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 353C0	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/dunk/mesh_bbox_353A8.*
+number	dunk.bif:0x353E4	dunk.bif:0x353E8	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 801893A8	part of the mesh header at 353C0 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/dunk/mesh_header_tail_353E4.*
+number	dunk.bif:0x353E8	dunk.bif:0x353F0	pad	zero	alignment / unused	-	-
+number	dunk.bif:0x38A10	dunk.bif:0x38A60	coll_quad	0x50 type-3 shape	wall quad of set 38B60	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_38A10.*
+number	dunk.bif:0x38A60	dunk.bif:0x38AB0	coll_quad	0x50 type-3 shape	wall quad of set 38B60	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_38A60.*
+number	dunk.bif:0x38AB0	dunk.bif:0x38B00	coll_quad	0x50 type-3 shape	wall quad of set 38B60	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_38AB0.*
+number	dunk.bif:0x38B00	dunk.bif:0x38B50	coll_quad	0x50 type-3 shape	wall quad of set 38B60	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/dunk/coll_quad_38B00.*
+number	dunk.bif:0x38B50	dunk.bif:0x38B60	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 38B60	coll_quad_set +4	tools/extract_level_rest.py -> out/dunk/coll_quad_ptrs_38B50.*
+number	dunk.bif:0x38B60	dunk.bif:0x38B68	coll_quad_set	u32 count, u32 ptr	4 quads, array 8018CB50	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/dunk/coll_quad_set_38B60.*
+number	dunk.bif:0x39FE0	dunk.bif:0x39FF8	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 39FF8	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/dunk/mesh_bbox_39FE0.*
+number	dunk.bif:0x3A01C	dunk.bif:0x3A020	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 8018DFE0	part of the mesh header at 39FF8 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/dunk/mesh_header_tail_3A01C.*
+number	dunk.bif:0x3A020	dunk.bif:0x3A039	pad	zero	alignment / unused	-	-
+number	bump.bif:0x00000	bump.bif:0x00018	display_list	F3DEX 1.23 GBI	pipesync; setcombine; enddl (80154000)	level-start prologue, as lvlB entry 80154000 in other levels	tools/extract_level_rest.py -> out/bump/display_list_00000.*
+number	bump.bif:0x00018	bump.bif:0x00030	display_list	F3DEX 1.23 GBI	pipesync; setcombine; enddl (80154018)	as lvlB entry 80154018 in other levels	tools/extract_level_rest.py -> out/bump/display_list_00018.*
+number	bump.bif:0x0F45C	bump.bif:0x0F460	pad	zero	alignment / unused	-	-
+number	bump.bif:0x0F81C	bump.bif:0x0F820	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1057C	bump.bif:0x10580	pad	zero	alignment / unused	-	-
+number	bump.bif:0x10774	bump.bif:0x10778	pad	zero	alignment / unused	-	-
+number	bump.bif:0x10974	bump.bif:0x10978	pad	zero	alignment / unused	-	-
+number	bump.bif:0x10D64	bump.bif:0x10D68	pad	zero	alignment / unused	-	-
+number	bump.bif:0x113C4	bump.bif:0x113C8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x115A4	bump.bif:0x115A8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x118BC	bump.bif:0x118C0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x11F04	bump.bif:0x11F08	pad	zero	alignment / unused	-	-
+number	bump.bif:0x12114	bump.bif:0x12118	pad	zero	alignment / unused	-	-
+number	bump.bif:0x122FC	bump.bif:0x12300	pad	zero	alignment / unused	-	-
+number	bump.bif:0x12BA4	bump.bif:0x12BA8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x138AC	bump.bif:0x138B0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x13A5C	bump.bif:0x13A60	pad	zero	alignment / unused	-	-
+number	bump.bif:0x13DD4	bump.bif:0x13DD8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x13FF4	bump.bif:0x13FF8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1426C	bump.bif:0x14270	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1463C	bump.bif:0x14640	pad	zero	alignment / unused	-	-
+number	bump.bif:0x14DB4	bump.bif:0x14DB8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x15294	bump.bif:0x15298	pad	zero	alignment / unused	-	-
+number	bump.bif:0x153F4	bump.bif:0x153F8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x155FC	bump.bif:0x15600	pad	zero	alignment / unused	-	-
+number	bump.bif:0x159DC	bump.bif:0x159E0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x15B54	bump.bif:0x15B58	pad	zero	alignment / unused	-	-
+number	bump.bif:0x15F14	bump.bif:0x15F18	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1631C	bump.bif:0x16320	pad	zero	alignment / unused	-	-
+number	bump.bif:0x16ABC	bump.bif:0x16AC0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x174CC	bump.bif:0x174D0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x179DC	bump.bif:0x179E0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x17B6C	bump.bif:0x17B70	pad	zero	alignment / unused	-	-
+number	bump.bif:0x17D64	bump.bif:0x17D68	pad	zero	alignment / unused	-	-
+number	bump.bif:0x185D4	bump.bif:0x185D8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x18E3C	bump.bif:0x18E40	pad	zero	alignment / unused	-	-
+number	bump.bif:0x18FEC	bump.bif:0x18FF0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x191A4	bump.bif:0x191A8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1933C	bump.bif:0x19340	pad	zero	alignment / unused	-	-
+number	bump.bif:0x198EC	bump.bif:0x198F0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x19AB4	bump.bif:0x19AB8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x19F84	bump.bif:0x19F88	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1A1F4	bump.bif:0x1A1F8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1A34C	bump.bif:0x1A350	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1B3A4	bump.bif:0x1B3A8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1B574	bump.bif:0x1B578	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1B7B4	bump.bif:0x1B7B8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1C2AC	bump.bif:0x1C2B0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1C864	bump.bif:0x1C868	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1D324	bump.bif:0x1D328	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1D564	bump.bif:0x1D568	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1D734	bump.bif:0x1D738	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1D92C	bump.bif:0x1D930	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1DAC4	bump.bif:0x1DAC8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1DC44	bump.bif:0x1DC48	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1E114	bump.bif:0x1E118	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1E54C	bump.bif:0x1E550	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1E70C	bump.bif:0x1E710	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1EE84	bump.bif:0x1EE88	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1F07C	bump.bif:0x1F080	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1F244	bump.bif:0x1F248	pad	zero	alignment / unused	-	-
+number	bump.bif:0x1F7F4	bump.bif:0x1F7F8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x20C94	bump.bif:0x20CA0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x262C0	bump.bif:0x264C0	palette	RGBA16 TLUT[256]	palette of an unused CI8 32x32 texture (entries 0-205 zero = the 0x19C leading zero bytes; texels use exactly 206-255) [RAM 0x8017A2C0] (per r1: one of four palette variants of one 32x32 CI8 gradient tile; unused)	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS; not all-zero (earlier note was wrong)	r1/tools/extract_r1.py
+number	bump.bif:0x264C0	bump.bif:0x268C0	texture	CI8 32x32	unused brown/orange gradient tile; texels byte-identical in all four blocks (0x264C0, 0x30450, 0x3A3E0, 0x44370), only the palettes differ: four colour variants, each placed just before a referenced pal+CI8 32x32 of the same section (per r1: one of four palette variants of one 32x32 CI8 gradient tile; unused)	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS	r1/tools/extract_r1.py
+number	bump.bif:0x2ABE8	bump.bif:0x2AC00	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 2AC00	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/bump/mesh_bbox_2ABE8.*
+number	bump.bif:0x2AC24	bump.bif:0x2AC28	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 8017EBE8	part of the mesh header at 2AC00 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/bump/mesh_header_tail_2AC24.*
+number	bump.bif:0x2AC28	bump.bif:0x2AC30	pad	zero	alignment / unused	-	-
+number	bump.bif:0x30250	bump.bif:0x30450	palette	RGBA16 TLUT[256]	palette of an unused CI8 32x32 texture (entries 0-205 zero = the 0x19C leading zero bytes; texels use exactly 206-255) [RAM 0x80184250] (per r1: one of four palette variants of one 32x32 CI8 gradient tile; unused)	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS; not all-zero (earlier note was wrong)	r1/tools/extract_r1.py
+number	bump.bif:0x30450	bump.bif:0x30850	texture	CI8 32x32	unused brown/orange gradient tile; texels byte-identical in all four blocks (0x264C0, 0x30450, 0x3A3E0, 0x44370), only the palettes differ: four colour variants, each placed just before a referenced pal+CI8 32x32 of the same section (per r1: one of four palette variants of one 32x32 CI8 gradient tile; unused)	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS	r1/tools/extract_r1.py
+number	bump.bif:0x34B78	bump.bif:0x34B90	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 34B90	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/bump/mesh_bbox_34B78.*
+number	bump.bif:0x34BB4	bump.bif:0x34BB8	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80188B78	part of the mesh header at 34B90 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/bump/mesh_header_tail_34BB4.*
+number	bump.bif:0x34BB8	bump.bif:0x34BC0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x3A1E0	bump.bif:0x3A3E0	palette	RGBA16 TLUT[256]	palette of an unused CI8 32x32 texture (entries 0-205 zero = the 0x19C leading zero bytes; texels use exactly 206-255) [RAM 0x8018E1E0] (per r1: one of four palette variants of one 32x32 CI8 gradient tile; unused)	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS; not all-zero (earlier note was wrong)	r1/tools/extract_r1.py
+number	bump.bif:0x3A3E0	bump.bif:0x3A7E0	texture	CI8 32x32	unused brown/orange gradient tile; texels byte-identical in all four blocks (0x264C0, 0x30450, 0x3A3E0, 0x44370), only the palettes differ: four colour variants, each placed just before a referenced pal+CI8 32x32 of the same section (per r1: one of four palette variants of one 32x32 CI8 gradient tile; unused)	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS	r1/tools/extract_r1.py
+number	bump.bif:0x3EB08	bump.bif:0x3EB20	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 3EB20	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/bump/mesh_bbox_3EB08.*
+number	bump.bif:0x3EB44	bump.bif:0x3EB48	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80192B08	part of the mesh header at 3EB20 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/bump/mesh_header_tail_3EB44.*
+number	bump.bif:0x3EB48	bump.bif:0x3EB50	pad	zero	alignment / unused	-	-
+number	bump.bif:0x44170	bump.bif:0x44370	palette	RGBA16 TLUT[256]	palette of an unused CI8 32x32 texture (entries 0-205 zero = the 0x19C leading zero bytes; texels use exactly 206-255) [RAM 0x80198170] (per r1: one of four palette variants of one 32x32 CI8 gradient tile; unused)	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS; not all-zero (earlier note was wrong)	r1/tools/extract_r1.py
+number	bump.bif:0x44370	bump.bif:0x44770	texture	CI8 32x32	unused brown/orange gradient tile; texels byte-identical in all four blocks (0x264C0, 0x30450, 0x3A3E0, 0x44370), only the palettes differ: four colour variants, each placed just before a referenced pal+CI8 32x32 of the same section (per r1: one of four palette variants of one 32x32 CI8 gradient tile; unused)	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS	r1/tools/extract_r1.py
+number	bump.bif:0x48A98	bump.bif:0x48AB0	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 48AB0	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/bump/mesh_bbox_48A98.*
+number	bump.bif:0x48AD4	bump.bif:0x48AD8	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 8019CA98	part of the mesh header at 48AB0 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/bump/mesh_header_tail_48AD4.*
+number	bump.bif:0x48AD8	bump.bif:0x48AE0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x4FB80	bump.bif:0x4FDA0	unknown	raw	unidentified; layout reads as a 16-colour RGBA5551 TLUT (0x20) + 0x200 bytes of 4-bit pixels (CI4 32x32), but no display list, image pointer or code address reaches it	none found	tools/extract_level_rest.py -> out/bump/unknown_4FB80.*
+number	bump.bif:0x55FA8	bump.bif:0x566D2	vertex_runs	u16 run list	vertex order of animated mesh 56700: 318 unique vertices	mesh hdr+0x14; walked by func_80000450	tools/extract_level_rest.py -> out/bump/vertex_runs_55FA8.*
+number	bump.bif:0x566D2	bump.bif:0x566D8	pad	zero	alignment / unused	-	-
+number	bump.bif:0x566E8	bump.bif:0x56700	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 56700	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/bump/mesh_bbox_566E8.*
+number	bump.bif:0x56724	bump.bif:0x56728	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 801AA6E8	part of the mesh header at 56700 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/bump/mesh_header_tail_56724.*
+number	bump.bif:0x56728	bump.bif:0x56730	pad	zero	alignment / unused	-	-
+number	bump.bif:0x58750	bump.bif:0x58848	vertex_runs	u16 run list	vertex order of animated mesh 58870: 94 unique vertices	mesh hdr+0x14; walked by func_80000450	tools/extract_level_rest.py -> out/bump/vertex_runs_58750.*
+number	bump.bif:0x58858	bump.bif:0x58870	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 58870	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/bump/mesh_bbox_58858.*
+number	bump.bif:0x58894	bump.bif:0x58898	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 801AC858	part of the mesh header at 58870 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/bump/mesh_header_tail_58894.*
+number	bump.bif:0x58898	bump.bif:0x5C098	morph_anim	vertex morph animation (sprA format)	38 keys, 73 ticks, 94 vertices	func_8003D3D0:addr | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/bump/morph_anim_58898.*
+number	bump.bif:0x5C098	bump.bif:0x5C0A0	pad	zero	alignment / unused	-	-
+number	bump.bif:0x5D970	bump.bif:0x5DB02	vertex_runs	u16 run list	vertex order of animated mesh 5DB30: 78 unique vertices	mesh hdr+0x14; walked by func_80000450	tools/extract_level_rest.py -> out/bump/vertex_runs_5D970.*
+number	bump.bif:0x5DB02	bump.bif:0x5DB08	pad	zero	alignment / unused	-	-
+number	bump.bif:0x5DB18	bump.bif:0x5DB30	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 5DB30	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/bump/mesh_bbox_5DB18.*
+number	bump.bif:0x5DB54	bump.bif:0x5DB58	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 801B1B18	part of the mesh header at 5DB30 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/bump/mesh_header_tail_5DB54.*
+number	bump.bif:0x5DB58	bump.bif:0x61D68	morph_anim	vertex morph animation (sprA format)	54 keys, 159 ticks, 78 vertices	func_8003D3D0:addr | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/bump/morph_anim_5DB58.*
+number	bump.bif:0x61D68	bump.bif:0x61D70	pad	zero	alignment / unused	-	-
+number	bump.bif:0x61D70	bump.bif:0x64A40	morph_anim	vertex morph animation (sprA format)	9 keys, 29 ticks, 318 vertices	data_word@0x800768D4 | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/bump/morph_anim_61D70.*
+number	bump.bif:0x64A40	bump.bif:0x67710	morph_anim	vertex morph animation (sprA format)	9 keys, 29 ticks, 318 vertices	data_word@0x800768D8 | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/bump/morph_anim_64A40.*
+number	bump.bif:0x67710	bump.bif:0x6A3E0	morph_anim	vertex morph animation (sprA format)	9 keys, 29 ticks, 318 vertices	data_word@0x800768DC | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/bump/morph_anim_67710.*
+number	bump.bif:0x6A3E0	bump.bif:0x71B48	morph_anim	vertex morph animation (sprA format)	24 keys, 89 ticks, 318 vertices	no reference found in code, program data or the image (unused?) | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/bump/morph_anim_6A3E0.*
+number	bump.bif:0x71B48	bump.bif:0x74818	morph_anim	vertex morph animation (sprA format)	9 keys, 29 ticks, 318 vertices	no reference found in code, program data or the image (unused?) | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/bump/morph_anim_71B48.*
+number	bump.bif:0x74818	bump.bif:0x774E8	morph_anim	vertex morph animation (sprA format)	9 keys, 29 ticks, 318 vertices	no reference found in code, program data or the image (unused?) | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/bump/morph_anim_74818.*
+number	bump.bif:0x774E8	bump.bif:0x77509	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x00820	mansion.bif:0x00A20	palette	TLUT RGBA5551	256 colours	texload_dl 08800	tools/extract_level_rest.py -> out/mansion/palette_00820.*
+number	mansion.bif:0x00A20	mansion.bif:0x01220	texture	CI8 64x32	palette 80154820	texload_dl 08800	tools/extract_level_rest.py -> out/mansion/texture_00A20.*
+number	mansion.bif:0x02220	mansion.bif:0x02420	palette	TLUT RGBA5551	256 colours	texload_dl 08980	tools/extract_level_rest.py -> out/mansion/palette_02220.*
+number	mansion.bif:0x02420	mansion.bif:0x02C20	texture	CI8 64x32	palette 80156220	texload_dl 08980	tools/extract_level_rest.py -> out/mansion/texture_02420.*
+number	mansion.bif:0x03220	mansion.bif:0x03420	palette	TLUT RGBA5551	256 colours	texload_dl 08A80	tools/extract_level_rest.py -> out/mansion/palette_03220.*
+number	mansion.bif:0x03420	mansion.bif:0x03C20	texture	CI8 64x32	palette 80157220	texload_dl 08A80	tools/extract_level_rest.py -> out/mansion/texture_03420.*
+number	mansion.bif:0x03C20	mansion.bif:0x03E20	palette	TLUT RGBA5551	256 colours	texload_dl 08B00	tools/extract_level_rest.py -> out/mansion/palette_03C20.*
+number	mansion.bif:0x03E20	mansion.bif:0x04220	texture	CI8 32x32	palette 80157C20	texload_dl 08B00	tools/extract_level_rest.py -> out/mansion/texture_03E20.*
+number	mansion.bif:0x04220	mansion.bif:0x04240	palette	TLUT RGBA5551	16 colours	texload_dl 08B80	tools/extract_level_rest.py -> out/mansion/palette_04220.*
+number	mansion.bif:0x04240	mansion.bif:0x042C0	texture	CI4 16x16	palette 80158220	texload_dl 08B80	tools/extract_level_rest.py -> out/mansion/texture_04240.*
+number	mansion.bif:0x042C0	mansion.bif:0x044C0	palette	TLUT RGBA5551	256 colours	texload_dl 08C00	tools/extract_level_rest.py -> out/mansion/palette_042C0.*
+number	mansion.bif:0x044C0	mansion.bif:0x048C0	texture	CI8 32x32	palette 801582C0	texload_dl 08C00	tools/extract_level_rest.py -> out/mansion/texture_044C0.*
+number	mansion.bif:0x08800	mansion.bif:0x08880	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80154820 + CI8 64x32 80154A20	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/mansion/texload_dl_08800.*
+number	mansion.bif:0x08980	mansion.bif:0x08A00	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80156220 + CI8 64x32 80156420	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/mansion/texload_dl_08980.*
+number	mansion.bif:0x08A80	mansion.bif:0x08B00	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80157220 + CI8 64x32 80157420	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/mansion/texload_dl_08A80.*
+number	mansion.bif:0x08B00	mansion.bif:0x08B80	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 80157C20 + CI8 32x32 80157E20	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/mansion/texload_dl_08B00.*
+number	mansion.bif:0x08B80	mansion.bif:0x08C00	texload_dl	F3DEX 1.23 GBI	loads 16-colour TLUT 80158220 + CI4 16x16 80158240	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/mansion/texload_dl_08B80.*
+number	mansion.bif:0x08C00	mansion.bif:0x08C80	texload_dl	F3DEX 1.23 GBI	loads 256-colour TLUT 801582C0 + CI8 32x32 801584C0	no root found (no code/data/level pointer); not reached by lvlB	tools/extract_level_rest.py -> out/mansion/texload_dl_08C00.*
+number	mansion.bif:0x09024	mansion.bif:0x09028	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x091DC	mansion.bif:0x091E0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0953C	mansion.bif:0x09540	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x09A54	mansion.bif:0x09A58	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x09E64	mansion.bif:0x09E68	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0A334	mansion.bif:0x0A338	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0AD94	mansion.bif:0x0AD98	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0B834	mansion.bif:0x0B838	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0BBAC	mansion.bif:0x0BBB0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0C55C	mansion.bif:0x0C560	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0C77C	mansion.bif:0x0C780	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0C90C	mansion.bif:0x0C910	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0D1E4	mansion.bif:0x0D1E8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0D3CC	mansion.bif:0x0D3D0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0D84C	mansion.bif:0x0D850	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0DA94	mansion.bif:0x0DA98	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0E3A4	mansion.bif:0x0E3A8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0E5A4	mansion.bif:0x0E5A8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0EA24	mansion.bif:0x0EA28	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0EB54	mansion.bif:0x0EB58	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0ECFC	mansion.bif:0x0ED00	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0EFA4	mansion.bif:0x0EFA8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0F364	mansion.bif:0x0F368	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0F9F4	mansion.bif:0x0F9F8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x0FEDC	mansion.bif:0x0FEE0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x10644	mansion.bif:0x10648	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x10AFC	mansion.bif:0x10B00	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x10D44	mansion.bif:0x10D48	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x10FB4	mansion.bif:0x10FB8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x113E4	mansion.bif:0x113E8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x117F4	mansion.bif:0x117F8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x11C1C	mansion.bif:0x11C20	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x127BC	mansion.bif:0x127C0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x12E2C	mansion.bif:0x12E30	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x133AC	mansion.bif:0x133B0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x135F4	mansion.bif:0x135F8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x13AE4	mansion.bif:0x13AE8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x13EBC	mansion.bif:0x13EC0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x14494	mansion.bif:0x14498	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1479C	mansion.bif:0x147A0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x14BCC	mansion.bif:0x14BD0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x16B5C	mansion.bif:0x16B60	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x16CFC	mansion.bif:0x16D00	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x177B4	mansion.bif:0x177B8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x18954	mansion.bif:0x18958	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1B25C	mansion.bif:0x1B260	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1B59C	mansion.bif:0x1B5A0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1C13C	mansion.bif:0x1C140	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1C50C	mansion.bif:0x1C510	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1C954	mansion.bif:0x1C958	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1CB2C	mansion.bif:0x1CB30	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1CD4C	mansion.bif:0x1CD50	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1D224	mansion.bif:0x1D228	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1D44C	mansion.bif:0x1D450	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1D8BC	mansion.bif:0x1D8C0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1DACC	mansion.bif:0x1DAD0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1DE8C	mansion.bif:0x1DE90	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1E08C	mansion.bif:0x1E090	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1E2AC	mansion.bif:0x1E2B0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1E3F4	mansion.bif:0x1E3F8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1E68C	mansion.bif:0x1E690	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1E89C	mansion.bif:0x1E8A0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1EAD4	mansion.bif:0x1EAD8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1EE24	mansion.bif:0x1EE28	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1F4EC	mansion.bif:0x1F4F0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1F8F4	mansion.bif:0x1F8F8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1FCD4	mansion.bif:0x1FCD8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x1FF3C	mansion.bif:0x1FF40	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x20194	mansion.bif:0x20198	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x20364	mansion.bif:0x20368	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2091C	mansion.bif:0x20920	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x20CB4	mansion.bif:0x20CB8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x21094	mansion.bif:0x21098	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x214F4	mansion.bif:0x214F8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x21904	mansion.bif:0x21908	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2214C	mansion.bif:0x22150	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2250C	mansion.bif:0x22510	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2270C	mansion.bif:0x22710	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2291C	mansion.bif:0x22920	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x23E9C	mansion.bif:0x23EA0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x24CA0	mansion.bif:0x24CF0	coll_quad	0x50 type-3 shape	wall quad of set 24CF4	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_24CA0.*
+number	mansion.bif:0x24CF0	mansion.bif:0x24CF4	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 24CF4	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_24CF0.*
+number	mansion.bif:0x24CF4	mansion.bif:0x24CFC	coll_quad_set	u32 count, u32 ptr	1 quads, array 80178CF0	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_24CF4.*
+number	mansion.bif:0x24CFC	mansion.bif:0x24D00	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x25060	mansion.bif:0x25078	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 25078	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_25060.*
+number	mansion.bif:0x2509C	mansion.bif:0x250A0	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80179060	part of the mesh header at 25078 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_2509C.*
+number	mansion.bif:0x268A0	mansion.bif:0x268F0	coll_quad	0x50 type-3 shape	wall quad of set 268F4	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_268A0.*
+number	mansion.bif:0x268F0	mansion.bif:0x268F4	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 268F4	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_268F0.*
+number	mansion.bif:0x268F4	mansion.bif:0x268FC	coll_quad_set	u32 count, u32 ptr	1 quads, array 8017A8F0	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_268F4.*
+number	mansion.bif:0x268FC	mansion.bif:0x26900	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x26CF0	mansion.bif:0x26D08	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 26D08	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_26CF0.*
+number	mansion.bif:0x26D2C	mansion.bif:0x26D30	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 8017ACF0	part of the mesh header at 26D08 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_26D2C.*
+number	mansion.bif:0x28530	mansion.bif:0x28580	coll_quad	0x50 type-3 shape	wall quad of set 2862C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_28530.*
+number	mansion.bif:0x28580	mansion.bif:0x285D0	coll_quad	0x50 type-3 shape	wall quad of set 2862C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_28580.*
+number	mansion.bif:0x285D0	mansion.bif:0x28620	coll_quad	0x50 type-3 shape	wall quad of set 2862C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_285D0.*
+number	mansion.bif:0x28620	mansion.bif:0x2862C	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 2862C	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_28620.*
+number	mansion.bif:0x2862C	mansion.bif:0x28634	coll_quad_set	u32 count, u32 ptr	3 quads, array 8017C620	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_2862C.*
+number	mansion.bif:0x28634	mansion.bif:0x28638	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x28A68	mansion.bif:0x28A80	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 28A80	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_28A68.*
+number	mansion.bif:0x28AA4	mansion.bif:0x28AA8	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 8017CA68	part of the mesh header at 28A80 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_28AA4.*
+number	mansion.bif:0x28AA8	mansion.bif:0x28AB0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2A2B0	mansion.bif:0x2A300	coll_quad	0x50 type-3 shape	wall quad of set 2A3AC	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_2A2B0.*
+number	mansion.bif:0x2A300	mansion.bif:0x2A350	coll_quad	0x50 type-3 shape	wall quad of set 2A3AC	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_2A300.*
+number	mansion.bif:0x2A350	mansion.bif:0x2A3A0	coll_quad	0x50 type-3 shape	wall quad of set 2A3AC	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_2A350.*
+number	mansion.bif:0x2A3A0	mansion.bif:0x2A3AC	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 2A3AC	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_2A3A0.*
+number	mansion.bif:0x2A3AC	mansion.bif:0x2A3B4	coll_quad_set	u32 count, u32 ptr	3 quads, array 8017E3A0	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_2A3AC.*
+number	mansion.bif:0x2A3B4	mansion.bif:0x2A3B8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2A7E8	mansion.bif:0x2A800	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 2A800	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_2A7E8.*
+number	mansion.bif:0x2A824	mansion.bif:0x2A828	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 8017E7E8	part of the mesh header at 2A800 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_2A824.*
+number	mansion.bif:0x2A828	mansion.bif:0x2A830	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2C030	mansion.bif:0x2C080	coll_quad	0x50 type-3 shape	wall quad of set 2C12C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_2C030.*
+number	mansion.bif:0x2C080	mansion.bif:0x2C0D0	coll_quad	0x50 type-3 shape	wall quad of set 2C12C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_2C080.*
+number	mansion.bif:0x2C0D0	mansion.bif:0x2C120	coll_quad	0x50 type-3 shape	wall quad of set 2C12C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_2C0D0.*
+number	mansion.bif:0x2C120	mansion.bif:0x2C12C	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 2C12C	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_2C120.*
+number	mansion.bif:0x2C12C	mansion.bif:0x2C134	coll_quad_set	u32 count, u32 ptr	3 quads, array 80180120	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_2C12C.*
+number	mansion.bif:0x2C134	mansion.bif:0x2C138	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2C568	mansion.bif:0x2C580	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 2C580	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_2C568.*
+number	mansion.bif:0x2C5A4	mansion.bif:0x2C5A8	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80180568	part of the mesh header at 2C580 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_2C5A4.*
+number	mansion.bif:0x2C5A8	mansion.bif:0x2C5B0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2C5B0	mansion.bif:0x2C600	coll_quad	0x50 type-3 shape	wall quad of set 2E404	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_2C5B0.*
+number	mansion.bif:0x2E400	mansion.bif:0x2E404	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 2E404	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_2E400.*
+number	mansion.bif:0x2E404	mansion.bif:0x2E40C	coll_quad_set	u32 count, u32 ptr	1 quads, array 80182400	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_2E404.*
+number	mansion.bif:0x2E40C	mansion.bif:0x2E410	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x2E6C0	mansion.bif:0x2E6D8	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 2E6D8	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_2E6C0.*
+number	mansion.bif:0x2E6FC	mansion.bif:0x2E700	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 801826C0	part of the mesh header at 2E6D8 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_2E6FC.*
+number	mansion.bif:0x2E700	mansion.bif:0x2E750	coll_quad	0x50 type-3 shape	wall quad of set 30554	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_2E700.*
+number	mansion.bif:0x30550	mansion.bif:0x30554	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 30554	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_30550.*
+number	mansion.bif:0x30554	mansion.bif:0x3055C	coll_quad_set	u32 count, u32 ptr	1 quads, array 80184550	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_30554.*
+number	mansion.bif:0x3055C	mansion.bif:0x30560	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x30A20	mansion.bif:0x30A38	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 30A38	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_30A20.*
+number	mansion.bif:0x30A5C	mansion.bif:0x30A60	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80184A20	part of the mesh header at 30A38 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_30A5C.*
+number	mansion.bif:0x32060	mansion.bif:0x320B0	coll_quad	0x50 type-3 shape	wall quad of set 3215C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_32060.*
+number	mansion.bif:0x320B0	mansion.bif:0x32100	coll_quad	0x50 type-3 shape	wall quad of set 3215C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_320B0.*
+number	mansion.bif:0x32100	mansion.bif:0x32150	coll_quad	0x50 type-3 shape	wall quad of set 3215C	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_32100.*
+number	mansion.bif:0x32150	mansion.bif:0x3215C	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 3215C	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_32150.*
+number	mansion.bif:0x3215C	mansion.bif:0x32164	coll_quad_set	u32 count, u32 ptr	3 quads, array 80186150	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_3215C.*
+number	mansion.bif:0x32164	mansion.bif:0x32168	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x32690	mansion.bif:0x326A8	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 326A8	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_32690.*
+number	mansion.bif:0x326CC	mansion.bif:0x326D0	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80186690	part of the mesh header at 326A8 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_326CC.*
+number	mansion.bif:0x326D0	mansion.bif:0x32720	coll_quad	0x50 type-3 shape	wall quad of set 327CC	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_326D0.*
+number	mansion.bif:0x32720	mansion.bif:0x32770	coll_quad	0x50 type-3 shape	wall quad of set 327CC	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_32720.*
+number	mansion.bif:0x32770	mansion.bif:0x327C0	coll_quad	0x50 type-3 shape	wall quad of set 327CC	coll_quad_ptrs; corners a..d copied/transformed by func_80023A38, test func_80040C00	tools/extract_level_rest.py -> out/mansion/coll_quad_32770.*
+number	mansion.bif:0x327C0	mansion.bif:0x327CC	coll_quad_ptrs	u32 ptr[count]	quad pointers of set 327CC	coll_quad_set +4	tools/extract_level_rest.py -> out/mansion/coll_quad_ptrs_327C0.*
+number	mansion.bif:0x327CC	mansion.bif:0x327D4	coll_quad_set	u32 count, u32 ptr	3 quads, array 801867C0	func_80023A38 `model` (muppet actor ids 0x7004/0x7005/0x7006/0x7016 ...); found by pointer from code	tools/extract_level_rest.py -> out/mansion/coll_quad_set_327CC.*
+number	mansion.bif:0x327D4	mansion.bif:0x327D8	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x328D8	mansion.bif:0x328F0	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 328F0	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_328D8.*
+number	mansion.bif:0x32914	mansion.bif:0x32918	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 801868D8	part of the mesh header at 328F0 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_32914.*
+number	mansion.bif:0x32918	mansion.bif:0x32920	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x34570	mansion.bif:0x34618	vertex_runs	u16 run list	vertex order of animated mesh 34640: 52 unique vertices	mesh hdr+0x14; walked by func_80000450	tools/extract_level_rest.py -> out/mansion/vertex_runs_34570.*
+number	mansion.bif:0x34628	mansion.bif:0x34640	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 34640	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_34628.*
+number	mansion.bif:0x34664	mansion.bif:0x34668	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 80188628	part of the mesh header at 34640 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_34664.*
+number	mansion.bif:0x34668	mansion.bif:0x35528	morph_anim	vertex morph animation (sprA format)	18 keys, 35 ticks, 52 vertices	data_word@0x8007749C | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/mansion/morph_anim_34668.*
+number	mansion.bif:0x35528	mansion.bif:0x36C10	morph_anim	vertex morph animation (sprA format)	28 keys, 54 ticks, 52 vertices	data_word@0x800774A0 | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/mansion/morph_anim_35528.*
+number	mansion.bif:0x37F90	mansion.bif:0x38094	vertex_runs	u16 run list	vertex order of animated mesh 380C0: 72 unique vertices	mesh hdr+0x14; walked by func_80000450	tools/extract_level_rest.py -> out/mansion/vertex_runs_37F90.*
+number	mansion.bif:0x38094	mansion.bif:0x38098	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x380A8	mansion.bif:0x380C0	mesh_bbox	f32[6] min xyz, max xyz	bounding box of mesh 380C0	mesh hdr+0x24; func_8000092C centres the model on (min+max)/2	tools/extract_level_rest.py -> out/mansion/mesh_bbox_380A8.*
+number	mansion.bif:0x380E4	mansion.bif:0x380E8	mesh_header_tail	u32 ptr	mesh header +0x24: pointer to bbox 8018C0A8	part of the mesh header at 380C0 (func_8000092C reads hdr+0x24)	tools/extract_level_rest.py -> out/mansion/mesh_header_tail_380E4.*
+number	mansion.bif:0x380E8	mansion.bif:0x39AE8	morph_anim	vertex morph animation (sprA format)	23 keys, 44 ticks, 72 vertices	func_8003D3D0:addr | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/mansion/morph_anim_380E8.*
+number	mansion.bif:0x39AE8	mansion.bif:0x39AF0	pad	zero	alignment / unused	-	-
+number	mansion.bif:0x39AF0	mansion.bif:0x4A954	morph_anim	vertex morph animation (sprA format)	51 keys, 198 ticks, 339 vertices	no reference found in code, program data or the image (unused?) | played by func_8000092C/func_80000450	tools/extract_level_rest.py -> out/mansion/morph_anim_39AF0.*
+number	mansion.bif:0x4A954	mansion.bif:0x4A979	pad	zero	alignment / unused	-	-

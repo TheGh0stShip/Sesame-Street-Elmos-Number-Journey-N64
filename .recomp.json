@@ -1,0 +1,37 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Sesame Street: Elmo's Number Journey",
+  "system": "N64",
+  "type": "decomp",
+  "original": {
+    "region": "USA",
+    "revision": "Rev 0",
+    "serial": "NNJE",
+    "sha1": "7195ea96d9fe5de065af61f70d55c92c8ee905e6"
+  },
+  "project": "Sesame Street: Elmo's Number Journey (N64) matching decompilation",
+  "status": "complete",
+  "toolchain": [
+    "N64 Decomp Kit",
+    "KMC GCC 2.7.2",
+    "SGI IDO 7.1"
+  ],
+  "approach": "Matching decompilation with independently replayed word-exact source and complete ROM-byte classification.",
+  "notes": "All 973 catalogued functions and 444672 executable bytes reproduce from source. Asset regeneration remains separately measured.",
+  "maintainers": [
+    {
+      "name": "TheGh0stShip",
+      "link": "https://github.com/TheGh0stShip"
+    }
+  ],
+  "links": [
+    {
+      "label": "Repository",
+      "url": "https://github.com/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64"
+    }
+  ],
+  "tags": [
+    "matching",
+    "MIPS"
+  ]
+}

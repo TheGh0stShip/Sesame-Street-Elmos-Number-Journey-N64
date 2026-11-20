@@ -1,0 +1,39 @@
+name: decompilation progress
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Validate immutable verification inventory
+        run: python tools/validate.py
+      - name: Rebuild progress reports
+        run: python tools/generate_report.py --check
+      - name: Upload ByteMatch progress
+        uses: actions/upload-artifact@v6
+        with:
+          name: usa_report
+          path: build/report.json
+          if-no-files-found: error
+      - name: Upload source-verification evidence
+        uses: actions/upload-artifact@v6
+        with:
+          name: verification-manifest
+          path: |
+            VERIFY.tsv
+            NAMES.tsv
+            progress-inventory.tsv
+            source-accounted.tsv
+          if-no-files-found: error

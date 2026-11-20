@@ -1,0 +1,17 @@
+game	rom_start	rom_end	class	format	description	referenced_by	extractor
+letter	0x0	0x40	rom_metadata	n64_header	ROM header (PI config, clock, entry, release, CRC1/CRC2, name, id, region, revision)	read by PIF/IPL3 at boot	tools/check_header.py
+letter	0x40	0x1000	boot	ipl3_6102	IPL3 boot code, standard CIC-NUS-6102/7101 variant	executed from SP DMEM by the PIF boot	tools/check_header.py (identifies; not extracted)
+letter	0x6BF90	0x6C060	rsp_ucode	rsp_text	rspboot (RSP boot stub), 208 bytes	OSTask.ucode_boot in func_8000B470 and audio task builder	tools/extract_ucode.py
+letter	0x6C060	0x6D490	rsp_ucode	rsp_text	gspF3DEX 1.23 text, 5168 bytes	OSTask.ucode in func_8000B470	tools/extract_ucode.py
+letter	0x6D490	0x6E0E4	rsp_ucode	rsp_text	audio microcode text (aspMain family, driven by libmus), 3156 bytes	OSTask.ucode via func_80050DD8 -> func_80050BC0	tools/extract_ucode.py
+letter	0x6E0E4	0x6E0F0	pad	zero	alignment padding after audio ucode text before game .data	-	-
+letter	0x79600	0x79E00	rsp_ucode	rsp_data	gspF3DEX 1.23 data (DMEM image, carries id string), 2048 bytes	OSTask.ucode_data, size 0x800, in func_8000B470	tools/extract_ucode.py
+letter	0x79E00	0x7A0B0	rsp_ucode	rsp_data	audio microcode data (DMEM image), 688 bytes; game strings follow	OSTask.ucode_data via func_80050DD8 -> func_80050BC0 (task size field says 0x800)	tools/extract_ucode.py
+number	0x0	0x40	rom_metadata	n64_header	ROM header (PI config, clock, entry, release, CRC1/CRC2, name, id, region, revision)	read by PIF/IPL3 at boot	tools/check_header.py
+number	0x40	0x1000	boot	ipl3_6102	IPL3 boot code, standard CIC-NUS-6102/7101 variant	executed from SP DMEM by the PIF boot	tools/check_header.py (identifies; not extracted)
+number	0x6D900	0x6D9D0	rsp_ucode	rsp_text	rspboot (RSP boot stub), 208 bytes	OSTask.ucode_boot in func_8000BA3C and audio task builder	tools/extract_ucode.py
+number	0x6D9D0	0x6EE00	rsp_ucode	rsp_text	gspF3DEX 1.23 text, 5168 bytes	OSTask.ucode in func_8000BA3C	tools/extract_ucode.py
+number	0x6EE00	0x6FA54	rsp_ucode	rsp_text	audio microcode text (aspMain family, driven by libmus), 3156 bytes	OSTask.ucode via audio frame loop -> audio task builder (number siblings of letter func_80050DD8/func_80050BC0)	tools/extract_ucode.py
+number	0x6FA54	0x6FA60	pad	zero	alignment padding after audio ucode text before game .data	-	-
+number	0x79E10	0x7A610	rsp_ucode	rsp_data	gspF3DEX 1.23 data (DMEM image, carries id string), 2048 bytes	OSTask.ucode_data, size 0x800, in func_8000BA3C	tools/extract_ucode.py
+number	0x7A610	0x7A8C0	rsp_ucode	rsp_data	audio microcode data (DMEM image), 688 bytes; game strings follow	OSTask.ucode_data via audio frame loop -> audio task builder (number siblings of letter func_80050DD8/func_80050BC0) (task size field says 0x800)	tools/extract_ucode.py

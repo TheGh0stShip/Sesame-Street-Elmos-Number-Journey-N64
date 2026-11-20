@@ -1,0 +1,99 @@
+# ram	size	ctype	name	class	comment	evidence
+# --- 20-byte .data island of the entry object: all zero, nothing references it (gaps are auto pad) ---
+# --- RSP microcode tail: the image's .data starts inside an RSP text block that begins in .text ---
+8006C9AC	B38	u32[]	rsp_text_tail_8006C9AC	rsp_ucode	tail of an RSP microcode text block (RSP instructions, not R4300); owned/decoded by the ucode agent, kept here as words	kit rsp range 8006CB00-8006D4C0 plus disassembly of the bytes as RSP code; no CPU reference
+8006D4F0	4	ptr		data	pointer to the program bss start (first free RAM after the image); unreferenced by matched code	value equals .bss start; no ref
+8006D500	4	s32		data	controller-present bit mask (bit n = port n); read as byte (lbu) and word	func_8000125C/func_80001000 test (D_8006D500>>n)&1; lw in func_80000F60
+8006D504	8	u16[]		data	previous button state per controller (4 ports), XORed with the new state to get edges	func_80001000/func_8000125C index &D_8006D504 by n*2 with u16 loads/s16 stores
+8006D510	4	u32		data	per-frame angle step added to D_80106894	func_800030A0 lw
+8006D514	4	u32		data	per-frame angle step added to D_800A7AB8	func_800030A0 lw
+8006D518	800	u16[]		texture	32x32 RGBA5551 texture (G_SETTIMG fmt RGBA siz 16b width 32)	func_800030A0 gDPSetTextureImage 0xFD10001F w1=&D_8006D518
+8006DD18	40	struct NodeList{s32 active;ptr func}[]		data	8-entry callback list {in-use flag, function pointer called with 0}	func_800013B0 clears .m0; func_800016C0 calls ((fn)D_8006DD18[i].m4)(0)
+8006DD58	4	s32		data	callback list counter	func_800013B0/func_80001424/func_80001EE8 lw/sw
+8006DD5C	4	s32		data	callback list state	func_800013B0/func_80001D38/func_80001DE4 lw/sw
+8006DD64	4	s32		data	flag tested by func_80001818	func_80001818 lw/sw
+8006DD68	40	Vtx[]		vtx	4-vertex quad (background), x/y rewritten each frame	func_800030A0 address + sh to +0x0/+0x2 of each vertex
+8006DDA8	40	Vtx[]		vtx	second 4-vertex quad	func_800030A0 address + sh
+8006DDE8	4	f32		data	camera angle (degrees, = atan result * 57.2957)	func_800030A0 lwc1/swc1
+8006DDEC	4	f32		data	camera field of view passed to func_80056878	func_800030A0/func_80018A60/func_80031274 lwc1
+8006DDF0	38	struct TexPair{word tlut;word img}[]		table	7 {TLUT address, texture address} pairs into the loaded-asset heap, put into G_SETTIMG commands	func_80004010 D_8006DDF0[k].m0/.m4 -> gd w1
+8006DE28	1A0	TexPair[]		table	52 {TLUT, texture} RAM address pairs (heap)	func_80004010 D_8006DE28[i].m0/.m4
+8006DFC8	1A0	TexPair[]		table	52 {TLUT, texture} RAM address pairs (heap); +4 read directly as D_8006DFCC	func_80004010 D_8006DFC8[0].m0, D_8006DFCC, [i].m4
+8006E168	C	s32[]		table	per-world count (index D_80106870, 3 worlds)	func_80004010 *(&D_8006E168 + world*4) << 1 loop bound
+8006E174	60	s32[]		table	world 0 coordinate list A	func_80004010 world switch case 0 sp18
+8006E1D4	80	s32[]		table	world 1 coordinate list A	func_80004010 case 1 sp18
+8006E254	A0	s32[]		table	world 2 coordinate list A	func_80004010 case 2 sp18
+8006E2F4	60	s32[]		table	world 0 coordinate list B	func_80004010 case 0 sp1C
+8006E354	80	s32[]		table	world 1 coordinate list B	func_80004010 case 1 sp1C
+8006E3D4	A0	s32[]		table	world 2 coordinate list B	func_80004010 case 2 sp1C
+8006E474	C	s32[]		table	per-world count for the second loop	func_80004010 *(&D_8006E474 + world*4)
+8006E480	30	s32[]		table	world 0 coordinate list C	func_80004010 case 0 sp20
+8006E4B0	20	s32[]		table	world 1 coordinate list C	func_80004010 case 1 sp20
+8006E4D0	28	s32[]		table	world 2 coordinate list C	func_80004010 case 2 sp20
+8006E4F8	18	s32[]		table	texture-rectangle lower-right x,y pairs (3 pairs, <<2 into G_TEXRECT w1)	func_80004010 &D_8006E4F8 / &D_8006E4FC indexed sp10*4
+8006E510	30	s32[]		table	world 0 coordinate list D	func_80004010 case 0 sp24
+8006E540	20	s32[]		table	world 1 coordinate list D	func_80004010 case 1 sp24
+8006E560	28	s32[]		table	world 2 coordinate list D	func_80004010 case 2 sp24
+8006E588	18	s32[]		table	texture-rectangle upper-left x,y pairs (3 pairs, <<2 into G_TEXRECT w0)	func_80004010 &D_8006E588 / &D_8006E58C
+8006E5A0	110	TexPair[]		table	34 {TLUT, texture} pairs (heap)	func_80004010 D_8006E5A0[D_800745F0]
+8006E6B0	110	TexPair[]		table	34 {TLUT, texture} pairs	func_80004010 D_8006E6B0[D_800745F4]
+8006E7C0	110	TexPair[]		table	34 {TLUT, texture} pairs	func_80004010 D_8006E7C0[D_800745F5]
+8006E8D0	1A8	TexPair[]		table	53 {TLUT, texture} pairs	func_80004010 D_8006E8D0[D_800745F0]
+8006EA78	1A8	TexPair[]		table	53 {TLUT, texture} pairs	func_80004010 D_8006EA78[D_800745F4]
+8006EC20	1A8	TexPair[]		table	53 {TLUT, texture} pairs	func_80004010 D_8006EC20[D_800745F5]
+8006EDC8	4	s32		data	blink frame counter (wraps at 30)	func_80004010 D_8006EDC8++ / >=30
+8006EDD0	4	s32		data	pulsing alpha value 0..255	func_80004010 ±8 clamp
+8006EDD4	4	s32		data	pulse direction flag	func_80004010
+8006EDD8	4	u32		data	HUD element enable bit mask (bits 0..12)	func_80004010 tests &1,&2,..,&0x1000; set by func_80018A60 etc.
+8006EDE0	1	u8		data	byte flag set by func_80018A60	func_80018A60 sb
+8006EDE1	1	u8		data	HUD counter (compared < 4)	func_80004010 lbu
+8006EDE2	1	u8		data	HUD mode flag	func_80004010/func_80018A60/func_8002F274 lbu/sb
+8006EDE8	84	u8[]		table	credits line colour index (0..4 -> white/green/yellow/blue/white), one per line	func_8000A7F0 switch (D_8006EDE8[i])
+8006EE6C	1860	struct CreditLine{s32 x;s32 y;char text[40]}[]		text	130 staff-credit lines {x, y, text}	func_8000A7F0 typedef CreditLine {s32 x; s32 y; char text[0x28]}
+800706CC	4	s32		data	credits scroll timer	func_8000A7F0 lw/sw
+800706D0	4	s32		data	credits fade alpha (its low byte is also read as u8 D_800706D3)	func_8000A7F0 -=5
+800706D4	4	u32		data	credits page index (switch)	func_8000A7F0 switch(D_800706D4)
+800706D8	1	u8		data	credits start flag	func_8000A7F0
+800706D9	1	s8		data	credits state byte	func_8000A7F0 sb
+800706DA	1	u8		data	first credits line of the page	func_8000A7F0
+800706DB	1	u8		data	last credits line of the page	func_8000A7F0
+800706E0	80	Mtx[]		mtx	2 double-buffered matrices indexed by D_80070760	func_800264F4 &((Mtx*)&D_800706E0)[D_80070760]
+80070760	4	s32		data	frame buffer / display list double-buffer index	used by 10+ functions as index into Mtx/Gfx buffers
+80070770	4	s32		data	timing initialised flag	func_8000D0CC: if 0 call func_8000CF50
+80070774	4	s32		data	frame timing counter	func_8000CF50 reset; func_8000D0CC/func_8000D060
+80070778	4	s32		data	frame timing counter	same
+8007077C	4	s32		data	frame timing counter	same
+80070780	4	s32		data	frame timing counter	same
+80070784	4	s32		data	frame timing counter (getter func_8000D6C8 etc.)	same
+80070788	4	s32		data	lag flag	func_8000D0CC sw 0/1
+8007078C	4	s32		data	frame timing counter	same
+80070790	4	s32		data	frame timing counter	same
+800707A0	8	Gfx[]		gfx	orphan one-command display list (gsSPEndDisplayList); nothing points to it	no CPU or data reference; G_ENDDL opcode 0xB8
+800707A8	1000	u8[]		texture	debug/menu font texture sheet (64 texels wide, referenced by every glyph Bitmap)	pointer from the 80 Bitmap entries at D_800717FC (.buf)
+800717A8	54	char[]		text	font character order string (80 glyphs), NUL-terminated	pointer at D_80071CFC+4
+800717FC	500	Bitmap[]		table	80 libultra sprite Bitmaps, one per glyph {width, width_img, s, t, buf, actualHeight, LUToffset}	pointer at D_80071CFC+8; used through the Sprite D_80071D08
+80071CFC	C	struct FontDesc{ptr chars;ptr glyphs;ptr tex}		data	font descriptor {character order string, glyph Bitmaps, font texture}	func_8000DEBC passes &D_80071CFC to func_8000D810
+80071D08	44	Sprite		sprite	libultra Sprite for text drawing	func_8000DE60/func_8000DEBC: spSetAttribute/spClearAttribute/spMove/spColor/spScale/spDraw; func_8000DBC0 lw D_80071D40 (rsp_dl) sw D_80071D44 (rsp_dl_next)
+80071D50	10	Vp		vp	viewport for the text display list	pointer at D_80071D60+4 (G_MOVEMEM viewport)
+80071D60	28	Gfx[]		gfx	text setup display list part 1 (viewport, geometry/othermode setup)	func_8000DBC0 address
+80071D88	88	Gfx[]		gfx	text setup display list part 2 (RDP modes)	func_8000DBC0 address
+80071E10	1	u8		data	text colour red	func_8000DDF4 sb; func_8000DEBC spColor
+80071E11	1	u8		data	text colour green	same
+80071E12	1	u8		data	text colour blue	same
+80071E13	1	u8		data	text colour alpha	same
+80071E14	4	s32		data	text x	func_8000DD7C sw; spMove
+80071E18	4	s32		data	text y	same
+80071E1C	4	s32		data	text columns	func_8000DD40; sprite width = n*8+8
+80071E20	4	s32		data	text rows	func_8000DD40; sprite height = n*16+8
+80071E28	8	f64		data	text scale x	func_8000DDB8 sdc1; spScale
+80071E30	8	f64		data	text scale y	same
+80071E40	4	s32		data	debug print state	func_8000E010 group
+80071E44	4	ptr		data	debug print int* target	func_8000E3EC/func_8000E5C4 (s32 *)
+80071E48	4	ptr		data	debug print f64* target	func_8000E4DC/func_8000E6B4 (f64 *)
+80071E4C	4	s32		data	debug print value	func_8000E010/func_8000E310
+80071E50	4	s32		data	debug print value	same
+80071E54	4	s32		data	debug print value	same
+80071E58	4	s32		data	debug print value	same
+80071E5C	4	s32		data	debug print value	same
+80071E60	300	u8[]		texture	8x8 1-bit font, 96 glyphs for ASCII 32..127, 8 bytes each	func_8000E7A0 ((c-32)<<3) + D_80071E60
+80072160	1000	u8[]		texture	4 KB I-format texture loaded with G_SETTIMG fmt I	func_80012164 gDPSetTextureImage 0xFD900000 w1=&D_80072160

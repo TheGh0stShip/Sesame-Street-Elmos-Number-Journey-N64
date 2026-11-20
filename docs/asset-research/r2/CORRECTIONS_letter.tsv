@@ -1,0 +1,232 @@
+agent	space	start	end	class	problem	evidence_class	what the evidence shows
+code	ROM	0x1000	0x1050	code	merged	mips	routine ends with jr $10 at 0x1034 + delay slot (60 bytes); the last 20 bytes are zero words (nop) never executed: section alignment
+gfx	ROM	0x6EBCC	0x6EFCC	texture	wrong	pointer-table	overlaps the pointer table 0x6EBC8-0x6ED68 (all 104 words RAM pointers or 0): not texels
+gfx	ROM	0x728FC	0x72904	font	wrong	typed	descriptor has a third pointer word at +8 (0x800707A8): 12 bytes
+gfx	ROM	0x750F0	0x75120	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x75318	0x75B18	texture	wrong	pointer-table	overlaps the pointer table 0x75314-0x753F4 (all 56 words RAM pointers or 0): not texels
+gfx	ROM	0x767B8	0x76820	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x778E0	0x77A08	display_list	merged	f3dex	3 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x134748	0x134B60	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x13EFC8	0x140408	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x146730	0x1469FC	model_vtxmap	merged	rebuild-list	list ends at 0x1469FA; the claim adds 2 zero bytes of alignment pad
+gfx	ROM	0x149180	0x1491C0	model_vtxmap	merged	rebuild-list	list ends at 0x1491BE; the claim adds 2 zero bytes of alignment pad
+gfx	ROM	0x154A70	0x154FD0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1586D8	0x158B88	model_vtxmap	merged	rebuild-list	list ends at 0x158B86; the claim adds 2 zero bytes of alignment pad
+gfx	ROM	0x15A870	0x15B050	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x15E230	0x15EA10	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1705A0	0x170B84	model_vtxmap	merged	rebuild-list	list ends at 0x170B82; the claim adds 2 zero bytes of alignment pad
+gfx	ROM	0x18F360	0x18FA50	model_vtxmap	merged	rebuild-list	list ends at 0x18FA4E; the claim adds 2 zero bytes of alignment pad
+gfx	ROM	0x1A4A10	0x1A51E0	model_vtxmap	merged	rebuild-list	list ends at 0x1A51DE; the claim adds 2 zero bytes of alignment pad
+gfx	ROM	0x1A54F0	0x1A5610	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A6340	0x1A6620	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A6DA0	0x1A6F90	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A7630	0x1A77F8	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A7B40	0x1A7C60	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A7F20	0x1A8020	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A8A50	0x1A8CB0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A8FF0	0x1A9110	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A9550	0x1A96B0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1A9D00	0x1A9EC8	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AA1D0	0x1AA2E0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AA4A0	0x1AA560	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AA8E0	0x1AAA10	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AACD0	0x1AADD0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AB790	0x1AB9E0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AC100	0x1AC2E8	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1ACE80	0x1AD128	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AD830	0x1ADA20	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AE7E0	0x1AEB30	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AED70	0x1AEE50	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AF530	0x1AF708	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AF910	0x1AF9E0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1AFD60	0x1AFE90	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B01D0	0x1B02F0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B0570	0x1B0660	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B08A0	0x1B0980	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B1450	0x1B16F8	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B20E0	0x1B2350	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B2AD0	0x1B2CC0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B36A0	0x1B3910	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B4380	0x1B45E0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B4D20	0x1B4EF0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B5E60	0x1B61C8	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B68D0	0x1B6A90	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B6EF0	0x1B7058	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B7B30	0x1B7DB0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B80B0	0x1B81C0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B8300	0x1B83A0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B90C0	0x1B93B0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1B9AB0	0x1B9C70	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BA630	0x1BA880	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BB260	0x1BB4D0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BBEF0	0x1BC160	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BC520	0x1BC660	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BD420	0x1BD770	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BDAB0	0x1BDBD0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BE2B0	0x1BE488	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BE690	0x1BE760	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BEAE0	0x1BEC10	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BEF50	0x1BF070	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BF2B0	0x1BF390	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	ROM	0x1BF6F0	0x204D00	container	merged	gzip	gzip member ends at 0x204CFA (CRC32 + ISIZE trailer); the 6 bytes after it up to the 16-byte boundary where the next file starts are non-zero packer leftovers and never read by the inflater: alignment slack
+gfx	ROM	0x204D00	0x227BA0	container	merged	gzip	gzip member ends at 0x227B97 (CRC32 + ISIZE trailer); the 9 bytes after it up to the 16-byte boundary where the next file starts are non-zero packer leftovers and never read by the inflater: alignment slack
+gfx	ROM	0x227BA0	0x243E20	container	merged	gzip	gzip member ends at 0x243E18 (CRC32 + ISIZE trailer); the 8 bytes after it up to the 16-byte boundary where the next file starts are non-zero packer leftovers and never read by the inflater: alignment slack
+gfx	ROM	0x243E20	0x2604B0	container	merged	gzip	gzip member ends at 0x2604A6 (CRC32 + ISIZE trailer); the 10 bytes after it up to the 16-byte boundary where the next file starts are non-zero packer leftovers and never read by the inflater: alignment slack
+gfx	ROM	0x2604B0	0x28FDB0	container	merged	gzip	gzip member ends at 0x28FDA4 (CRC32 + ISIZE trailer); the 12 bytes after it up to the 16-byte boundary where the next file starts are non-zero packer leftovers and never read by the inflater: alignment slack
+gfx	ROM	0x28FDB0	0x2ACFA0	container	merged	gzip	gzip member ends at 0x2ACF97 (CRC32 + ISIZE trailer); the 9 bytes after it up to the 16-byte boundary where the next file starts are non-zero packer leftovers and never read by the inflater: alignment slack
+gfx	ROM	0x2ACFA0	0x2D1FB0	container	merged	gzip	gzip member ends at 0x2D1FA6 (CRC32 + ISIZE trailer); the 10 bytes after it up to the 16-byte boundary where the next file starts are non-zero packer leftovers and never read by the inflater: alignment slack
+gfx	ROM	0x2D1FB0	0x2F9B60	container	merged	gzip	gzip member ends at 0x2F9B52 (CRC32 + ISIZE trailer); the 14 bytes after it up to the 16-byte boundary where the next file starts are non-zero packer leftovers and never read by the inflater: alignment slack
+gfx	bonusabc.bif	0x0	0x30	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	bonusabc.bif	0x5E30	0x65B0	display_list	merged	f3dex	15 display lists (G_ENDDL at each list end) merged
+gfx	bonusabc.bif	0x562E8	0x56628	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	chute.bif	0x57E0	0x77E0	texture	merged	texture-ref	G_SETTIMG of a traced display list (load commands read 0x1000 bytes); further texture/TLUT references inside at 0x67E0
+gfx	chute.bif	0xA8C0	0xA9F8	model_vtxmap	merged	rebuild-list	list ends at 0xA9F6; the claim adds 2 zero bytes of alignment pad
+gfx	chute.bif	0xE140	0xE2B8	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	chute.bif	0x1D3C0	0x1F108	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	chute.bif	0x25D50	0x26650	display_list	merged	f3dex	18 display lists (G_ENDDL at each list end) merged
+gfx	garden.bif	0x1A00	0x1C98	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	garden.bif	0x3D60	0x4088	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	garden.bif	0xBF00	0xC02C	model_vtxmap	merged	rebuild-list	list ends at 0xC02A; the claim adds 2 zero bytes of alignment pad
+gfx	garden.bif	0xCD10	0xCD40	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	garden.bif	0x28140	0x29940	display_list	merged	f3dex	48 display lists (G_ENDDL at each list end) merged
+gfx	manor.bif	0x7088	0x70AC	model_vtxmap	merged	rebuild-list	list ends at 0x70AA; the claim adds 2 zero bytes of alignment pad
+gfx	manor.bif	0x22C60	0x25188	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	manor.bif	0x251D0	0x25200	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	manor.bif	0x28200	0x28600	display_list	merged	f3dex	8 display lists (G_ENDDL at each list end) merged
+gfx	orchard.bif	0x1F58	0x2410	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	orchard.bif	0x43A8	0x4860	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	orchard.bif	0x67F8	0x6CB0	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	orchard.bif	0x8C48	0x9100	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	orchard.bif	0x17710	0x17740	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	orchard.bif	0x1E988	0x1F908	display_list	merged	f3dex	31 display lists (G_ENDDL at each list end) merged
+gfx	planet.bif	0x13950	0x15150	texture	merged	texture-ref	G_SETTIMG of a traced display list (load commands read 0x800 bytes); further texture/TLUT references inside at 0x14150
+gfx	planet.bif	0x1A240	0x1A434	model_vtxmap	merged	rebuild-list	list ends at 0x1A432; the claim adds 2 zero bytes of alignment pad
+gfx	planet.bif	0x1D990	0x1F190	texture	merged	texture-ref	G_SETTIMG of a traced display list (load commands read 0x800 bytes); further texture/TLUT references inside at 0x1E190
+gfx	planet.bif	0x37300	0x38E98	model_vtxmap	merged	rebuild-list	list ends at 0x38E96; the claim adds 2 zero bytes of alignment pad
+gfx	planet.bif	0x43B90	0x43E10	display_list	merged	f3dex	5 display lists (G_ENDDL at each list end) merged
+gfx	space.bif	0x71E8	0x77A0	model_vtxmap	merged	rebuild-list	list ends at 0x779E; the claim adds 2 zero bytes of alignment pad
+gfx	space.bif	0x9A58	0x9CF4	model_vtxmap	merged	rebuild-list	list ends at 0x9CF2; the claim adds 2 zero bytes of alignment pad
+gfx	space.bif	0x2E3E0	0x2ED94	model_vtxmap	merged	rebuild-list	list ends at 0x2ED92; the claim adds 2 zero bytes of alignment pad
+gfx	space.bif	0x3B250	0x3B280	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	streetab.bif	0x0	0x30	display_list	merged	f3dex	2 display lists (G_ENDDL at each list end) merged
+gfx	streetab.bif	0x38C90	0x3C010	display_list	merged	f3dex	103 display lists (G_ENDDL at each list end) merged
+lvlB	chute.bif	0x2A788	0x2A7B0	model_header	wrong	model-record	not a model record (+0x06/+0x10/+0x18 not 0, +0x24 not 0 or header-0x18, or +0x08 no display list)
+lvlB	chute.bif	0x2A7B0	0x2A7D8	vertices	wrong	f3dex-vtx	not a whole number of 16-byte Vtx
+lvlB	chute.bif	0x2B678	0x2B6A0	model_header	wrong	model-record	not a model record (+0x06/+0x10/+0x18 not 0, +0x24 not 0 or header-0x18, or +0x08 no display list)
+lvlB	chute.bif	0x2B6A0	0x2B6C8	vertices	wrong	f3dex-vtx	not a whole number of 16-byte Vtx
+lvlB	chute.bif	0x2CBE0	0x2CC08	model_header	wrong	model-record	not a model record (+0x06/+0x10/+0x18 not 0, +0x24 not 0 or header-0x18, or +0x08 no display list)
+lvlB	chute.bif	0x2CC08	0x2CC30	vertices	wrong	f3dex-vtx	not a whole number of 16-byte Vtx
+lvlB	chute.bif	0x348B8	0x348E0	model_header	wrong	model-record	not a model record (+0x06/+0x10/+0x18 not 0, +0x24 not 0 or header-0x18, or +0x08 no display list)
+lvlB	chute.bif	0x348E0	0x34908	vertices	wrong	f3dex-vtx	not a whole number of 16-byte Vtx
+lvlB	chute.bif	0x392F8	0x39320	model_header	wrong	model-record	not a model record (+0x06/+0x10/+0x18 not 0, +0x24 not 0 or header-0x18, or +0x08 no display list)
+lvlB	chute.bif	0x39320	0x39348	vertices	wrong	f3dex-vtx	not a whole number of 16-byte Vtx
+lvlB	planet.bif	0x50CC0	0x50CE8	model_header	wrong	model-record	not a model record (+0x06/+0x10/+0x18 not 0, +0x24 not 0 or header-0x18, or +0x08 no display list)
+lvlB	planet.bif	0x50CE8	0x50D10	vertices	wrong	f3dex-vtx	not a whole number of 16-byte Vtx
+lvlB	space.bif	0x3B378	0x3B3A0	model_header	wrong	model-record	not a model record (+0x06/+0x10/+0x18 not 0, +0x24 not 0 or header-0x18, or +0x08 no display list)
+lvlE	chute.bif	0xA8C0	0xA9F4	vertex_dup_list	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+lvlE	chute.bif	0x26150	0x26160	texload_dl	wrong	f3dex	list runs to G_ENDDL at 0x261D0; claim stops early
+lvlE	manor.bif	0x7088	0x70A8	vertex_dup_list	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+lvlE	manor.bif	0x9770	0x9922	vertex_dup_list	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+lvlE	manor.bif	0xF390	0xF42A	vertex_dup_list	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+lvlE	orchard.bif	0xB3A0	0xB3EA	vertex_dup_list	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+lvlE	orchard.bif	0x145C8	0x14D32	vertex_dup_list	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+lvlE	streetab.bif	0x3B910	0x3B930	texload_dl	wrong	f3dex	list runs to G_ENDDL at 0x3B990; claim stops early
+lvlF	bonusabc.bif	0x55B90	0x55C80	coll_quad	merged	pointer-table	the quad pointer table points at 0x55B90 and at 0x55BE0, 0x55C30: 3 quads
+lvlF	garden.bif	0xC080	0xCD40	morph_anim	wrong	morph	animation ends at 0xCD08 (nunique 114 is the unique-vertex count of an animated mesh); claim runs to 0xCD40 over a display list at 0xCD10
+packA	ROM	0x7CED0	0x7D6F0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x7CEF0
+packA	ROM	0x7D6F0	0x7DF10	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x7D710
+packA	ROM	0x7DF10	0x7E730	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x7DF30
+packA	ROM	0x7E730	0x7EF50	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x7E750
+packA	ROM	0x7EF50	0x7F770	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x7EF70
+packA	ROM	0x7F770	0x7FF90	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x7F790
+packA	ROM	0x7FF90	0x807B0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x7FFB0
+packA	ROM	0x807B0	0x80FD0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x807D0
+packA	ROM	0x80FD0	0x817F0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x80FF0
+packA	ROM	0x817F0	0x82010	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x81810
+packA	ROM	0x82010	0x82830	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x82030
+packA	ROM	0x82830	0x83050	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x82850
+packA	ROM	0x83050	0x83870	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x83070
+packA	ROM	0x83870	0x84090	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x83890
+packA	ROM	0x84090	0x848B0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x840B0
+packA	ROM	0x848B0	0x850D0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x848D0
+packA	ROM	0x850D0	0x858F0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x850F0
+packA	ROM	0x858F0	0x86110	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x85910
+packA	ROM	0x86110	0x86930	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x86130
+packA	ROM	0x86930	0x87150	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x86950
+packA	ROM	0x87150	0x87970	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x87170
+packA	ROM	0x87970	0x88190	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x87990
+packA	ROM	0x88190	0x889B0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x881B0
+packA	ROM	0x889B0	0x891D0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x889D0
+packA	ROM	0x891D0	0x899F0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x891F0
+packA	ROM	0x899F0	0x8A210	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x89A10
+packA	ROM	0x8A210	0x8AA30	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8A230
+packA	ROM	0x8AA30	0x8B250	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8AA50
+packA	ROM	0x8B250	0x8BA70	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8B270
+packA	ROM	0x8BA70	0x8C290	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8BA90
+packA	ROM	0x8C290	0x8CAB0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8C2B0
+packA	ROM	0x8CAB0	0x8D2D0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8CAD0
+packA	ROM	0x8D2D0	0x8DAF0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8D2F0
+packA	ROM	0x8DAF0	0x8E310	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8DB10
+packA	ROM	0x8E310	0x8EB30	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8E330
+packA	ROM	0x8EB30	0x8F350	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8EB50
+packA	ROM	0x8F350	0x8FB70	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8F370
+packA	ROM	0x8FB70	0x90390	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x8FB90
+packA	ROM	0x90390	0x90BB0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x903B0
+packA	ROM	0x90BB0	0x913D0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x90BD0
+packA	ROM	0x913D0	0x91BF0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x913F0
+packA	ROM	0x91BF0	0x92410	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x91C10
+packA	ROM	0x92410	0x92C30	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x92430
+packA	ROM	0x92C30	0x93450	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x92C50
+packA	ROM	0x93450	0x93C70	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x93470
+packA	ROM	0x93C70	0x94490	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x93C90
+packA	ROM	0x94490	0x94CB0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x944B0
+packA	ROM	0x94CB0	0x954D0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x94CD0
+packA	ROM	0x954D0	0x95CF0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x954F0
+packA	ROM	0x95CF0	0x96510	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x95D10
+packA	ROM	0x96510	0x96D30	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x96530
+packA	ROM	0x96D30	0x97550	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x96D50
+packA	ROM	0x97550	0x97D70	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x97570
+packA	ROM	0x97D70	0x98590	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x97D90
+packA	ROM	0x98590	0x98DB0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x985B0
+packA	ROM	0x98DB0	0x995D0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x98DD0
+packA	ROM	0x995D0	0x99DF0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x995F0
+packA	ROM	0x99DF0	0x9A610	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x99E10
+packA	ROM	0x9A610	0x9AE30	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9A630
+packA	ROM	0x9AE30	0x9B650	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9AE50
+packA	ROM	0x9B650	0x9BE70	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9B670
+packA	ROM	0x9BE70	0x9C690	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9BE90
+packA	ROM	0x9C690	0x9CEB0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9C6B0
+packA	ROM	0x9CEB0	0x9D6D0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9CED0
+packA	ROM	0x9D6D0	0x9DEF0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9D6F0
+packA	ROM	0x9DEF0	0x9E710	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9DF10
+packA	ROM	0x9E710	0x9EF30	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9E730
+packA	ROM	0x9EF30	0x9F750	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9EF50
+packA	ROM	0x9F750	0x9FF70	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9F770
+packA	ROM	0x9FF70	0xA0790	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0x9FF90
+packA	ROM	0xA0790	0xA0FB0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA07B0
+packA	ROM	0xA0FB0	0xA17D0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA0FD0
+packA	ROM	0xA17D0	0xA1FF0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA17F0
+packA	ROM	0xA1FF0	0xA2810	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA2010
+packA	ROM	0xA2810	0xA3030	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA2830
+packA	ROM	0xA3030	0xA3850	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA3050
+packA	ROM	0xA4450	0xA4870	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA4470
+packA	ROM	0xA4870	0xA4C90	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA4890
+packA	ROM	0xA4C90	0xA50B0	texture	merged	texture-ref	menu file (PI-copied to 0x80154000): address held by a .data pointer table; further texture/TLUT references inside at 0xA4CB0
+packC	ROM	0x10D0F8	0x10E108	texture	wrong	texture-ref	HUD code-built load (hud/FORMAT.md, address in LEVEL_REFS); size 0x1000, claim 0x1010
+packC	ROM	0x10E108	0x10F118	texture	wrong	texture-ref	HUD code-built load (hud/FORMAT.md, address in LEVEL_REFS); size 0x1000, claim 0x1010
+packC	ROM	0x10F118	0x110128	texture	wrong	texture-ref	HUD code-built load (hud/FORMAT.md, address in LEVEL_REFS); size 0x1000, claim 0x1010
+packC	ROM	0x110128	0x111138	texture	wrong	texture-ref	HUD code-built load (hud/FORMAT.md, address in LEVEL_REFS); size 0x1000, claim 0x1010
+packC	ROM	0x111138	0x112140	texture	wrong	texture-ref	HUD code-built load (hud/FORMAT.md, address in LEVEL_REFS); size 0x1000, claim 0x1008
+packC	ROM	0x130B40	0x130D40	tlut	wrong	texture-ref	the HUD TexPair tables use this address as texels
+packC	ROM	0x130D60	0x130F60	tlut	wrong	texture-ref	the HUD TexPair tables use this address as texels
+packC	ROM	0x130F80	0x131180	tlut	wrong	texture-ref	the HUD TexPair tables use this address as texels
+packC	ROM	0x1311A0	0x1313A0	tlut	wrong	texture-ref	the HUD TexPair tables use this address as texels
+packC	ROM	0x1313C0	0x1315C0	tlut	wrong	texture-ref	the HUD TexPair tables use this address as texels
+packC	ROM	0x1315E0	0x1317E0	tlut	wrong	texture-ref	the HUD TexPair tables use this address as texels
+packC	ROM	0x131800	0x131A00	tlut	wrong	texture-ref	the HUD TexPair tables use this address as texels
+packC	ROM	0x146730	0x1469F8	table	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+packC	ROM	0x149180	0x1491BC	table	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+packC	ROM	0x1586D8	0x158B84	table	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+packC	ROM	0x1705A0	0x170B80	table	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+packC	ROM	0x18F360	0x18FA4C	table	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads
+packC	ROM	0x1A4A10	0x1A51DC	table	wrong	rebuild-list	claim stops at sum(n+m) and leaves out the 0 terminator that func_80000450 reads

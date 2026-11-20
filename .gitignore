@@ -1,0 +1,6 @@
+*.z64
+*.n64
+*.v64
+build/*
+!build/report.json
+__pycache__/

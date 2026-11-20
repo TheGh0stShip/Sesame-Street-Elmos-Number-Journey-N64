@@ -1,0 +1,465 @@
+game	start	end	class	format/description	reference	extractor
+letter	streetab.bif:0x29630	streetab.bif:0x29650	tex_palette	TLUT RGBA5551 x16	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x29650	streetab.bif:0x29A50	tex_image	fmt 2 siz 0 64x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x2A050	streetab.bif:0x2A250	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x2A250	streetab.bif:0x2A650	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x2A650	streetab.bif:0x2A670	tex_palette	TLUT RGBA5551 x16	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x2A670	streetab.bif:0x2A870	tex_image	fmt 2 siz 0 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x30070	streetab.bif:0x30270	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x30270	streetab.bif:0x30670	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x31670	streetab.bif:0x31870	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x31870	streetab.bif:0x31C70	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x31C70	streetab.bif:0x31E70	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x32270	streetab.bif:0x32470	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x32470	streetab.bif:0x32870	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x32870	streetab.bif:0x32A70	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x32A70	streetab.bif:0x32E70	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x32E70	streetab.bif:0x33070	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x33070	streetab.bif:0x33470	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x33470	streetab.bif:0x33670	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x33670	streetab.bif:0x33A70	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	streetab.bif:0x3AF10	streetab.bif:0x3AF90	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3B010	streetab.bif:0x3B090	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3B090	streetab.bif:0x3B110	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3B710	streetab.bif:0x3B790	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3B890	streetab.bif:0x3B910	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3B910	streetab.bif:0x3B930	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3B990	streetab.bif:0x3BA10	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3BA10	streetab.bif:0x3BA90	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3BA90	streetab.bif:0x3BB10	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3BB10	streetab.bif:0x3BB90	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	streetab.bif:0x3C2EC	streetab.bif:0x3C2F0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3C554	streetab.bif:0x3C558	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3CA04	streetab.bif:0x3CA08	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3CF14	streetab.bif:0x3CF18	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3D474	streetab.bif:0x3D478	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3DD2C	streetab.bif:0x3DD30	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3DF2C	streetab.bif:0x3DF30	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3E14C	streetab.bif:0x3E150	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3E6CC	streetab.bif:0x3E6D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3F00C	streetab.bif:0x3F010	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3FBC4	streetab.bif:0x3FBC8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x3FF14	streetab.bif:0x3FF18	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x400E4	streetab.bif:0x400E8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x41264	streetab.bif:0x41268	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x41564	streetab.bif:0x41568	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x417DC	streetab.bif:0x417E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x428D4	streetab.bif:0x428D8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x42B5C	streetab.bif:0x42B60	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4505C	streetab.bif:0x45060	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x453CC	streetab.bif:0x453D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x45874	streetab.bif:0x45878	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x45AAC	streetab.bif:0x45AB0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x463E4	streetab.bif:0x463E8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4654C	streetab.bif:0x46550	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4677C	streetab.bif:0x46780	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x47444	streetab.bif:0x47448	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x47894	streetab.bif:0x47898	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x47E24	streetab.bif:0x47E28	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x48054	streetab.bif:0x48058	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x48DEC	streetab.bif:0x48DF0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x491B4	streetab.bif:0x491B8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x499C4	streetab.bif:0x499C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x49D64	streetab.bif:0x49D68	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x49FAC	streetab.bif:0x49FB0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4A1FC	streetab.bif:0x4A200	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4A7A4	streetab.bif:0x4A7A8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4A9B4	streetab.bif:0x4A9B8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4AB8C	streetab.bif:0x4AB90	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4AFEC	streetab.bif:0x4AFF0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4B9C4	streetab.bif:0x4B9C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4BC7C	streetab.bif:0x4BC80	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4BDA4	streetab.bif:0x4BDA8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4BF24	streetab.bif:0x4BF28	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4C664	streetab.bif:0x4C668	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4C7D4	streetab.bif:0x4C7D8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4C9D4	streetab.bif:0x4C9D8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4D014	streetab.bif:0x4D018	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4DE0C	streetab.bif:0x4DE10	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4E22C	streetab.bif:0x4E230	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4F274	streetab.bif:0x4F278	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4F754	streetab.bif:0x4F758	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x4FA9C	streetab.bif:0x4FAA0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x50204	streetab.bif:0x50208	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x507CC	streetab.bif:0x507D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x50CBC	streetab.bif:0x50CC0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x50E74	streetab.bif:0x50E78	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x51084	streetab.bif:0x51088	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x513E4	streetab.bif:0x513E8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x515D4	streetab.bif:0x515D8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x5180C	streetab.bif:0x51810	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x51C0C	streetab.bif:0x51C10	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x51ECC	streetab.bif:0x51ED0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x5257C	streetab.bif:0x52580	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x52C94	streetab.bif:0x52C98	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x52E14	streetab.bif:0x52E18	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x5325C	streetab.bif:0x53260	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x538F4	streetab.bif:0x538F8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x53F44	streetab.bif:0x53F48	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x543FC	streetab.bif:0x54400	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x548F4	streetab.bif:0x548F8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x54B2C	streetab.bif:0x54B30	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x5524C	streetab.bif:0x55250	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x554B4	streetab.bif:0x554B8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x55644	streetab.bif:0x55648	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x558CC	streetab.bif:0x558D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x55FB4	streetab.bif:0x55FC0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x55FC0	streetab.bif:0x56010	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	streetab.bif:0x56010	streetab.bif:0x56060	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	streetab.bif:0x56060	streetab.bif:0x560B0	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	streetab.bif:0x560B0	streetab.bif:0x56100	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	streetab.bif:0x56100	streetab.bif:0x56110	collider_ptrs	u32 pointers to the n 0x50-byte collider quads	collider_list +4	tools/extract_level_rest.py
+letter	streetab.bif:0x56110	streetab.bif:0x56118	collider_list	u32 n; u32 pointer to pointer array (code: func_80023118 spD4)	code address (func_80023118 spD4, e.g. D_801AA110 case 0x1015)	tools/extract_level_rest.py
+letter	streetab.bif:0x56218	streetab.bif:0x56230	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	streetab.bif:0x56254	streetab.bif:0x56258	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	streetab.bif:0x56258	streetab.bif:0x56260	pad	zero bytes	none	tools/extract_level_rest.py
+letter	streetab.bif:0x56260	streetab.bif:0x63764	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	streetab.bif:0x63764	streetab.bif:0x68AF4	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	streetab.bif:0x68AF4	streetab.bif:0x73E90	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	streetab.bif:0x73E90	streetab.bif:0x7C440	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	streetab.bif:0x7C440	streetab.bif:0x7C459	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x03B18	chute.bif:0x03B7C	vertex_dup_list	u16 groups {n new, m dup, m indices} until sum(n+m) = model header u16 +4 (model header +0x14; func_80000450)	pointer at model header +0x14	tools/extract_level_rest.py
+letter	chute.bif:0x03B7C	chute.bif:0x03B80	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x03B90	chute.bif:0x03BA8	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x03BCC	chute.bif:0x03BD0	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x03BD0	chute.bif:0x057D8	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	chute.bif:0x057D8	chute.bif:0x057E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x08020	chute.bif:0x08078	vertex_dup_list	u16 groups {n new, m dup, m indices} until sum(n+m) = model header u16 +4 (model header +0x14; func_80000450)	pointer at model header +0x14	tools/extract_level_rest.py
+letter	chute.bif:0x08088	chute.bif:0x080A0	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x080C4	chute.bif:0x080C8	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x080C8	chute.bif:0x08EE4	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	chute.bif:0x08EE4	chute.bif:0x08EF0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x0A8C0	chute.bif:0x0A9F4	vertex_dup_list	u16 groups {n new, m dup, m indices} until sum(n+m) = model header u16 +4 (model header +0x14; func_80000450)	pointer at model header +0x14	tools/extract_level_rest.py
+letter	chute.bif:0x0A9F4	chute.bif:0x0A9F8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x0A9F8	chute.bif:0x0AA10	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x0AA34	chute.bif:0x0AA38	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x0AA38	chute.bif:0x0CC7C	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	chute.bif:0x0CC7C	chute.bif:0x0CC80	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x0E2B8	chute.bif:0x0E2D0	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x0E2F4	chute.bif:0x0E2F8	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x0E2F8	chute.bif:0x0E300	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x1F108	chute.bif:0x1F120	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x1F144	chute.bif:0x1F148	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	chute.bif:0x1F148	chute.bif:0x1F150	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x22750	chute.bif:0x22950	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	chute.bif:0x22950	chute.bif:0x22D50	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	chute.bif:0x24550	chute.bif:0x24750	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	chute.bif:0x24750	chute.bif:0x24B50	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	chute.bif:0x24B50	chute.bif:0x24D50	tex_palette	TLUT RGBA5551 x256	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	chute.bif:0x24D50	chute.bif:0x25150	tex_image	fmt 2 siz 1 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	chute.bif:0x26150	chute.bif:0x26160	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	chute.bif:0x261D0	chute.bif:0x26250	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	chute.bif:0x26450	chute.bif:0x264D0	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	chute.bif:0x264D0	chute.bif:0x26550	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	chute.bif:0x268FC	chute.bif:0x26900	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x26AC4	chute.bif:0x26AC8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x26C9C	chute.bif:0x26CA0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x26E6C	chute.bif:0x26E70	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x27F6C	chute.bif:0x27F70	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x28204	chute.bif:0x28208	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x285B4	chute.bif:0x285B8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x28F64	chute.bif:0x28F68	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2940C	chute.bif:0x29410	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x29504	chute.bif:0x29508	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x29BC4	chute.bif:0x29BC8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x29DAC	chute.bif:0x29DB0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x29F8C	chute.bif:0x29F90	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2A1A4	chute.bif:0x2A1A8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2A50C	chute.bif:0x2A510	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2A85C	chute.bif:0x2A860	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2ABEC	chute.bif:0x2ABF0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2AE5C	chute.bif:0x2AE60	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2B114	chute.bif:0x2B118	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2B844	chute.bif:0x2B848	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2B984	chute.bif:0x2B988	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2BB64	chute.bif:0x2BB68	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2BFF4	chute.bif:0x2BFF8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2C114	chute.bif:0x2C118	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2C34C	chute.bif:0x2C350	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2C5AC	chute.bif:0x2C5B0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2C7EC	chute.bif:0x2C7F0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2C8EC	chute.bif:0x2C8F0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2CAB4	chute.bif:0x2CAB8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2CEE4	chute.bif:0x2CEE8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2CF9C	chute.bif:0x2CFA0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2D124	chute.bif:0x2D128	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2D4A4	chute.bif:0x2D4A8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2DAA4	chute.bif:0x2DAA8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2DC9C	chute.bif:0x2DCA0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2DF24	chute.bif:0x2DF28	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2E1B4	chute.bif:0x2E1B8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2E4DC	chute.bif:0x2E4E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2E8F4	chute.bif:0x2E8F8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2EB24	chute.bif:0x2EB28	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2ED74	chute.bif:0x2ED78	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2F48C	chute.bif:0x2F490	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2F8F4	chute.bif:0x2F8F8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x2FC94	chute.bif:0x2FC98	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x303DC	chute.bif:0x303E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x308DC	chute.bif:0x308E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x30D74	chute.bif:0x30D78	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3118C	chute.bif:0x31190	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x32D9C	chute.bif:0x32DA0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x33024	chute.bif:0x33028	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x33434	chute.bif:0x33438	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x33A1C	chute.bif:0x33A20	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x34644	chute.bif:0x34648	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x34EFC	chute.bif:0x34F00	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x354C4	chute.bif:0x354C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x36494	chute.bif:0x36498	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3671C	chute.bif:0x36720	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x37184	chute.bif:0x37188	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3730C	chute.bif:0x37310	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x37A1C	chute.bif:0x37A20	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x37EB4	chute.bif:0x37EB8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x38A74	chute.bif:0x38A78	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x39094	chute.bif:0x39098	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x393DC	chute.bif:0x393E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x39B3C	chute.bif:0x39B40	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x39D04	chute.bif:0x39D08	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3A3CC	chute.bif:0x3A3D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3A634	chute.bif:0x3A638	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3AC6C	chute.bif:0x3AC70	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3B19C	chute.bif:0x3B1A0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3BA44	chute.bif:0x3BA48	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3BF0C	chute.bif:0x3BF10	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3C714	chute.bif:0x3C718	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3C8C4	chute.bif:0x3C8C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3CEA4	chute.bif:0x3CEA8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3D454	chute.bif:0x3D458	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3D58C	chute.bif:0x3D590	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3D744	chute.bif:0x3D748	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3D81C	chute.bif:0x3D820	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3DACC	chute.bif:0x3DAD0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3DD0C	chute.bif:0x3DD10	pad	zero bytes	none	tools/extract_level_rest.py
+letter	chute.bif:0x3F684	chute.bif:0x3F6A9	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x00B58	manor.bif:0x00B70	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x00B94	manor.bif:0x00B98	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x00B98	manor.bif:0x00BA0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x016F8	manor.bif:0x01710	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x01734	manor.bif:0x01738	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x01738	manor.bif:0x01740	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x026C8	manor.bif:0x026E0	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x02704	manor.bif:0x02708	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x02708	manor.bif:0x02710	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x03698	manor.bif:0x036B0	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x036D4	manor.bif:0x036D8	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x036D8	manor.bif:0x036E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x04668	manor.bif:0x04680	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x046A4	manor.bif:0x046A8	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x046A8	manor.bif:0x046B0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x060B0	manor.bif:0x062B0	palette	RGBA16 TLUT[256]; palette of an unused CI8 32x64 texture (entries 0-32 zero, never indexed) [RAM 0x8015A0B0]; out/letter/manor_0060B0_CI8_32x64.png	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS (only the manor image itself searched for level pointers); .data table 0x800746BC.. points at 0x8015A180/A1A0/A9A0/A9C0 but those are space.bif display-list entry points (lvlB dl_8015A170), not manor data	r1/tools/extract_r1.py
+letter	manor.bif:0x062B0	manor.bif:0x06AB0	texture	CI8 32x64; unused CI8 32x64 strip of manor's magenta-keyed glowing yellow arc decoration (indices 33-255 only; matches the referenced neighbour strips 0x801588B0 / 0x801598B0, same layout pal+CI8 32x64) [RAM 0x8015A2B0]	unreferenced: searched code (lui+addiu/ori/load/store pairs over all .text), all .data words, all words of the common block and of every level image (r1/tools/probe.py), LEVEL_REFS	r1/tools/extract_r1.py
+letter	manor.bif:0x07088	manor.bif:0x070A8	vertex_dup_list	u16 groups {n new, m dup, m indices} until sum(n+m) = model header u16 +4 (model header +0x14; func_80000450)	pointer at model header +0x14	tools/extract_level_rest.py
+letter	manor.bif:0x070A8	manor.bif:0x070B0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x070C0	manor.bif:0x070D8	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x070FC	manor.bif:0x07100	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x07100	manor.bif:0x077A0	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	manor.bif:0x09770	manor.bif:0x09922	vertex_dup_list	u16 groups {n new, m dup, m indices} until sum(n+m) = model header u16 +4 (model header +0x14; func_80000450)	pointer at model header +0x14	tools/extract_level_rest.py
+letter	manor.bif:0x09922	manor.bif:0x09928	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x09938	manor.bif:0x09950	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x09974	manor.bif:0x09978	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x09978	manor.bif:0x0ADE0	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	manor.bif:0x0F390	manor.bif:0x0F42A	vertex_dup_list	u16 groups {n new, m dup, m indices} until sum(n+m) = model header u16 +4 (model header +0x14; func_80000450)	pointer at model header +0x14	tools/extract_level_rest.py
+letter	manor.bif:0x0F42A	manor.bif:0x0F430	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x0F440	manor.bif:0x0F458	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x0F47C	manor.bif:0x0F480	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x0F480	manor.bif:0x10D54	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	manor.bif:0x10D54	manor.bif:0x10D60	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x25188	manor.bif:0x251A0	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x251C4	manor.bif:0x251C8	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	manor.bif:0x251C8	manor.bif:0x251D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x28D5C	manor.bif:0x28D60	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x28F8C	manor.bif:0x28F90	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x29924	manor.bif:0x29928	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x29D7C	manor.bif:0x29D80	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x29FBC	manor.bif:0x29FC0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2B044	manor.bif:0x2B048	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2B64C	manor.bif:0x2B650	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2BA0C	manor.bif:0x2BA10	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2BC74	manor.bif:0x2BC78	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2C20C	manor.bif:0x2C210	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2C364	manor.bif:0x2C368	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2C5D4	manor.bif:0x2C5D8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2C8F4	manor.bif:0x2C8F8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2CACC	manor.bif:0x2CAD0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2D35C	manor.bif:0x2D360	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2D57C	manor.bif:0x2D580	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2D834	manor.bif:0x2D838	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2E184	manor.bif:0x2E188	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2E374	manor.bif:0x2E378	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2EB6C	manor.bif:0x2EB70	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x2F7D4	manor.bif:0x2F7D8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x301DC	manor.bif:0x301E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x306BC	manor.bif:0x306C0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x309A4	manor.bif:0x309A8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3178C	manor.bif:0x31790	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x31A44	manor.bif:0x31A48	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3201C	manor.bif:0x32020	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x32A84	manor.bif:0x32A88	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x32D54	manor.bif:0x32D58	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x33214	manor.bif:0x33218	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3379C	manor.bif:0x337A0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x33E24	manor.bif:0x33E28	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x34284	manor.bif:0x34288	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x34F1C	manor.bif:0x34F20	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x351B4	manor.bif:0x351B8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x35D2C	manor.bif:0x35D30	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x35FCC	manor.bif:0x35FD0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x36294	manor.bif:0x36298	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3653C	manor.bif:0x36540	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3662C	manor.bif:0x36630	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3732C	manor.bif:0x37330	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x37D14	manor.bif:0x37D18	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x37EE4	manor.bif:0x37EE8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3818C	manor.bif:0x38190	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x385D4	manor.bif:0x385D8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3882C	manor.bif:0x38830	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x38AFC	manor.bif:0x38B00	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x38C64	manor.bif:0x38C68	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x392C4	manor.bif:0x392C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3983C	manor.bif:0x39840	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x39D1C	manor.bif:0x39D20	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3A29C	manor.bif:0x3A2A0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3A3DC	manor.bif:0x3A3E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3A5A4	manor.bif:0x3A5A8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3A83C	manor.bif:0x3A840	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3AB1C	manor.bif:0x3AB20	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3ACCC	manor.bif:0x3ACD0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3B134	manor.bif:0x3B138	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3B3C4	manor.bif:0x3B3C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3B674	manor.bif:0x3B678	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3BCBC	manor.bif:0x3BCC0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3C0FC	manor.bif:0x3C100	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3C33C	manor.bif:0x3C340	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3C4CC	manor.bif:0x3C4D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3C96C	manor.bif:0x3C970	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3CD54	manor.bif:0x3CD58	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3D184	manor.bif:0x3D188	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3D3AC	manor.bif:0x3D3B0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x3D9E4	manor.bif:0x3D9E8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	manor.bif:0x403E4	manor.bif:0x40409	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x01200	orchard.bif:0x01250	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x01250	orchard.bif:0x012A0	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x012A0	orchard.bif:0x012F0	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x012F0	orchard.bif:0x01340	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x01340	orchard.bif:0x01350	collider_ptrs	u32 pointers to the n 0x50-byte collider quads	collider_list +4	tools/extract_level_rest.py
+letter	orchard.bif:0x01350	orchard.bif:0x01358	collider_list	u32 n; u32 pointer to pointer array (code: func_80023118 spD4)	code address (func_80023118 spD4, e.g. D_801AA110 case 0x1015)	tools/extract_level_rest.py
+letter	orchard.bif:0x02410	orchard.bif:0x02428	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x0244C	orchard.bif:0x02450	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x03650	orchard.bif:0x036A0	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x036A0	orchard.bif:0x036F0	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x036F0	orchard.bif:0x03740	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x03740	orchard.bif:0x03790	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x03790	orchard.bif:0x037A0	collider_ptrs	u32 pointers to the n 0x50-byte collider quads	collider_list +4	tools/extract_level_rest.py
+letter	orchard.bif:0x037A0	orchard.bif:0x037A8	collider_list	u32 n; u32 pointer to pointer array (code: func_80023118 spD4)	code address (func_80023118 spD4, e.g. D_801AA110 case 0x1015)	tools/extract_level_rest.py
+letter	orchard.bif:0x04860	orchard.bif:0x04878	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x0489C	orchard.bif:0x048A0	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x05AA0	orchard.bif:0x05AF0	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x05AF0	orchard.bif:0x05B40	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x05B40	orchard.bif:0x05B90	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x05B90	orchard.bif:0x05BE0	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x05BE0	orchard.bif:0x05BF0	collider_ptrs	u32 pointers to the n 0x50-byte collider quads	collider_list +4	tools/extract_level_rest.py
+letter	orchard.bif:0x05BF0	orchard.bif:0x05BF8	collider_list	u32 n; u32 pointer to pointer array (code: func_80023118 spD4)	code address (func_80023118 spD4, e.g. D_801AA110 case 0x1015)	tools/extract_level_rest.py
+letter	orchard.bif:0x06CB0	orchard.bif:0x06CC8	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x06CEC	orchard.bif:0x06CF0	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x06CF0	orchard.bif:0x06D40	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x06D40	orchard.bif:0x06D90	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x06D90	orchard.bif:0x06DE0	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x06DE0	orchard.bif:0x06E30	collider_quad	0x50: u32 kind, f32 plane, 4 corners (func_80023118)	collider_ptrs entries	tools/extract_level_rest.py
+letter	orchard.bif:0x08030	orchard.bif:0x08040	collider_ptrs	u32 pointers to the n 0x50-byte collider quads	collider_list +4	tools/extract_level_rest.py
+letter	orchard.bif:0x08040	orchard.bif:0x08048	collider_list	u32 n; u32 pointer to pointer array (code: func_80023118 spD4)	code address (func_80023118 spD4, e.g. D_801AA110 case 0x1015)	tools/extract_level_rest.py
+letter	orchard.bif:0x09100	orchard.bif:0x09118	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x0913C	orchard.bif:0x09140	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x0B3A0	orchard.bif:0x0B3EA	vertex_dup_list	u16 groups {n new, m dup, m indices} until sum(n+m) = model header u16 +4 (model header +0x14; func_80000450)	pointer at model header +0x14	tools/extract_level_rest.py
+letter	orchard.bif:0x0B3EA	orchard.bif:0x0B3F0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x0B400	orchard.bif:0x0B418	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x0B43C	orchard.bif:0x0B440	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x0B440	orchard.bif:0x0D0C8	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	orchard.bif:0x0D0C8	orchard.bif:0x0D0D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x145C8	orchard.bif:0x14D32	vertex_dup_list	u16 groups {n new, m dup, m indices} until sum(n+m) = model header u16 +4 (model header +0x14; func_80000450)	pointer at model header +0x14	tools/extract_level_rest.py
+letter	orchard.bif:0x14D32	orchard.bif:0x14D38	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x14D48	orchard.bif:0x14D60	bbox	f32 min x,y,z, max x,y,z (model header +0x24; func_8000092C uses the centre)	pointer at model header +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x14D84	orchard.bif:0x14D88	model_header_tail	model header +0x24: u32 pointer to bounding box (read by func_8000092C)	model header (lvlB model_header) +0x24	tools/extract_level_rest.py
+letter	orchard.bif:0x14D88	orchard.bif:0x14D90	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x14D90	orchard.bif:0x17708	morph_anim	keyframed vertex morph animation (sprA format; func_8000092C/func_80000450)	actor anim tables in program .data (e.g. Letter D_80075D00[actor+0x1D4] -> 0x801AA260/0x801B7764/0x801BCAF4 in streetab); played by func_8002AB50 -> func_8000092C -> func_80000450	tools/extract_level_rest.py
+letter	orchard.bif:0x17708	orchard.bif:0x17710	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x193E0	orchard.bif:0x19400	tex_palette	TLUT RGBA5551 x16	gsDPSetTextureImage+gsDPLoadTLUT in a texload_dl	tools/extract_level_rest.py
+letter	orchard.bif:0x19400	orchard.bif:0x19600	tex_image	fmt 2 siz 0 32x32	gsDPSetTextureImage+gsDPLoadBlock in a texload_dl	tools/extract_level_rest.py
+letter	orchard.bif:0x1ED88	orchard.bif:0x1EE08	texload_dl	F3DEX texture/palette load sub-list (no gsSPDisplayList reaches it; called by code)	none in the image (no G_DL reaches it); code-built display lists	tools/extract_level_rest.py
+letter	orchard.bif:0x202F4	orchard.bif:0x202F8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x207EC	orchard.bif:0x207F0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2174C	orchard.bif:0x21750	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x219E4	orchard.bif:0x219E8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x21C04	orchard.bif:0x21C08	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x21EC4	orchard.bif:0x21EC8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x22124	orchard.bif:0x22128	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x22564	orchard.bif:0x22568	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2297C	orchard.bif:0x22980	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x23FA4	orchard.bif:0x23FA8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2420C	orchard.bif:0x24210	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x24434	orchard.bif:0x24438	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x246F4	orchard.bif:0x246F8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2497C	orchard.bif:0x24980	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x25874	orchard.bif:0x25878	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x25F74	orchard.bif:0x25F78	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x26A3C	orchard.bif:0x26A40	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2752C	orchard.bif:0x27530	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2820C	orchard.bif:0x28210	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x28404	orchard.bif:0x28408	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x29A64	orchard.bif:0x29A68	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x29D0C	orchard.bif:0x29D10	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2AC14	orchard.bif:0x2AC18	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2ADA4	orchard.bif:0x2ADA8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2AF1C	orchard.bif:0x2AF20	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2B39C	orchard.bif:0x2B3A0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2B5D4	orchard.bif:0x2B5D8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2BA04	orchard.bif:0x2BA08	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2BD7C	orchard.bif:0x2BD80	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2C644	orchard.bif:0x2C648	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2CC84	orchard.bif:0x2CC88	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2D0DC	orchard.bif:0x2D0E0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2D524	orchard.bif:0x2D528	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2DEAC	orchard.bif:0x2DEB0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2E04C	orchard.bif:0x2E050	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2E1A4	orchard.bif:0x2E1A8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2E35C	orchard.bif:0x2E360	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2E6FC	orchard.bif:0x2E700	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2F084	orchard.bif:0x2F088	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2F244	orchard.bif:0x2F248	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2F704	orchard.bif:0x2F708	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2F934	orchard.bif:0x2F938	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x2FC1C	orchard.bif:0x2FC20	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x30D2C	orchard.bif:0x30D30	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x30FC4	orchard.bif:0x30FC8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x314A4	orchard.bif:0x314A8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x31904	orchard.bif:0x31908	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x330C4	orchard.bif:0x330C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x34964	orchard.bif:0x34968	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x34FFC	orchard.bif:0x35000	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x36C64	orchard.bif:0x36C68	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x38C0C	orchard.bif:0x38C10	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3900C	orchard.bif:0x39010	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3930C	orchard.bif:0x39310	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3960C	orchard.bif:0x39610	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x39C24	orchard.bif:0x39C28	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x39EFC	orchard.bif:0x39F00	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3A204	orchard.bif:0x3A208	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3A3C4	orchard.bif:0x3A3C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3A5C4	orchard.bif:0x3A5C8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3AEBC	orchard.bif:0x3AEC0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3B15C	orchard.bif:0x3B160	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3BA0C	orchard.bif:0x3BA10	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3D61C	orchard.bif:0x3D620	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3F284	orchard.bif:0x3F288	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3FBCC	orchard.bif:0x3FBD0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x3FE84	orchard.bif:0x3FE88	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x40094	orchard.bif:0x40098	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x402CC	orchard.bif:0x402D0	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x404FC	orchard.bif:0x40500	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x4076C	orchard.bif:0x40770	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x4097C	orchard.bif:0x40980	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x40BB4	orchard.bif:0x40BB8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x40DE4	orchard.bif:0x40DE8	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x41C3C	orchard.bif:0x41C40	pad	zero bytes	none	tools/extract_level_rest.py
+letter	orchard.bif:0x4524C	orchard.bif:0x45269	pad	zero bytes	none	tools/extract_level_rest.py
