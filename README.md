@@ -1,4 +1,4 @@
-# Sesame Street: Elmo's Number Journey (Nintendo 64) — complete matching code reconstruction
+# Sesame Street: Elmo's Number Journey (Nintendo 64) — byte-matching decompilation
 
 All **973 catalogued functions** and **444,672 executable bytes** in the USA release reproduce word-for-word from the published sources. Independent verification run v17 compiled every function at its retail address and compared every instruction; float constants and switch tables were checked separately.
 
@@ -22,9 +22,9 @@ ByteMatch's **complete code / units** measurement is the project-completion figu
 - `NAMES.tsv` records resolved named references used during strict replay.
 - GitHub Actions validates counts, ranges, source digests, proof rows and generated tracker reports on every push.
 
-The source is a byte-matching reconstruction, not a claim that every function is human-restored or portable. `UGLY_FORMS.tsv` identifies compiler-sensitive forms retained for matching.
+This is a byte-matching decompilation at function level: every published function was compiled with its recorded original compiler lane and compared word-for-word with the retail ROM. It is not yet organized as a conventional matching-decomp project with shared headers, translation units, a linker script, and a self-contained `make` ROM build. That packaging gap does not change the function-level matching result. The sources are also not claimed to be fully human-restored or portable; `UGLY_FORMS.tsv` identifies compiler-sensitive forms retained for matching.
 
-## Assets and ROM reconstruction
+## Assets and whole-ROM build
 
 Every byte of the 8 MiB ROM and all eight unpacked level images is classified with zero unknown ranges. The last measured whole-ROM build matched the original SHA-1 while regenerating **80.5%** of ROM bytes and placing the remaining identified bytes verbatim. Later component encoders passed their own byte-exact checks, but the end-to-end regeneration percentage has not yet been remeasured. The pending DOS gzip 1.2.4 experiment is not counted unless it reproduces all compressed level streams exactly.
 
