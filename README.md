@@ -1,4 +1,10 @@
-# Sesame Street: Elmo's Number Journey (N64), matching decompilation: number
+# Sesame Street: Elmo's Number Journey (N64) — 100% source-reproduced
+
+[![Byte-identical source](https://bytematch.dev/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64.svg?version=usa&category=catalogued-code&measure=matched_code_percent&label=Byte-identical%20source)](https://bytematch.dev/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64/usa)
+[![Ordinary matching C](https://bytematch.dev/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64.svg?version=usa&category=matching-c&measure=matched_code_percent&label=Ordinary%20matching%20C)](https://bytematch.dev/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64/usa)
+[![Fully linked](https://bytematch.dev/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64.svg?version=usa&category=catalogued-code&measure=complete_code_percent&label=Fully%20linked)](https://bytematch.dev/TheGh0stShip/Sesame-Street-Elmos-Number-Journey-N64/usa)
+
+All 973 catalogued functions and all 444,672 executable bytes are reproduced from byte-identical source. Of that code, 434,956 bytes (97.82%) are ordinary matching C; the remainder is verified original assembly or compiler/runtime source and is reported separately rather than mislabeled as C.
 
 `make` rebuilds the whole retail ROM from this tree and checks it: code segment, main segment and the full 8 MiB ROM
 are byte-identical (`number.code.sha1`, `number.main.sha1`, `number.sha1`). The base ROM is read once, by `make extract`.

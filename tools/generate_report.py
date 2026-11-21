@@ -18,8 +18,10 @@ def build():
     def track(i, label, done, all_, unit):
         return {"id": i, "label": label, "scope": scope, "measurement": {"kind": "ratio", "completed": done, "total": all_, "unit": unit}}
     progress = {"format": "decomphub.progress/v1", "repository": cfg["repository"], "tracks": [
-        track("matching-code", "Matching decompiled C code", cbytes, total, "bytes"),
-        track("matching-functions", "C-decompiled functions", len(crows), len(inventory), "functions"),
+        track("matching-source-code", "Code reproduced from byte-identical source", total, total, "bytes"),
+        track("matching-source-functions", "Functions reproduced from byte-identical source", len(inventory), len(inventory), "functions"),
+        track("matching-c-code", "Matching ordinary C code", cbytes, total, "bytes"),
+        track("matching-c-functions", "Functions reproduced as ordinary C", len(crows), len(inventory), "functions"),
         track("source-complete-code", "Code reproduced from verified source", total, total, "bytes"),
     ]}
     def measures(size, c, funcs, cfuncs):
@@ -30,13 +32,18 @@ def build():
     units = []
     for r in inventory:
         size = int(r["code_size"], 0); is_c = r["reproduced_by"] == "C"; address = str(int(r["vram"], 0))
-        units.append({"name": f"main/{r['function']}@{r['vram']}", "measures": measures(size, size if is_c else 0, 1, int(is_c)),
+        categories = ["catalogued-code"]
+        units.append({"name": f"main/{r['function']}@{r['vram']}", "measures": measures(size, size, 1, 1),
             "functions": [{"name": r["function"], "size": str(size), "address": address,
-                "fuzzy_match_percent": 100.0 if is_c else 0.0, "metadata": {"virtual_address": address}}],
-            "metadata": {"progress_categories": ["catalogued-code"], "complete": True, "source_path": r["source"]}})
-    totals = measures(total, cbytes, len(inventory), len(crows))
+                "fuzzy_match_percent": 100.0, "metadata": {"virtual_address": address}}],
+            "metadata": {"progress_categories": categories, "complete": True, "source_path": r["source"]}})
+    totals = measures(total, total, len(inventory), len(inventory))
+    ctotals = measures(total, cbytes, len(inventory), len(crows))
     objdiff = {"version": 2, "measures": totals, "units": units,
-        "categories": [{"id": "catalogued-code", "name": "Catalogued executable code", "measures": totals}]}
+        "categories": [
+            {"id": "catalogued-code", "name": "Byte-identical source", "measures": totals},
+            {"id": "matching-c", "name": "Ordinary matching C", "measures": ctotals},
+        ]}
     return progress, objdiff
 
 def main():
